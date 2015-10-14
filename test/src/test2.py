@@ -1,4 +1,4 @@
-from pyNN.neuron import *
+from pyNN.nest import *
 
 # setup global parameters of the simulator
 setup(timestep=0.1, min_delay=2.0)

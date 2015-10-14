@@ -37,6 +37,7 @@ electrode = sim.DCSource(start=2.0, stop=92.0, amplitude=0.014)
 electrode.inject_into(neurons[2:3])
 
 neurons.record(['v'])  #, 'u'])
+
 neurons.initialize(v=-70.0, u=-14.0)
 
 
