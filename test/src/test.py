@@ -31,7 +31,7 @@ spike_source = sim.Population(1, sim.SpikeSourceArray(spike_times=arange(10.0, 5
 
 connection = sim.Projection(spike_source, neurons[1:2], sim.OneToOneConnector(),
                             sim.StaticSynapse(weight=3.0, delay=1.0),
-                            receptor_type='excitatory'),
+                            receptor_type='excitatory')
 
 electrode = sim.DCSource(start=2.0, stop=92.0, amplitude=0.014)
 electrode.inject_into(neurons[2:3])
