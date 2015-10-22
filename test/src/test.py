@@ -1,13 +1,3 @@
-"""
-A selection of Izhikevich neurons.
-
-Run as:
-
-$ python Izhikevich.py <simulator>
-
-where <simulator> is 'neuron', 'nest', etc.
-
-"""
 
 from numpy import arange
 from pyNN.utility import get_simulator, init_logging, normalized_filename
