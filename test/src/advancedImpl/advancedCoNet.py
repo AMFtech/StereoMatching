@@ -26,8 +26,8 @@ spikingTimingRight = [[[40.], [300.], [300.]]]
 retinaRight = createSpikeSource(dx = dimensionRetinaX, dy = dimensionRetinaY, timing = spikingTimingRight)
 
 # create network and attach the spike sources 
-# network = createCooperativeNetwork(dx = dimensionRetinaX, dy = dimensionRetinaY, dz = disparityMax, 
-# 	spikeSourceL = retinaLeft, spikeSourceR = retinaRight)
+network = createCooperativeNetwork(dx = dimensionRetinaX, dy = dimensionRetinaY, dz = disparityMax, 
+	spikeSourceL = retinaLeft, spikeSourceR = retinaRight)
 
 # run simulation for time in milliseconds
 # run(200.0)
