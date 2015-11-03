@@ -1,19 +1,7 @@
 from pyNN.nest import setup, run, end
 from network_builder import createCooperativeNetwork, createSpikeSource
 # from plotter import plotSimulationResults
-
-
-####### Network Parameters #########
-
-dimensionRetinaX = 3
-dimensionRetinaY = 1
-  
-# radiusInhibition = 1
-# radiusExcitation = 1
-disparityMin = 0
-disparityMax = 1
-
-#################################
+from network_parameters import *
 
 # setup timestep of simulation and minimum and maximum synaptic delays
 setup(timestep=0.1, min_delay=0.2, max_delay=5.0)

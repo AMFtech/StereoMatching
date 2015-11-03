@@ -2,21 +2,22 @@ import pyNN.nest as sim
 from pyNN.utility import normalized_filename
 from numpy import arange
 
-sim.setup(timestep=0.01, min_delay=1.0)
+sim.setup(timestep=0.1, min_delay=0.1)
 
-neurons = sim.Population(1, sim.IF_cond_exp())
-spike_source = sim.Population(1, sim.SpikeSourceArray(spike_times=[10.0]))
+neurons = sim.Population(1, sim.IF_curr_exp())
+spike_sourceE = sim.Population(1, sim.SpikeSourceArray(spike_times=[33.1, 330.2, 330.3]))
+spike_sourceI = sim.Population(1, sim.SpikeSourceArray(spike_times=[33.1, 330.2, 330.3]))
 
-connection = sim.Projection(spike_source, neurons, sim.OneToOneConnector(), sim.StaticSynapse(weight=0.1, delay=1.0), receptor_type='excitatory')
-
-
+connection = sim.Projection(spike_sourceE, neurons, sim.OneToOneConnector(), sim.StaticSynapse(weight=22.5, delay=0.1))
+connection = sim.Projection(spike_sourceI, neurons, sim.OneToOneConnector(), sim.StaticSynapse(weight=-22.5, delay=0.1))
 # electrode = sim.DCSource(start=2.0, stop=92.0, amplitude=0.014)
 # electrode.inject_into(neurons)
 
 neurons.record(['v'])  #, 'u'])
-
-neurons.initialize(v=-70.0, u=-14.0)
-
+neurons.set(tau_syn_E=1.0)
+neurons.set(tau_syn_I=1.0)
+neurons.set(tau_m=5.0)
+neurons.set(v_reset=-72.0)
 
 sim.run(100.0)
 

@@ -20,26 +20,28 @@ neuronInhLeft.record('spikes')
 neuronInhRight.record('spikes')
 
 all_neurons.set(tau_syn_E=1.0)
-all_neurons.set(tau_syn_I=1.06)
+all_neurons.set(tau_syn_I=1.0)
 all_neurons.set(tau_m=1.07)
-all_neurons.set(v_reset=-72.0)
+neuronInhLeft.set(v_reset=-92.0)
+neuronInhRight.set(v_reset=-92.0)
+neuronCell.set(v_reset=-102.0)
 # create a spike source firing at spike_times
-retinaLeft = Population(1, SpikeSourceArray(spike_times=[10., 11, 12, 13, 14, 15, 50., 70., 130.]), label="Spike Source Left")
-retinaRight = Population(1, SpikeSourceArray(spike_times=[16.0]), label="Spike Source Right")
+retinaLeft = Population(1, SpikeSourceArray(spike_times=[10., 11., 12., 13., 14., 15., 16., 17., 18., 19., 20., 21., 22., 23., 24., 25., 26., 27.]), label="Spike Source Left")
+retinaRight = Population(1, SpikeSourceArray(spike_times=[28., 29., 30., 31., 32., 33.]), label="Spike Source Right")
 # connect them in according to the follwing pattern
 
-Projection(retinaLeft, neuronInhLeft, OneToOneConnector(), StaticSynapse(weight=39.5, delay=0.1))
+Projection(retinaLeft, neuronInhLeft, OneToOneConnector(), StaticSynapse(weight=49.5, delay=0.1))
 Projection(retinaLeft, neuronInhRight, OneToOneConnector(), StaticSynapse(weight=-39.5, delay=0.1))
-Projection(retinaLeft, neuronCell, OneToOneConnector(), StaticSynapse(weight=39.5, delay=1.374))
+Projection(retinaLeft, neuronCell, OneToOneConnector(), StaticSynapse(weight=39.5, delay=1.174))
 
-Projection(retinaRight, neuronInhRight, OneToOneConnector(), StaticSynapse(weight=39.5, delay=0.1))
+Projection(retinaRight, neuronInhRight, OneToOneConnector(), StaticSynapse(weight=49.5, delay=0.1))
 Projection(retinaRight, neuronInhLeft, OneToOneConnector(), StaticSynapse(weight=-39.5, delay=0.1))
-Projection(retinaRight, neuronCell, OneToOneConnector(), StaticSynapse(weight=39.5, delay=1.374))
+Projection(retinaRight, neuronCell, OneToOneConnector(), StaticSynapse(weight=39.5, delay=1.174))
 
 Projection(neuronInhLeft, neuronCell, OneToOneConnector(), StaticSynapse(weight=-39.5, delay=0.1))
 Projection(neuronInhRight, neuronCell, OneToOneConnector(), StaticSynapse(weight=-39.5, delay=0.1))
 
-run(200.0)
+run(50.0)
 
 # plot results
 filename = normalized_filename("Results", "cell_type_demonstration", "pkl", "nest")

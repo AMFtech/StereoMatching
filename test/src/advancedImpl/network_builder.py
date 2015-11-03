@@ -1,4 +1,6 @@
 from pyNN.nest import *
+from network_parameters import *
+# from advancedCoNet import disparityMax, disparityMin, dimensionRetinaX, dimensionRetinaY
 
 '''
 Creating an Assembly of Populations of one spiking neuron with an assigned timing for the spikes.
@@ -47,11 +49,13 @@ def createCooperativeNetwork(spikeSourceL, spikeSourceR, dx=1, dy=1, dz=1):
 		print "WARNING:\ncreateCooperativeNetwork: One or more Dimensions are less than or equal to 0. No Network created!"
 		return None
 
+	print "Creating Network..."
 	network = createNetwork(dx=dx, dy=dy, dz=dz)
+	print "Network successfully created."
+	print "Connetcting Spike-sources..."
 	connectSpikeSourcesToNetwork(sourceL=spikeSourceL, sourceR=spikeSourceR, network=network)
+	print "Spike-sources successfully connected."
 	# interconnectLayersForExternalExcitationAndInhibition(network)
-
-	print "Successfully created Network"
 	return network
 
 def createNetwork(dx=1, dy=1, dz=1):
@@ -84,6 +88,7 @@ def createANDCell(xlabel, ylabel, zlabel):
 	return andNeuron
 
 def connectSpikeSourcesToNetwork(sourceL, sourceR, network):
+	
 	# connect neurons
 	connectionPaternRetinaLeft = []
 	for pixel in range(0, dimensionRetinaX):
@@ -94,7 +99,7 @@ def connectSpikeSourcesToNetwork(sourceL, sourceR, network):
 				break
 			connectionPaternRetinaLeft.append((pixel, indexInNetworkLayer, 0.189, 0.2))   
 	print connectionPaternRetinaLeft
-
+ 
 	connectionPaternRetinaRight = []
 	for pixel in range(0, dimensionRetinaX):
 		for disp in range(disparityMin, disparityMax+1):
@@ -104,9 +109,6 @@ def connectSpikeSourcesToNetwork(sourceL, sourceR, network):
 				break
 			connectionPaternRetinaRight.append((pixel, indexInNetworkLayer, 0.189, 0.2))   
 	print connectionPaternRetinaRight
-		   
-	connectionRetinaLeft = Projection(retinaLeft, oneNeuralLayer, FromListConnector(connectionPaternRetinaLeft), StaticSynapse(), receptor_type='excitatory')
-	connectionRetinaRight = Projection(retinaRight, oneNeuralLayer, FromListConnector(connectionPaternRetinaRight), StaticSynapse(), receptor_type='excitatory')	
-
+ 		   
 					
 
