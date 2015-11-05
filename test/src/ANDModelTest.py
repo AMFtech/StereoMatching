@@ -15,14 +15,14 @@ neuronCell = Population(1, IF_curr_exp(), label="Cell Output")
 # initialise records for plotting purposes
 all_neurons = neuronInhLeft + neuronInhRight + neuronCell
 all_neurons.record('v')
-neuronCell.record('spikes')
+neuronCell.record('spikes', 'v')
 neuronInhLeft.record('spikes')
 neuronInhRight.record('spikes')
 
 all_neurons.set(tau_syn_E=1.0)
 all_neurons.set(tau_syn_I=1.0)
 all_neurons.set(tau_m=1.07)
-neuronInhLeft.set(v_reset=-92.0)
+neuronInhLeft.set(v_reset=-92.0, tau_syn_E=1.0)
 neuronInhRight.set(v_reset=-92.0)
 neuronCell.set(v_reset=-102.0)
 # create a spike source firing at spike_times
