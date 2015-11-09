@@ -1,5 +1,5 @@
 from pyNN.nest import *
-from network_parameters import disparityMax, disparityMin
+from network_parameters import disparityMax, disparityMin 
 
 '''
 Creating an Assembly of Populations of one spiking neuron with an assigned timing for the spikes.
@@ -16,10 +16,12 @@ def createSpikeSource(dx=1, dy=1, timing=[[]], labelSS=""):
 	for layer in range(1, dy+1):
 		oneLayer = []
 		for pixel in range(1, dx+1):
-			oneLayer.append(Population(1, SpikeSourceArray(spike_times = timing[layer-1][pixel-1]), 
-				label="{2} - Layer {1} - Pixel {0}".format(pixel, layer, labelSS)))
-		spikeSource.append(oneLayer)
-	print spikeSource		
+			onePixel = Population(1, SpikeSourceArray(spike_times = timing[layer-1][pixel-1]), 
+				label="{2} - Layer {1} - Pixel {0}".format(pixel, layer, labelSS))
+			onePixel.record('spikes')
+			oneLayer.append(onePixel)
+			
+		spikeSource.append(oneLayer)		
 	print "Successfully created Spike Source"	
 	return spikeSource					
 		
@@ -79,6 +81,8 @@ def createANDCell(xlabel, ylabel, zlabel):
 	Projection(neuronInhRight, neuronCell, OneToOneConnector(), StaticSynapse(weight=internalWeightInhibition, delay=internalDelayInhibition))
 
 	andNeuron = neuronInhLeft + neuronInhRight + neuronCell
+	andNeuron.record('spikes')
+	andNeuron.record('v')
 # 	print andNeuron
 	return andNeuron
 
@@ -112,13 +116,13 @@ def connectSpikeSourcesToNetwork(sourceL=None, sourceR=None, network=None, dx=1,
 				indexInNetworkLayerR = pixel - disp
 				if indexInNetworkLayerR >= 0:
 					Projection(sourceR[layer][indexInNetworkLayerR], 
-							network[layer][pixel][indexInNetworkLayerR].get_population("Inhibitor Left {0} - {1} - {2}".format(indexInNetworkLayerR+1, layer+1, pixel+1)), 
+							network[layer][pixel][indexInNetworkLayerR].get_population("Inhibitor Right {0} - {1} - {2}".format(indexInNetworkLayerR+1, layer+1, pixel+1)), 
 							OneToOneConnector(), StaticSynapse(weight=weightExcitationSelfBlocker, delay=delayExcitationSelfBlocker))
 					Projection(sourceR[layer][indexInNetworkLayerR], 
 							network[layer][pixel][indexInNetworkLayerR].get_population("Cell Output {0} - {1} - {2}".format(indexInNetworkLayerR+1, layer+1, pixel+1)), 
 							OneToOneConnector(), StaticSynapse(weight=weightExcitationCell, delay=delayExcitationCell))
 					Projection(sourceR[layer][indexInNetworkLayerR], 
-							network[layer][pixel][indexInNetworkLayerR].get_population("Inhibitor Right {0} - {1} - {2}".format(indexInNetworkLayerR+1, layer+1, pixel+1)), 
+							network[layer][pixel][indexInNetworkLayerR].get_population("Inhibitor Left {0} - {1} - {2}".format(indexInNetworkLayerR+1, layer+1, pixel+1)), 
 							OneToOneConnector(), StaticSynapse(weight=weightInhibitionOtherBlocker, delay=delayInhibitionOtherBlocker))
 							
 					
