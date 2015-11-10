@@ -8,9 +8,9 @@ setup(timestep=0.1, min_delay=0.1, max_delay=5.0)
 
 
 # create a spike sources firing at specific spiking times
-spikingTimingLeft = [[[3],[5], [6], [7]]]
+spikingTimingLeft = [ [[0.5], [5]] ]
 retinaLeft = createSpikeSource(dx = dimensionRetinaX, dy = dimensionRetinaY, timing = spikingTimingLeft, labelSS = "Left Retina")
-spikingTimingRight = [[[3],[5], [8], [13]]]
+spikingTimingRight = [[[0.5], [5]]]
 retinaRight = createSpikeSource(dx = dimensionRetinaX, dy = dimensionRetinaY, timing = spikingTimingRight, labelSS = "Right Retina")
 
 # create network and attach the spike sources 
@@ -19,10 +19,11 @@ network = createCooperativeNetwork(dx = dimensionRetinaX, dy = dimensionRetinaY,
 	spikeSourceL = retinaLeft, spikeSourceR = retinaRight)
 
 # run simulation for time in milliseconds
-run(15.0)
+simulationTime = 3.0
+run(simulationTime)
 
 # plot results s
-plotSimulationResults(network, retinaLeft, retinaRight)
+plotSimulationResults(network, retinaLeft, retinaRight, int(simulationTime))
 
 # finalise program and simulation
 end()
