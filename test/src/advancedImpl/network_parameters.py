@@ -1,8 +1,8 @@
 
 ## Network dimension parameters
 
-dimensionRetinaX = 3
-dimensionRetinaY = 2
+dimensionRetinaX = 4
+dimensionRetinaY = 1
 disparityMax = 0
 disparityMin = 0
 

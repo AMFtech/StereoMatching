@@ -1,46 +1,41 @@
-from pyNN.utility import normalized_filename
+import numpy as np
+import matplotlib.pyplot as plt
+
 from network_parameters import dimensionRetinaX, dimensionRetinaY, disparityMin, disparityMax
+from docutils.nodes import row
 # from pyNN.nest import *
 
 
 def plotSimulationResults(network, retinaLeft, retinaRight):
+    
     # plot results using pyNN plotting functions
-    # TODO: replace with matplotlib & co. for finer tunning
-    filename = normalized_filename("Results", "cell_type_demonstration", "pkl", "nest")
+    fixedLayer = 0
+    time = 45
+    n = dimensionRetinaX
+    x = range(0, dimensionRetinaX)
+    y = range(0, dimensionRetinaX)
+    rows, pixels = np.meshgrid(x,y)
+    cellValues = getMembranePotential(network, fixedLayer, rows, pixels, time)
+    print cellValues
+    plt.axes([0.025,0.025,0.95,0.95])
+    plt.imshow(cellValues, interpolation='none', cmap='gray', origin='upper')
+    plt.colorbar(shrink=.92)
     
-    retinaLeftMerged = retinaLeft[0][0]
-    retinaRightMerged = retinaRight[0][0]
+    plt.xticks([]), plt.yticks([])
+    # savefig('../figures/imshow_ex.png', dpi=48)
+    plt.show()
     
-    for layer in range(0, dimensionRetinaY):
-        for pixel in range(1, dimensionRetinaX):
-            retinaLeftMerged += retinaLeft[layer][pixel]
-            retinaRightMerged += retinaRight[layer][pixel]
-            
-    networkMerged = network[0][0][0]
-    for layer in range(0, dimensionRetinaY):
-        for row in range(disparityMin, disparityMax):
-            for pixel in range(1, dimensionRetinaX):
-                networkMerged += network[layer][row][pixel]        
-            
-#     retinaLeftMerged.write_data(filename, annotations={'script_name': __file__})
+def getMembranePotential(network=None, fixedLayer=0, meshRows=0, meshPixels=0, time=0):
+    cellValues = []
+    cellValuesRows = []
+    for rows, pixels in zip(meshRows, meshPixels):
+        for row,pixel in zip(rows, pixels):
+            cellValue = network[fixedLayer][row][pixel].get_population(
+                "Cell Output {0} - {1} - {2}".format(pixel+1, fixedLayer+1, row+1)
+                    ).get_data().segments[0].filter(name='v')[0][time][0]
+            cellValuesRows.append(cellValue)
+        cellValues.append(cellValuesRows)
+        cellValuesRows = []   
+    return cellValues
     
-    cellActivity =  network[1][1][1].get_population("Cell Output 2 - 2 - 2").get_data().segments[0]
-    cellInhLActivity = network[1][1][1].get_population("Inhibitor Left 2 - 2 - 2").get_data().segments[0]
-    cellInhRActivity = network[1][1][1].get_population("Inhibitor Right 2 - 2 - 2").get_data().segments[0]
-    retinaLeftActivity = retinaLeft[0][0].get_data().segments[0]
-    retinaRightActivity = retinaRight[0][0].get_data().segments[0]
-    
-#     print network[0][0][0].get_population("Cell Output 1 - 1 - 1")
-    
-    from pyNN.utility.plotting import Figure, Panel
-    figure_filename = filename.replace("pkl", "png")
-    Figure(Panel(cellActivity.filter(name='v')[0], ylabel="Membrane potential (mV)", yticks=True),
-           Panel(cellInhLActivity.filter(name='v')[0], ylabel="Membrane potential (mV)", yticks=True),
-           Panel(cellInhRActivity.filter(name='v')[0], ylabel="Membrane potential (mV)", yticks=True),
-           Panel(cellActivity.spiketrains, xlabel="Time (ms)", xticks=True, yticks=True),
-           Panel(retinaLeftActivity.spiketrains, xlabel="Time (ms)", xticks=True, yticks=True),
-           Panel(retinaRightActivity.spiketrains, xlabel="Time (ms)", xticks=True, yticks=True)).save(figure_filename)
-    print(figure_filename)
-
-
 
