@@ -16,18 +16,23 @@ def plotSimulationResults(network, retinaLeft, retinaRight, simulationTime):
     x = range(0, dimensionRetinaX)
     y = range(0, dimensionRetinaX)
     rows, pixels = np.meshgrid(x,y)
+    print "Formatting data for plotting..."
     cellValuesAllTimesteps = getMembranePotential(network, fixedLayer, rows, pixels)
-    
+    print "Before reshaping"
+    print cellValuesAllTimesteps
     cellValuesAllTimesteps = reshapeDimension(cellValuesAllTimesteps)
+    print "After reshaping"
+    print cellValuesAllTimesteps
     
     plt.axes([0.025,0.025,0.95,0.95])
     
     fig = plt.figure()
-    im = plt.imshow(cellValuesAllTimesteps[0], interpolation='none', cmap='gray', origin='upper')
+    im = plt.imshow(cellValuesAllTimesteps[0], interpolation='none', origin='upper')
+    
     plt.colorbar(shrink=.92)
     plt.xticks([]), plt.yticks([])
     args = (cellValuesAllTimesteps, im)
-    anim = animation.FuncAnimation(fig, animate, fargs=args, frames= simulationTime*10, interval=50)       
+    anim = animation.FuncAnimation(fig, animate, fargs=args, frames=simulationTime*10, interval=1000)       
     plt.show()
 
 
@@ -36,8 +41,9 @@ def plotSimulationResults(network, retinaLeft, retinaRight, simulationTime):
 #     im.set_data(cellValuesAllTimesteps[0])
 
 def animate(i, *args):
-    im = args[0]
-    data = args[1]
+    im = args[1]
+    data = args[0]
+    print data[i]
     im.set_data(data[i])
     return im
            
