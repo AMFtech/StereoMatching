@@ -1,5 +1,5 @@
 from pyNN.nest import *
-from network_parameters import disparityMax, disparityMin 
+from network_parameters import disparityMax, disparityMin, radiusExcitation, radiusInhibition
 
 '''
 Creating an Assembly of Populations of one spiking neuron with an assigned timing for the spikes.
@@ -42,7 +42,7 @@ def createCooperativeNetwork(spikeSourceL, spikeSourceR, dx=1, dy=1, dz=1):
 	print "Connetcting Spike-sources..."
 	connectSpikeSourcesToNetwork(sourceL=spikeSourceL, sourceR=spikeSourceR, network=network, dy=dy, dx=dx, dz=dz)
 	print "Spike-sources successfully connected."
-# 	interconnectLayersForInternalExcitationAndInhibition(network)
+	interconnectNeuronsForInternalExcInh(network=network, dx=dx, dy=dy, dz=dz)
 	return network
 
 def createNetwork(dx=1, dy=1, dz=1):
@@ -94,7 +94,7 @@ def connectSpikeSourcesToNetwork(sourceL=None, sourceR=None, network=None, dx=1,
 	
 	delayExcitationSelfBlocker = 0.1
 	delayInhibitionOtherBlocker = 0.1
-	delayExcitationCell = 0.65#1.174
+	delayExcitationCell = 0.63#1.174
 	
 	for layer in range(0, dy):
 		for pixel in range(0, dx):
@@ -127,5 +127,42 @@ def connectSpikeSourcesToNetwork(sourceL=None, sourceR=None, network=None, dx=1,
 							
 					
 					
-					
+def interconnectNeuronsForInternalExcInh(network=None, dx=1, dy=1, dz=1):
 	
+	weightLocalInhibition = -50.0
+	delayLocalInhibition = 0.1
+	weightLocalExcitation = 30.0
+	delayLocalExcitation = 0.1
+	
+	for layer in range(0, dy):
+		for row in range(0, dz):
+			for pixel in range(0, dx):
+				
+				for inhibitedIndex in range(1, radiusInhibition+1):
+					if (pixel + inhibitedIndex) < dx:
+						Projection(network[layer][row][pixel].get_population("Cell Output {0} - {1} - {2}".format(pixel+1, layer+1, row+1)),
+							network[layer][row][pixel+inhibitedIndex].get_population("Cell Output {0} - {1} - {2}".format(pixel+1+inhibitedIndex, layer+1, row+1)),
+							OneToOneConnector(), StaticSynapse(weight=weightLocalInhibition, delay=delayLocalInhibition))
+					if (pixel - inhibitedIndex) >= 0:
+						Projection(network[layer][row][pixel].get_population("Cell Output {0} - {1} - {2}".format(pixel+1, layer+1, row+1)),
+							network[layer][row][pixel-inhibitedIndex].get_population("Cell Output {0} - {1} - {2}".format(pixel+1-inhibitedIndex, layer+1, row+1)),
+							OneToOneConnector(), StaticSynapse(weight=weightLocalInhibition, delay=delayLocalInhibition))
+					if (row + inhibitedIndex) < dx:
+						Projection(network[layer][row][pixel].get_population("Cell Output {0} - {1} - {2}".format(pixel+1, layer+1, row+1)),
+							network[layer][row+inhibitedIndex][pixel].get_population("Cell Output {0} - {1} - {2}".format(pixel+1, layer+1, row+1+inhibitedIndex)),
+							OneToOneConnector(), StaticSynapse(weight=weightLocalInhibition, delay=delayLocalInhibition))
+					if (row - inhibitedIndex) >= 0:
+						Projection(network[layer][row][pixel].get_population("Cell Output {0} - {1} - {2}".format(pixel+1, layer+1, row+1)),
+							network[layer][row-inhibitedIndex][pixel].get_population("Cell Output {0} - {1} - {2}".format(pixel+1, layer+1, row+1-inhibitedIndex)),
+							OneToOneConnector(), StaticSynapse(weight=weightLocalInhibition, delay=delayLocalInhibition))
+				
+				for excitedIndex in range(1, radiusExcitation+1):
+					if (pixel + excitedIndex) < dx and (row + excitedIndex) < dz:
+						Projection(network[layer][row][pixel].get_population("Cell Output {0} - {1} - {2}".format(pixel+1, layer+1, row+1)),
+							network[layer][row+excitedIndex][pixel+excitedIndex].get_population("Cell Output {0} - {1} - {2}".format(pixel+1+excitedIndex, layer+1, row+1+excitedIndex)),
+							OneToOneConnector(), StaticSynapse(weight=weightLocalExcitation, delay=delayLocalExcitation))
+					if (pixel - excitedIndex) >= 0 and (row - excitedIndex) >= 0:
+						Projection(network[layer][row][pixel].get_population("Cell Output {0} - {1} - {2}".format(pixel+1, layer+1, row+1)),
+							network[layer][row-excitedIndex][pixel-excitedIndex].get_population("Cell Output {0} - {1} - {2}".format(pixel+1-excitedIndex, layer+1, row+1-excitedIndex)),
+							OneToOneConnector(), StaticSynapse(weight=weightLocalExcitation, delay=delayLocalExcitation))
+					

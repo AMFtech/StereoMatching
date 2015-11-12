@@ -2,8 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 from matplotlib import animation
-from network_parameters import dimensionRetinaX, dimensionRetinaY 
-from simpleCoNet import disparityMax
+from network_parameters import dimensionRetinaX, dimensionRetinaY
 # from pyNN.nest import *
 
 
