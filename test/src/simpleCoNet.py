@@ -77,14 +77,14 @@ cellActivity = oneNeuralLayer.get_data().segments[0]
 retinaLeftActivity = retinaLeft.get_data().segments[0]
 retinaRightActivity = retinaRight.get_data().segments[0]
 
-from pyNN.utility.plotting import Figure, Panel
-figure_filename = filename.replace("pkl", "png")
-Figure(Panel(cellActivity.spiketrains, xlabel="Time (ms)", xticks=True, yticks=True), 
-       Panel(cellActivity.filter(name='v')[0], ylabel="Membrane potential (mV)", yticks=True, ylim=(-66, -48)), 
-       Panel(retinaLeftActivity.spiketrains, xlabel="Time (ms)", xticks=True, yticks=True),
-       Panel(retinaRightActivity.spiketrains, xlabel="Time (ms)", xticks=True, yticks=True),
-       title="Simple CoNet", annotations="Simulated with NEST").save(figure_filename)
-print(figure_filename)
+# from pyNN.utility.plotting import Figure, Panel
+# figure_filename = filename.replace("pkl", "png")
+# Figure(Panel(cellActivity.spiketrains, xlabel="Time (ms)", xticks=True, yticks=True), 
+#        Panel(cellActivity.filter(name='v')[0], ylabel="Membrane potential (mV)", yticks=True, ylim=(-66, -48)), 
+#        Panel(retinaLeftActivity.spiketrains, xlabel="Time (ms)", xticks=True, yticks=True),
+#        Panel(retinaRightActivity.spiketrains, xlabel="Time (ms)", xticks=True, yticks=True),
+#        title="Simple CoNet", annotations="Simulated with NEST").save(figure_filename)
+# print(figure_filename)
 
 end()
 

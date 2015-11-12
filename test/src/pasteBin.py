@@ -175,22 +175,91 @@
 # print newlst2
 
 
+# import numpy as np
+# from matplotlib import pyplot as plt
+# from matplotlib import animation
+# 
+# 
+# fig = plt.figure()
+# data = np.array([[[-65.0, -65.0], [-65.0, -65.0]],
+#     [[-65.0, -65.0], [-65.0, -65.0]],
+#     [[-65.0 ,-65.0], [-65.0, -65.0]],
+#     [[-57.828351311545966, -65.0], [-65.0, -65.0]],
+#     [[-51.979056114739706, -65.0], [-65.0, -65.0]],
+#     [[-102.0, -65.0], [-65.0, -65.0]],
+#     [[-96.74140032786413, -65.0], [-65.0, -65.0]],
+#     [[-65.33318615046791, -65.0], [-65.0, -64.99999999999999]],
+#     [[-62.66515594431097, -65.0], [-65.0, -57.82835131154595]],
+#     [[-60.48624485166279, -65.0], [-65.0, -51.97905611473969]],
+#     [[-65.0, -65.0], [-65.0, -65.0]],
+#     [[-65.0, -65.0], [-65.0, -65.0]],
+#     [[-65.0, -65.0], [-65.0, -65.0]]], dtype='float')
+# im = plt.imshow(data[1], cmap='gray', interpolation='none')
+# plt.colorbar()
+# 
+# def init():
+#     im.set_data([[0, 0], [0, 0]])
+# 
+# def animate(i):
+#     im.set_data(data[i])
+#     print data[i]
+#     print i
+#     return im
+
+# anim = animation.FuncAnimation(fig, animate, init_func=init, frames=len(data),
+#                                interval=1000)
+# plt.show()
+
+import matplotlib.pyplot as plt
 import numpy as np
-from matplotlib import pyplot as plt
-from matplotlib import animation
+from mpl_toolkits.axes_grid1 import make_axes_locatable
+from matplotlib.colors import LogNorm
+from matplotlib.ticker import MultipleLocator
 
+s = {'t': 1,
+     'x': [1, 2, 3, 4, 5, 6, 7, 8],
+     'T': [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8],
+     'D': [0.3, 0.5, 0.2, 0.3, 0.5, 0.5, 0.3, 0.4]}
 
-fig = plt.figure()
-data = [[[1, 2], [3, 4]], [[5,6], [7,8]]]
-im = plt.imshow(data[0], cmap='gray')
+width = 40
 
-def init():
-    im.set_data([[0, 0], [0, 0]])
+tot = np.repeat(s['D'],width).reshape(len(s['D']), width)
+tot2 = np.repeat(s['T'],width).reshape(len(s['D']), width)
 
-def animate(i):
-    im.set_data(data[i])
-    return im
+fig, (ax1, ax2, ax3) = plt.subplots(1,3)
 
-anim = animation.FuncAnimation(fig, animate, init_func=init, frames=3,
-                               interval=1000)
+fig.suptitle('Title of figure', fontsize=20)
+
+# Line plots
+ax1.set_title('Title of ax1')
+ax1.plot(s['x'], s['T'])
+ax1.set_ylim(0,1)
+
+ax2.set_title('Title of ax2')
+ax2.plot(s['x'], s['D'])
+# Set locations of ticks on y-axis (at every multiple of 0.25)
+ax2.yaxis.set_major_locator(MultipleLocator(0.25))
+# Set locations of ticks on x-axis (at every multiple of 2)
+ax2.xaxis.set_major_locator(MultipleLocator(2))
+ax2.set_ylim(0,1)
+
+ax3.set_title('Title of ax3')
+# Display image, `aspect='auto'` makes it fill the whole `axes` (ax3)
+im3 = ax3.imshow(tot, norm=LogNorm(vmin=0.001, vmax=1), aspect='auto')
+# Create divider for existing axes instance
+divider3 = make_axes_locatable(ax3)
+# Append axes to the right of ax3, with 20% width of ax3
+cax3 = divider3.append_axes("right", size="20%", pad=0.05)
+# Create colorbar in the appended axes
+# Tick locations can be set with the kwarg `ticks`
+# and the format of the ticklabels with kwarg `format`
+cbar3 = plt.colorbar(im3, cax=cax3, ticks=MultipleLocator(0.2), format="%.2f")
+# Remove xticks from ax3
+ax3.xaxis.set_visible(False)
+# Manually set ticklocations
+ax3.set_yticks([0.0, 2.5, 3.14, 4.0, 5.2, 7.0])
+
+plt.tight_layout()
+# Make space for title
+plt.subplots_adjust(top=0.85)
 plt.show()

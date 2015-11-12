@@ -26,8 +26,8 @@ neuronInhLeft.set(v_reset=-92.0, tau_syn_E=1.0)
 neuronInhRight.set(v_reset=-92.0)
 neuronCell.set(v_reset=-102.0)
 # create a spike source firing at spike_times
-retinaLeft = Population(1, SpikeSourceArray(spike_times=[10., 11., 12., 13., 14., 15., 16., 17., 18., 19., 20., 21., 22., 23., 24., 25., 26., 27.]), label="Spike Source Left")
-retinaRight = Population(1, SpikeSourceArray(spike_times=[28., 29., 30., 31., 32., 33.]), label="Spike Source Right")
+retinaLeft = Population(1, SpikeSourceArray(spike_times=[30.]), label="Spike Source Left")
+retinaRight = Population(1, SpikeSourceArray(spike_times=[31.]), label="Spike Source Right")
 # connect them in according to the follwing pattern
 
 Projection(retinaLeft, neuronInhLeft, OneToOneConnector(), StaticSynapse(weight=49.5, delay=0.1))
