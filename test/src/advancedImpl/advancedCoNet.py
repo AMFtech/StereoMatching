@@ -8,9 +8,9 @@ setup(timestep=0.1, min_delay=0.1, max_delay=5.0)
 
 
 # create a spike sources firing at specific spiking times
-spikingTimingLeft = [ [[10, 110, 130], [200.6], [100.5], [100.5], [100.5], [100.5]] ]
+spikingTimingLeft = [ [[1, 110, 130], [2,3,4,5,6, 200.6], [100.5], [100.5], [100.5], [100.5]] ]
 retinaLeft = createSpikeSource(dx = dimensionRetinaX, dy = dimensionRetinaY, timing = spikingTimingLeft, labelSS = "Left Retina")
-spikingTimingRight = [ [[500.5], [100.6], [100.5], [100.5], [1000.5], [1000.5]] ]
+spikingTimingRight = [ [[500.5], [7, 100.6], [100.5], [100.5], [1000.5], [1000.5]] ]
 retinaRight = createSpikeSource(dx = dimensionRetinaX, dy = dimensionRetinaY, timing = spikingTimingRight, labelSS = "Right Retina")
 
 # create network and attach the spike sources 

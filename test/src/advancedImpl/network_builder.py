@@ -94,7 +94,7 @@ def connectSpikeSourcesToNetwork(sourceL=None, sourceR=None, network=None, dx=1,
 	
 	delayExcitationSelfBlocker = 0.1
 	delayInhibitionOtherBlocker = 0.1
-	delayExcitationCell = 1.174
+	delayExcitationCell = 0.65#1.174
 	
 	for layer in range(0, dy):
 		for pixel in range(0, dx):
