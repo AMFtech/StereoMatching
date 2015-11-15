@@ -94,7 +94,7 @@ def connectSpikeSourcesToNetwork(sourceL=None, sourceR=None, network=None, dx=1,
 	
 	delayExcitationSelfBlocker = 0.1
 	delayInhibitionOtherBlocker = 0.1
-	delayExcitationCell = 0.63#1.174
+	delayExcitationCell = 0.655#1.174
 	
 	for layer in range(0, dy):
 		for pixel in range(0, dx):
@@ -115,13 +115,13 @@ def connectSpikeSourcesToNetwork(sourceL=None, sourceR=None, network=None, dx=1,
 				# Right Retina is being connected, swap x and z coordinates!
 				indexInNetworkLayerR = pixel - disp
 				if indexInNetworkLayerR >= 0:
-					Projection(sourceR[layer][indexInNetworkLayerR], 
+					Projection(sourceR[layer][pixel], 
 							network[layer][pixel][indexInNetworkLayerR].get_population("Inhibitor Right {0} - {1} - {2}".format(indexInNetworkLayerR+1, layer+1, pixel+1)), 
 							OneToOneConnector(), StaticSynapse(weight=weightExcitationSelfBlocker, delay=delayExcitationSelfBlocker))
-					Projection(sourceR[layer][indexInNetworkLayerR], 
+					Projection(sourceR[layer][pixel], 
 							network[layer][pixel][indexInNetworkLayerR].get_population("Cell Output {0} - {1} - {2}".format(indexInNetworkLayerR+1, layer+1, pixel+1)), 
 							OneToOneConnector(), StaticSynapse(weight=weightExcitationCell, delay=delayExcitationCell))
-					Projection(sourceR[layer][indexInNetworkLayerR], 
+					Projection(sourceR[layer][pixel], 
 							network[layer][pixel][indexInNetworkLayerR].get_population("Inhibitor Left {0} - {1} - {2}".format(indexInNetworkLayerR+1, layer+1, pixel+1)), 
 							OneToOneConnector(), StaticSynapse(weight=weightInhibitionOtherBlocker, delay=delayInhibitionOtherBlocker))
 							
