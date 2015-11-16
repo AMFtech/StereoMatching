@@ -7,11 +7,11 @@ from SimulationAndNetworkSettings import simulationTime, simulationTimestep, max
 setup(timestep=simulationTimestep, min_delay=minSynapseDelay, max_delay=maxSynapseDelay)
 
 # create a spike sources
-retinaLeft = createSpikeSource()
-retinaRight = createSpikeSource()
+retinaLeft = createSpikeSource("Retina Left")
+retinaRight = createSpikeSource("Retina Right")
 
 # create network and attach the spike sources 
-network = createCooperativeNetwork()
+network = createCooperativeNetwork(retinaLeft=retinaLeft, retinaRight=retinaRight)
 
 # run simulation for time in milliseconds
 run(simulationTime)
