@@ -40,7 +40,7 @@ def plotSimulationResults(network, retinaLeft, retinaRight, simulationTime, laye
 #     plt.xticks([0, dimensionRetinaX]) 
 #     plt.yticks([0, dimensionRetinaX])
     args = (cellValuesAllTimesteps, imNet)#, imL, imR)
-    anim = animation.FuncAnimation(fig, animate, fargs=args, frames=simulationTime*10, interval=80)       
+    anim = animation.FuncAnimation(fig, animate, fargs=args, frames=simulationTime*10, interval=50)       
     plt.show()
 
 
