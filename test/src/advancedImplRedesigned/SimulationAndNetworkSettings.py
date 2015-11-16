@@ -9,42 +9,42 @@ maxSynapseDelay = 2.0       # The largest time step for a delay in a synapse con
 
 ## Network Parameters ##
 
-dimensionRetinaX = 3        # Defines the dimension of the x-axis of the input spikes from the retina sensor
+dimensionRetinaX = 4        # Defines the dimension of the x-axis of the input spikes from the retina sensor
 dimensionRetinaY = 1        # Defines the dimension of the y-axis of the input spikes from the retina sensor
 minDisparity = 0            # Defines the minimum detectable disparity
-maxDisparity = 1            # Defines the maximum detectable disparity
+maxDisparity = 2            # Defines the maximum detectable disparity
 
 radiusExcitation = 2
 radiusInhibition = max(dimensionRetinaX, dimensionRetinaY)
 
 ## Sample Spike Input ##
 retLeftSpikes = \
-    [[[10, 15, 20],  [103], [100]],
-     [[101],         [100], [100]],
-     [[102],         [100], [100]],
+    [[[10, 15, 20],  [103], [100], [100]],
+     [[101],         [100], [100], [100]],
+     [[102],         [100], [100], [100]],
     ]
 
 retRightSpikes = \
-    [[[11,12],       [100], [100]],
-     [[10],          [100], [100]],
-     [[100],         [100], [100]],
+    [[[11,12],       [100], [100], [100]],
+     [[10],          [100], [100], [100]],
+     [[100],         [100], [100], [100]],
     ]    
 
 ## Neural Parameters ##
 
 # Synaptic parameters
 
-weightInhToOut = -39.5      # Defines the synaptic weight between an inhibitory neuron and a Cell Output neuron
-delayInhToOut = 0.1         # Defines the delay in transmitting the active potential between an inhibitory neuron and a Cell Output neuron
+wInhToOut = -39.5      # Defines the synaptic weight between an inhibitory neuron and a Cell Output neuron
+dInhToOut = 0.1         # Defines the delay in transmitting the active potential between an inhibitory neuron and a Cell Output neuron
 
-weightSSToOut = 39.5        # Defines the synaptic weight between a Spike Source neuron and a Cell Output neuron
-delaySSToOut = 0.65         # Defines the delay in transmitting the active potential between a Spike Source neuron and a Cell Output neuron
+wSSToOut = 39.5        # Defines the synaptic weight between a Spike Source neuron and a Cell Output neuron
+dSSToOut = 0.65         # Defines the delay in transmitting the active potential between a Spike Source neuron and a Cell Output neuron
 
-weightSSToSelfInh = 39.5    # Defines the synaptic weight between a Spike Source (SS) neuron and the inhibitory neuron corresponding to this SS neuron
-delaySSToSelfInh = 0.1      # Defines the delay in transmitting the active potential between a Spike Source (SS) neuron and the inhibitory neuron corresponding to this SS neuron
+wSSToSelfInh = 39.5    # Defines the synaptic weight between a Spike Source (SS) neuron and the inhibitory neuron corresponding to this SS neuron
+dSSToSelfInh = 0.1      # Defines the delay in transmitting the active potential between a Spike Source (SS) neuron and the inhibitory neuron corresponding to this SS neuron
 
-weightSSToOtherInh = -39.5  # Defines the synaptic weight between a Spike Source (SS) neuron and the inhibitory neuron corresponding to the other SS neuron
-delaySSToOtherInh = 0.1     # Defines the delay in transmitting the active potential between a Spike Source (SS) neuron and the inhibitory neuron corresponding to the other SS neuron
+wSSToOtherInh = -39.5  # Defines the synaptic weight between a Spike Source (SS) neuron and the inhibitory neuron corresponding to the other SS neuron
+dSSToOtherInh = 0.1     # Defines the delay in transmitting the active potential between a Spike Source (SS) neuron and the inhibitory neuron corresponding to the other SS neuron
 
 # Soma's, membrane's and other parameters
 t_synE = 1.0
