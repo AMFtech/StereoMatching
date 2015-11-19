@@ -2,7 +2,7 @@
 
 def plotSimulationResults(network=None):
     
-    assert network is not None, "Uninitialised network! Visualising failed."
+    assert network is not None, "Network is not initialised! Visualising failed."
     
     print "Nicely visualising results..."
     cellOut = network.get_population("Cell Output Population of Network")
