@@ -48,11 +48,17 @@ def createNetwork():
     
     # reocrd data for plotting purposes
     from pyNN.nest import record
-    inhLeftPop.record('spikes', 'v')
-    inhRightPop.record('spikes', 'v')
-    cellOutputPop.record('spikes', 'v')
+    inhLeftPop.record('v', 'spikes')
+    inhRightPop.record('v', 'spikes')
+    cellOutputPop.record('v', 'spikes')
+    inhLeftPop.record('spikes')
+    inhRightPop.record('spikes')
+    cellOutputPop.record('spikes')
     
     network = inhLeftPop + inhRightPop + cellOutputPop
+    
+    network.record('v')
+    network.record('spikes')
     
     interconnectNetworkNeurons(network)
     
@@ -89,7 +95,7 @@ def connectSpikeSourcesToNetwork(network=None, retinaLeft=None, retinaRight=None
             indexLNet = indexL * (maxDisparity+1) + disp  
             indexRNet = indexLNet
             
-            retLeftToCO.append([indexL, indexLNet, wSSToOut, dSSToOut])
+            retLeftToCO.appedInhToOutnd([indexL, indexLNet, wSSToOut, dSSToOut])
             retLeftToInhLeft.append([indexL, indexLNet, wSSToSelfInh, dSSToSelfInh])
             retLeftToInhRight.append([indexL, indexLNet, wSSToOtherInh, dSSToOtherInh])    
                 
@@ -136,8 +142,30 @@ def interconnectNetworkNeurons(network=None):
     interconnectNeuronsForInternalInhibitionAndExcitation(network)
     
 def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
-    pass    
+    
+    assert network is not None, "Network is not initialised! Interconnecting for inhibitory and excitatory patterns failed."
+    
+    print "Connecting neurons for internal excitation and inhibition..."
+    
+    cellOut = network.get_population("Cell Output Population of Network")
+    
+    inhibL = []
+    inhibR = []
+    excite = []
+    
+    from SimulationAndNetworkSettings import radiusExcitation, radiusInhibition
+    # create lists with inhibitory and excitatory patterns
+    for id in cellOut:
+        for neighbour in range(0, radiusInhibition):
+            if neighbour == cellOut.id_to_index(id):
+                continue
+            inhibL.append([cellOut.id_to_index(id), cellOut.id_to_index(id), wInhToOut, dInhToOut])
+        rightToCO.append([inhRight.id_to_index(idR), cellOut.id_to_index(idCO), wInhToOut, dInhToOut])
 
+    # connect the inhibitory neurons to the cell output neurons
+    print "Interconnecting Neurons..."
+    Projection(inhLeft, cellOut, FromListConnector(leftToCO))
+    Projection(inhRight, cellOut, FromListConnector(rightToCO))
 
 
 

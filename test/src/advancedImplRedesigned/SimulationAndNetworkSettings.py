@@ -12,21 +12,21 @@ maxSynapseDelay = 2.0       # The largest time step for a delay in a synapse con
 dimensionRetinaX = 4        # Defines the dimension of the x-axis of the input spikes from the retina sensor
 dimensionRetinaY = 1        # Defines the dimension of the y-axis of the input spikes from the retina sensor
 minDisparity = 0            # Defines the minimum detectable disparity
-maxDisparity = 2            # Defines the maximum detectable disparity
+maxDisparity = 1            # Defines the maximum detectable disparity
 
 radiusExcitation = 2
 radiusInhibition = max(dimensionRetinaX, dimensionRetinaY)
 
 ## Sample Spike Input ##
 retLeftSpikes = \
-    [[[10, 15, 20],  [103], [100], [100]],
+    [[[10],  [25], [100], [30]],
      [[101],         [100], [100], [100]],
      [[102],         [100], [100], [100]],
     ]
 
 retRightSpikes = \
-    [[[11,12],       [100], [100], [100]],
-     [[10],          [100], [100], [100]],
+    [[[11],       [11,26], [100], [31]],
+     [[100],          [100], [100], [100]],
      [[100],         [100], [100], [100]],
     ]    
 
@@ -38,7 +38,7 @@ wInhToOut = -39.5      # Defines the synaptic weight between an inhibitory neuro
 dInhToOut = 0.1         # Defines the delay in transmitting the active potential between an inhibitory neuron and a Cell Output neuron
 
 wSSToOut = 39.5        # Defines the synaptic weight between a Spike Source neuron and a Cell Output neuron
-dSSToOut = 0.65         # Defines the delay in transmitting the active potential between a Spike Source neuron and a Cell Output neuron
+dSSToOut = 1.169         # Defines the delay in transmitting the active potential between a Spike Source neuron and a Cell Output neuron
 
 wSSToSelfInh = 39.5    # Defines the synaptic weight between a Spike Source (SS) neuron and the inhibitory neuron corresponding to this SS neuron
 dSSToSelfInh = 0.1      # Defines the delay in transmitting the active potential between a Spike Source (SS) neuron and the inhibitory neuron corresponding to this SS neuron
