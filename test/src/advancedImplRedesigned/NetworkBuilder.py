@@ -88,14 +88,18 @@ def connectSpikeSourcesToNetwork(network=None, retinaLeft=None, retinaRight=None
         indexL = retinaLeft.id_to_index(pixelLID)
         indexR = retinaRight.id_to_index(pixelRID) 
         
-        if indexL > dimensionRetinaX - maxDisparity - 1: 
+        # reset limiter for the next layer
+        if indexL % dimensionRetinaX == 0:
+            indexLimiter = maxDisparity + 1
+            
+        if indexL % dimensionRetinaX > dimensionRetinaX - maxDisparity - 1: 
             indexLimiter -= 1
           
         for disp in range(minDisparity, indexLimiter):
             indexLNet = indexL * (maxDisparity+1) + disp  
             indexRNet = indexLNet
             
-            retLeftToCO.appedInhToOutnd([indexL, indexLNet, wSSToOut, dSSToOut])
+            retLeftToCO.append([indexL, indexLNet, wSSToOut, dSSToOut])
             retLeftToInhLeft.append([indexL, indexLNet, wSSToSelfInh, dSSToSelfInh])
             retLeftToInhRight.append([indexL, indexLNet, wSSToOtherInh, dSSToOtherInh])    
                 
@@ -145,30 +149,55 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
     
     assert network is not None, "Network is not initialised! Interconnecting for inhibitory and excitatory patterns failed."
     
-    print "Connecting neurons for internal excitation and inhibition..."
-    
     cellOut = network.get_population("Cell Output Population of Network")
     
-    inhibL = []
-    inhibR = []
-    excite = []
-    
     from SimulationAndNetworkSettings import radiusExcitation, radiusInhibition
-    # create lists with inhibitory and excitatory patterns
-    for id in cellOut:
-        for neighbour in range(0, radiusInhibition):
-            if neighbour == cellOut.id_to_index(id):
-                continue
-            inhibL.append([cellOut.id_to_index(id), cellOut.id_to_index(id), wInhToOut, dInhToOut])
-        rightToCO.append([inhRight.id_to_index(idR), cellOut.id_to_index(idCO), wInhToOut, dInhToOut])
-
-    # connect the inhibitory neurons to the cell output neurons
-    print "Interconnecting Neurons..."
-    Projection(inhLeft, cellOut, FromListConnector(leftToCO))
-    Projection(inhRight, cellOut, FromListConnector(rightToCO))
-
-
-
+    assert radiusInhibition >= maxDisparity, "Bad radius of inhibition. Uniquness constraint cannot be satisfied."
+    assert 0 <= radiusExcitation <= dimensionRetinaX, "Bad radius of excitation."
+    # create lists with inhibitory along the Retina Right projective line
+    nbhoodInhL = []
+    nbhoodInhR = []
+    # used for the triangular form of the matrix in order to remain within the square
+    indexLimiter = maxDisparity+1
+    rowCounter = -1
+    for index in cellOut[0::maxDisparity+1]:
+        rowCounter += 1
+        # take first index of each row
+        rowID = cellOut.id_to_index(index)
+        print rowID
+        # reset limiter for the next layer
+        if rowCounter % dimensionRetinaX == 0:
+            indexLimiter = maxDisparity + 1
+        
+        if rowCounter % dimensionRetinaX > dimensionRetinaX - maxDisparity - 1: 
+            indexLimiter -= 1
+            if indexLimiter <= 0:
+                break
+        allXRForOneXLVal = []    
+        allXLForOneXRVal = []
+        for disp in range(minDisparity, indexLimiter):
+            #compute for according index in the network for the left inhibition
+            # for each pixel count up along the row until disparityMax (or limiter is reached)
+            indexNet = rowID + disp  
+            allXRForOneXLVal.append(indexNet)
+            # compute it now for the right
+            # for all diagonal elements count up until disparity max is reached
+            if indexNet % (maxDisparity + 1) == 0:
+                if maxDisparity == 0:
+                    nbhoodInhR.append([indexNet])
+                else:    
+                    nbhoodInhR.append([x for x in range(indexNet, indexNet - maxDisparity**2 - 1, -maxDisparity) \
+                                       if x/(dimensionRetinaX*(maxDisparity+1)) == indexNet/(dimensionRetinaX*(maxDisparity+1))])
+            
+        nbhoodInhL.append(allXRForOneXLVal)  
+    
+    print nbhoodInhL
+    print nbhoodInhR          
+            
+    print "Connecting neurons for internal excitation and inhibition..."
+    
+    from pyNN.nest import Projection, FromListConnector
+    
 
 
 

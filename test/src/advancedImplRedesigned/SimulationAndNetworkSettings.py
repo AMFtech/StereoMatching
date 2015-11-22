@@ -10,9 +10,9 @@ maxSynapseDelay = 2.0       # The largest time step for a delay in a synapse con
 ## Network Parameters ##
 
 dimensionRetinaX = 4        # Defines the dimension of the x-axis of the input spikes from the retina sensor
-dimensionRetinaY = 1        # Defines the dimension of the y-axis of the input spikes from the retina sensor
+dimensionRetinaY = 3        # Defines the dimension of the y-axis of the input spikes from the retina sensor
 minDisparity = 0            # Defines the minimum detectable disparity
-maxDisparity = 1            # Defines the maximum detectable disparity
+maxDisparity = 0            # Defines the maximum detectable disparity
 
 radiusExcitation = 2
 radiusInhibition = max(dimensionRetinaX, dimensionRetinaY)
