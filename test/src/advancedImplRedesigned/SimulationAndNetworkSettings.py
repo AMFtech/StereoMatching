@@ -9,23 +9,23 @@ maxSynapseDelay = 2.0       # The largest time step for a delay in a synapse con
 
 ## Network Parameters ##
 
-dimensionRetinaX = 4        # Defines the dimension of the x-axis of the input spikes from the retina sensor
-dimensionRetinaY = 2        # Defines the dimension of the y-axis of the input spikes from the retina sensor
+dimensionRetinaX = 3        # Defines the dimension of the x-axis of the input spikes from the retina sensor
+dimensionRetinaY = 1        # Defines the dimension of the y-axis of the input spikes from the retina sensor
 minDisparity = 0            # Defines the minimum detectable disparity
-maxDisparity = 2            # Defines the maximum detectable disparity
+maxDisparity = 1            # Defines the maximum detectable disparity
 
 radiusExcitation = 1
 radiusInhibition = max(dimensionRetinaX, dimensionRetinaY)
 
 ## Sample Spike Input ##
 retLeftSpikes = \
-    [[[10],  [25], [100], [30]],
+    [[[2,6,11,30],  [25], [100], [30]],
      [[101],         [100], [100], [100]],
      [[102],         [100], [100], [100]],
     ]
 
 retRightSpikes = \
-    [[[11],       [11,26], [100], [31]],
+    [[[2, 12],       [11,26], [100], [31]],
      [[100],          [100], [100], [100]],
      [[100],         [100], [100], [100]],
     ]    

@@ -17,7 +17,7 @@ network = createCooperativeNetwork(retinaLeft=retinaLeft, retinaRight=retinaRigh
 run(simulationTime)
 
 # plot results s
-# plotSimulationResults(network)
+plotSimulationResults(network)
 
 # finalise program and simulation
 end()

@@ -248,9 +248,12 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
 #     print connectionListExc
     
     from pyNN.nest import Projection, FromListConnector
-    Projection(cellOut, cellOut, FromListConnector(connectionListInhL))
-    Projection(cellOut, cellOut, FromListConnector(connectionListInhR))
-    Projection(cellOut, cellOut, FromListConnector(connectionListExc))
+    if connectionListInhL != []:
+        Projection(cellOut, cellOut, FromListConnector(connectionListInhL))
+    if connectionListInhR != []:    
+        Projection(cellOut, cellOut, FromListConnector(connectionListInhR))
+    if connectionListExc != []:    
+        Projection(cellOut, cellOut, FromListConnector(connectionListExc))
     
     
     
