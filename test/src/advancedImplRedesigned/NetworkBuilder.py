@@ -157,14 +157,15 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
     # create lists with inhibitory along the Retina Right projective line
     nbhoodInhL = []
     nbhoodInhR = []
+    nbhoodExc = []
     # used for the triangular form of the matrix in order to remain within the square
     indexLimiter = maxDisparity+1
     rowCounter = -1
-    for index in cellOut[0::maxDisparity+1]:
+    for id in cellOut[0::maxDisparity+1]:
         rowCounter += 1
         # take first index of each row
-        rowID = cellOut.id_to_index(index)
-        print rowID
+        rowID = cellOut.id_to_index(id)
+        
         # reset limiter for the next layer
         if rowCounter % dimensionRetinaX == 0:
             indexLimiter = maxDisparity + 1
@@ -173,8 +174,7 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
             indexLimiter -= 1
             if indexLimiter <= 0:
                 break
-        allXRForOneXLVal = []    
-        allXLForOneXRVal = []
+        allXRForOneXLVal = []   
         for disp in range(minDisparity, indexLimiter):
             #compute for according index in the network for the left inhibition
             # for each pixel count up along the row until disparityMax (or limiter is reached)
@@ -191,12 +191,65 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
             
         nbhoodInhL.append(allXRForOneXLVal)  
     
+    # generate all the diagonal connections
+    for diag in map(None, *nbhoodInhL):
+        sublist = []
+        for elem in diag:
+            if elem is not None:
+                sublist.append(elem)
+        nbhoodExc.append(sublist)
+    
     print nbhoodInhL
-    print nbhoodInhR          
+    print nbhoodInhR
+    print nbhoodExc          
             
     print "Connecting neurons for internal excitation and inhibition..."
+    from SimulationAndNetworkSettings import wOutToOutExc, dOutToOutExc, wOutToOutInh, dOutToOutInh
+    connectionListInhL = []
+    connectionListInhR = []
+    connectionListExc = []
+    for neuronID in cellOut:
+        neuronIndex = cellOut.id_to_index(neuronID)
+        
+        for inhL in nbhoodInhL:
+            if neuronIndex in inhL:
+                for dist in range(1, min(len(inhL), radiusInhibition)):
+                    if neuronIndex + dist <= max(inhL):
+                        connectionListInhL.append([neuronIndex, neuronIndex+dist, wOutToOutInh, dOutToOutInh])
+                    if neuronIndex - dist >= min(inhL):    
+                        connectionListInhL.append([neuronIndex, neuronIndex-dist, wOutToOutInh, dOutToOutInh])          
+                break       
+        
+        for inhR in nbhoodInhR:
+            if neuronIndex in inhR:
+                for dist in range(1, min(len(inhR), radiusInhibition)):
+                    if neuronIndex + dist*maxDisparity <= max(inhR):
+                        connectionListInhR.append([neuronIndex, neuronIndex+dist*maxDisparity, wOutToOutInh, dOutToOutInh])
+                    if neuronIndex - dist*maxDisparity >= min(inhR):    
+                        connectionListInhR.append([neuronIndex, neuronIndex-dist*maxDisparity, wOutToOutInh, dOutToOutInh])
+        
+        for exc in nbhoodExc:
+            if neuronIndex in exc:
+                for dist in range(1, min(len(exc), radiusExcitation**2)):
+                    if neuronIndex + dist*(maxDisparity+1) in exc:
+                        connectionListExc.append([neuronIndex, neuronIndex+dist*(maxDisparity+1), wOutToOutExc, dOutToOutExc])
+                    if neuronIndex - dist*(maxDisparity+1) in exc:    
+                        connectionListExc.append([neuronIndex, neuronIndex-dist*(maxDisparity+1), wOutToOutExc, dOutToOutExc])
+                    if neuronIndex + dist*(maxDisparity+1)*dimensionRetinaX in exc:
+                        connectionListExc.append([neuronIndex, neuronIndex+dist*(maxDisparity+1)*dimensionRetinaX, wOutToOutExc, dOutToOutExc])
+                    if neuronIndex - dist*(maxDisparity+1)*dimensionRetinaX in exc:    
+                        connectionListExc.append([neuronIndex, neuronIndex-dist*(maxDisparity+1)*dimensionRetinaX, wOutToOutExc, dOutToOutExc])    
+             
+    print connectionListInhL            
+    print connectionListInhR
+    print connectionListExc
     
     from pyNN.nest import Projection, FromListConnector
+    Projection(cellOut, cellOut, FromListConnector(connectionListInhL))
+    Projection(cellOut, cellOut, FromListConnector(connectionListInhR))
+#     Projection(cellOut, cellOut, FromListConnector(connectionListExc))
+    
+    
     
 
 

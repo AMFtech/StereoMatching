@@ -10,9 +10,9 @@ maxSynapseDelay = 2.0       # The largest time step for a delay in a synapse con
 ## Network Parameters ##
 
 dimensionRetinaX = 4        # Defines the dimension of the x-axis of the input spikes from the retina sensor
-dimensionRetinaY = 3        # Defines the dimension of the y-axis of the input spikes from the retina sensor
+dimensionRetinaY = 2        # Defines the dimension of the y-axis of the input spikes from the retina sensor
 minDisparity = 0            # Defines the minimum detectable disparity
-maxDisparity = 0            # Defines the maximum detectable disparity
+maxDisparity = 2            # Defines the maximum detectable disparity
 
 radiusExcitation = 2
 radiusInhibition = max(dimensionRetinaX, dimensionRetinaY)
@@ -46,7 +46,13 @@ dSSToSelfInh = 0.1      # Defines the delay in transmitting the active potential
 wSSToOtherInh = -39.5  # Defines the synaptic weight between a Spike Source (SS) neuron and the inhibitory neuron corresponding to the other SS neuron
 dSSToOtherInh = 0.1     # Defines the delay in transmitting the active potential between a Spike Source (SS) neuron and the inhibitory neuron corresponding to the other SS neuron
 
-# Soma's, membrane's and other parameters
+wOutToOutInh = -50.0    # Defines the synaptic weight between individual output neurons which inhibit themselves according to the physical constraints of objects
+dOutToOutInh = 0.1      # Defines the delay between inhibition of output neurons 
+
+wOutToOutExc = 10.0    # Defines the synaptic weight between individual output neurons which excite themselves
+dOutToOutExc = 0.1      # Defines the delay between excitation of output neurons
+
+# Soma's, membrane's and other parameters, see IF_exp_curr model in pyNN wiki
 t_synE = 1.0
 t_synI = 1.0
 t_memb = 1.07
