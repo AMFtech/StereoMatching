@@ -199,9 +199,9 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
                 sublist.append(elem)
         nbhoodExc.append(sublist)
     
-    print nbhoodInhL
-    print nbhoodInhR
-    print nbhoodExc          
+#     print nbhoodInhL
+#     print nbhoodInhR
+#     print nbhoodExc          
             
     print "Connecting neurons for internal excitation and inhibition..."
     from SimulationAndNetworkSettings import wOutToOutExc, dOutToOutExc, wOutToOutInh, dOutToOutInh
@@ -228,26 +228,29 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
                     if neuronIndex - dist*maxDisparity >= min(inhR):    
                         connectionListInhR.append([neuronIndex, neuronIndex-dist*maxDisparity, wOutToOutInh, dOutToOutInh])
         
+        # TODO: Fix the bounded 3D excitation of neighbouring layers! Add something like a modulo maxDisaprity*dimensionX, 
+        # because now last cell is being connected with the first on the upper row or sth like this.
         for exc in nbhoodExc:
             if neuronIndex in exc:
-                for dist in range(1, min(len(exc), radiusExcitation**2)):
+                for dist in range(1, min(len(exc), radiusExcitation+1)):
                     if neuronIndex + dist*(maxDisparity+1) in exc:
                         connectionListExc.append([neuronIndex, neuronIndex+dist*(maxDisparity+1), wOutToOutExc, dOutToOutExc])
                     if neuronIndex - dist*(maxDisparity+1) in exc:    
                         connectionListExc.append([neuronIndex, neuronIndex-dist*(maxDisparity+1), wOutToOutExc, dOutToOutExc])
+                for dist in range(1, min(len(exc), (radiusExcitation+1)**2)):        
                     if neuronIndex + dist*(maxDisparity+1)*dimensionRetinaX in exc:
                         connectionListExc.append([neuronIndex, neuronIndex+dist*(maxDisparity+1)*dimensionRetinaX, wOutToOutExc, dOutToOutExc])
                     if neuronIndex - dist*(maxDisparity+1)*dimensionRetinaX in exc:    
                         connectionListExc.append([neuronIndex, neuronIndex-dist*(maxDisparity+1)*dimensionRetinaX, wOutToOutExc, dOutToOutExc])    
              
-    print connectionListInhL            
-    print connectionListInhR
-    print connectionListExc
+#     print connectionListInhL            
+#     print connectionListInhR
+#     print connectionListExc
     
     from pyNN.nest import Projection, FromListConnector
     Projection(cellOut, cellOut, FromListConnector(connectionListInhL))
     Projection(cellOut, cellOut, FromListConnector(connectionListInhR))
-#     Projection(cellOut, cellOut, FromListConnector(connectionListExc))
+    Projection(cellOut, cellOut, FromListConnector(connectionListExc))
     
     
     

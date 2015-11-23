@@ -14,7 +14,7 @@ dimensionRetinaY = 2        # Defines the dimension of the y-axis of the input s
 minDisparity = 0            # Defines the minimum detectable disparity
 maxDisparity = 2            # Defines the maximum detectable disparity
 
-radiusExcitation = 2
+radiusExcitation = 1
 radiusInhibition = max(dimensionRetinaX, dimensionRetinaY)
 
 ## Sample Spike Input ##
@@ -49,7 +49,7 @@ dSSToOtherInh = 0.1     # Defines the delay in transmitting the active potential
 wOutToOutInh = -50.0    # Defines the synaptic weight between individual output neurons which inhibit themselves according to the physical constraints of objects
 dOutToOutInh = 0.1      # Defines the delay between inhibition of output neurons 
 
-wOutToOutExc = 10.0    # Defines the synaptic weight between individual output neurons which excite themselves
+wOutToOutExc = 20.0    # Defines the synaptic weight between individual output neurons which excite themselves
 dOutToOutExc = 0.1      # Defines the delay between excitation of output neurons
 
 # Soma's, membrane's and other parameters, see IF_exp_curr model in pyNN wiki
