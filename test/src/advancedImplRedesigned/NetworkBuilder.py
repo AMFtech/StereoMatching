@@ -108,7 +108,11 @@ def connectSpikeSourcesToNetwork(network=None, retinaLeft=None, retinaRight=None
             retRightToInhLeft.append([indexR + disp, indexRNet, wSSToOtherInh, dSSToOtherInh])
           
 #     print retLeftToCO 
+#     print retLeftToInhLeft
+#     print retLeftToInhRight
 #     print retRightToCO 
+#     print retRightToInhLeft
+#     print retRightToInhRight
     from pyNN.nest import Projection, FromListConnector
     
     Projection(retinaLeft, cellOut, FromListConnector(retLeftToCO))  
@@ -138,12 +142,15 @@ def interconnectNetworkNeurons(network=None):
         leftToCO.append([inhLeft.id_to_index(idL), cellOut.id_to_index(idCO), wInhToOut, dInhToOut])
         rightToCO.append([inhRight.id_to_index(idR), cellOut.id_to_index(idCO), wInhToOut, dInhToOut])
 
+#     print leftToCO
+#     print rightToCO
     # connect the inhibitory neurons to the cell output neurons
     print "Interconnecting Neurons..."
     Projection(inhLeft, cellOut, FromListConnector(leftToCO))
     Projection(inhRight, cellOut, FromListConnector(rightToCO))
     
-    interconnectNeuronsForInternalInhibitionAndExcitation(network)
+    if dimensionRetinaX > 1 and maxDisparity > 0:
+        interconnectNeuronsForInternalInhibitionAndExcitation(network)
     
 def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
     
