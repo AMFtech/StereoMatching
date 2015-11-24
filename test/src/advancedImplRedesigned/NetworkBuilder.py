@@ -4,7 +4,7 @@ from pyNN.nest.standardmodels.cells import IF_curr_exp
 
 def createSpikeSource(label):
     assert label == "Retina Left" or label == "Retina Right", "Unknown Retina Identifier! Creating Retina Failed."
-    retina = Population((dimensionRetinaX, dimensionRetinaY), SpikeSourceArray(), label=label)
+    retina = Population((dimensionRetinaY, dimensionRetinaX), SpikeSourceArray(), label=label)
     
     if label == "Retina Right":
         spikeTimes = retRightSpikes
@@ -14,10 +14,15 @@ def createSpikeSource(label):
     assert len(spikeTimes) >= dimensionRetinaY and len(spikeTimes[0]) >= dimensionRetinaX, "Check dimensionality of retina's spiking times!"        
     # iterate over all neurons in the SpikeSourcaArray and set every one's parameters individually        
     print "Creating Spike Source: {0}".format(label)
-    for row in range(0, dimensionRetinaY):
-        for pixel in range(0, dimensionRetinaX):
-            retina[row * dimensionRetinaY + pixel].set_parameters(spike_times = spikeTimes[row][pixel])
-#             print retina[row * dimensionRetinaY + pixel].get_parameters()        
+    row = pixel = 0
+    for pixelID in retina:
+        pixelIndex = retina.id_to_index(pixelID)
+        retina[pixelIndex].set_parameters(spike_times = spikeTimes[row][pixel])
+        pixel += 1
+        if pixel % dimensionRetinaX == 0:
+            pixel = 0
+            row += 1
+   
     return retina
 
 
