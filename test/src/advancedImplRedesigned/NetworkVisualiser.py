@@ -1,6 +1,6 @@
 from SimulationAndNetworkSettings import dimensionRetinaX, dimensionRetinaY, maxDisparity, simulationTime
 
-def plotSimulationResults(network=None, layer=0, plotGraphMP=True):
+def plotSimulationResults(network=None, layer=0, plotGraphMP=False):
     
     assert network is not None, "Network is not initialised! Visualising failed."
     assert layer > 0 and layer <= dimensionRetinaY, "No such layer in the network."
@@ -20,17 +20,17 @@ def plotSimulationResults(network=None, layer=0, plotGraphMP=True):
     cellValuesAllTimesteps = getMembranePotentialNetwork(cellOut, layer, rows, pixels)
     cellValuesAllTimesteps = reshapeDimensionNetwork(cellValuesAllTimesteps)
     
-#     fig = plt.figure()
+    fig = plt.figure()
     
     initialData = createInitialisingData(maxDepolarisation=-50.0, maxPolarisation=-80.0)
-#     imNet = plt.imshow(initialData, cmap='RdYlGn', interpolation='none', origin='upper')
-#     
-#     plt.colorbar()
-#     plt.xticks(range(0, maxDisparity+1)) 
-#     plt.yticks(range(0, dimensionRetinaX))
-#     plt.title("Layer {0}".format(layer))
-#     args = (cellValuesAllTimesteps, imNet)
-#     anim = animation.FuncAnimation(fig, animate, fargs=args, frames=int(simulationTime)*10, interval=100)
+    imNet = plt.imshow(initialData, cmap='RdYlGn', interpolation='none', origin='upper')
+     
+    plt.colorbar()
+    plt.xticks(range(0, maxDisparity+1)) 
+    plt.yticks(range(0, dimensionRetinaX))
+    plt.title("Layer {0}".format(layer))
+    args = (cellValuesAllTimesteps, imNet)
+    anim = animation.FuncAnimation(fig, animate, fargs=args, frames=int(simulationTime)*10, interval=100)
     print "Nicely visualising results for layer {0}...".format(layer)       
     plt.show()
 
