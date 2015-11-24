@@ -1,21 +1,20 @@
-from SimulationAndNetworkSettings import dimensionRetinaX, maxDisparity, simulationTime
+from SimulationAndNetworkSettings import dimensionRetinaX, dimensionRetinaY, maxDisparity, simulationTime
 
-def plotSimulationResults(network=None):
+def plotSimulationResults(network=None, layer=0):
     
     assert network is not None, "Network is not initialised! Visualising failed."
-    
+    assert layer > 0 and layer <= dimensionRetinaY, "No such layer in the network."
     import matplotlib.pyplot as plt
     from matplotlib import animation
     
     cellOut = network.get_population("Cell Output Population of Network")
     
-    fixedLayer = 0
     x = range(0, dimensionRetinaX)
     y = range(0, dimensionRetinaX)
     from numpy import meshgrid
     rows, pixels = meshgrid(x,y)
     
-    cellValuesAllTimesteps = getMembranePotentialNetwork(cellOut, fixedLayer, rows, pixels)
+    cellValuesAllTimesteps = getMembranePotentialNetwork(cellOut, layer, rows, pixels)
     cellValuesAllTimesteps = reshapeDimensionNetwork(cellValuesAllTimesteps)
     
     fig = plt.figure()
@@ -26,16 +25,19 @@ def plotSimulationResults(network=None):
     plt.colorbar()
     plt.xticks(range(0, maxDisparity+1)) 
     plt.yticks(range(0, dimensionRetinaX))
+    plt.title("Layer {0}".format(layer))
     args = (cellValuesAllTimesteps, imNet)
     anim = animation.FuncAnimation(fig, animate, fargs=args, frames=int(simulationTime)*10, interval=100)
-    print "Nicely visualising results..."       
+    print "Nicely visualising results for layer {0}...".format(layer)       
     plt.show()
 
 def createInitialisingData(maxDepolarisation=-50.0, maxPolarisation=-75.0):
     from itertools import repeat
     initData = []
-    for rows in range(0, dimensionRetinaX):
+    # initialise with limiting values to adjust the colorbar and color scheme of the squares
+    for rows in range(0, dimensionRetinaX, 2):
         initData.append([maxPolarisation]+list(repeat(maxDepolarisation, maxDisparity))) 
+        initData.append([maxDepolarisation]+list(repeat(maxPolarisation, maxDisparity)))
     return initData        
 
 def animate(i, *args):
@@ -48,7 +50,9 @@ def animate(i, *args):
     
 def getMembranePotentialNetwork(cells=None, fixedLayer=0, meshRows=0, meshPixels=0):
     assert cells is not None, "Cells are not initialised!"   
-    cellValues = cells.get_data().segments[0].filter(name='v')[0]
+    cellsAtFixedLayer = cells[(fixedLayer-1)*(maxDisparity+1)*dimensionRetinaX:fixedLayer*(maxDisparity+1)*dimensionRetinaX]
+    print "Layer {0}".format(fixedLayer), cellsAtFixedLayer
+    cellValues = cellsAtFixedLayer.get_data().segments[0].filter(name='v')[0]
     return cellValues
     
     

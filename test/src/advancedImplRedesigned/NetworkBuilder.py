@@ -228,21 +228,39 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
                     if neuronIndex - dist*maxDisparity >= min(inhR):    
                         connectionListInhR.append([neuronIndex, neuronIndex-dist*maxDisparity, wOutToOutInh, dOutToOutInh])
         
-        # TODO: Fix the bounded 3D excitation of neighbouring layers! Add something like a modulo maxDisaprity*dimensionX, 
-        # because now last cell is being connected with the first on the upper row or sth like this.
         for exc in nbhoodExc:
             if neuronIndex in exc:
-                for dist in range(1, min(len(exc), radiusExcitation+1)):
-                    if neuronIndex + dist*(maxDisparity+1) in exc:
-                        connectionListExc.append([neuronIndex, neuronIndex+dist*(maxDisparity+1), wOutToOutExc, dOutToOutExc])
-                    if neuronIndex - dist*(maxDisparity+1) in exc:    
-                        connectionListExc.append([neuronIndex, neuronIndex-dist*(maxDisparity+1), wOutToOutExc, dOutToOutExc])
-                for dist in range(1, min(len(exc), (radiusExcitation+1)**2)):        
-                    if neuronIndex + dist*(maxDisparity+1)*dimensionRetinaX in exc:
-                        connectionListExc.append([neuronIndex, neuronIndex+dist*(maxDisparity+1)*dimensionRetinaX, wOutToOutExc, dOutToOutExc])
-                    if neuronIndex - dist*(maxDisparity+1)*dimensionRetinaX in exc:    
-                        connectionListExc.append([neuronIndex, neuronIndex-dist*(maxDisparity+1)*dimensionRetinaX, wOutToOutExc, dOutToOutExc])    
-             
+                for distX in range(1, radiusExcitation+1):
+                    nbPlus = neuronIndex + distX*(maxDisparity+1)
+                    nbMinus = neuronIndex - distX*(maxDisparity+1)
+                    if nbPlus in exc:
+                        connectionListExc.append([neuronIndex, nbPlus, wOutToOutExc, dOutToOutExc])
+                        for distY in range(1, radiusExcitation+1):
+                            nbUp = nbPlus + distY*(maxDisparity+1)*dimensionRetinaX
+                            nbDn = nbPlus - distY*(maxDisparity+1)*dimensionRetinaX
+                            if nbUp in exc:
+                                connectionListExc.append([neuronIndex, nbUp, wOutToOutExc, dOutToOutExc])
+                            if nbDn in exc:
+                                connectionListExc.append([neuronIndex, nbDn, wOutToOutExc, dOutToOutExc])    
+                    if nbMinus in exc:    
+                        connectionListExc.append([neuronIndex, nbMinus, wOutToOutExc, dOutToOutExc])
+                        for distY in range(1, radiusExcitation+1):
+                            nbUp = nbMinus + distY*(maxDisparity+1)*dimensionRetinaX
+                            nbDn = nbMinus - distY*(maxDisparity+1)*dimensionRetinaX
+                            if nbUp in exc:
+                                connectionListExc.append([neuronIndex, nbUp, wOutToOutExc, dOutToOutExc])
+                            if nbDn in exc:
+                                connectionListExc.append([neuronIndex, nbDn, wOutToOutExc, dOutToOutExc])
+                for distYOverSpiking in range(1, radiusExcitation+1):
+                    # no need to check if it is within the possible nodes because the network is identical in every layer 
+                    # and there always exist such neighbouring neuron    
+                    nbUp = neuronIndex + distYOverSpiking*(maxDisparity+1)*dimensionRetinaX
+                    nbDn = neuronIndex - distYOverSpiking*(maxDisparity+1)*dimensionRetinaX
+                    if nbUp in exc:
+                        connectionListExc.append([neuronIndex, nbUp, wOutToOutExc, dOutToOutExc])
+                    if nbDn in exc:
+                        connectionListExc.append([neuronIndex, nbDn, wOutToOutExc, dOutToOutExc])
+                    
 #     print connectionListInhL            
 #     print connectionListInhR
 #     print connectionListExc
