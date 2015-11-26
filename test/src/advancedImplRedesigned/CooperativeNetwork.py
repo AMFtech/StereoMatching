@@ -23,7 +23,7 @@ def main():
     from itertools import repeat
     numberOfLayersToPlot = 1
     layers = zip(repeat(network, numberOfLayersToPlot), range(1, numberOfLayersToPlot+1), repeat(False, numberOfLayersToPlot))
-    customLayers = [(network, 4, False)]
+    customLayers = [(network, 3, False)]
     for proc in range(0, numberOfLayersToPlot):
         p = Process(target=plotSimulationResults, args=customLayers[proc])
         p.start()

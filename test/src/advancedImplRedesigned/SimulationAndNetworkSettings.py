@@ -9,27 +9,27 @@ maxSynapseDelay = 2.0       # The largest time step for a delay in a synapse con
 
 ## Network Parameters ##
 
-dimensionRetinaX = 4        # Defines the dimension of the x-axis of the input spikes from the retina sensor
-dimensionRetinaY = 4        # Defines the dimension of the y-axis of the input spikes from the retina sensor
+dimensionRetinaX = 8        # Defines the dimension of the x-axis of the input spikes from the retina sensor
+dimensionRetinaY = 3        # Defines the dimension of the y-axis of the input spikes from the retina sensor
 minDisparity = 0            # Defines the minimum detectable disparity
-maxDisparity = 1            # Defines the maximum detectable disparity
+maxDisparity = 2            # Defines the maximum detectable disparity
 
-radiusExcitation = 2
+radiusExcitation = 3
 radiusInhibition = max(dimensionRetinaX, dimensionRetinaY)
 
 ## Sample Spike Input ##
 retLeftSpikes = \
-    [[[100], [100], [100], [100],[100],  [100], [100], [100],[100],  [100], [100], [100]],
-     [[100], [1], [100], [100],[100],  [100], [100], [100],[100],  [100], [100], [100]],
-     [[100], [100], [100], [100],[100],  [100], [100], [100],[100],  [100], [100], [100]],
-     [[100], [5], [100], [100],[100],  [100], [100], [100],[100],  [100], [100], [100]]
+    [[[100], [100], [100], [100],[100],  [100], [6], [100],[100],  [100], [100], [100]],
+     [[100], [100], [100], [1],[100],  [100], [100], [100],[100],  [100], [100], [100]],
+     [[100], [100], [100], [100],[3],  [3], [100], [100],[100],  [100], [100], [100]],
+     [[100], [100], [100], [100],[100],  [100], [100], [100],[100],  [100], [100], [100]]
     ]
 
 retRightSpikes = \
-    [[[100], [100], [100], [100],[100],  [100], [100], [100],[100],  [100], [100], [100]],
-     [[100], [2], [100], [100],[100],  [100], [100], [100],[100],  [100], [100], [100]],
-     [[100], [100], [100], [100],[100],  [100], [100], [100],[100],  [100], [100], [100]],
-     [[100], [100], [5], [100],[100],  [100], [100], [100],[100],  [100], [100], [100]]
+    [[[100], [100], [100], [100],[100],  [6], [100], [100],[100],  [100], [100], [100]],
+     [[100], [100], [100], [1],[100],  [100], [100], [100],[100],  [100], [100], [100]],
+     [[100], [100], [100], [100],[100],  [100], [4], [100],[100],  [100], [100], [100]],
+     [[100], [100], [100], [100],[100],  [100], [100], [100],[100],  [100], [100], [100]]
     ]    
 
 ## Neural Parameters ##
@@ -51,7 +51,7 @@ dSSToOtherInh = 0.1     # Defines the delay in transmitting the active potential
 wOutToOutInh = -50.0    # Defines the synaptic weight between individual output neurons which inhibit themselves according to the physical constraints of objects
 dOutToOutInh = 0.1      # Defines the delay between inhibition of output neurons 
 
-wOutToOutExc = 10.0    # Defines the synaptic weight between individual output neurons which excite themselves
+wOutToOutExc = 15.0    # Defines the synaptic weight between individual output neurons which excite themselves
 dOutToOutExc = 0.1      # Defines the delay between excitation of output neurons
 
 # Soma's, membrane's and other parameters, see IF_exp_curr model in pyNN wiki
