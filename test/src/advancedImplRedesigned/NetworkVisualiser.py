@@ -18,6 +18,7 @@ def plotSimulationResults(network=None, layer=0, plotGraphMP=False):
     rows, pixels = meshgrid(x,y)
     
     cellValuesAllTimesteps = getMembranePotentialNetwork(cellOut, layer, rows, pixels)
+#     print cellValuesAllTimesteps
     cellValuesAllTimesteps = reshapeDimensionNetwork(cellValuesAllTimesteps)
     
     fig = plt.figure()
@@ -54,7 +55,7 @@ def animate(i, *args):
 def getMembranePotentialNetwork(cells=None, fixedLayer=0, meshRows=0, meshPixels=0):
     assert cells is not None, "Cells are not initialised!"   
     cellsAtFixedLayer = cells[(fixedLayer-1)*(maxDisparity+1)*dimensionRetinaX:fixedLayer*(maxDisparity+1)*dimensionRetinaX]
-    print "Layer {0}".format(fixedLayer), cellsAtFixedLayer
+#     print "Layer {0}".format(fixedLayer), cellsAtFixedLayer
     cellValues = cellsAtFixedLayer.get_data().segments[0].filter(name='v')[0]
     return cellValues
     
