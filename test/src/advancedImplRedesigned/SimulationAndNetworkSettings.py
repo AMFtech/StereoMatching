@@ -1,7 +1,7 @@
 
 ## Simulation Parameters ##
 
-simulationTime = 10.0       # Total simulation time
+simulationTime = 100.0       # Total simulation time
 simulationTimestep = 0.1    # Temporal resolution of the simulation
 minSynapseDelay = 0.1       # The smallest time step for a delay in a synapse connection
 maxSynapseDelay = 2.0       # The largest time step for a delay in a synapse connection
@@ -9,29 +9,32 @@ maxSynapseDelay = 2.0       # The largest time step for a delay in a synapse con
 
 ## Network Parameters ##
 
-dimensionRetinaX = 8        # Defines the dimension of the x-axis of the input spikes from the retina sensor
-dimensionRetinaY = 3        # Defines the dimension of the y-axis of the input spikes from the retina sensor
+dimensionRetinaX = 128        # Defines the dimension of the x-axis of the input spikes from the retina sensor
+dimensionRetinaY = 128        # Defines the dimension of the y-axis of the input spikes from the retina sensor
 minDisparity = 0            # Defines the minimum detectable disparity
-maxDisparity = 2            # Defines the maximum detectable disparity
+maxDisparity = 100            # Defines the maximum detectable disparity
 
-radiusExcitation = 3
+radiusExcitation = 5
 radiusInhibition = max(dimensionRetinaX, dimensionRetinaY)
 
 ## Sample Spike Input ##
-retLeftSpikes = \
-    [[[100], [100], [100], [100],[100],  [100], [6], [100],[100],  [100], [100], [100]],
-     [[100], [100], [100], [1],[100],  [100], [100], [100],[100],  [100], [100], [100]],
-     [[100], [100], [100], [100],[3],  [3], [100], [100],[100],  [100], [100], [100]],
-     [[100], [100], [100], [100],[100],  [100], [100], [100],[100],  [100], [100], [100]]
-    ]
-
-retRightSpikes = \
-    [[[100], [100], [100], [100],[100],  [6], [100], [100],[100],  [100], [100], [100]],
-     [[100], [100], [100], [1],[100],  [100], [100], [100],[100],  [100], [100], [100]],
-     [[100], [100], [100], [100],[100],  [100], [4], [100],[100],  [100], [100], [100]],
-     [[100], [100], [100], [100],[100],  [100], [100], [100],[100],  [100], [100], [100]]
-    ]    
-
+# retLeftSpikes = \
+#     [[[100], [100], [100], [100],[100],  [100], [6], [100],[100],  [100], [100], [100]],
+#      [[100], [100], [100], [1],[100],  [100], [100], [100],[100],  [100], [100], [100]],
+#      [[100], [100], [100], [100],[3],  [3], [100], [100],[100],  [100], [100], [100]],
+#      [[100], [100], [100], [100],[100],  [100], [100], [100],[100],  [100], [100], [100]]
+#     ]
+# 
+# retRightSpikes = \
+#     [[[100], [100], [100], [100],[100],  [6], [100], [100],[100],  [100], [100], [100]],
+#      [[100], [100], [100], [1],[100],  [100], [100], [100],[100],  [100], [100], [100]],
+#      [[100], [100], [100], [100],[100],  [100], [4], [100],[100],  [100], [100], [100]],
+#      [[100], [100], [100], [100],[100],  [100], [100], [100],[100],  [100], [100], [100]]
+#     ]   
+from cPickle import load
+ 
+retLeftSpikes = load(open('../realInput/retinaLeft.p', 'rb'))
+retRightSpikes = load(open('../realInput/retinaRight.p', 'rb'))
 ## Neural Parameters ##
 
 # Synaptic parameters
@@ -51,7 +54,7 @@ dSSToOtherInh = 0.1     # Defines the delay in transmitting the active potential
 wOutToOutInh = -50.0    # Defines the synaptic weight between individual output neurons which inhibit themselves according to the physical constraints of objects
 dOutToOutInh = 0.1      # Defines the delay between inhibition of output neurons 
 
-wOutToOutExc = 15.0    # Defines the synaptic weight between individual output neurons which excite themselves
+wOutToOutExc = 5.0    # Defines the synaptic weight between individual output neurons which excite themselves
 dOutToOutExc = 0.1      # Defines the delay between excitation of output neurons
 
 # Soma's, membrane's and other parameters, see IF_exp_curr model in pyNN wiki
