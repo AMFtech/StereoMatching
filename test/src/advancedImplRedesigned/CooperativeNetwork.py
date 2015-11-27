@@ -21,9 +21,9 @@ def main():
     print "Simulation ended."
     # plot results 
     from itertools import repeat
-    numberOfLayersToPlot = 1
+    numberOfLayersToPlot = 4
     layers = zip(repeat(network, numberOfLayersToPlot), range(1, numberOfLayersToPlot+1), repeat(False, numberOfLayersToPlot))
-    customLayers = [(network, 5, False)]
+    customLayers = [(network, 20, False),(network, 40, False),(network, 60, False),(network, 80, False)]
     for proc in range(0, numberOfLayersToPlot):
         p = Process(target=plotSimulationResults, args=customLayers[proc])
         p.start()
