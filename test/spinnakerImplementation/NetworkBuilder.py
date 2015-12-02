@@ -128,113 +128,33 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
                 sublist.append(elem)
         nbhoodExc.append(sublist)
      
-    print nbhoodInhL
-    print nbhoodInhR
-    print nbhoodExc          
+#     print nbhoodInhL
+#     print nbhoodInhR
+#     print nbhoodExc          
     
-    print "Connecting neurons for internal excitation and inhibition..."
+    print "\t Connecting neurons for internal excitation and inhibition..."
     from SimulationAndNetworkSettings import wOutToOutExc, dOutToOutExc, wOutToOutInh, dOutToOutInh
-    connectionListInhL = []
-    connectionListInhR = []
-    connectionListExc = []
-    for neuronID in cellOut:
-        neuronIndex = cellOut.id_to_index(neuronID)
-        if neuronIndex % 1000 == 0:
-            print "\t {0} out of {1} neurons calculated.".format(neuronIndex, len(cellOut))
-        for inhL in nbhoodInhL:
-            if neuronIndex in inhL:
-                for dist in range(1, min(len(inhL), radiusInhibition)):
-                    if neuronIndex + dist <= max(inhL):
-                        connectionListInhL.append([neuronIndex, neuronIndex+dist, wOutToOutInh, dOutToOutInh])
-                    if neuronIndex - dist >= min(inhL):    
-                        connectionListInhL.append([neuronIndex, neuronIndex-dist, wOutToOutInh, dOutToOutInh]) 
-                break       
-#         print "\t Creating connector list for inhibilion Right..."
-        for inhR in nbhoodInhR:
-            if neuronIndex in inhR:
-                for dist in range(1, min(len(inhR), radiusInhibition)):
-                    if neuronIndex + dist*maxDisparity <= max(inhR):
-                        connectionListInhR.append([neuronIndex, neuronIndex+dist*maxDisparity, wOutToOutInh, dOutToOutInh])
-                    if neuronIndex - dist*maxDisparity >= min(inhR):    
-                        connectionListInhR.append([neuronIndex, neuronIndex-dist*maxDisparity, wOutToOutInh, dOutToOutInh])    
-                break
-#         print "\t Creating connector list for excitation..."   
-        for exc in nbhoodExc:
-            if neuronIndex in exc:
-                for distX in range(1, min(radiusExcitation+1, dimensionRetinaX)):
-                    nbPlus = neuronIndex + distX*(maxDisparity+1)
-                    # make sure that neighbouring neurons remain within this layer
-                    if nbPlus/(dimensionRetinaX*(maxDisparity+1)) == neuronIndex/(dimensionRetinaX*(maxDisparity+1)):
-                        if nbPlus in exc:
-                            connectionListExc.append([neuronIndex, nbPlus, wOutToOutExc, dOutToOutExc])
-                            for distY in range(1, radiusExcitation+1):
-                                nbUp = nbPlus + distY*(maxDisparity+1)*dimensionRetinaX
-                                nbDn = nbPlus - distY*(maxDisparity+1)*dimensionRetinaX
-                                if nbUp in exc:
-                                    connectionListExc.append([neuronIndex, nbUp, wOutToOutExc, dOutToOutExc])
-                                if nbDn in exc:
-                                    connectionListExc.append([neuronIndex, nbDn, wOutToOutExc, dOutToOutExc])    
-                    nbMinus = neuronIndex - distX*(maxDisparity+1)
-                    # same in the other direction
-                    if nbMinus/(dimensionRetinaX*(maxDisparity+1)) == neuronIndex/(dimensionRetinaX*(maxDisparity+1)):
-                        if nbMinus in exc:    
-                            connectionListExc.append([neuronIndex, nbMinus, wOutToOutExc, dOutToOutExc])
-                            for distY in range(1, radiusExcitation+1):
-                                nbUp = nbMinus + distY*(maxDisparity+1)*dimensionRetinaX
-                                nbDn = nbMinus - distY*(maxDisparity+1)*dimensionRetinaX
-                                if nbUp in exc:
-                                    connectionListExc.append([neuronIndex, nbUp, wOutToOutExc, dOutToOutExc])
-                                if nbDn in exc:
-                                    connectionListExc.append([neuronIndex, nbDn, wOutToOutExc, dOutToOutExc])
-                # now iterate over all neighbouring layers
-                for distYOverSpiking in range(1, min(radiusExcitation+1, dimensionRetinaY)):
-                    # no need to check if it is within the possible nodes because the network is identical in every layer 
-                    # and there always exist such neighbouring neuron    
-                    nbUp = neuronIndex + distYOverSpiking*(maxDisparity+1)*dimensionRetinaX
-                    nbDn = neuronIndex - distYOverSpiking*(maxDisparity+1)*dimensionRetinaX
-                    if nbUp in exc:
-                        connectionListExc.append([neuronIndex, nbUp, wOutToOutExc, dOutToOutExc])
-                    if nbDn in exc:
-                        connectionListExc.append([neuronIndex, nbDn, wOutToOutExc, dOutToOutExc])    
-                break    
-# #     print connectionListInhL            
-# #     print connectionListInhR
-# #     print connectionListExc
-#     dump(connectionListInhL, open('./precomputedLObj/connectionListInhL_64x_64y_30d_5e.p', 'wb'))
-#     dump(connectionListInhR, open('./precomputedLObj/connectionListInhR_64x_64y_30d_5e.p', 'wb'))
-#     dump(connectionListExc, open('./precomputedLObj/connectionListExc_64x_64y_30d_5e.p', 'wb'))
-    print "\t Connecting from generated lists..."
+    from pyNN.spiNNaker import Projection, OneToOneConnector
     
-    from pyNN.nest import Projection, FromListConnector
-#     if connectionListInhL != []:
-#     l1 = open('./precomputedLObj/connectionListInhL_64x_64y_30d_5e.p', 'rb')
-#     connectionListInhL = load(l1)
-#     l1.close()
-#     print "Freeing inhl"
-    print "starting 1 conn"
-    t1 = Thread(target=Projection, args=(cellOut, cellOut, FromListConnector(connectionListInhL)))
-    t1.start()
-#         Projection(cellOut, cellOut, FromListConnector(connectionListInhL))
-#     if connectionListInhR != []:  
-#     l2 = open('./precomputedLObj/connectionListInhR_64x_64y_30d_5e.p', 'rb')
-#     connectionListInhR = load(l2)
-#     l2.close()
-#     print "Freeing inhr"
-    print "starting 2 conn"
-    t2 = Thread(target=Projection, args=(cellOut, cellOut, FromListConnector(connectionListInhR)))
-    t2.start()        
-#         Projection(cellOut, cellOut, FromListConnector(connectionListInhR))
-#     if connectionListExc != []: 
-#     l3 = open('./precomputedLObj/connectionListExc_64x_64y_30d_5e.p', 'rb')
-#     connectionListExc = load(l3)
-#     l3.close()       
-    print "starting 3 conn"  
-    t3 = Thread(target=Projection, args=(cellOut, cellOut, FromListConnector(connectionListExc)))
-    t3.start()       
-#         Projection(cellOut, cellOut, FromListConnector(connectionListExc))
-    t1.join()
-    t2.join()
-    t3.join()
+    for row in nbhoodInhL:
+        for pop in row:
+            for nb in row:
+                if nb != pop:
+                    Projection(network[pop][2], network[nb][2], 
+                        OneToOneConnector(weights=wOutToOutInh, delays=dOutToOutInh))
+    for col in nbhoodInhR:
+        for pop in col:
+            for nb in col:
+                if nb != pop:
+                    Projection(network[pop][2], network[nb][2], 
+                        OneToOneConnector(weights=wOutToOutInh, delays=dOutToOutInh))
+    for diag in nbhoodExc:
+        for pop in diag:
+            for nb in diag:
+                if nb != pop:
+                    Projection(network[pop][2], network[nb][2], 
+                        OneToOneConnector(weights=wOutToOutExc, delays=dOutToOutExc))
+    
     print "\t Connecting completed."
     
 def connectSpikeSourcesToNetwork(network=None, retinaLeft=None, retinaRight=None):
