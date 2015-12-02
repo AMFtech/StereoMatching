@@ -132,6 +132,9 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
 #     print nbhoodInhR
 #     print nbhoodExc          
     
+    retinaNbhoodL = nbhoodInhL
+    retinaNbhoodR = nbhoodInhR
+
     print "\t Connecting neurons for internal excitation and inhibition..."
     from SimulationAndNetworkSettings import wOutToOutExc, dOutToOutExc, wOutToOutInh, dOutToOutInh
     from pyNN.spiNNaker import Projection, OneToOneConnector
@@ -161,112 +164,24 @@ def connectSpikeSourcesToNetwork(network=None, retinaLeft=None, retinaRight=None
     
     assert network is not None and retinaLeft is not None and retinaRight is not None, "Network or one of the Retinas is not initialised!"
     print "Connecting Spike Sources to Network..."
-    
-    inhLeft = network.get_population("Inhibitory Population of Left Retina")
-    inhRight = network.get_population("Inhibitory Population of Right Retina")
-    cellOut = network.get_population("Cell Output Population of Network") 
-    
-    retLeftToCO = []
-    retLeftToInhLeft = []
-    retLeftToInhRight = []
-    retRightToCO = []
-    retRightToInhRight = []
-    retRightToInhLeft = []
  
     from SimulationAndNetworkSettings import wSSToOtherInh, wSSToSelfInh, wSSToOut, dSSToOtherInh, dSSToSelfInh, dSSToOut
      
-    # connect neurons with retina according to the AND-ensemble pattern
-    indexLimiter = maxDisparity+1
-    for pixelLID, pixelRID in zip(retinaLeft, retinaRight):
-        indexL = retinaLeft.id_to_index(pixelLID)
-        indexR = retinaRight.id_to_index(pixelRID) 
-         
-        # reset limiter for the next layer
-        if indexL % dimensionRetinaX == 0:
-            indexLimiter = maxDisparity + 1
-             
-        if indexL % dimensionRetinaX > dimensionRetinaX - maxDisparity - 1: 
-            indexLimiter -= 1
-           
-        for disp in range(minDisparity, indexLimiter):
-            indexLNet = indexL * (maxDisparity+1) + disp  
-            indexRNet = indexLNet
-             
-            retLeftToCO.append([indexL, indexLNet, wSSToOut, dSSToOut])
-            retLeftToInhLeft.append([indexL, indexLNet, wSSToSelfInh, dSSToSelfInh])
-            retLeftToInhRight.append([indexL, indexLNet, wSSToOtherInh, dSSToOtherInh])    
-                 
-            retRightToCO.append([indexR + disp, indexRNet, wSSToOut, dSSToOut])
-            retRightToInhRight.append([indexR + disp, indexRNet, wSSToSelfInh, dSSToSelfInh])
-            retRightToInhLeft.append([indexR + disp, indexRNet, wSSToOtherInh, dSSToOtherInh])
-           
-#     print retLeftToCO 
-#     print retLeftToInhLeft
-#     print retLeftToInhRight
-#     print retRightToCO 
-#     print retRightToInhLeft
-#     print retRightToInhRight
-#     dump(retLeftToCO, open('./precomputedLObj/retLeftToCO_64x_64y_30d_5e.p', 'wb'))
-#     dump(retLeftToInhLeft, open('./precomputedLObj/retLeftToInhLeft_64x_64y_30d_5e.p', 'wb'))
-#     dump(retLeftToInhRight, open('./precomputedLObj/retLeftToInhRight_164x_64y_30d_5e.p', 'wb'))
-#     dump(retRightToCO, open('./precomputedLObj/retRightToCO_64x_64y_30d_5e.p', 'wb'))
-#     dump(retRightToInhLeft, open('./precomputedLObj/retRightToInhLeft_64x_64y_30d_5e.p', 'wb'))
-#     dump(retRightToInhRight, open('./precomputedLObj/retRightToInhRight_64x_64y_30d_5e.p', 'wb'))
-
-#     l1 = open('./precomputedLObj/retLeftToCO_64x_64y_30d_5e.p', 'rb')
-#     retLeftToCO = load(l1)
-#     l1.close()
-#     
-#     l2 = open('./precomputedLObj/retLeftToInhLeft_64x_64y_30d_5e.p', 'rb')
-#     retLeftToInhLeft = load(l2)
-#     l2.close()
-#     
-#     l3 = open('./precomputedLObj/retLeftToInhRight_164x_64y_30d_5e.p', 'rb')
-#     retLeftToInhRight = load(l3)
-#     l3.close()
-#     
-#     l4 = open('./precomputedLObj/retRightToCO_64x_64y_30d_5e.p', 'rb')
-#     retRightToCO = load(l4)
-#     l4.close()
-#     
-#     l5 = open('./precomputedLObj/retRightToInhLeft_64x_64y_30d_5e.p', 'rb')
-#     retRightToInhLeft = load(l5)
-#     l5.close()
-#     
-#     l6 = open('./precomputedLObj/retRightToInhRight_64x_64y_30d_5e.p', 'rb')
-#     retRightToInhRight = load(l6)
-#     l6.close()
+    for row in retinaNbhoodL:
+        for pop in row:
+            for nb in row:
+                if nb != pop:
+                    Projection(retinaLeft[pop][2], network[nb][2], 
+                        OneToOneConnector(weights=wOutToOutInh, delays=dOutToOutInh))
+    for col in retinaNbhoodR:
+        for pop in col:
+            for nb in col:
+                if nb != pop:
+                    Projection(retinaRight[pop][2], network[nb][2], 
+                        OneToOneConnector(weights=wOutToOutInh, delays=dOutToOutInh))
     
-    from pyNN.nest import Projection, FromListConnector
-    print "\t Connecting Left..."
-    t1 = Thread(target=Projection, args=(retinaLeft, cellOut, FromListConnector(retLeftToCO)))
-    t2 = Thread(target=Projection, args=(retinaLeft, inhLeft, FromListConnector(retLeftToInhLeft)))
-    t3 = Thread(target=Projection, args=(retinaLeft, inhRight, FromListConnector(retLeftToInhRight)))
-    t1.start()
-    t2.start()
-    t3.start()
-#     Projection(retinaLeft, cellOut, FromListConnector(retLeftToCO))  
-#     Projection(retinaLeft, inhLeft, FromListConnector(retLeftToInhLeft)) 
-#     Projection(retinaLeft, inhRight, FromListConnector(retLeftToInhRight)) 
-#     print "\t Connecting Left completed."
-    print "\t Connecting Right..."
-    t4 = Thread(target=Projection, args=(retinaRight, cellOut, FromListConnector(retRightToCO)))
-    t5 = Thread(target=Projection, args=(retinaRight, inhLeft, FromListConnector(retRightToInhLeft)))
-    t6 = Thread(target=Projection, args=(retinaRight, inhRight, FromListConnector(retRightToInhRight)))
-    t4.start()
-    t5.start()
-    t6.start()    
-#     Projection(retinaRight, cellOut, FromListConnector(retRightToCO)) 
-#     Projection(retinaRight, inhLeft, FromListConnector(retRightToInhLeft)) 
-#     Projection(retinaRight, inhRight, FromListConnector(retRightToInhRight)) 
-#     print "\t Connecting Right completed."
-    t1.join()
-    t2.join()
-    t3.join()
-    t4.join()
-    t5.join()
-    t6.join()
-
+retinaNbhoodL = []
+retinaNbhoodR = []
     
 
 
