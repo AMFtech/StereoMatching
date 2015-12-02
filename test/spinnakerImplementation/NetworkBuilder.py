@@ -91,6 +91,7 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
     nbhoodExc = []
     # used for the triangular form of the matrix in order to remain within the square
     print "\t Generating inhibitory and excitatory connectivity patterns..."
+    # generate rows
     limiter = maxDisparity+1
     ensembleIndex = 0
     
@@ -105,35 +106,21 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
     
     ensembleIndex = len(network)
     
-    #idea for nbhoodR: [0,1,2][3,4,5][6,7][8] some sort of zip with shift in position of the current for each next element: [0][1,3][2,4,6]...    
-#         
-#         
-#         
-#         
-#         rowCounter += 1
-#           
-#         if rowCounter % dimensionRetinaX > dimensionRetinaX - maxDisparity - 1: 
-#             indexLimiter -= 1
-#             if indexLimiter <= 0:
-#                 break
-#         allXRForOneXLVal = []   
-#         for disp in range(minDisparity, indexLimiter):
-#             #compute for according index in the network for the left inhibition
-#             # for each pixel count up along the row until disparityMax (or limiter is reached)
-#             indexNet = rowID + disp  
-#             allXRForOneXLVal.append(indexNet)
-#             # compute it now for the right
-#             # for all diagonal elements count up until disparity max is reached
-#             if indexNet % (maxDisparity + 1) == 0:
-#                 if maxDisparity == 0:
-#                     nbhoodInhR.append([indexNet])
-#                 else:    
-#                     nbhoodInhR.append([x for x in range(indexNet, indexNet - maxDisparity**2 - 1, -maxDisparity) \
-#                                        if x/(dimensionRetinaX*(maxDisparity+1)) == indexNet/(dimensionRetinaX*(maxDisparity+1))])
-#               
-#         nbhoodInhL.append(allXRForOneXLVal)  
+    # generate columns
+    nbhoodInhR = [[x] for x in nbhoodInhL[0]]
+    shiftGlob = 0
+    for x in nbhoodInhL[1:]:
+        shiftGlob += 1
+        shift = 0
+    #     print "--", x, shiftGlob
+        for e in x:
+            if (shift+1) % (maxDisparity+1) == 0:
+                nbhoodInhR.append([e])
+            else:
+                nbhoodInhR[shift+shiftGlob].append(e)
+            shift += 1     
       
-    # generate all the diagonal connections
+    # generate all diagonals
     for diag in map(None, *nbhoodInhL):
         sublist = []
         for elem in diag:
