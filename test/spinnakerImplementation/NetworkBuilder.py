@@ -3,6 +3,10 @@ from SimulationAndNetworkSettings import dimensionRetinaX, dimensionRetinaY, min
 from pyNN.spiNNaker import IF_curr_exp
 from pyNN.space import Line
 
+retinaNbhoodL = []
+retinaNbhoodR = []
+
+
 def createSpikeSource(label):
     assert label == "Retina Left" or label == "Retina Right", "Unknown Retina Identifier! Creating Retina Failed."
     if label == "Retina Right":
@@ -132,6 +136,8 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
 #     print nbhoodInhR
 #     print nbhoodExc          
     
+    global retinaNbhoodL,retinaNbhoodR
+    
     retinaNbhoodL = nbhoodInhL
     retinaNbhoodR = nbhoodInhR
 
@@ -164,24 +170,38 @@ def connectSpikeSourcesToNetwork(network=None, retinaLeft=None, retinaRight=None
     
     assert network is not None and retinaLeft is not None and retinaRight is not None, "Network or one of the Retinas is not initialised!"
     print "Connecting Spike Sources to Network..."
- 
-    from SimulationAndNetworkSettings import wSSToOtherInh, wSSToSelfInh, wSSToOut, dSSToOtherInh, dSSToSelfInh, dSSToOut
-     
-    for row in retinaNbhoodL:
-        for pop in row:
-            for nb in row:
-                if nb != pop:
-                    Projection(retinaLeft[pop][2], network[nb][2], 
-                        OneToOneConnector(weights=wOutToOutInh, delays=dOutToOutInh))
-    for col in retinaNbhoodR:
-        for pop in col:
-            for nb in col:
-                if nb != pop:
-                    Projection(retinaRight[pop][2], network[nb][2], 
-                        OneToOneConnector(weights=wOutToOutInh, delays=dOutToOutInh))
     
-retinaNbhoodL = []
-retinaNbhoodR = []
+    from pyNN.spiNNaker import Projection, OneToOneConnector
+    from SimulationAndNetworkSettings import wSSToOtherInh, wSSToSelfInh, wSSToOut, dSSToOtherInh, dSSToSelfInh, dSSToOut
+    
+    global retinaNbhoodL, retinaNbhoodR
+    
+    pixel = 0
+    for row in retinaNbhoodL:
+#         print row, pixel
+        for pop in row:
+            Projection(retinaLeft[pixel], network[pop][2], 
+                OneToOneConnector(weights=wSSToOut, delays=dSSToOut))
+            Projection(retinaLeft[pixel], network[pop][0], 
+                OneToOneConnector(weights=wSSToSelfInh, delays=dSSToSelfInh))
+            Projection(retinaLeft[pixel], network[pop][1], 
+                OneToOneConnector(weights=wSSToOtherInh, delays=dSSToOtherInh))
+        pixel += 1
+    
+    pixel = 0    
+    for col in retinaNbhoodR:
+#         print col, pixel
+        for pop in col:
+            Projection(retinaRight[pixel], network[pop][2], 
+                OneToOneConnector(weights=wSSToOut, delays=dSSToOut))
+            Projection(retinaRight[pixel], network[pop][0], 
+                OneToOneConnector(weights=wSSToOtherInh, delays=dSSToOtherInh))
+            Projection(retinaRight[pixel], network[pop][1], 
+                OneToOneConnector(weights=wSSToSelfInh, delays=dSSToSelfInh))
+        pixel += 1    
+    print "\t Spike Sources connected."
+    
+
     
 
 

@@ -32,6 +32,8 @@ retRightSpikes = \
      [[100], [100], [100], [100]],
      [[100], [100], [100], [100]]
     ]  
+retinaNbhoodL = []
+retinaNbhoodR = []    
 # from cPickle import load
 #  
 # retLeftSpikes = load(open('../src/realInput/retinaLeft_40_centre.p', 'rb'))

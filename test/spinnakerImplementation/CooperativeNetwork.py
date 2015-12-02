@@ -1,7 +1,7 @@
+from SimulationAndNetworkSettings import simulationTime, simulationTimestep, maxSynapseDelay, minSynapseDelay
 from pyNN.spiNNaker import setup, run, end
 from NetworkBuilder import createCooperativeNetwork, createSpikeSource
 from NetworkVisualiser import plotSimulationResults 
-from SimulationAndNetworkSettings import simulationTime, simulationTimestep, maxSynapseDelay, minSynapseDelay
 
 def main():
     # setup timestep of simulation and minimum and maximum synaptic delays
@@ -20,7 +20,7 @@ def main():
     print "Simulation ended."
     
     # plot results 
-    plotSimulationResults(network, 5, False)
+#     plotSimulationResults(network, 5, False)
     
     # finalise program and simulation
     end()
