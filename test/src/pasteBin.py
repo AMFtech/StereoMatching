@@ -10,6 +10,7 @@
 #                 Projection(network[layer][row][cell].get_population("Inhibitor Right {0} - {1} - {2}".format(cell, layer, row)), 
 #                         network[layer][row][cell].get_population("Cell Output {0} - {1} - {2}".format(cell, layer, row)),
 #                         OneToOneConnector(), StaticSynapse(weight=internalWeightInhibition, delay=internalDelayInhibition))    
+from itertools import repeat
 
 
 
@@ -266,14 +267,26 @@
 
 
 
-data = [[1,2,3,4,5,6],[1,2,3,4,5,6]]
+data = [[0,1,2,3],[4,5,6,7],[8,9,10],[11,12],[13]]
 
-n = 3
-arr = []
-for x in data:
-    arr.append([x[i:i+n] for i in range(0, len(x), n)])
-
-print arr
+disp = 3
+shiftGlob = 0
+newdata = [[0],[1],[2],[3]]
+for x in data[1:]:
+    
+    shiftGlob += 1
+    shift = 0
+#     print "--", x, shiftGlob
+    
+    for e in x:
+        if (shift+1) % (disp+1) == 0:
+            newdata.append([e])
+        else:
+            newdata[shift+shiftGlob].append(e)
+        shift += 1    
+            
+    
+print newdata
 
 
 
