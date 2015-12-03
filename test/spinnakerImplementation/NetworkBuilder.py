@@ -5,6 +5,7 @@ from pyNN.space import Line
 
 retinaNbhoodL = []
 retinaNbhoodR = []
+sameDisparityInd = []
 
 
 def createSpikeSource(label):
@@ -40,25 +41,26 @@ def createNetwork():
     assert dimensionRetinaX > maxDisparity >= 0, "Maximum Disparity Constant is illegal!"
     print "Creating Cooperative Network..."
     
-    print "\t Creating Populations..."
+    
     from SimulationAndNetworkSettings import t_synE, t_synI, t_memb, vResetInh, vResetCO
     from pyNN.spiNNaker import record
     
     network = []
-    for x in range(0, dimensionRetinaX):
-        for disp in range(0, maxDisparity+1):
-            inhLeftPop = Population(dimensionRetinaY, IF_curr_exp, {'tau_syn_E':t_synE, 'tau_syn_I':t_synI, 'tau_m':t_memb, 'v_reset':vResetInh},
-                label="Blocker Left {0}".format(x*dimensionRetinaX + disp))
-            inhRightPop = Population(dimensionRetinaY, IF_curr_exp, {'tau_syn_E':t_synE, 'tau_syn_I':t_synI, 'tau_m':t_memb, 'v_reset':vResetInh},
-                label="Blocker Right {0}".format(x*dimensionRetinaX + disp))
-            cellOutputPop = Population(dimensionRetinaY, IF_curr_exp, {'tau_syn_E':t_synE, 'tau_syn_I':t_synI, 'tau_m':t_memb, 'v_reset':vResetCO},
-                label="Cell Output {0}".format(x*dimensionRetinaX + disp))
+    numberOfPopulations = (2*dimensionRetinaX*(maxDisparity+1) - (maxDisparity+1)**2 + maxDisparity + 1)/2
+    print "\t Creating {0} Populations...".format(numberOfPopulations)
+    for x in range(0, numberOfPopulations):
+        inhLeftPop = Population(dimensionRetinaY, IF_curr_exp, {'tau_syn_E':t_synE, 'tau_syn_I':t_synI, 'tau_m':t_memb, 'v_reset':vResetInh},
+            label="Blocker Left {0}".format(x))
+        inhRightPop = Population(dimensionRetinaY, IF_curr_exp, {'tau_syn_E':t_synE, 'tau_syn_I':t_synI, 'tau_m':t_memb, 'v_reset':vResetInh},
+            label="Blocker Right {0}".format(x))
+        cellOutputPop = Population(dimensionRetinaY, IF_curr_exp, {'tau_syn_E':t_synE, 'tau_syn_I':t_synI, 'tau_m':t_memb, 'v_reset':vResetCO},
+            label="Cell Output {0}".format(x))
+        
+        # reocrd data for plotting purposes
+        cellOutputPop.record('spikes')
             
-            # reocrd data for plotting purposes
-            cellOutputPop.record('v')
-            
-            network.append((inhLeftPop, inhRightPop, cellOutputPop))
-    
+        network.append((inhLeftPop, inhRightPop, cellOutputPop))
+        
     interconnectNetworkNeurons(network)
     
     return network
@@ -87,12 +89,14 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
     assert network is not None, "Network is not initialised! Interconnecting for inhibitory and excitatory patterns failed."
     
     from SimulationAndNetworkSettings import radiusExcitation, radiusInhibition
+    from SimulationAndNetworkSettings import wOutToOutExc, dOutToOutExc, wOutToOutInh, dOutToOutInh
     assert radiusInhibition >= maxDisparity, "Bad radius of inhibition. Uniquness constraint cannot be satisfied."
     assert 0 <= radiusExcitation <= dimensionRetinaX, "Bad radius of excitation."
     # create lists with inhibitory along the Retina Right projective line
     nbhoodInhL = []
     nbhoodInhR = []
-    nbhoodExc = []
+    nbhoodExcX = []
+    nbhoodEcxY = []
     # used for the triangular form of the matrix in order to remain within the square
     print "\t Generating inhibitory and excitatory connectivity patterns..."
     # generate rows
@@ -130,20 +134,30 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
         for elem in diag:
             if elem is not None:
                 sublist.append(elem)
-        nbhoodExc.append(sublist)
+        nbhoodExcX.append(sublist)
+    
+    # generate all y-axis excitation
+    for x in range(0, dimensionRetinaY):
+        for e in range(1, radiusExcitation+1):
+            if x+e < dimensionRetinaY:
+                nbhoodEcxY.append((x, x+e, wOutToOutExc, dOutToOutExc))
+            if x-e >= 0:
+                nbhoodEcxY.append((x, x-e, wOutToOutExc, dOutToOutExc))    
      
 #     print nbhoodInhL
 #     print nbhoodInhR
-#     print nbhoodExc          
+#     print nbhoodExcX  
+#     print nbhoodEcxY        
     
-    global retinaNbhoodL,retinaNbhoodR
+    global retinaNbhoodL,retinaNbhoodR, sameDisparityInd 
     
     retinaNbhoodL = nbhoodInhL
     retinaNbhoodR = nbhoodInhR
+    sameDisparityInd = nbhoodExcX
 
     print "\t Connecting neurons for internal excitation and inhibition..."
-    from SimulationAndNetworkSettings import wOutToOutExc, dOutToOutExc, wOutToOutInh, dOutToOutInh
-    from pyNN.spiNNaker import Projection, OneToOneConnector
+    
+    from pyNN.spiNNaker import Projection, OneToOneConnector, FromListConnector
     
     for row in nbhoodInhL:
         for pop in row:
@@ -157,14 +171,21 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
                 if nb != pop:
                     Projection(network[pop][2], network[nb][2], 
                         OneToOneConnector(weights=wOutToOutInh, delays=dOutToOutInh))
-    for diag in nbhoodExc:
+                    
+    for diag in nbhoodExcX:
         for pop in diag:
-            for nb in diag:
-                if nb != pop:
-                    Projection(network[pop][2], network[nb][2], 
+            for nb in range(1, radiusExcitation+1):
+                if diag.index(pop)+nb < len(diag):
+                    Projection(network[pop][2], network[diag[diag.index(pop)+nb]][2], 
+                        OneToOneConnector(weights=wOutToOutExc, delays=dOutToOutExc))
+                if diag.index(pop)-nb >= 0:
+                    Projection(network[pop][2], network[diag[diag.index(pop)-nb]][2], 
                         OneToOneConnector(weights=wOutToOutExc, delays=dOutToOutExc))
     
-    print "\t Connecting completed."
+    for ensemble in network:
+        Projection(ensemble[2], ensemble[2], FromListConnector(nbhoodEcxY))
+                    
+#     print "\t Connecting completed."
     
 def connectSpikeSourcesToNetwork(network=None, retinaLeft=None, retinaRight=None):
     

@@ -1,7 +1,7 @@
 from SimulationAndNetworkSettings import simulationTime, simulationTimestep, maxSynapseDelay, minSynapseDelay
 from pyNN.spiNNaker import setup, run, end
 from NetworkBuilder import createCooperativeNetwork, createSpikeSource
-from NetworkVisualiser import plotSimulationResults 
+from NetworkVisualiser import plotDisparityMap
 
 def main():
     # setup timestep of simulation and minimum and maximum synaptic delays
@@ -16,11 +16,11 @@ def main():
     
     # run simulation for time in milliseconds
     print "Simulation started..."
-    run(simulationTime)
+    run(simulationTime)                                            
     print "Simulation ended."
     
     # plot results 
-#     plotSimulationResults(network, 5, False)
+    plotDisparityMap(network=network, disparity=0)
     
     # finalise program and simulation
     end()

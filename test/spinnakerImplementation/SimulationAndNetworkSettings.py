@@ -1,7 +1,7 @@
 
 ## Simulation Parameters ##
 
-simulationTime = 50.0       # Total simulation time
+simulationTime = 10.0       # Total simulation time
 simulationTimestep = 0.1    # Temporal resolution of the simulation
 minSynapseDelay = 0.1       # The smallest time step for a delay in a synapse connection
 maxSynapseDelay = 2.0       # The largest time step for a delay in a synapse connection
@@ -20,14 +20,14 @@ radiusInhibition = max(dimensionRetinaX, dimensionRetinaY)
 ## Sample Spike Input ##
 # Note that rows in tha array correspond to columns from the retina 
 retLeftSpikes = \
-    [[[100], [100], [100], [100]],
+    [[[1], [100], [100], [100]],
      [[100], [100], [100], [100]],
      [[100], [100], [100], [100]],
      [[100], [100], [100], [100]]
     ]
- 
+  
 retRightSpikes = \
-    [[[100], [100], [100], [100]],
+    [[[2], [100], [100], [100]],
      [[100], [100], [100], [100]],
      [[100], [100], [100], [100]],
      [[100], [100], [100], [100]]
@@ -35,9 +35,9 @@ retRightSpikes = \
 retinaNbhoodL = []
 retinaNbhoodR = []    
 # from cPickle import load
-#  
 # retLeftSpikes = load(open('../src/realInput/retinaLeft_40_centre.p', 'rb'))
 # retRightSpikes = load(open('../src/realInput/retinaRight_40_centre.p', 'rb'))
+
 ## Neural Parameters ##
 
 # Synaptic parameters
