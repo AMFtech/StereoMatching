@@ -10,11 +10,11 @@ t_memb = 1.07
 vResetInh = -92.0
 vResetCO = -102.0
 # 'tau_syn_E':t_synE, 'tau_syn_I':t_synI, 'tau_m':t_memb, 'v_reset':vResetInh
-neuronInhLeft = Population(1, IF_curr_exp, {},
+neuronInhLeft = Population(1, IF_curr_exp, {'tau_syn_E':t_synE, 'tau_syn_I':t_synI, 'tau_m':t_memb, 'v_reset':vResetInh},
             label="Blocker Left")
-neuronInhRight = Population(1, IF_curr_exp, {},
+neuronInhRight = Population(1, IF_curr_exp, {'tau_syn_E':t_synE, 'tau_syn_I':t_synI, 'tau_m':t_memb, 'v_reset':vResetInh},
             label="Blocker Right")
-neuronCell = Population(1, IF_curr_exp, {},
+neuronCell = Population(1, IF_curr_exp, {'tau_syn_E':t_synE, 'tau_syn_I':t_synI, 'tau_m':t_memb, 'v_reset':vResetCO},
             label="Cell Output")
 
 # globally set parameters
@@ -22,24 +22,26 @@ neuronCell = Population(1, IF_curr_exp, {},
 
 # initialise records for plotting purposes
 neuronCell.record_v()
+neuronInhLeft.record_v()
+neuronInhRight.record_v()
 
 # create a spike source firing at spike_times
-retinaLeft = Population(1, SpikeSourceArray, {'spike_times': [1]}, label="Retina Left")
-retinaRight = Population(1, SpikeSourceArray, {'spike_times': [100]}, label="Retina Right")
+retinaLeft = Population(1, SpikeSourceArray, {'spike_times': [1,2,3]}, label="Retina Left")
+retinaRight = Population(1, SpikeSourceArray, {'spike_times': [3]}, label="Retina Right")
 # connect them in according to the follwing pattern
 
-excDelay = 0.1
+excDelay = 0.6
 
-Projection(retinaLeft, neuronInhLeft, OneToOneConnector(weights=.95, delays=0.1))
-Projection(retinaLeft, neuronInhRight, OneToOneConnector(weights=-.95, delays=0.1))
-Projection(retinaLeft, neuronCell, OneToOneConnector(weights=5.0, delays=excDelay))
+Projection(retinaLeft, neuronInhLeft, OneToOneConnector(weights=49.5, delays=0.1), target='excitatory')
+Projection(retinaLeft, neuronInhRight, OneToOneConnector(weights=39.5, delays=0.1), target='inhibitory')
+Projection(retinaLeft, neuronCell, OneToOneConnector(weights=39.5, delays=excDelay), target='excitatory')
 
-Projection(retinaRight, neuronInhLeft, OneToOneConnector(weights=.95, delays=0.1))
-Projection(retinaRight, neuronInhRight, OneToOneConnector(weights=-.95, delays=0.1))
-Projection(retinaRight, neuronCell, OneToOneConnector(weights=.95, delays=excDelay))
+Projection(retinaRight, neuronInhRight, OneToOneConnector(weights=49.5, delays=0.1), target='excitatory')
+Projection(retinaRight, neuronInhLeft, OneToOneConnector(weights=39.5, delays=0.1), target='inhibitory')
+Projection(retinaRight, neuronCell, OneToOneConnector(weights=39.5, delays=excDelay), target='excitatory')
   
-Projection(neuronInhLeft, neuronCell, OneToOneConnector(weights=-.95, delays=0.1))
-Projection(neuronInhRight, neuronCell, OneToOneConnector(weights=-.95, delays=0.1))
+Projection(neuronInhLeft, neuronCell, OneToOneConnector(weights=39.5, delays=0.1), target='inhibitory')
+Projection(neuronInhRight, neuronCell, OneToOneConnector(weights=39.5, delays=0.1), target='inhibitory')
 
 simTime = 20.0
 run(simTime)
@@ -49,6 +51,16 @@ memPotCO = zip(*neuronCell.get_v())[2]
 
 plt.plot(memPotCO)
 plt.axis([0.0, simTime*10, -75.0, -40.0])
+
+memPotInhL = zip(*neuronInhLeft.get_v())[2]
+
+plt.plot(memPotInhL)
+plt.axis([0.0, simTime*10, -75.0, -40.0])
+
+# memPotInhR = zip(*neuronInhRight.get_v())[2]
+# 
+# plt.plot(memPotInhR)
+# plt.axis([0.0, simTime*10, -75.0, -40.0])
 plt.show()
 
 

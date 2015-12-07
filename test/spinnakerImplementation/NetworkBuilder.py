@@ -77,9 +77,9 @@ def interconnectNetworkNeurons(network=None):
     print "Interconnecting Neurons..."
     for ensemble in network:
         # connect the left inhibitor to the cell output neuron
-        Projection(ensemble[0], ensemble[2], OneToOneConnector(weights=wInhToOut, delays=dInhToOut))
+        Projection(ensemble[0], ensemble[2], OneToOneConnector(weights=wInhToOut, delays=dInhToOut), target='inhibitory')
         # connect the right inhibitor to the cell output neuron
-        Projection(ensemble[1], ensemble[2], OneToOneConnector(weights=wInhToOut, delays=dInhToOut))
+        Projection(ensemble[1], ensemble[2], OneToOneConnector(weights=wInhToOut, delays=dInhToOut), target='inhibitory')
     
     if dimensionRetinaX > 1 and maxDisparity > 0:
         interconnectNeuronsForInternalInhibitionAndExcitation(network)
@@ -164,26 +164,26 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
             for nb in row:
                 if nb != pop:
                     Projection(network[pop][2], network[nb][2], 
-                        OneToOneConnector(weights=wOutToOutInh, delays=dOutToOutInh))
+                        OneToOneConnector(weights=wOutToOutInh, delays=dOutToOutInh), target='inhibitory')
     for col in nbhoodInhR:
         for pop in col:
             for nb in col:
                 if nb != pop:
                     Projection(network[pop][2], network[nb][2], 
-                        OneToOneConnector(weights=wOutToOutInh, delays=dOutToOutInh))
+                        OneToOneConnector(weights=wOutToOutInh, delays=dOutToOutInh), target='inhibitory')
                     
     for diag in nbhoodExcX:
         for pop in diag:
             for nb in range(1, radiusExcitation+1):
                 if diag.index(pop)+nb < len(diag):
                     Projection(network[pop][2], network[diag[diag.index(pop)+nb]][2], 
-                        OneToOneConnector(weights=wOutToOutExc, delays=dOutToOutExc))
+                        OneToOneConnector(weights=wOutToOutExc, delays=dOutToOutExc), target='excitatory')
                 if diag.index(pop)-nb >= 0:
                     Projection(network[pop][2], network[diag[diag.index(pop)-nb]][2], 
-                        OneToOneConnector(weights=wOutToOutExc, delays=dOutToOutExc))
+                        OneToOneConnector(weights=wOutToOutExc, delays=dOutToOutExc), target='excitatory')
     
     for ensemble in network:
-        Projection(ensemble[2], ensemble[2], FromListConnector(nbhoodEcxY))
+        Projection(ensemble[2], ensemble[2], FromListConnector(nbhoodEcxY), target='excitatory')
                     
 #     print "\t Connecting completed."
     
@@ -202,11 +202,11 @@ def connectSpikeSourcesToNetwork(network=None, retinaLeft=None, retinaRight=None
 #         print row, pixel
         for pop in row:
             Projection(retinaLeft[pixel], network[pop][2], 
-                OneToOneConnector(weights=wSSToOut, delays=dSSToOut))
+                OneToOneConnector(weights=wSSToOut, delays=dSSToOut), target='excitatory')
             Projection(retinaLeft[pixel], network[pop][0], 
-                OneToOneConnector(weights=wSSToSelfInh, delays=dSSToSelfInh))
+                OneToOneConnector(weights=wSSToSelfInh, delays=dSSToSelfInh), target='excitatory')
             Projection(retinaLeft[pixel], network[pop][1], 
-                OneToOneConnector(weights=wSSToOtherInh, delays=dSSToOtherInh))
+                OneToOneConnector(weights=wSSToOtherInh, delays=dSSToOtherInh), target='inhibitory')
         pixel += 1
     
     pixel = 0    
@@ -214,11 +214,11 @@ def connectSpikeSourcesToNetwork(network=None, retinaLeft=None, retinaRight=None
 #         print col, pixel
         for pop in col:
             Projection(retinaRight[pixel], network[pop][2], 
-                OneToOneConnector(weights=wSSToOut, delays=dSSToOut))
+                OneToOneConnector(weights=wSSToOut, delays=dSSToOut), target='excitatory')
             Projection(retinaRight[pixel], network[pop][0], 
-                OneToOneConnector(weights=wSSToOtherInh, delays=dSSToOtherInh))
+                OneToOneConnector(weights=wSSToOtherInh, delays=dSSToOtherInh), target='inhibitory')
             Projection(retinaRight[pixel], network[pop][1], 
-                OneToOneConnector(weights=wSSToSelfInh, delays=dSSToSelfInh))
+                OneToOneConnector(weights=wSSToSelfInh, delays=dSSToSelfInh), target='excitatory')
         pixel += 1    
     print "\t Spike Sources connected."
     

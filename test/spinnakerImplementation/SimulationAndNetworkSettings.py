@@ -20,16 +20,16 @@ radiusInhibition = max(dimensionRetinaX, dimensionRetinaY)
 ## Sample Spike Input ##
 # Note that rows in tha array correspond to columns from the retina 
 retLeftSpikes = \
-    [[[1], [100], [100], [100]],
+    [[[100], [100], [100], [100]],
      [[100], [100], [100], [100]],
-     [[100], [100], [100], [100]],
+     [[100], [100], [3], [100]],
      [[100], [100], [100], [100]]
     ]
   
 retRightSpikes = \
-    [[[2], [100], [100], [100]],
+    [[[100], [100], [100], [100]],
      [[100], [100], [100], [100]],
-     [[100], [100], [100], [100]],
+     [[100], [3], [100], [100]],
      [[100], [100], [100], [100]]
     ]  
 retinaNbhoodL = []
@@ -46,7 +46,7 @@ wInhToOut = -39.5      # Defines the synaptic weight between an inhibitory neuro
 dInhToOut = 0.1         # Defines the delay in transmitting the active potential between an inhibitory neuron and a Cell Output neuron
 
 wSSToOut = 39.5        # Defines the synaptic weight between a Spike Source neuron and a Cell Output neuron
-dSSToOut = 0.69         # Defines the delay in transmitting the active potential between a Spike Source neuron and a Cell Output neuron
+dSSToOut = 0.6         # Defines the delay in transmitting the active potential between a Spike Source neuron and a Cell Output neuron
 
 wSSToSelfInh = 49.5    # Defines the synaptic weight between a Spike Source (SS) neuron and the inhibitory neuron corresponding to this SS neuron
 dSSToSelfInh = 0.1      # Defines the delay in transmitting the active potential between a Spike Source (SS) neuron and the inhibitory neuron corresponding to this SS neuron
