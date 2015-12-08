@@ -9,7 +9,7 @@ with open(fileName, 'rb') as allEvents:
  		
 # # print eventList
  
-dimRet = 40
+dimRet = 20
 initTime = 10000.0
  
 retinaL = []
@@ -27,11 +27,13 @@ for evt in eventList:
 	x = evt[1]-1
 	y = evt[2]-1
  	
- 	if 40 <= x < 80 and 40 <= y < 80:
+ 	lowerBound = 50
+ 	upperBound = 70
+	if lowerBound <= x < upperBound and lowerBound <= y < upperBound:
 		if evt[4] == 1:
-			retinaR[x-dimRet][y-dimRet].append(evt[0]/10000.0)
+			retinaR[y-lowerBound][x-lowerBound].append(evt[0]/10000.0)
 		elif evt[4] == 0:
-			retinaL[x-dimRet][y-dimRet].append(evt[0]/10000.0)
+			retinaL[y-lowerBound][x-lowerBound].append(evt[0]/10000.0)
 
 for y in range(0, dimRet):
 	for x in range(0, dimRet):
@@ -40,8 +42,8 @@ for y in range(0, dimRet):
 		if retinaL[y][x] == []:
 			retinaL[y][x].append(initTime) 
  	
-cPickle.dump(retinaL, open('retinaLeft_40_centre.p', 'wb')) 	
-cPickle.dump(retinaR, open('retinaRight_40_centre.p', 'wb')) 	
+cPickle.dump(retinaL, open('retinaLeft_20.p', 'wb')) 	
+cPickle.dump(retinaR, open('retinaRight_20.p', 'wb')) 	
 
-rL = cPickle.load(open('../realInput/retinaLeft_40_centre.p', 'rb'))
-print rL[20]
+rL = cPickle.load(open('../realInput/retinaLeft_20.p', 'rb'))
+print rL[10]

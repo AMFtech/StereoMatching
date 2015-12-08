@@ -1,5 +1,63 @@
 from SimulationAndNetworkSettings import dimensionRetinaX, dimensionRetinaY, maxDisparity, simulationTime
 
+def plotDisparityHistogram(network=None):
+    assert network is not None, "Network is not initialised! Visualising failed."
+    import matplotlib.pyplot as plt
+    from NetworkBuilder import sameDisparityInd
+    
+    spikesPerDisparityMap = []
+    for d in range(0, maxDisparity+1):
+        cellsOut = [network[x][2] for x in sameDisparityInd[d]]
+        spikesPerDisparityMap.append(sum([x.mean_spike_count() for x in cellsOut]))
+    
+    plt.hist(spikesPerDisparityMap, maxDisparity+1, normed=1, facecolor='g', alpha=0.75)
+    
+    plt.show()
+    
+def plotExperiment(retinaLeft, retinaRight, network):
+    # TODO: make it work
+    import matplotlib.pyplot as plt
+    plotRetinaSpikes(retinaLeft, "Retina Left")
+    plotRetinaSpikes(retinaRight, "Retina Right")
+    plotDisparityMap(network, 0)
+    plt.show()
+
+def plotRetinaSpikes(retina=None, label=""):
+    
+    assert retina is not None, "Network is not initialised! Visualising failed."
+    import matplotlib.pyplot as plt
+    from matplotlib import animation
+    
+    print "Visualising {0} Spikes...".format(label) 
+
+    spikes = [x.getSpikes() for x in retina]
+#     print spikes
+    
+    sortedSpikes = sortSpikes(spikes)
+#     print sortedSpikes
+    
+    framesOfSpikes = generateFrames(sortedSpikes)
+#     print framesOfSpikes
+    
+    x = range(0, dimensionRetinaX)
+    y = range(0, dimensionRetinaY)
+    from numpy import meshgrid
+    rows, pixels = meshgrid(x,y)
+    
+    fig = plt.figure()
+    
+    initialData = createInitialisingData()
+    
+    imNet = plt.imshow(initialData, cmap='gray', interpolation='none', origin='upper')
+    
+    plt.xticks(range(0, dimensionRetinaX)) 
+    plt.yticks(range(0, dimensionRetinaY))
+    args = (framesOfSpikes, imNet)
+    anim = animation.FuncAnimation(fig, animate, fargs=args, frames=int(simulationTime)*10, interval=30)
+          
+    plt.show()
+
+
 def plotDisparityMap(network=None, disparity=0):
     
     assert network is not None, "Network is not initialised! Visualising failed."
@@ -11,7 +69,7 @@ def plotDisparityMap(network=None, disparity=0):
     print "Visualising results for disparity value {0}...".format(disparity) 
     
     cellsOut = [network[x][2] for x in sameDisparityInd[disparity]]
-    
+
     spikes = [x.getSpikes() for x in cellsOut]
 #     print spikes
     
@@ -36,7 +94,7 @@ def plotDisparityMap(network=None, disparity=0):
     plt.yticks(range(0, dimensionRetinaY))
     plt.title("Disparity Map {0}".format(disparity))
     args = (framesOfSpikes, imNet)
-    anim = animation.FuncAnimation(fig, animate, fargs=args, frames=int(simulationTime)*10, interval=100)
+    anim = animation.FuncAnimation(fig, animate, fargs=args, frames=int(simulationTime)*10, interval=30)
           
     plt.show()
 

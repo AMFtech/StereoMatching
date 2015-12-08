@@ -21,8 +21,10 @@ def createSpikeSource(label):
     
     retina = []
     for x in range(0, dimensionRetinaX):
-        retina.append(Population(dimensionRetinaY, SpikeSourceArray, {'spike_times': spikeTimes[x]}, label="{0} - Population {1}".format(label, x), structure=Line()))
-
+        rowOfPixels = Population(dimensionRetinaY, SpikeSourceArray, {'spike_times': spikeTimes[x]}, label="{0} - Population {1}".format(label, x), structure=Line())
+        retina.append(rowOfPixels)
+        rowOfPixels.record('spikes')
+    
     return retina
 
 
@@ -58,6 +60,7 @@ def createNetwork():
         
         # reocrd data for plotting purposes
         cellOutputPop.record('spikes')
+        cellOutputPop.record_v()
             
         network.append((inhLeftPop, inhRightPop, cellOutputPop))
         
@@ -220,7 +223,6 @@ def connectSpikeSourcesToNetwork(network=None, retinaLeft=None, retinaRight=None
             Projection(retinaRight[pixel], network[pop][1], 
                 OneToOneConnector(weights=wSSToSelfInh, delays=dSSToSelfInh), target='excitatory')
         pixel += 1    
-    print "\t Spike Sources connected."
     
 
     

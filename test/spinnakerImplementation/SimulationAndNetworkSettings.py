@@ -1,7 +1,7 @@
 
 ## Simulation Parameters ##
 
-simulationTime = 10.0       # Total simulation time
+simulationTime = 1000.0       # Total simulation time
 simulationTimestep = 0.1    # Temporal resolution of the simulation
 minSynapseDelay = 0.1       # The smallest time step for a delay in a synapse connection
 maxSynapseDelay = 2.0       # The largest time step for a delay in a synapse connection
@@ -9,34 +9,34 @@ maxSynapseDelay = 2.0       # The largest time step for a delay in a synapse con
 
 ## Network Parameters ##
 
-dimensionRetinaX = 4        # Defines the dimension of the x-axis of the input spikes from the retina sensor
-dimensionRetinaY = 4        # Defines the dimension of the y-axis of the input spikes from the retina sensor
+dimensionRetinaX = 20        # Defines the dimension of the x-axis of the input spikes from the retina sensor
+dimensionRetinaY = 20        # Defines the dimension of the y-axis of the input spikes from the retina sensor
 minDisparity = 0            # Defines the minimum detectable disparity
-maxDisparity = 2            # Defines the maximum detectable disparity
+maxDisparity = 15            # Defines the maximum detectable disparity
 
-radiusExcitation = 1
+radiusExcitation = 0
 radiusInhibition = max(dimensionRetinaX, dimensionRetinaY)
 
 ## Sample Spike Input ##
 # Note that rows in tha array correspond to columns from the retina 
-retLeftSpikes = \
-    [[[100], [100], [100], [100]],
-     [[100], [100], [100], [100]],
-     [[100], [100], [3], [100]],
-     [[100], [100], [100], [100]]
-    ]
-  
-retRightSpikes = \
-    [[[100], [100], [100], [100]],
-     [[100], [100], [100], [100]],
-     [[100], [3], [100], [100]],
-     [[100], [100], [100], [100]]
-    ]  
+# retLeftSpikes = \
+#     [[[100], [100], [100], [2]],
+#      [[100], [1], [100], [100]],
+#      [[100], [100], [100], [100]],
+#      [[100], [100], [100], [100]]
+#     ]
+#     
+# retRightSpikes = \
+#     [[[100], [100], [100], [100]],
+#      [[100], [100], [100], [2]],
+#      [[100], [1], [100], [100]],
+#      [[100], [100], [100], [100]]
+#     ]  
 retinaNbhoodL = []
 retinaNbhoodR = []    
-# from cPickle import load
-# retLeftSpikes = load(open('../src/realInput/retinaLeft_40_centre.p', 'rb'))
-# retRightSpikes = load(open('../src/realInput/retinaRight_40_centre.p', 'rb'))
+from cPickle import load
+retLeftSpikes = load(open('../src/realInput/retinaLeft_20.p', 'rb'))
+retRightSpikes = load(open('../src/realInput/retinaRight_20.p', 'rb'))
 
 ## Neural Parameters ##
 
