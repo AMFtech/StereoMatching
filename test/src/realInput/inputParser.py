@@ -1,6 +1,6 @@
 import cPickle	
 
-fileName = "oneHand.dat"
+fileName = "movingPersons.dat"
  
 eventList = []
 with open(fileName, 'rb') as allEvents:
@@ -10,7 +10,7 @@ with open(fileName, 'rb') as allEvents:
 # # print eventList
  
 dimRet = 20
-initTime = 10000.0
+initTime = 100000.0
  
 retinaL = []
 retinaR = []
@@ -30,10 +30,10 @@ for evt in eventList:
  	lowerBound = 50
  	upperBound = 70
 	if lowerBound <= x < upperBound and lowerBound <= y < upperBound:
-		if evt[4] == 1:
-			retinaR[y-lowerBound][x-lowerBound].append(evt[0]/10000.0)
-		elif evt[4] == 0:
-			retinaL[y-lowerBound][x-lowerBound].append(evt[0]/10000.0)
+		if evt[4] == 0:
+			retinaR[x-lowerBound][y-lowerBound].append(evt[0]/1000.0)
+		elif evt[4] == 1:
+			retinaL[x-lowerBound][y-lowerBound].append(evt[0]/1000.0)
 
 for y in range(0, dimRet):
 	for x in range(0, dimRet):
@@ -41,9 +41,12 @@ for y in range(0, dimRet):
 			retinaR[y][x].append(initTime)
 		if retinaL[y][x] == []:
 			retinaL[y][x].append(initTime) 
+
+formatedL = retinaL#[list(x) for x in zip(*retinaL)]
+formatedR = retinaR#[list(x) for x in zip(*retinaR)]
  	
-cPickle.dump(retinaL, open('retinaLeft_20.p', 'wb')) 	
-cPickle.dump(retinaR, open('retinaRight_20.p', 'wb')) 	
+cPickle.dump(formatedL, open('retinaLeft_20_pers.p', 'wb')) 	
+cPickle.dump(formatedR, open('retinaRight_20_pers.p', 'wb')) 	
 
 rL = cPickle.load(open('../realInput/retinaLeft_20.p', 'rb'))
 print rL[10]
