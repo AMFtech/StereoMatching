@@ -1,0 +1,53 @@
+        Network Specification
+ =====================
+
+Generated: Thu Dec 10 14:49:06 2015 for target machine 'spin5b'
+
+*** Vertices:
+Vertex Blocker Left, size: 1
+Model: <bound method IFCurrExp.model_name of Blocker Left with 1 atoms>
+constraint: partitioner max atom per core constraint with size 255
+
+Vertex Blocker Right, size: 1
+Model: <bound method IFCurrExp.model_name of Blocker Right with 1 atoms>
+constraint: partitioner max atom per core constraint with size 255
+
+Vertex Cell Output, size: 1
+Model: <bound method IFCurrExp.model_name of Cell Output with 1 atoms>
+constraint: partitioner max atom per core constraint with size 255
+
+Vertex Retina Left, size: 1
+Model: SpikeSourceArray
+constraint: partitioner max atom per core constraint with size 9223372036854775807
+constraint: tag allocator constraint
+
+Vertex Retina Right, size: 1
+Model: SpikeSourceArray
+constraint: partitioner max atom per core constraint with size 9223372036854775807
+constraint: tag allocator constraint
+
+*** Edges:
+Edge Projection 0 from vertex: 'Retina Left' (1 atoms) to vertex: 'Blocker Left' (1 atoms)
+  Model: No Model
+
+Edge Projection 1 from vertex: 'Retina Left' (1 atoms) to vertex: 'Blocker Right' (1 atoms)
+  Model: No Model
+
+Edge Projection 2 from vertex: 'Retina Left' (1 atoms) to vertex: 'Cell Output' (1 atoms)
+  Model: No Model
+
+Edge Projection 3 from vertex: 'Retina Right' (1 atoms) to vertex: 'Blocker Right' (1 atoms)
+  Model: No Model
+
+Edge Projection 4 from vertex: 'Retina Right' (1 atoms) to vertex: 'Blocker Left' (1 atoms)
+  Model: No Model
+
+Edge Projection 5 from vertex: 'Retina Right' (1 atoms) to vertex: 'Cell Output' (1 atoms)
+  Model: No Model
+
+Edge Projection 6 from vertex: 'Blocker Left' (1 atoms) to vertex: 'Cell Output' (1 atoms)
+  Model: No Model
+
+Edge Projection 7 from vertex: 'Blocker Right' (1 atoms) to vertex: 'Cell Output' (1 atoms)
+  Model: No Model
+

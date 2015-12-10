@@ -1,0 +1,3441 @@
+        Placement Information by Core
+        =============================
+
+Generated: Thu Dec 10 15:53:40 2015 for target machine 'spin5b'
+
+**** Chip: (0, 0)
+Application cores: 18
+  Processor 1: Vertex: 'Retina Left - Population 0', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 2: Vertex: 'Retina Left - Population 1', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 3: Vertex: 'Retina Left - Population 2', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 4: Vertex: 'Retina Left - Population 3', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 5: Vertex: 'Retina Left - Population 4', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 6: Vertex: 'Retina Left - Population 5', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 7: Vertex: 'Retina Left - Population 6', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 8: Vertex: 'Retina Left - Population 7', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 9: Vertex: 'Retina Left - Population 8', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 10: Vertex: 'Retina Left - Population 9', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 11: Vertex: 'Retina Left - Population 10', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 12: Vertex: 'Retina Left - Population 11', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 13: Vertex: 'Retina Left - Population 12', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 14: Vertex: 'Retina Left - Population 13', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 15: Vertex: 'Retina Left - Population 14', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 16: Vertex: 'Retina Left - Population 15', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+**** Chip: (1, 0)
+Application cores: 18
+  Processor 1: Vertex: 'Retina Left - Population 16', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 2: Vertex: 'Retina Left - Population 17', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 3: Vertex: 'Retina Left - Population 18', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 4: Vertex: 'Retina Left - Population 19', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 5: Vertex: 'Retina Right - Population 0', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 6: Vertex: 'Retina Right - Population 1', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 7: Vertex: 'Retina Right - Population 2', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 8: Vertex: 'Retina Right - Population 3', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 9: Vertex: 'Retina Right - Population 4', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 10: Vertex: 'Retina Right - Population 5', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 11: Vertex: 'Retina Right - Population 6', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 12: Vertex: 'Retina Right - Population 7', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 13: Vertex: 'Retina Right - Population 8', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 14: Vertex: 'Retina Right - Population 9', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 15: Vertex: 'Retina Right - Population 10', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 16: Vertex: 'Retina Right - Population 11', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+**** Chip: (1, 1)
+Application cores: 17
+  Processor 1: Vertex: 'Retina Right - Population 12', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 2: Vertex: 'Retina Right - Population 13', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 3: Vertex: 'Retina Right - Population 14', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 4: Vertex: 'Retina Right - Population 15', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 5: Vertex: 'Retina Right - Population 16', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 6: Vertex: 'Retina Right - Population 17', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 7: Vertex: 'Retina Right - Population 18', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 8: Vertex: 'Retina Right - Population 19', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 9: Vertex: 'Blocker Left 0', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 0 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Blocker Right 0', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 0 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Cell Output 0', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 0 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Blocker Left 1', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 1 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Blocker Right 1', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 1 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Cell Output 1', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 1 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Blocker Left 2', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 2 with 20 atoms>
+
+
+**** Chip: (0, 1)
+Application cores: 18
+  Processor 1: Vertex: 'Blocker Right 2', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 2 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Cell Output 2', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 2 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Blocker Left 3', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 3 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Blocker Right 3', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 3 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Cell Output 3', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 3 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Blocker Left 4', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 4 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Blocker Right 4', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 4 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Cell Output 4', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 4 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Blocker Left 5', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 5 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Blocker Right 5', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 5 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Cell Output 5', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 5 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Blocker Left 6', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 6 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Blocker Right 6', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 6 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Cell Output 6', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 6 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Blocker Left 7', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 7 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Blocker Right 7', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 7 with 20 atoms>
+
+
+**** Chip: (1, 2)
+Application cores: 18
+  Processor 1: Vertex: 'Cell Output 23', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 23 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Blocker Left 24', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 24 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Blocker Right 24', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 24 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Cell Output 24', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 24 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Blocker Left 25', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 25 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Blocker Right 25', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 25 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Cell Output 25', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 25 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Blocker Left 26', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 26 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Blocker Right 26', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 26 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Cell Output 26', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 26 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Blocker Left 27', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 27 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Blocker Right 27', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 27 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Cell Output 27', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 27 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Blocker Left 28', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 28 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Blocker Right 28', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 28 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Cell Output 28', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 28 with 20 atoms>
+
+
+**** Chip: (0, 2)
+Application cores: 18
+  Processor 1: Vertex: 'Blocker Left 29', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 29 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Blocker Right 29', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 29 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Cell Output 29', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 29 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Blocker Left 30', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 30 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Blocker Right 30', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 30 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Cell Output 30', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 30 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Blocker Left 31', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 31 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Blocker Right 31', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 31 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Cell Output 31', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 31 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Blocker Left 32', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 32 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Blocker Right 32', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 32 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Cell Output 32', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 32 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Blocker Left 33', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 33 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Blocker Right 33', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 33 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Cell Output 33', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 33 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Blocker Left 34', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 34 with 20 atoms>
+
+
+**** Chip: (2, 2)
+Application cores: 18
+  Processor 1: Vertex: 'Blocker Right 18', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 18 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Cell Output 18', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 18 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Blocker Left 19', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 19 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Blocker Right 19', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 19 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Cell Output 19', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 19 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Blocker Left 20', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 20 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Blocker Right 20', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 20 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Cell Output 20', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 20 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Blocker Left 21', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 21 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Blocker Right 21', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 21 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Cell Output 21', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 21 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Blocker Left 22', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 22 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Blocker Right 22', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 22 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Cell Output 22', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 22 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Blocker Left 23', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 23 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Blocker Right 23', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 23 with 20 atoms>
+
+
+**** Chip: (2, 3)
+Application cores: 18
+  Processor 1: Vertex: 'Blocker Left 55', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 55 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Blocker Right 55', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 55 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Cell Output 55', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 55 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Blocker Left 56', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 56 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Blocker Right 56', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 56 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Cell Output 56', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 56 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Blocker Left 57', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 57 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Blocker Right 57', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 57 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Cell Output 57', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 57 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Blocker Left 58', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 58 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Blocker Right 58', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 58 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Cell Output 58', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 58 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Blocker Left 59', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 59 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Blocker Right 59', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 59 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Cell Output 59', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 59 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Blocker Left 60', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 60 with 20 atoms>
+
+
+**** Chip: (1, 3)
+Application cores: 17
+  Processor 1: Vertex: 'Blocker Right 60', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 60 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Cell Output 60', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 60 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Blocker Left 61', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 61 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Blocker Right 61', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 61 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Cell Output 61', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 61 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Blocker Left 62', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 62 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Blocker Right 62', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 62 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Cell Output 62', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 62 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Blocker Left 63', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 63 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Blocker Right 63', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 63 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Cell Output 63', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 63 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Blocker Left 64', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 64 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Blocker Right 64', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 64 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Cell Output 64', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 64 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Blocker Left 65', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 65 with 20 atoms>
+
+
+**** Chip: (2, 4)
+Application cores: 18
+  Processor 1: Vertex: 'Cell Output 102', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 102 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Blocker Left 103', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 103 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Blocker Right 103', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 103 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Cell Output 103', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 103 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Blocker Left 104', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 104 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Blocker Right 104', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 104 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Cell Output 104', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 104 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Blocker Left 105', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 105 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Blocker Right 105', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 105 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Cell Output 105', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 105 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Blocker Left 106', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 106 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Blocker Right 106', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 106 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Cell Output 106', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 106 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Blocker Left 107', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 107 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Blocker Right 107', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 107 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Cell Output 107', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 107 with 20 atoms>
+
+
+**** Chip: (1, 4)
+Application cores: 18
+  Processor 1: Vertex: 'Blocker Left 108', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 108 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Blocker Right 108', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 108 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Cell Output 108', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 108 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Blocker Left 109', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 109 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Blocker Right 109', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 109 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Cell Output 109', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 109 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Blocker Left 110', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 110 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Blocker Right 110', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 110 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Cell Output 110', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 110 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Blocker Left 111', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 111 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Blocker Right 111', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 111 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Cell Output 111', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 111 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Blocker Left 112', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 112 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Blocker Right 112', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 112 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Cell Output 112', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 112 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Blocker Left 113', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 113 with 20 atoms>
+
+
+**** Chip: (0, 3)
+Application cores: 18
+  Processor 1: Vertex: 'Blocker Right 65', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 65 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Cell Output 65', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 65 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Blocker Left 66', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 66 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Blocker Right 66', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 66 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Cell Output 66', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 66 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Blocker Left 67', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 67 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Blocker Right 67', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 67 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Cell Output 67', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 67 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Blocker Left 68', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 68 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Blocker Right 68', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 68 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Cell Output 68', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 68 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Blocker Left 69', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 69 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Blocker Right 69', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 69 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Cell Output 69', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 69 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Blocker Left 70', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 70 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Blocker Right 70', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 70 with 20 atoms>
+
+
+**** Chip: (2, 5)
+Application cores: 18
+  Processor 1: Vertex: 'Cell Output 149', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 149 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Blocker Left 150', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 150 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Blocker Right 150', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 150 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Cell Output 150', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 150 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Blocker Left 151', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 151 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Blocker Right 151', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 151 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Cell Output 151', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 151 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Blocker Left 152', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 152 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Blocker Right 152', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 152 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Cell Output 152', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 152 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Blocker Left 153', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 153 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Blocker Right 153', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 153 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Cell Output 153', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 153 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Blocker Left 154', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 154 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Blocker Right 154', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 154 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Cell Output 154', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 154 with 20 atoms>
+
+
+**** Chip: (3, 4)
+Application cores: 18
+  Processor 1: Vertex: 'Blocker Right 97', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 97 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Cell Output 97', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 97 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Blocker Left 98', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 98 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Blocker Right 98', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 98 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Cell Output 98', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 98 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Blocker Left 99', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 99 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Blocker Right 99', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 99 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Cell Output 99', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 99 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Blocker Left 100', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 100 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Blocker Right 100', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 100 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Cell Output 100', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 100 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Blocker Left 101', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 101 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Blocker Right 101', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 101 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Cell Output 101', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 101 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Blocker Left 102', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 102 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Blocker Right 102', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 102 with 20 atoms>
+
+
+**** Chip: (3, 5)
+Application cores: 17
+  Processor 1: Vertex: 'Cell Output 144', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 144 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Blocker Left 145', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 145 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Blocker Right 145', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 145 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Cell Output 145', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 145 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Blocker Left 146', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 146 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Blocker Right 146', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 146 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Cell Output 146', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 146 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Blocker Left 147', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 147 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Blocker Right 147', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 147 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Cell Output 147', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 147 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Blocker Left 148', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 148 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Blocker Right 148', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 148 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Cell Output 148', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 148 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Blocker Left 149', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 149 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Blocker Right 149', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 149 with 20 atoms>
+
+
+**** Chip: (4, 5)
+Application cores: 18
+  Processor 1: Vertex: 'Blocker Right 139', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 139 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Cell Output 139', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 139 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Blocker Left 140', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 140 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Blocker Right 140', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 140 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Cell Output 140', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 140 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Blocker Left 141', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 141 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Blocker Right 141', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 141 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Cell Output 141', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 141 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Blocker Left 142', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 142 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Blocker Right 142', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 142 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Cell Output 142', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 142 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Blocker Left 143', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 143 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Blocker Right 143', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 143 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Cell Output 143', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 143 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Blocker Left 144', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 144 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Blocker Right 144', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 144 with 20 atoms>
+
+
+**** Chip: (4, 6)
+Application cores: 18
+  Processor 1: Vertex: 'Cell Output 186', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 186 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Blocker Left 187', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 187 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Blocker Right 187', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 187 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Cell Output 187', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 187 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Blocker Left 188', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 188 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Blocker Right 188', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 188 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Cell Output 188', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 188 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Blocker Left 189', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 189 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Blocker Right 189', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 189 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Cell Output 189', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 189 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Blocker Left 190', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 190 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Blocker Right 190', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 190 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Cell Output 190', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 190 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Blocker Left 191', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 191 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Blocker Right 191', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 191 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Cell Output 191', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 191 with 20 atoms>
+
+
+**** Chip: (3, 6)
+Application cores: 18
+  Processor 1: Vertex: 'Blocker Left 192', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 192 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Blocker Right 192', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 192 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Cell Output 192', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 192 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Blocker Left 193', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 193 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Blocker Right 193', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 193 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Cell Output 193', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 193 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Blocker Left 194', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 194 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Blocker Right 194', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 194 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Cell Output 194', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 194 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Blocker Left 195', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 195 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Blocker Right 195', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 195 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Cell Output 195', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 195 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Blocker Left 196', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 196 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Blocker Right 196', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 196 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Cell Output 196', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 196 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Blocker Left 197', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 197 with 20 atoms>
+
+
+**** Chip: (5, 6)
+Application cores: 17
+  Processor 1: Vertex: 'Cell Output 181', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 181 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Blocker Left 182', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 182 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Blocker Right 182', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 182 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Cell Output 182', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 182 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Blocker Left 183', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 183 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Blocker Right 183', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 183 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Cell Output 183', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 183 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Blocker Left 184', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 184 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Blocker Right 184', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 184 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Cell Output 184', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 184 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Blocker Left 185', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 185 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Blocker Right 185', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 185 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Cell Output 185', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 185 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Blocker Left 186', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 186 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Blocker Right 186', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 186 with 20 atoms>
+
+
+**** Chip: (6, 6)
+Application cores: 18
+  Processor 1: Vertex: 'Blocker Right 176', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 176 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Cell Output 176', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 176 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Blocker Left 177', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 177 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Blocker Right 177', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 177 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Cell Output 177', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 177 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Blocker Left 178', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 178 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Blocker Right 178', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 178 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Cell Output 178', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 178 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Blocker Left 179', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 179 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Blocker Right 179', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 179 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Cell Output 179', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 179 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Blocker Left 180', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 180 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Blocker Right 180', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 180 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Cell Output 180', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 180 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Blocker Left 181', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 181 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Blocker Right 181', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 181 with 20 atoms>
+
+
+**** Chip: (5, 5)
+Application cores: 18
+  Processor 1: Vertex: 'Blocker Left 134', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 134 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Blocker Right 134', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 134 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Cell Output 134', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 134 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Blocker Left 135', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 135 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Blocker Right 135', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 135 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Cell Output 135', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 135 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Blocker Left 136', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 136 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Blocker Right 136', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 136 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Cell Output 136', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 136 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Blocker Left 137', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 137 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Blocker Right 137', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 137 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Cell Output 137', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 137 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Blocker Left 138', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 138 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Blocker Right 138', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 138 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Cell Output 138', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 138 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Blocker Left 139', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 139 with 20 atoms>
+
+
+**** Chip: (6, 5)
+Application cores: 18
+  Processor 1: Vertex: 'Blocker Left 171', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 171 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Blocker Right 171', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 171 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Cell Output 171', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 171 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Blocker Left 172', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 172 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Blocker Right 172', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 172 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Cell Output 172', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 172 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Blocker Left 173', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 173 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Blocker Right 173', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 173 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Cell Output 173', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 173 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Blocker Left 174', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 174 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Blocker Right 174', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 174 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Cell Output 174', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 174 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Blocker Left 175', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 175 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Blocker Right 175', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 175 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Cell Output 175', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 175 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Blocker Left 176', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 176 with 20 atoms>
+
+
+**** Chip: (7, 5)
+Application cores: 18
+  Processor 1: Vertex: 'Blocker Left 208', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 208 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Blocker Right 208', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 208 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Cell Output 208', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 208 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Blocker Left 209', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 209 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Blocker Right 209', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 209 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Cell Output 209', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 209 with 20 atoms>
+
+
+**** Chip: (5, 4)
+Application cores: 17
+  Processor 1: Vertex: 'Blocker Left 129', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 129 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Blocker Right 129', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 129 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Cell Output 129', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 129 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Blocker Left 130', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 130 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Blocker Right 130', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 130 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Cell Output 130', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 130 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Blocker Left 131', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 131 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Blocker Right 131', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 131 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Cell Output 131', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 131 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Blocker Left 132', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 132 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Blocker Right 132', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 132 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Cell Output 132', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 132 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Blocker Left 133', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 133 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Blocker Right 133', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 133 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Cell Output 133', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 133 with 20 atoms>
+
+
+**** Chip: (6, 4)
+Application cores: 18
+  Processor 1: Vertex: 'Cell Output 165', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 165 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Blocker Left 166', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 166 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Blocker Right 166', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 166 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Cell Output 166', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 166 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Blocker Left 167', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 167 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Blocker Right 167', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 167 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Cell Output 167', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 167 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Blocker Left 168', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 168 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Blocker Right 168', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 168 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Cell Output 168', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 168 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Blocker Left 169', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 169 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Blocker Right 169', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 169 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Cell Output 169', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 169 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Blocker Left 170', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 170 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Blocker Right 170', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 170 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Cell Output 170', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 170 with 20 atoms>
+
+
+**** Chip: (7, 4)
+Application cores: 18
+  Processor 1: Vertex: 'Cell Output 202', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 202 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Blocker Left 203', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 203 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Blocker Right 203', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 203 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Cell Output 203', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 203 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Blocker Left 204', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 204 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Blocker Right 204', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 204 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Cell Output 204', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 204 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Blocker Left 205', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 205 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Blocker Right 205', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 205 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Cell Output 205', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 205 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Blocker Left 206', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 206 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Blocker Right 206', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 206 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Cell Output 206', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 206 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Blocker Left 207', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 207 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Blocker Right 207', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 207 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Cell Output 207', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 207 with 20 atoms>
+
+
+**** Chip: (5, 3)
+Application cores: 18
+  Processor 1: Vertex: 'Cell Output 123', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 123 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Blocker Left 124', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 124 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Blocker Right 124', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 124 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Cell Output 124', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 124 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Blocker Left 125', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 125 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Blocker Right 125', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 125 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Cell Output 125', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 125 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Blocker Left 126', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 126 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Blocker Right 126', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 126 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Cell Output 126', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 126 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Blocker Left 127', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 127 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Blocker Right 127', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 127 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Cell Output 127', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 127 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Blocker Left 128', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 128 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Blocker Right 128', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 128 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Cell Output 128', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 128 with 20 atoms>
+
+
+**** Chip: (6, 3)
+Application cores: 18
+  Processor 1: Vertex: 'Blocker Right 160', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 160 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Cell Output 160', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 160 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Blocker Left 161', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 161 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Blocker Right 161', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 161 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Cell Output 161', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 161 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Blocker Left 162', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 162 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Blocker Right 162', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 162 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Cell Output 162', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 162 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Blocker Left 163', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 163 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Blocker Right 163', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 163 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Cell Output 163', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 163 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Blocker Left 164', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 164 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Blocker Right 164', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 164 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Cell Output 164', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 164 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Blocker Left 165', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 165 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Blocker Right 165', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 165 with 20 atoms>
+
+
+**** Chip: (7, 3)
+Application cores: 18
+  Processor 1: Vertex: 'Blocker Right 197', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 197 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Cell Output 197', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 197 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Blocker Left 198', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 198 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Blocker Right 198', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 198 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Cell Output 198', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 198 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Blocker Left 199', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 199 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Blocker Right 199', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 199 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Cell Output 199', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 199 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Blocker Left 200', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 200 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Blocker Right 200', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 200 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Cell Output 200', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 200 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Blocker Left 201', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 201 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Blocker Right 201', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 201 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Cell Output 201', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 201 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Blocker Left 202', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 202 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Blocker Right 202', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 202 with 20 atoms>
+
+
+**** Chip: (5, 2)
+Application cores: 17
+  Processor 1: Vertex: 'Cell Output 118', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 118 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Blocker Left 119', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 119 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Blocker Right 119', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 119 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Cell Output 119', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 119 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Blocker Left 120', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 120 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Blocker Right 120', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 120 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Cell Output 120', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 120 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Blocker Left 121', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 121 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Blocker Right 121', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 121 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Cell Output 121', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 121 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Blocker Left 122', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 122 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Blocker Right 122', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 122 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Cell Output 122', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 122 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Blocker Left 123', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 123 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Blocker Right 123', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 123 with 20 atoms>
+
+
+**** Chip: (6, 2)
+Application cores: 18
+  Processor 1: Vertex: 'Blocker Left 155', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 155 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Blocker Right 155', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 155 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Cell Output 155', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 155 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Blocker Left 156', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 156 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Blocker Right 156', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 156 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Cell Output 156', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 156 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Blocker Left 157', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 157 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Blocker Right 157', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 157 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Cell Output 157', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 157 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Blocker Left 158', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 158 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Blocker Right 158', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 158 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Cell Output 158', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 158 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Blocker Left 159', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 159 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Blocker Right 159', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 159 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Cell Output 159', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 159 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Blocker Left 160', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 160 with 20 atoms>
+
+
+**** Chip: (5, 1)
+Application cores: 18
+  Processor 1: Vertex: 'Blocker Right 113', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 113 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Cell Output 113', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 113 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Blocker Left 114', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 114 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Blocker Right 114', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 114 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Cell Output 114', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 114 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Blocker Left 115', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 115 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Blocker Right 115', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 115 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Cell Output 115', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 115 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Blocker Left 116', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 116 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Blocker Right 116', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 116 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Cell Output 116', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 116 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Blocker Left 117', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 117 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Blocker Right 117', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 117 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Cell Output 117', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 117 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Blocker Left 118', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 118 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Blocker Right 118', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 118 with 20 atoms>
+
+
+**** Chip: (4, 2)
+Application cores: 18
+  Processor 1: Vertex: 'Blocker Right 81', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 81 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Cell Output 81', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 81 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Blocker Left 82', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 82 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Blocker Right 82', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 82 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Cell Output 82', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 82 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Blocker Left 83', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 83 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Blocker Right 83', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 83 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Cell Output 83', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 83 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Blocker Left 84', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 84 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Blocker Right 84', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 84 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Cell Output 84', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 84 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Blocker Left 85', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 85 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Blocker Right 85', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 85 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Cell Output 85', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 85 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Blocker Left 86', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 86 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Blocker Right 86', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 86 with 20 atoms>
+
+
+**** Chip: (4, 1)
+Application cores: 18
+  Processor 1: Vertex: 'Blocker Left 76', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 76 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Blocker Right 76', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 76 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Cell Output 76', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 76 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Blocker Left 77', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 77 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Blocker Right 77', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 77 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Cell Output 77', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 77 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Blocker Left 78', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 78 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Blocker Right 78', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 78 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Cell Output 78', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 78 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Blocker Left 79', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 79 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Blocker Right 79', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 79 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Cell Output 79', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 79 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Blocker Left 80', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 80 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Blocker Right 80', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 80 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Cell Output 80', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 80 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Blocker Left 81', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 81 with 20 atoms>
+
+
+**** Chip: (4, 0)
+Application cores: 18
+  Processor 1: Vertex: 'Cell Output 70', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 70 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Blocker Left 71', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 71 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Blocker Right 71', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 71 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Cell Output 71', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 71 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Blocker Left 72', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 72 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Blocker Right 72', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 72 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Cell Output 72', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 72 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Blocker Left 73', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 73 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Blocker Right 73', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 73 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Cell Output 73', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 73 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Blocker Left 74', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 74 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Blocker Right 74', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 74 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Cell Output 74', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 74 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Blocker Left 75', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 75 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Blocker Right 75', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 75 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Cell Output 75', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 75 with 20 atoms>
+
+
+**** Chip: (3, 1)
+Application cores: 17
+  Processor 1: Vertex: 'Cell Output 39', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 39 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Blocker Left 40', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 40 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Blocker Right 40', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 40 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Cell Output 40', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 40 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Blocker Left 41', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 41 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Blocker Right 41', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 41 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Cell Output 41', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 41 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Blocker Left 42', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 42 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Blocker Right 42', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 42 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Cell Output 42', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 42 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Blocker Left 43', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 43 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Blocker Right 43', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 43 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Cell Output 43', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 43 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Blocker Left 44', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 44 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Blocker Right 44', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 44 with 20 atoms>
+
+
+**** Chip: (3, 0)
+Application cores: 18
+  Processor 1: Vertex: 'Blocker Right 34', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 34 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Cell Output 34', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 34 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Blocker Left 35', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 35 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Blocker Right 35', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 35 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Cell Output 35', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 35 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Blocker Left 36', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 36 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Blocker Right 36', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 36 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Cell Output 36', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 36 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Blocker Left 37', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 37 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Blocker Right 37', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 37 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Cell Output 37', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 37 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Blocker Left 38', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 38 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Blocker Right 38', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 38 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Cell Output 38', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 38 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Blocker Left 39', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 39 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Blocker Right 39', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 39 with 20 atoms>
+
+
+**** Chip: (2, 0)
+Application cores: 18
+  Processor 1: Vertex: 'Cell Output 7', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 7 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Blocker Left 8', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 8 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Blocker Right 8', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 8 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Cell Output 8', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 8 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Blocker Left 9', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 9 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Blocker Right 9', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 9 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Cell Output 9', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 9 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Blocker Left 10', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 10 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Blocker Right 10', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 10 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Cell Output 10', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 10 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Blocker Left 11', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 11 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Blocker Right 11', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 11 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Cell Output 11', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 11 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Blocker Left 12', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 12 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Blocker Right 12', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 12 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Cell Output 12', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 12 with 20 atoms>
+
+
+**** Chip: (3, 2)
+Application cores: 18
+  Processor 1: Vertex: 'Cell Output 44', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 44 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Blocker Left 45', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 45 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Blocker Right 45', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 45 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Cell Output 45', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 45 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Blocker Left 46', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 46 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Blocker Right 46', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 46 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Cell Output 46', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 46 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Blocker Left 47', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 47 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Blocker Right 47', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 47 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Cell Output 47', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 47 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Blocker Left 48', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 48 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Blocker Right 48', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 48 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Cell Output 48', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 48 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Blocker Left 49', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 49 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Blocker Right 49', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 49 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Cell Output 49', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 49 with 20 atoms>
+
+
+**** Chip: (2, 1)
+Application cores: 18
+  Processor 1: Vertex: 'Blocker Left 13', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 13 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Blocker Right 13', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 13 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Cell Output 13', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 13 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Blocker Left 14', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 14 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Blocker Right 14', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 14 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Cell Output 14', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 14 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Blocker Left 15', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 15 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Blocker Right 15', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 15 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Cell Output 15', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 15 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Blocker Left 16', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 16 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Blocker Right 16', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 16 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Cell Output 16', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 16 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Blocker Left 17', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 17 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Blocker Right 17', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 17 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Cell Output 17', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 17 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Blocker Left 18', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 18 with 20 atoms>
+
+
+**** Chip: (4, 3)
+Application cores: 18
+  Processor 1: Vertex: 'Cell Output 86', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 86 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Blocker Left 87', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 87 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Blocker Right 87', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 87 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Cell Output 87', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 87 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Blocker Left 88', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 88 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Blocker Right 88', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 88 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Cell Output 88', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 88 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Blocker Left 89', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 89 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Blocker Right 89', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 89 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Cell Output 89', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 89 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Blocker Left 90', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 90 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Blocker Right 90', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 90 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Cell Output 90', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 90 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Blocker Left 91', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 91 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Blocker Right 91', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 91 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Cell Output 91', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 91 with 20 atoms>
+
+
+**** Chip: (3, 3)
+Application cores: 17
+  Processor 1: Vertex: 'Blocker Left 50', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 50 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Blocker Right 50', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 50 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Cell Output 50', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 50 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Blocker Left 51', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 51 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Blocker Right 51', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 51 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Cell Output 51', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 51 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Blocker Left 52', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 52 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Blocker Right 52', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 52 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Cell Output 52', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 52 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Blocker Left 53', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 53 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Blocker Right 53', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 53 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Cell Output 53', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 53 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Blocker Left 54', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 54 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Blocker Right 54', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 54 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Cell Output 54', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 54 with 20 atoms>
+
+
+**** Chip: (4, 4)
+Application cores: 18
+  Processor 1: Vertex: 'Blocker Left 92', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 92 with 20 atoms>
+
+
+  Processor 2: Vertex: 'Blocker Right 92', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 92 with 20 atoms>
+
+
+  Processor 3: Vertex: 'Cell Output 92', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 92 with 20 atoms>
+
+
+  Processor 4: Vertex: 'Blocker Left 93', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 93 with 20 atoms>
+
+
+  Processor 5: Vertex: 'Blocker Right 93', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 93 with 20 atoms>
+
+
+  Processor 6: Vertex: 'Cell Output 93', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 93 with 20 atoms>
+
+
+  Processor 7: Vertex: 'Blocker Left 94', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 94 with 20 atoms>
+
+
+  Processor 8: Vertex: 'Blocker Right 94', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 94 with 20 atoms>
+
+
+  Processor 9: Vertex: 'Cell Output 94', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 94 with 20 atoms>
+
+
+  Processor 10: Vertex: 'Blocker Left 95', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 95 with 20 atoms>
+
+
+  Processor 11: Vertex: 'Blocker Right 95', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 95 with 20 atoms>
+
+
+  Processor 12: Vertex: 'Cell Output 95', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 95 with 20 atoms>
+
+
+  Processor 13: Vertex: 'Blocker Left 96', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 96 with 20 atoms>
+
+
+  Processor 14: Vertex: 'Blocker Right 96', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right 96 with 20 atoms>
+
+
+  Processor 15: Vertex: 'Cell Output 96', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output 96 with 20 atoms>
+
+
+  Processor 16: Vertex: 'Blocker Left 97', pop sz: 20
+              Slice on this core: 0:19 (20 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left 97 with 20 atoms>
+
+

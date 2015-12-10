@@ -21,9 +21,9 @@ def createSpikeSource(label):
     
     retina = []
     for x in range(0, dimensionRetinaX):
-        rowOfPixels = Population(dimensionRetinaY, SpikeSourceArray, {'spike_times': spikeTimes[x]}, label="{0} - Population {1}".format(label, x), structure=Line())
-        retina.append(rowOfPixels)
-        rowOfPixels.record('spikes')
+        colOfPixels = Population(dimensionRetinaY, SpikeSourceArray, {'spike_times': spikeTimes[x]}, label="{0} - Population {1}".format(label, x), structure=Line())
+        retina.append(colOfPixels)
+        colOfPixels.record('spikes')
     
     return retina
 

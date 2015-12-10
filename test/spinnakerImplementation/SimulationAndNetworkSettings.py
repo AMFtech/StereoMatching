@@ -1,7 +1,7 @@
 
 ## Simulation Parameters ##
 
-simulationTime = 1000.0       # Total simulation time
+simulationTime = 10000.0       # Total simulation time
 simulationTimestep = 0.1    # Temporal resolution of the simulation
 minSynapseDelay = 0.1       # The smallest time step for a delay in a synapse connection
 maxSynapseDelay = 2.0       # The largest time step for a delay in a synapse connection
@@ -14,20 +14,20 @@ dimensionRetinaY = 20        # Defines the dimension of the y-axis of the input 
 minDisparity = 0            # Defines the minimum detectable disparity
 maxDisparity = 15            # Defines the maximum detectable disparity
 
-radiusExcitation = 0
+radiusExcitation = 5
 radiusInhibition = max(dimensionRetinaX, dimensionRetinaY)
 
 ## Sample Spike Input ##
 # Note that rows in tha array correspond to columns from the retina 
 # retLeftSpikes = \
-#     [[[100], [100], [100], [2]],
+#     [[[1], [100], [100], [2]],
 #      [[100], [1], [100], [100]],
 #      [[100], [100], [100], [100]],
 #      [[100], [100], [100], [100]]
 #     ]
-#     
+#        
 # retRightSpikes = \
-#     [[[100], [100], [100], [100]],
+#     [[[1], [100], [100], [100]],
 #      [[100], [100], [100], [2]],
 #      [[100], [1], [100], [100]],
 #      [[100], [100], [100], [100]]
@@ -35,8 +35,8 @@ radiusInhibition = max(dimensionRetinaX, dimensionRetinaY)
 retinaNbhoodL = []
 retinaNbhoodR = []    
 from cPickle import load
-retLeftSpikes = load(open('../src/realInput/retinaLeft_20.p', 'rb'))
-retRightSpikes = load(open('../src/realInput/retinaRight_20.p', 'rb'))
+retLeftSpikes = load(open('../src/realInput/retinaLeft_20_pers.p', 'rb'))
+retRightSpikes = load(open('../src/realInput/retinaRight_20_pers.p', 'rb'))
 
 ## Neural Parameters ##
 
@@ -48,16 +48,16 @@ dInhToOut = 0.1         # Defines the delay in transmitting the active potential
 wSSToOut = 39.5        # Defines the synaptic weight between a Spike Source neuron and a Cell Output neuron
 dSSToOut = 0.6         # Defines the delay in transmitting the active potential between a Spike Source neuron and a Cell Output neuron
 
-wSSToSelfInh = 49.5    # Defines the synaptic weight between a Spike Source (SS) neuron and the inhibitory neuron corresponding to this SS neuron
+wSSToSelfInh = 64.0#49.5    # Defines the synaptic weight between a Spike Source (SS) neuron and the inhibitory neuron corresponding to this SS neuron
 dSSToSelfInh = 0.1      # Defines the delay in transmitting the active potential between a Spike Source (SS) neuron and the inhibitory neuron corresponding to this SS neuron
 
-wSSToOtherInh = -39.5  # Defines the synaptic weight between a Spike Source (SS) neuron and the inhibitory neuron corresponding to the other SS neuron
+wSSToOtherInh = -60.0#-39.5  # Defines the synaptic weight between a Spike Source (SS) neuron and the inhibitory neuron corresponding to the other SS neuron
 dSSToOtherInh = 0.1     # Defines the delay in transmitting the active potential between a Spike Source (SS) neuron and the inhibitory neuron corresponding to the other SS neuron
 
-wOutToOutInh = -50.0    # Defines the synaptic weight between individual output neurons which inhibit themselves according to the physical constraints of objects
+wOutToOutInh = -300.0    # Defines the synaptic weight between individual output neurons which inhibit themselves according to the physical constraints of objects
 dOutToOutInh = 0.1      # Defines the delay between inhibition of output neurons 
 
-wOutToOutExc = 5.0    # Defines the synaptic weight between individual output neurons which excite themselves
+wOutToOutExc = 10.0    # Defines the synaptic weight between individual output neurons which excite themselves
 dOutToOutExc = 0.1      # Defines the delay between excitation of output neurons
 
 # Soma's, membrane's and other parameters, see IF_exp_curr model in pyNN wiki

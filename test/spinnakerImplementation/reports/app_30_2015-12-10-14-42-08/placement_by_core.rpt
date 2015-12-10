@@ -1,0 +1,32 @@
+        Placement Information by Core
+        =============================
+
+Generated: Thu Dec 10 14:42:12 2015 for target machine 'spin5b'
+
+**** Chip: (0, 0)
+Application cores: 18
+  Processor 1: Vertex: 'Retina Left', pop sz: 1
+              Slice on this core: 0:0 (1 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 2: Vertex: 'Retina Right', pop sz: 1
+              Slice on this core: 0:0 (1 atoms)
+              Model: SpikeSourceArray
+
+
+  Processor 3: Vertex: 'Blocker Left', pop sz: 1
+              Slice on this core: 0:0 (1 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Left with 1 atoms>
+
+
+  Processor 4: Vertex: 'Blocker Right', pop sz: 1
+              Slice on this core: 0:0 (1 atoms)
+              Model: <bound method IFCurrExp.model_name of Blocker Right with 1 atoms>
+
+
+  Processor 5: Vertex: 'Cell Output', pop sz: 1
+              Slice on this core: 0:0 (1 atoms)
+              Model: <bound method IFCurrExp.model_name of Cell Output with 1 atoms>
+
+

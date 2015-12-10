@@ -1,0 +1,35 @@
+        Placement Information by Vertex
+        ===============================
+
+Generated: Thu Dec 10 14:49:06 2015 for target machine 'spin5b'
+
+**** Vertex: 'Blocker Left'
+Model: <bound method IFCurrExp.model_name of Blocker Left with 1 atoms>
+Pop sz: 1
+Sub-vertices: 
+  Slice 0:0 (1 atoms) on core (0, 0, 3) 
+
+**** Vertex: 'Blocker Right'
+Model: <bound method IFCurrExp.model_name of Blocker Right with 1 atoms>
+Pop sz: 1
+Sub-vertices: 
+  Slice 0:0 (1 atoms) on core (0, 0, 4) 
+
+**** Vertex: 'Cell Output'
+Model: <bound method IFCurrExp.model_name of Cell Output with 1 atoms>
+Pop sz: 1
+Sub-vertices: 
+  Slice 0:0 (1 atoms) on core (0, 0, 5) 
+
+**** Vertex: 'Retina Left'
+Model: SpikeSourceArray
+Pop sz: 1
+Sub-vertices: 
+  Slice 0:0 (1 atoms) on core (0, 0, 1) 
+
+**** Vertex: 'Retina Right'
+Model: SpikeSourceArray
+Pop sz: 1
+Sub-vertices: 
+  Slice 0:0 (1 atoms) on core (0, 0, 2) 
+

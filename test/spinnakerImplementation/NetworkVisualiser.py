@@ -1,4 +1,23 @@
 from SimulationAndNetworkSettings import dimensionRetinaX, dimensionRetinaY, maxDisparity, simulationTime
+    
+def plotExperiment(retinaLeft, retinaRight, network):
+    # TODO: make it work
+#     import matplotlib.pyplot as plt
+#     plotRetinaSpikes(retinaLeft, "Retina Left")
+#     plotRetinaSpikes(retinaRight, "Retina Right")
+#     plotDisparityMap(network, 0)
+#     plt.show()
+    spikesCountL = sum([sum(x.get_spike_counts().values()) for x in retinaLeft])
+    spikesCountR = sum([sum(x.get_spike_counts().values()) for x in retinaRight])
+    spikesCountN = sum([sum(x[2].get_spike_counts().values()) for x in network])
+    
+    print "Experiment Results:"
+    print "\tTotal Number of Spikes in the Network: %d"%spikesCountN
+    print "\tTotal Number of Spikes in the Left Retina: %d"%spikesCountL
+    print "\tTotal Number of Spikes in the Right Retina: %d"%spikesCountR
+    print "\tNon-matched evets: %d"%(spikesCountL+spikesCountR-spikesCountN)
+    
+    plotDisparityHistogram(network)
 
 def plotDisparityHistogram(network=None):
     assert network is not None, "Network is not initialised! Visualising failed."
@@ -8,20 +27,14 @@ def plotDisparityHistogram(network=None):
     spikesPerDisparityMap = []
     for d in range(0, maxDisparity+1):
         cellsOut = [network[x][2] for x in sameDisparityInd[d]]
-        spikesPerDisparityMap.append(sum([x.mean_spike_count() for x in cellsOut]))
+        spikesPerDisparityMap.append(sum([sum(x.get_spike_counts().values()) for x in cellsOut]))
     
-    plt.hist(spikesPerDisparityMap, maxDisparity+1, normed=1, facecolor='g', alpha=0.75)
+    print spikesPerDisparityMap
+    
+    plt.bar(range(0, maxDisparity+1), spikesPerDisparityMap, align='center')
     
     plt.show()
     
-def plotExperiment(retinaLeft, retinaRight, network):
-    # TODO: make it work
-    import matplotlib.pyplot as plt
-    plotRetinaSpikes(retinaLeft, "Retina Left")
-    plotRetinaSpikes(retinaRight, "Retina Right")
-    plotDisparityMap(network, 0)
-    plt.show()
-
 def plotRetinaSpikes(retina=None, label=""):
     
     assert retina is not None, "Network is not initialised! Visualising failed."

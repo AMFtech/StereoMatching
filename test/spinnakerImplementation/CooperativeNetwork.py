@@ -1,7 +1,7 @@
 from SimulationAndNetworkSettings import simulationTime, simulationTimestep, maxSynapseDelay, minSynapseDelay
 from pyNN.spiNNaker import setup, run, end
 from NetworkBuilder import createCooperativeNetwork, createSpikeSource
-from NetworkVisualiser import plotExperiment, plotRetinaSpikes, plotDisparityMap, plotDisparityHistogram
+from NetworkVisualiser import plotExperiment
 
 def main():
     # setup timestep of simulation and minimum and maximum synaptic delays
@@ -19,11 +19,8 @@ def main():
     run(simulationTime)                                            
     print "Simulation ended."
     
-    # plot results 
-#     plotExperiment(retinaLeft, retinaRight, network)
-#     plotRetinaSpikes(retinaRight, "Retina Right")
-#     plotDisparityMap(network, 1)
-    plotDisparityHistogram(network)
+    # plot results  
+    plotExperiment(retinaLeft, retinaRight, network)
     # finalise program and simulation
     end()
 

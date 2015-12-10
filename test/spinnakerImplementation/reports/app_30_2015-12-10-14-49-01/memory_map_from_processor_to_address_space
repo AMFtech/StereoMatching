@@ -1,0 +1,5 @@
+(0, 0, 2, 'Retina Right'): (0, 0, 2, 'Retina Right'): ('start_address': 1612976424, hex(0x60241128), 'memory_used': 144, 'memory_written': 132 
+(0, 0, 3, 'Blocker Left'): (0, 0, 3, 'Blocker Left'): ('start_address': 1612976568, hex(0x602411b8), 'memory_used': 2072, 'memory_written': 1268 
+(0, 0, 5, 'Cell Output'): (0, 0, 5, 'Cell Output'): ('start_address': 1612972032, hex(0x60240000), 'memory_used': 4168, 'memory_written': 3364 
+(0, 0, 1, 'Retina Left'): (0, 0, 1, 'Retina Left'): ('start_address': 1612976200, hex(0x60241048), 'memory_used': 224, 'memory_written': 132 
+(0, 0, 4, 'Blocker Right'): (0, 0, 4, 'Blocker Right'): ('start_address': 1612978640, hex(0x602419d0), 'memory_used': 2072, 'memory_written': 1268 

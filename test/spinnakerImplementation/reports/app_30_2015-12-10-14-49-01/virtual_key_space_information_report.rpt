@@ -1,0 +1,23 @@
+Subvert: Retina Left:0:0 
+subedge:PartitionedEdge:Retina Left:0:0->Blocker Left:0:0, keys_and_masks:[KeyAndMask:0x0L:0xffffffff] 
+subedge:PartitionedEdge:Retina Left:0:0->Blocker Right:0:0, keys_and_masks:[KeyAndMask:0x0L:0xffffffff] 
+subedge:PartitionedEdge:Retina Left:0:0->Cell Output:0:0, keys_and_masks:[KeyAndMask:0x0L:0xffffffff] 
+
+
+Subvert: Retina Right:0:0 
+subedge:PartitionedEdge:Retina Right:0:0->Blocker Right:0:0, keys_and_masks:[KeyAndMask:0x1L:0xffffffff] 
+subedge:PartitionedEdge:Retina Right:0:0->Blocker Left:0:0, keys_and_masks:[KeyAndMask:0x1L:0xffffffff] 
+subedge:PartitionedEdge:Retina Right:0:0->Cell Output:0:0, keys_and_masks:[KeyAndMask:0x1L:0xffffffff] 
+
+
+Subvert: Blocker Left:0:0 
+subedge:PartitionedEdge:Blocker Left:0:0->Cell Output:0:0, keys_and_masks:[KeyAndMask:0x2L:0xffffffff] 
+
+
+Subvert: Blocker Right:0:0 
+subedge:PartitionedEdge:Blocker Right:0:0->Cell Output:0:0, keys_and_masks:[KeyAndMask:0x3L:0xffffffff] 
+
+
+Subvert: Cell Output:0:0 
+
+
