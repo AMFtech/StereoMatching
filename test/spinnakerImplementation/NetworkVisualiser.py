@@ -15,9 +15,13 @@ def plotExperiment(retinaLeft, retinaRight, network):
     print "\tTotal Number of Spikes in the Network: %d"%spikesCountN
     print "\tTotal Number of Spikes in the Left Retina: %d"%spikesCountL
     print "\tTotal Number of Spikes in the Right Retina: %d"%spikesCountR
-    print "\tNon-matched evets: %d"%(spikesCountL+spikesCountR-spikesCountN)
+    print "\tTotal Number of non-matched evets: %d"%(spikesCountL+spikesCountR-spikesCountN)
     
     plotDisparityHistogram(network)
+#     plotRetinaSpikes(retinaLeft, "Retina Left")
+
+def plotColorCodedNetworkSpikes(network):
+    pass
 
 def plotDisparityHistogram(network=None):
     assert network is not None, "Network is not initialised! Visualising failed."
@@ -84,7 +88,7 @@ def plotDisparityMap(network=None, disparity=0):
     cellsOut = [network[x][2] for x in sameDisparityInd[disparity]]
 
     spikes = [x.getSpikes() for x in cellsOut]
-#     print spikes
+    print spikes
     
     sortedSpikes = sortSpikes(spikes)
 #     print sortedSpikes

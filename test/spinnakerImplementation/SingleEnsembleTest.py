@@ -1,7 +1,12 @@
-from pyNN.spiNNaker import *
+
 import matplotlib.pyplot as plt
+from pyNN.utility import get_script_args
+
+simulator_name = get_script_args(1)[0]
+exec("from pyNN.%s import *" % simulator_name)
+
 # setup timestep of simulation and minimum and maximum synaptic delays
-setup(timestep=0.1, min_delay=0.1, max_delay=1.0)
+setup(timestep=0.1, min_delay=0.2, max_delay=1.0)
 
 # create populations of single neurons of type IF_cond_alpha
 t_synE = 1.0
@@ -26,29 +31,30 @@ neuronInhLeft.record_v()
 neuronInhRight.record_v()
 
 # create a spike source firing at spike_times
-retinaLeft = Population(1, SpikeSourceArray, {'spike_times': [1,2,3,4,5,6,7,8,9]}, label="Retina Left")
-retinaRight = Population(1, SpikeSourceArray, {'spike_times': [40]}, label="Retina Right")
+retinaLeft = Population(1, SpikeSourceArray, {'spike_times': [1, 1.2, 1.8]}, label="Retina Left")
+retinaRight = Population(1, SpikeSourceArray, {'spike_times': [20]}, label="Retina Right")
 # connect them in according to the follwing pattern
 
-excDelay = 0.6
+excDelay = 0.8
+minDelay = 0.2
 
-Projection(retinaLeft, neuronInhLeft, OneToOneConnector(weights=49.5, delays=.1), target='excitatory')
-Projection(retinaLeft, neuronInhRight, OneToOneConnector(weights=39.5, delays=.1), target='inhibitory')
+Projection(retinaLeft, neuronInhLeft, OneToOneConnector(weights=49.5, delays=minDelay), target='excitatory')
+Projection(retinaLeft, neuronInhRight, OneToOneConnector(weights=39.5, delays=minDelay), target='inhibitory')
 Projection(retinaLeft, neuronCell, OneToOneConnector(weights=39.5, delays=excDelay), target='excitatory')
 
-Projection(retinaRight, neuronInhRight, OneToOneConnector(weights=49.5, delays=.1), target='excitatory')
-Projection(retinaRight, neuronInhLeft, OneToOneConnector(weights=39.5, delays=.1), target='inhibitory')
+Projection(retinaRight, neuronInhRight, OneToOneConnector(weights=49.5, delays=minDelay), target='excitatory')
+Projection(retinaRight, neuronInhLeft, OneToOneConnector(weights=39.5, delays=minDelay), target='inhibitory')
 Projection(retinaRight, neuronCell, OneToOneConnector(weights=39.5, delays=excDelay), target='excitatory')
   
-Projection(neuronInhLeft, neuronCell, OneToOneConnector(weights=39.5, delays=.1), target='inhibitory')
-Projection(neuronInhRight, neuronCell, OneToOneConnector(weights=39.5, delays=.1), target='inhibitory')
+Projection(neuronInhLeft, neuronCell, OneToOneConnector(weights=39.5, delays=minDelay), target='inhibitory')
+Projection(neuronInhRight, neuronCell, OneToOneConnector(weights=39.5, delays=minDelay), target='inhibitory')
 
 simTime = 20.0
 run(simTime)
 
 # plot results
 memPotCO = zip(*neuronCell.get_v())[2]
-
+# print memPotCO
 plt.plot(memPotCO)
 plt.axis([0.0, simTime*10, -75.0, -40.0])
 
