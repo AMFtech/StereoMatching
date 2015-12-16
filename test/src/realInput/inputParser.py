@@ -1,6 +1,7 @@
 import cPickle	
 
-fileName = "movingPersons.dat"
+
+fileName = "movingPersonFaraway.dat"
  
 eventList = []
 with open(fileName, 'rb') as allEvents:
@@ -9,8 +10,8 @@ with open(fileName, 'rb') as allEvents:
  		
 # # print eventList
  
-dimRet = 20
-initTime = 100000.0
+dimRet = 50
+initTime = 10000.0
  
 retinaL = []
 retinaR = []
@@ -22,19 +23,24 @@ for y in range(0, dimRet):
 		retinaR[y].append([])
 		retinaL[y].append([])
  
- 
+last_t = [[0.0]*dimRet]*dimRet
 for evt in eventList:
 	x = evt[1]-1
 	y = evt[2]-1
+ 	t = evt[0]/1000.0
  	
- 	lowerBound = 50
- 	upperBound = 70
+ 	lowerBound = 35
+ 	upperBound = 85
 	if lowerBound <= x < upperBound and lowerBound <= y < upperBound:
 		if evt[4] == 0:
-			retinaR[x-lowerBound][y-lowerBound].append(evt[0]/1000.0)
+			if t - last_t[x-lowerBound][y-lowerBound] > 0.9:
+				retinaR[x-lowerBound][y-lowerBound].append(t)
 		elif evt[4] == 1:
-			retinaL[x-lowerBound][y-lowerBound].append(evt[0]/1000.0)
-
+			if t - last_t[x-lowerBound][y-lowerBound] > 0.9:
+				retinaL[x-lowerBound][y-lowerBound].append(t)
+		last_t[x-lowerBound][y-lowerBound] = t
+	
+			
 for y in range(0, dimRet):
 	for x in range(0, dimRet):
 		if retinaR[y][x] == []:
@@ -45,8 +51,8 @@ for y in range(0, dimRet):
 formatedL = retinaL#[list(x) for x in zip(*retinaL)]
 formatedR = retinaR#[list(x) for x in zip(*retinaR)]
  	
-cPickle.dump(formatedL, open('retinaLeft_20_pers.p', 'wb')) 	
-cPickle.dump(formatedR, open('retinaRight_20_pers.p', 'wb')) 	
+cPickle.dump(formatedL, open('../realInput/retinaLeft_50_persAway.p', 'wb')) 	
+cPickle.dump(formatedR, open('../realInput/retinaRight_50_persAway.p', 'wb')) 	
 
-rL = cPickle.load(open('../realInput/retinaLeft_20.p', 'rb'))
+rL = cPickle.load(open('../realInput/retinaLeft_50_persAway.p', 'rb'))
 print rL[10]
