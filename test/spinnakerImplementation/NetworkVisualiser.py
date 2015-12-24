@@ -9,7 +9,7 @@ def plotExperiment(retinaLeft, retinaRight, network):
 #     plt.show()
     spikesCountL = sum([sum(x.get_spike_counts().values()) for x in retinaLeft])
     spikesCountR = sum([sum(x.get_spike_counts().values()) for x in retinaRight])
-    spikesCountN = sum([sum(x[2].get_spike_counts().values()) for x in network])
+    spikesCountN = sum([sum(x[1].get_spike_counts().values()) for x in network])
       
     print "Experiment Results:"
     print "\tTotal Number of Spikes in the Network: %d"%spikesCountN
@@ -59,7 +59,7 @@ def plotDisparityHistogram(network=None):
     
     spikesPerDisparityMap = []
     for d in range(0, maxDisparity+1):
-        cellsOut = [network[x][2] for x in sameDisparityInd[d]]
+        cellsOut = [network[x][1] for x in sameDisparityInd[d]]
         spikesPerDisparityMap.append(sum([sum(x.get_spike_counts().values()) for x in cellsOut]))
     
     print spikesPerDisparityMap

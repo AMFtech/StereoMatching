@@ -51,18 +51,16 @@ def createNetwork():
     numberOfPopulations = (2*dimensionRetinaX*(maxDisparity+1) - (maxDisparity+1)**2 + maxDisparity + 1)/2
     print "\t Creating {0} Populations...".format(numberOfPopulations)
     for x in range(0, numberOfPopulations):
-        inhLeftPop = Population(dimensionRetinaY, IF_curr_exp, {'tau_syn_E':t_synE, 'tau_syn_I':t_synI, 'tau_m':t_memb, 'v_reset':vResetInh},
-            label="Blocker Left {0}".format(x))
-        inhRightPop = Population(dimensionRetinaY, IF_curr_exp, {'tau_syn_E':t_synE, 'tau_syn_I':t_synI, 'tau_m':t_memb, 'v_reset':vResetInh},
-            label="Blocker Right {0}".format(x))
+        inhLeftRightPop = Population(dimensionRetinaY*2, IF_curr_exp, {'tau_syn_E':t_synE, 'tau_syn_I':t_synI, 'tau_m':t_memb, 'v_reset':vResetInh},
+            label="Inhibiting Neurons {0}".format(x))
         cellOutputPop = Population(dimensionRetinaY, IF_curr_exp, {'tau_syn_E':t_synE, 'tau_syn_I':t_synI, 'tau_m':t_memb, 'v_reset':vResetCO},
-            label="Cell Output {0}".format(x))
+            label="Collector Neuron {0}".format(x))
         
         # reocrd data for plotting purposes
         cellOutputPop.record('spikes')
         cellOutputPop.record_v()
             
-        network.append((inhLeftPop, inhRightPop, cellOutputPop))
+        network.append((inhLeftRightPop, cellOutputPop))
         
     interconnectNetworkNeurons(network)
     
@@ -73,16 +71,19 @@ def interconnectNetworkNeurons(network=None):
     
     assert network is not None, "Network is not initialised! Interconnecting failed."
     
-    from pyNN.spiNNaker import Projection, OneToOneConnector
+    from pyNN.spiNNaker import Projection, FromListConnector
     from SimulationAndNetworkSettings import wInhToOut, dInhToOut
         
+    # generate connectivity list: 0 till dimensionRetinaY-1 for the  left and dimensionRetinaY till dimensionRetinaY*2 -1 for the right
+    connList = []
+    for y in range(0, dimensionRetinaY):
+        connList.append((y, y, wInhToOut, dInhToOut))
+        connList.append((y+dimensionRetinaY, y, wInhToOut, dInhToOut))
+          
     # connect the inhibitory neurons to the cell output neurons
     print "Interconnecting Neurons..."
     for ensemble in network:
-        # connect the left inhibitor to the cell output neuron
-        Projection(ensemble[0], ensemble[2], OneToOneConnector(weights=wInhToOut, delays=dInhToOut), target='inhibitory')
-        # connect the right inhibitor to the cell output neuron
-        Projection(ensemble[1], ensemble[2], OneToOneConnector(weights=wInhToOut, delays=dInhToOut), target='inhibitory')
+        Projection(ensemble[0], ensemble[1], FromListConnector(connList),  target='inhibitory')
     
     if dimensionRetinaX > 1 and maxDisparity > 0:
         interconnectNeuronsForInternalInhibitionAndExcitation(network)
@@ -123,7 +124,7 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
     for x in nbhoodInhL[1:]:
         shiftGlob += 1
         shift = 0
-    #     print "--", x, shiftGlob
+    
         for e in x:
             if (shift+1) % (maxDisparity+1) == 0:
                 nbhoodInhR.append([e])
@@ -166,27 +167,27 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
         for pop in row:
             for nb in row:
                 if nb != pop:
-                    Projection(network[pop][2], network[nb][2], 
+                    Projection(network[pop][1], network[nb][1], 
                         OneToOneConnector(weights=wOutToOutInh, delays=dOutToOutInh), target='inhibitory')
     for col in nbhoodInhR:
         for pop in col:
             for nb in col:
                 if nb != pop:
-                    Projection(network[pop][2], network[nb][2], 
+                    Projection(network[pop][1], network[nb][1], 
                         OneToOneConnector(weights=wOutToOutInh, delays=dOutToOutInh), target='inhibitory')
                     
     for diag in nbhoodExcX:
         for pop in diag:
             for nb in range(1, radiusExcitation+1):
                 if diag.index(pop)+nb < len(diag):
-                    Projection(network[pop][2], network[diag[diag.index(pop)+nb]][2], 
+                    Projection(network[pop][1], network[diag[diag.index(pop)+nb]][1], 
                         OneToOneConnector(weights=wOutToOutExc, delays=dOutToOutExc), target='excitatory')
                 if diag.index(pop)-nb >= 0:
-                    Projection(network[pop][2], network[diag[diag.index(pop)-nb]][2], 
+                    Projection(network[pop][1], network[diag[diag.index(pop)-nb]][1], 
                         OneToOneConnector(weights=wOutToOutExc, delays=dOutToOutExc), target='excitatory')
     
     for ensemble in network:
-        Projection(ensemble[2], ensemble[2], FromListConnector(nbhoodEcxY), target='excitatory')
+        Projection(ensemble[1], ensemble[1], FromListConnector(nbhoodEcxY), target='excitatory')
                     
 #     print "\t Connecting completed."
     
@@ -195,33 +196,40 @@ def connectSpikeSourcesToNetwork(network=None, retinaLeft=None, retinaRight=None
     assert network is not None and retinaLeft is not None and retinaRight is not None, "Network or one of the Retinas is not initialised!"
     print "Connecting Spike Sources to Network..."
     
-    from pyNN.spiNNaker import Projection, OneToOneConnector
+    from pyNN.spiNNaker import Projection, OneToOneConnector, FromListConnector
     from SimulationAndNetworkSettings import wSSToOtherInh, wSSToSelfInh, wSSToOut, dSSToOtherInh, dSSToSelfInh, dSSToOut
     
     global retinaNbhoodL, retinaNbhoodR
     
+    # left is 0--dimensionRetinaY-1; right is dimensionRetinaY--dimensionRetinaY*2-1
+    connListRetLBlockerL = []
+    connListRetLBlockerR = []
+    connListRetRBlockerL = []
+    connListRetRBlockerR = []
+    for y in range(0, dimensionRetinaY):
+        connListRetLBlockerL.append((y, y, wSSToSelfInh, dSSToSelfInh))
+        connListRetLBlockerR.append((y, y+dimensionRetinaY, wSSToOtherInh, dSSToOtherInh))
+        connListRetRBlockerL.append((y, y, wSSToOtherInh, dSSToOtherInh))
+        connListRetRBlockerR.append((y, y+dimensionRetinaY, wSSToSelfInh, dSSToSelfInh))
+        
     pixel = 0
     for row in retinaNbhoodL:
 #         print row, pixel
         for pop in row:
-            Projection(retinaLeft[pixel], network[pop][2], 
-                OneToOneConnector(weights=wSSToOut, delays=dSSToOut), target='excitatory')
-            Projection(retinaLeft[pixel], network[pop][0], 
-                OneToOneConnector(weights=wSSToSelfInh, delays=dSSToSelfInh), target='excitatory')
             Projection(retinaLeft[pixel], network[pop][1], 
-                OneToOneConnector(weights=wSSToOtherInh, delays=dSSToOtherInh), target='inhibitory')
+                OneToOneConnector(weights=wSSToOut, delays=dSSToOut), target='excitatory')
+            Projection(retinaLeft[pixel], network[pop][0], FromListConnector(connListRetLBlockerL), target='excitatory')
+            Projection(retinaLeft[pixel], network[pop][0], FromListConnector(connListRetLBlockerR), target='inhibitory')
         pixel += 1
     
     pixel = 0    
     for col in retinaNbhoodR:
 #         print col, pixel
         for pop in col:
-            Projection(retinaRight[pixel], network[pop][2], 
-                OneToOneConnector(weights=wSSToOut, delays=dSSToOut), target='excitatory')
-            Projection(retinaRight[pixel], network[pop][0], 
-                OneToOneConnector(weights=wSSToOtherInh, delays=dSSToOtherInh), target='inhibitory')
             Projection(retinaRight[pixel], network[pop][1], 
-                OneToOneConnector(weights=wSSToSelfInh, delays=dSSToSelfInh), target='excitatory')
+                OneToOneConnector(weights=wSSToOut, delays=dSSToOut), target='excitatory')
+            Projection(retinaRight[pixel], network[pop][0], FromListConnector(connListRetRBlockerR), target='excitatory')
+            Projection(retinaRight[pixel], network[pop][0], FromListConnector(connListRetRBlockerL), target='inhibitory')
         pixel += 1    
     
 

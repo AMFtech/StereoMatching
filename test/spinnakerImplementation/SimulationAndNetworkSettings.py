@@ -25,7 +25,7 @@ radiusInhibition = max(dimensionRetinaX, dimensionRetinaY)
 #      [[100], [100], [100], [100]],
 #      [[100], [100], [100], [100]]
 #     ]
-#           
+#            
 # retRightSpikes = \
 #     [[[1], [100], [100], [100]],
 #      [[100], [100], [100], [2]],
@@ -42,10 +42,10 @@ retRightSpikes = load(open('../src/realInput/retinaRight_50_persAway.p', 'rb'))
 
 # Synaptic parameters
 
-wInhToOut = 20.5#-39.5      # Defines the synaptic weight between an inhibitory neuron and a Cell Output neuron
+wInhToOut = -20.5#-39.5      # Defines the synaptic weight between an inhibitory neuron and a Cell Output neuron
 dInhToOut = minSynapseDelay         # Defines the delay in transmitting the active potential between an inhibitory neuron and a Cell Output neuron
 
-wSSToOut = -20.5#39.5        # Defines the synaptic weight between a Spike Source neuron and a Cell Output neuron
+wSSToOut = 20.5#39.5        # Defines the synaptic weight between a Spike Source neuron and a Cell Output neuron
 dSSToOut = 1.6#0.8         # Defines the delay in transmitting the active potential between a Spike Source neuron and a Cell Output neuron
 
 wSSToSelfInh = 22.5#49.5#64.0#49.5    # Defines the synaptic weight between a Spike Source (SS) neuron and the inhibitory neuron corresponding to this SS neuron
