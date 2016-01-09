@@ -1,0 +1,29 @@
+        Edge Routing Report
+        ===================
+
+Generated: Mon Dec 28 16:37:11 2015 for target machine '10.162.177.122'
+
+**** SubEdge 'recorder_edge', from vertex: 'pop_backward:0:99' to vertex: 'LiveSpikeReceiver'
+P5->0:0->P3
+recorder_edge has route length: 1
+
+**** SubEdge '[]', from vertex: 'pop_forward:0:99' to vertex: 'pop_forward:0:99'
+P4->0:0->P4
+[] has route length: 1
+
+**** SubEdge '[]', from vertex: 'spike_injector_forward' to vertex: 'pop_forward:0:99'
+P1->0:0->P4
+[] has route length: 1
+
+**** SubEdge 'recorder_edge', from vertex: 'pop_forward:0:99' to vertex: 'LiveSpikeReceiver'
+P4->0:0->P3
+recorder_edge has route length: 1
+
+**** SubEdge '[]', from vertex: 'spike_injector_backward' to vertex: 'pop_backward:0:99'
+P2->0:0->P5
+[] has route length: 1
+
+**** SubEdge '[]', from vertex: 'pop_backward:0:99' to vertex: 'pop_backward:0:99'
+P5->0:0->P5
+[] has route length: 1
+

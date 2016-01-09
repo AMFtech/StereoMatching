@@ -1,28 +1,24 @@
 import spynnaker.pyNN as Frontend
 import spynnaker_external_devices_plugin.pyNN as ExternalDevices
-# import pyNN.spiNNaker as Frontend
-from SimulationAndNetworkSettings import dimensionRetinaX, dimensionRetinaY, minDisparity, maxDisparity, retLeftSpikes, retRightSpikes
+import pyNN.spiNNaker as Frontend2
+from SimulationAndNetworkSettings import dimensionRetinaX, dimensionRetinaY, minDisparity, maxDisparity
 from pyNN.space import Line
+
+from NetworkVisualiser import plotReceivedSpike
 
 retinaNbhoodL = []
 retinaNbhoodR = []
 sameDisparityInd = []
 
+useCVisualiser = False
 
-def createSpikeSource(label):
-    assert label == "Retina Left" or label == "Retina Right", "Unknown Retina Identifier! Creating Retina Failed."
-    if label == "Retina Right":
-        spikeTimes = retRightSpikes
-    else:
-        spikeTimes = retLeftSpikes   
-        
-    assert len(spikeTimes) >= dimensionRetinaY and len(spikeTimes[0]) >= dimensionRetinaX, "Check dimensionality of retina's spiking times!"        
+def createSpikeSource(label):       
     # iterate over all neurons in the SpikeSourcaArray and set every one's parameters individually        
     print "Creating Spike Source: {0}".format(label)
     
     retina = []
     for x in range(0, dimensionRetinaX):
-        colOfPixels = Frontend.Population(dimensionRetinaY, ExternalDevices.SpikeInjector, {'port': 12300+x}, label="{0} - Population {1}".format(label, x), structure=Line())
+        colOfPixels = Frontend2.Population(dimensionRetinaY, ExternalDevices.SpikeInjector, {'port': 12300+x}, label="{0}_{1}".format(label, x))
         retina.append(colOfPixels)
 #         colOfPixels.record('spikes')
     
@@ -33,8 +29,8 @@ def createCooperativeNetwork(retinaLeft=None, retinaRight=None):
     
     assert retinaLeft is not None and retinaRight is not None, "Retinas are not initialised! Creating Network Failed."
     network = createNetwork()
-    connectSpikeSourcesToNetwork(network, retinaLeft, retinaRight)
-    return network
+    liveConnections = connectSpikeSourcesToNetwork(network, retinaLeft, retinaRight)
+    return (network, liveConnections)
 
 
 def createNetwork():
@@ -52,12 +48,12 @@ def createNetwork():
     print "\t Creating {0} Populations...".format(numberOfPopulations)
     for x in range(0, numberOfPopulations):
         inhLeftRightPop = Frontend.Population(dimensionRetinaY*2, Frontend.IF_curr_exp, {'tau_syn_E':t_synE, 'tau_syn_I':t_synI, 'tau_m':t_memb, 'v_reset':vResetInh},
-            label="Inhibiting Neurons {0}".format(x))
+            label="InhPop {0}".format(x))
         cellOutputPop = Frontend.Population(dimensionRetinaY, Frontend.IF_curr_exp, {'tau_syn_E':t_synE, 'tau_syn_I':t_synI, 'tau_m':t_memb, 'v_reset':vResetCO},
-            label="Collector Neuron {0}".format(x))
+            label="ColPop {0}".format(x))
         
         # reocrd data for plotting purposes
-        cellOutputPop.record('spikes')
+        cellOutputPop.record()
 #         cellOutputPop.record_v()
             
         network.append((inhLeftRightPop, cellOutputPop))
@@ -228,41 +224,48 @@ def connectSpikeSourcesToNetwork(network=None, retinaLeft=None, retinaRight=None
             Frontend.Projection(retinaRight[pixel], network[pop][0], Frontend.FromListConnector(connListRetRBlockerL), target='inhibitory')
         pixel += 1    
     
-    setupSpikeReceiver(network)
-    setupSpikeInjectors(retinaLeft, retinaRight)
+    liveConnectionNetwork = setupSpikeReceiver(network)
+    liveConnectionRetinas = setupSpikeInjectors(retinaLeft, retinaRight)
     
+    return (liveConnectionNetwork, liveConnectionRetinas)
+
+def setupSpikeReceiver(network=None):
+    print "Setting up Spike Receiver..."
+    networkLabels = []
+    for pop in network:
+        ExternalDevices.activate_live_output_for(pop[1], database_notify_host="localhost", database_notify_port_num=19996)
+        networkLabels.append(pop[1].label)
+      
+    from spynnaker_external_devices_plugin.pyNN.connections.spynnaker_live_spikes_connection import SpynnakerLiveSpikesConnection
+        
+    if not useCVisualiser:
+         liveConnection = SpynnakerLiveSpikesConnection(receive_labels=networkLabels, local_port=19996, send_labels=None)   
+    for label in networkLabels:
+        liveConnection.add_receive_callback(label, receiveSpike)    
+    return liveConnection       
     
-def setupSpikeInjectors(network=None, retinaLeft=None, retinaRight=None, label=""):
+def setupSpikeInjectors(retinaLeft=None, retinaRight=None):
     print "Setting up Spike Injectors for Retina Left and Retina Right..."
     retinaLabels = []
     for popL, popR in zip(retinaLeft, retinaRight):
         retinaLabels.append(popL.label)
         retinaLabels.append(popR.label)
-    networkLabels = []
-    for popN in network:
-        networkLabels.append(popN[0].label)
-        networkLabels.append(popN[1].label)
         
     from spynnaker_external_devices_plugin.pyNN.connections.spynnaker_live_spikes_connection import SpynnakerLiveSpikesConnection
     
-    liveConnection = SpynnakerLiveSpikesConnection(receive_labels=networkLabels, local_port=19996, send_labels=retinaLabels)
-    for retCols in retinaLabels:
-        liveConnection.add_start_callback(retCols, injectSpike)
+    liveConnection = SpynnakerLiveSpikesConnection(receive_labels=None, local_port=19999, send_labels=retinaLabels)
     
+    from retinaSpikeInjector import startInjecting
+    liveConnection.add_start_callback(retinaLabels[0], startInjecting)
+    return liveConnection 
     
-def setupSpikeReceiver(network=None):
-    print "Setting up Spike Receiver..."
-    for pop in network:
-        ExternalDevices.activate_live_output_for(pop[1], database_notify_host="localhost", database_notify_port_num=19996)
-        
-        #add receive callbacks see example in the file singEnstest
-    
-def injectSpike(populationLabel, neuronID, sender):
-    sender.send_spike(populationLabel, neuronID)   
+def injectSpike(label="", neuronID=0, sender=None):
+    sender.send_spike(label, neuronID)   
 
-def receiveSpike():         
-
-
+def receiveSpike(label, time, neuronIDs):
+    populationNumber = [s for s in label.split()][1]
+    for neuronID in neuronIDs:         
+        plotReceivedSpike(populationNumber, neuronID)
 
 
 
