@@ -19,13 +19,16 @@ run_time = 3000
 cell_params_inh = {'tau_m': 2.07, 'tau_refrac': 2.0,'tau_syn_E': 2.0, 'tau_syn_I': 2.0, 'v_reset': -84.0}
 cell_params_col = {'tau_m': 2.07, 'tau_refrac': 2.0,'tau_syn_E': 2.0, 'tau_syn_I': 2.0, 'v_reset': -90.0}
 # create synfire populations (if cur exp)
-collector = Frontend.Population(1, Frontend.IF_curr_exp, cell_params_col, label='collector')
-inh_left = Frontend.Population(1, Frontend.IF_curr_exp, cell_params_inh, label='inh_left')
-inh_right = Frontend.Population(1, Frontend.IF_curr_exp, cell_params_inh, label='inh_right')
+collector = Frontend.Population(100, Frontend.IF_curr_exp, cell_params_col, label='collector')
+inh_left = Frontend.Population(100, Frontend.IF_curr_exp, cell_params_inh, label='inh_left')
+inh_right = Frontend.Population(100, Frontend.IF_curr_exp, cell_params_inh, label='inh_right')
 # Create injection populations
 
-ret_left = Frontend.Population(1, ExternalDevices.SpikeInjector,{'port':12345}, label='ret_left')
-ret_right = Frontend.Population(1, ExternalDevices.SpikeInjector,{'port':12346}, label='ret_right')
+ret_left = Frontend.Population(100, ExternalDevices.SpikeInjector,{'port':12345}, label='ret_left')
+rets = []
+for x in range(0, 100):
+    rets.append(Frontend.Population(100, ExternalDevices.SpikeInjector,{'port':12400+x}, label='ret_left_'.format(x)))
+ret_right = Frontend.Population(100, ExternalDevices.SpikeInjector,{'port':12346}, label='ret_right')
 # Create a connection from the injector into the populations
 excDelay = 1.6
 minDelay = 0.2
@@ -59,8 +62,8 @@ def send_spike_retina(label, sender):
 # is created to define that there are python code which receives the
 # outputted spikes.
 
-def receive_spike_cell(label, receiver):
-    print label, " received a spike"
+def receive_spike_cell(label, time, neuron_ids):
+    print label, " received a spike at time ", time
 
 def threadLeft_run(liveConnectionRetina):
     retinasSpikes = [(1, 0, 0, 0), (100, 0, 0, 0), (250, 0, 0, 0), (300, 0, 0, 0)]#cp.load(open('../src/realInput/timesorted_50_persAway.p', 'rb'))

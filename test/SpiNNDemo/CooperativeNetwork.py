@@ -2,7 +2,7 @@ from SimulationAndNetworkSettings import simulationTime, simulationTimestep, max
 import spynnaker.pyNN as Frontend
 # import pyNN.spiNNaker as Frontend2
 from NetworkBuilder import createCooperativeNetwork, createSpikeSource
-from NetworkVisualiser import plotExperiment
+# from NetworkVisualiser import plotExperiment
 
 def main():
     # setup timestep of simulation and minimum and maximum synaptic delays
@@ -21,7 +21,8 @@ def main():
     print "Simulation ended."
     
     # plot results  
-    plotExperiment(retinaLeft, retinaRight, network)
+    #
+#     plotExperiment(retinaLeft, retinaRight, network)
     # finalise program and simulation
     Frontend.end()
 

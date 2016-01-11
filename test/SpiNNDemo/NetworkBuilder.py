@@ -1,10 +1,11 @@
 import spynnaker.pyNN as Frontend
 import spynnaker_external_devices_plugin.pyNN as ExternalDevices
-import pyNN.spiNNaker as Frontend2
+from spynnaker_external_devices_plugin.pyNN.connections.spynnaker_live_spikes_connection import SpynnakerLiveSpikesConnection
+# import pyNN.spiNNaker as Frontend2
 from SimulationAndNetworkSettings import dimensionRetinaX, dimensionRetinaY, minDisparity, maxDisparity
 from pyNN.space import Line
 
-from NetworkVisualiser import plotReceivedSpike
+from NetworkVisualiser import plotReceivedSpike, setupVisualiser
 
 retinaNbhoodL = []
 retinaNbhoodR = []
@@ -18,7 +19,10 @@ def createSpikeSource(label):
     
     retina = []
     for x in range(0, dimensionRetinaX):
-        colOfPixels = Frontend2.Population(dimensionRetinaY, ExternalDevices.SpikeInjector, {'port': 12300+x}, label="{0}_{1}".format(label, x))
+        if label == "RetL":
+            colOfPixels = Frontend.Population(dimensionRetinaY, ExternalDevices.SpikeInjector, {'port': 12300+x}, label="RetL_{0}".format(x))
+        else:
+            colOfPixels = Frontend.Population(dimensionRetinaY, ExternalDevices.SpikeInjector, {'port': 13300+x}, label="RetR_{0}".format(x))
         retina.append(colOfPixels)
 #         colOfPixels.record('spikes')
     
@@ -227,6 +231,8 @@ def connectSpikeSourcesToNetwork(network=None, retinaLeft=None, retinaRight=None
     liveConnectionNetwork = setupSpikeReceiver(network)
     liveConnectionRetinas = setupSpikeInjectors(retinaLeft, retinaRight)
     
+    setupVisualiser()
+    
     return (liveConnectionNetwork, liveConnectionRetinas)
 
 def setupSpikeReceiver(network=None):
@@ -235,11 +241,10 @@ def setupSpikeReceiver(network=None):
     for pop in network:
         ExternalDevices.activate_live_output_for(pop[1], database_notify_host="localhost", database_notify_port_num=19996)
         networkLabels.append(pop[1].label)
-      
-    from spynnaker_external_devices_plugin.pyNN.connections.spynnaker_live_spikes_connection import SpynnakerLiveSpikesConnection
         
     if not useCVisualiser:
-         liveConnection = SpynnakerLiveSpikesConnection(receive_labels=networkLabels, local_port=19996, send_labels=None)   
+        liveConnection = SpynnakerLiveSpikesConnection(receive_labels=networkLabels, local_port=19996, send_labels=None)   
+    
     for label in networkLabels:
         liveConnection.add_receive_callback(label, receiveSpike)    
     return liveConnection       
@@ -250,8 +255,6 @@ def setupSpikeInjectors(retinaLeft=None, retinaRight=None):
     for popL, popR in zip(retinaLeft, retinaRight):
         retinaLabels.append(popL.label)
         retinaLabels.append(popR.label)
-        
-    from spynnaker_external_devices_plugin.pyNN.connections.spynnaker_live_spikes_connection import SpynnakerLiveSpikesConnection
     
     liveConnection = SpynnakerLiveSpikesConnection(receive_labels=None, local_port=19999, send_labels=retinaLabels)
     
@@ -263,8 +266,9 @@ def injectSpike(label="", neuronID=0, sender=None):
     sender.send_spike(label, neuronID)   
 
 def receiveSpike(label, time, neuronIDs):
-    populationNumber = [s for s in label.split()][1]
-    for neuronID in neuronIDs:         
+    populationNumber = int([s for s in label.split()][1])
+    for neuronID in neuronIDs:   
+        print "Received spike from ", label, neuronID      
         plotReceivedSpike(populationNumber, neuronID)
 
 

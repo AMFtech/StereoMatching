@@ -1,7 +1,7 @@
 
 ## Simulation Parameters ##
 
-simulationTime = 2000.0       # Total simulation time
+simulationTime = 5000.0       # Total simulation time
 simulationTimestep = 0.2    # Temporal resolution of the simulation
 minSynapseDelay = 0.2       # The smallest time step for a delay in a synapse connection
 maxSynapseDelay = 2.0       # The largest time step for a delay in a synapse connection
@@ -9,12 +9,12 @@ maxSynapseDelay = 2.0       # The largest time step for a delay in a synapse con
 
 ## Network Parameters ##
 
-dimensionRetinaX = 1       # Defines the dimension of the x-axis of the input spikes from the retina sensor
-dimensionRetinaY = 1       # Defines the dimension of the y-axis of the input spikes from the retina sensor
+dimensionRetinaX = 7       # Defines the dimension of the x-axis of the input spikes from the retina sensor
+dimensionRetinaY = 7       # Defines the dimension of the y-axis of the input spikes from the retina sensor
 minDisparity = 0            # Defines the minimum detectable disparity
-maxDisparity = 0            # Defines the maximum detectable disparity
+maxDisparity = 3            # Defines the maximum detectable disparity
 
-radiusExcitation = 0
+radiusExcitation = 1
 radiusInhibition = max(dimensionRetinaX, dimensionRetinaY)
 
 ## Sample Spike Input ##
