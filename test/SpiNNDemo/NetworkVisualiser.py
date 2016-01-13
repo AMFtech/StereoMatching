@@ -1,4 +1,4 @@
-from SimulationAndNetworkSettings import dimensionRetinaX, dimensionRetinaY, maxDisparity, simulationTime
+from SimulationAndNetworkSettings import dimensionRetinaX, dimensionRetinaY, maxDisparity, minDisparity, simulationTime
 import matplotlib.pyplot as plt    
 import time
 from threading import Thread
@@ -24,7 +24,7 @@ def plotReceivedSpike(populationID, neuronID):
         if populationID in sameDisparityInd[d]:
             disp = d
             break
-    
+    print "Detected disp: ", disp + minDisparity
     pixel = 0    
     for p in range(0, dimensionRetinaX):
         if populationID in retinaNbhoodL[p]:
@@ -38,7 +38,7 @@ def drawFrames():
     
     fig = plt.figure()
     plt.ion()
-    imNet = plt.imshow(retinaImg, cmap=plt.cm.coolwarm, vmin=0, vmax=maxDisparity, interpolation='none')
+    imNet = plt.imshow(retinaImg, cmap=plt.cm.coolwarm, vmin=minDisparity-1, vmax=maxDisparity, interpolation='none')
     plt.show()
       
     plt.xticks(range(0, dimensionRetinaX)) 
@@ -52,7 +52,7 @@ def drawFrames():
         for x in range(0, dimensionRetinaX):
             for y in range(0, dimensionRetinaY):    
                 retinaImg[x][y] = 0   
-        time.sleep(0.1)
+        time.sleep(0.5)
         
     
     

@@ -18,7 +18,7 @@ def createSpikeSource(label):
     print "Creating Spike Source: {0}".format(label)
     
     retina = []
-    for x in range(0, dimensionRetinaX):
+    for x in range(0, dimensionRetinaX-minDisparity):
         if label == "RetL":
             colOfPixels = Frontend.Population(dimensionRetinaY, ExternalDevices.SpikeInjector, {'port': 12300+x}, label="RetL_{0}".format(x))
         else:
@@ -48,7 +48,7 @@ def createNetwork():
     from SimulationAndNetworkSettings import t_synE, t_synI, t_memb, vResetInh, vResetCO
     
     network = []
-    numberOfPopulations = (2*dimensionRetinaX*(maxDisparity+1) - (maxDisparity+1)**2 + maxDisparity + 1)/2
+    numberOfPopulations = (2*(dimensionRetinaX - minDisparity)*(maxDisparity-minDisparity+1) - (maxDisparity-minDisparity+1)**2 + maxDisparity - minDisparity + 1)/2
     print "\t Creating {0} Populations...".format(numberOfPopulations)
     for x in range(0, numberOfPopulations):
         inhLeftRightPop = Frontend.Population(dimensionRetinaY*2, Frontend.IF_curr_exp, {'tau_syn_E':t_synE, 'tau_syn_I':t_synI, 'tau_m':t_memb, 'v_reset':vResetInh},
@@ -84,8 +84,11 @@ def interconnectNetworkNeurons(network=None):
     for ensemble in network:
         Frontend.Projection(ensemble[0], ensemble[1], Frontend.FromListConnector(connList),  target='inhibitory')
     
-    if dimensionRetinaX > 1 and maxDisparity > 0:
+    if dimensionRetinaX > 1 and maxDisparity >= 0 and minDisparity <= maxDisparity:
         interconnectNeuronsForInternalInhibitionAndExcitation(network)
+    else:
+        assert 0 <= minDisparity <= maxDisparity, "\tDisparity value is invalid."    
+        
     
 def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
     
@@ -103,11 +106,11 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
     # used for the triangular form of the matrix in order to remain within the square
     print "\t Generating inhibitory and excitatory connectivity patterns..."
     # generate rows
-    limiter = maxDisparity+1
+    limiter = maxDisparity-minDisparity+1
     ensembleIndex = 0
     
     while ensembleIndex < len(network):
-        if ensembleIndex/(maxDisparity+1) > dimensionRetinaX - maxDisparity - 1:
+        if ensembleIndex/(maxDisparity-minDisparity+1) > (dimensionRetinaX-minDisparity) - (maxDisparity-minDisparity) - 1:
             limiter -= 1
             if limiter == 0:
                 break
@@ -125,14 +128,14 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
         shift = 0
     
         for e in x:
-            if (shift+1) % (maxDisparity+1) == 0:
+            if (shift+1) % (maxDisparity-minDisparity+1) == 0:
                 nbhoodInhR.append([e])
             else:
                 nbhoodInhR[shift+shiftGlob].append(e)
             shift += 1     
       
     # generate all diagonals
-    for diag in map(None, *nbhoodInhL):
+    for diag in [list(x) if isinstance(x, tuple) else [x] for x in map(None, *nbhoodInhL)]:
         sublist = []
         for elem in diag:
             if elem is not None:
@@ -239,7 +242,7 @@ def setupSpikeReceiver(network=None):
     print "Setting up Spike Receiver..."
     networkLabels = []
     for pop in network:
-        ExternalDevices.activate_live_output_for(pop[1], database_notify_host="localhost", database_notify_port_num=19996)
+        ExternalDevices.activate_live_output_for(pop[1], database_notify_host="localhost", database_notify_port_num=19996, board_address='10.162.177.122')
         networkLabels.append(pop[1].label)
         
     if not useCVisualiser:
@@ -261,9 +264,6 @@ def setupSpikeInjectors(retinaLeft=None, retinaRight=None):
     from retinaSpikeInjector import startInjecting
     liveConnection.add_start_callback(retinaLabels[0], startInjecting)
     return liveConnection 
-    
-def injectSpike(label="", neuronID=0, sender=None):
-    sender.send_spike(label, neuronID)   
 
 def receiveSpike(label, time, neuronIDs):
     populationNumber = int([s for s in label.split()][1])
