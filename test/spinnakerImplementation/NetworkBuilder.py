@@ -15,15 +15,15 @@ def createSpikeSource(label):
     else:
         spikeTimes = retLeftSpikes   
         
-    assert len(spikeTimes) >= dimensionRetinaY and len(spikeTimes[0]) >= dimensionRetinaX, "Check dimensionality of retina's spiking times!"        
+#     assert len(spikeTimes) >= dimensionRetinaY and len(spikeTimes[0]) >= dimensionRetinaX, "Check dimensionality of retina's spiking times!"        
     # iterate over all neurons in the SpikeSourcaArray and set every one's parameters individually        
     print "Creating Spike Source: {0}".format(label)
     
     retina = []
-    for x in range(0, dimensionRetinaX):
+    for x in range(0, dimensionRetinaX-minDisparity):
         colOfPixels = Population(dimensionRetinaY, SpikeSourceArray, {'spike_times': spikeTimes[x]}, label="{0} - Population {1}".format(label, x), structure=Line())
         retina.append(colOfPixels)
-        colOfPixels.record('spikes')
+        colOfPixels.record()
     
     return retina
 
@@ -48,7 +48,7 @@ def createNetwork():
     from pyNN.spiNNaker import record
     
     network = []
-    numberOfPopulations = (2*dimensionRetinaX*(maxDisparity+1) - (maxDisparity+1)**2 + maxDisparity + 1)/2
+    numberOfPopulations = (2*(dimensionRetinaX - minDisparity)*(maxDisparity-minDisparity+1) - (maxDisparity-minDisparity+1)**2 + maxDisparity - minDisparity + 1)/2
     print "\t Creating {0} Populations...".format(numberOfPopulations)
     for x in range(0, numberOfPopulations):
         inhLeftRightPop = Population(dimensionRetinaY*2, IF_curr_exp, {'tau_syn_E':t_synE, 'tau_syn_I':t_synI, 'tau_m':t_memb, 'v_reset':vResetInh},
@@ -57,8 +57,8 @@ def createNetwork():
             label="Collector Neuron {0}".format(x))
         
         # reocrd data for plotting purposes
-        cellOutputPop.record('spikes')
-        cellOutputPop.record_v()
+        cellOutputPop.record()
+#         cellOutputPop.record_v()
             
         network.append((inhLeftRightPop, cellOutputPop))
         
@@ -85,8 +85,10 @@ def interconnectNetworkNeurons(network=None):
     for ensemble in network:
         Projection(ensemble[0], ensemble[1], FromListConnector(connList),  target='inhibitory')
     
-    if dimensionRetinaX > 1 and maxDisparity > 0:
+    if dimensionRetinaX > 1 and maxDisparity >= 0 and minDisparity <= maxDisparity:
         interconnectNeuronsForInternalInhibitionAndExcitation(network)
+    else:
+        assert 0 <= minDisparity <= maxDisparity, "\tDisparity value is invalid."    
     
 def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
     
@@ -104,11 +106,11 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
     # used for the triangular form of the matrix in order to remain within the square
     print "\t Generating inhibitory and excitatory connectivity patterns..."
     # generate rows
-    limiter = maxDisparity+1
+    limiter = maxDisparity-minDisparity+1
     ensembleIndex = 0
     
     while ensembleIndex < len(network):
-        if ensembleIndex/(maxDisparity+1) > dimensionRetinaX - maxDisparity - 1:
+        if ensembleIndex/(maxDisparity-minDisparity+1) > (dimensionRetinaX-minDisparity) - (maxDisparity-minDisparity) - 1:
             limiter -= 1
             if limiter == 0:
                 break
@@ -126,7 +128,7 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
         shift = 0
     
         for e in x:
-            if (shift+1) % (maxDisparity+1) == 0:
+            if (shift+1) % (maxDisparity-minDisparity+1) == 0:
                 nbhoodInhR.append([e])
             else:
                 nbhoodInhR[shift+shiftGlob].append(e)

@@ -1,0 +1,21 @@
+        Edge Routing Report
+        ===================
+
+Generated: Thu Jan 14 15:40:23 2016 for target machine '10.162.177.122'
+
+**** SubEdge '[]', from vertex: 'i0:0:255' to vertex: 'c0:0:254'
+P1->0:0->P2
+[] has route length: 1
+
+**** SubEdge 'recorder_edge', from vertex: 'c0:255:255' to vertex: 'LiveSpikeReceiver'
+P3->0:0->P4
+recorder_edge has route length: 1
+
+**** SubEdge '[]', from vertex: 'i0:0:255' to vertex: 'c0:255:255'
+P1->0:0->P3
+[] has route length: 1
+
+**** SubEdge 'recorder_edge', from vertex: 'c0:0:254' to vertex: 'LiveSpikeReceiver'
+P2->0:0->P4
+recorder_edge has route length: 1
+

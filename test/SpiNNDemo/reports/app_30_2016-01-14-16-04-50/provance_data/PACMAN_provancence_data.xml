@@ -1,0 +1,32 @@
+<Provenance_data_from_PACMAN>
+  <algorithm_timings>
+    <algorithm_FrontEndCommonMachineInterfacer>0:00:00.981712</algorithm_FrontEndCommonMachineInterfacer>
+    <algorithm_MallocBasedChipIDAllocator>0:00:00.002554</algorithm_MallocBasedChipIDAllocator>
+    <algorithm_PartitionAndPlacePartitioner>0:00:00.005488</algorithm_PartitionAndPlacePartitioner>
+    <algorithm_RadialPlacer>0:00:00.529783</algorithm_RadialPlacer>
+    <algorithm_BasicDijkstraRouting>0:00:00.024953</algorithm_BasicDijkstraRouting>
+    <algorithm_BasicTagAllocator>0:00:00.002414</algorithm_BasicTagAllocator>
+    <algorithm_FrontEndCommonBufferManagerCreater>0:00:00.004839</algorithm_FrontEndCommonBufferManagerCreater>
+    <algorithm_GraphEdgeFilter>0:00:00.005290</algorithm_GraphEdgeFilter>
+    <algorithm_EdgeToNKeysMapper>0:00:00.001290</algorithm_EdgeToNKeysMapper>
+    <algorithm_MallocBasedRoutingInfoAllocator>0:00:00.005285</algorithm_MallocBasedRoutingInfoAllocator>
+    <algorithm_SpynnakerDatabaseWriter>0:00:03.381393</algorithm_SpynnakerDatabaseWriter>
+    <algorithm_FrontEndCommonNotificationProtocol>0:00:00.003306</algorithm_FrontEndCommonNotificationProtocol>
+    <algorithm_FrontEndCommonRoutingTableLoader>0:00:00.018426</algorithm_FrontEndCommonRoutingTableLoader>
+    <algorithm_FrontEndCommonTagsLoader>0:00:00.013820</algorithm_FrontEndCommonTagsLoader>
+    <algorithm_FrontEndCommomPartitionableGraphDataSpecificationWriter>0:00:00.038348</algorithm_FrontEndCommomPartitionableGraphDataSpecificationWriter>
+    <algorithm_FrontEndCommonPartitionableGraphHostExecuteDataSpecification>0:00:00.003735</algorithm_FrontEndCommonPartitionableGraphHostExecuteDataSpecification>
+    <algorithm_FrontEndCommonPartitionableGraphApplicationDataLoader>0:00:00.033766</algorithm_FrontEndCommonPartitionableGraphApplicationDataLoader>
+    <algorithm_FrontEndCommomLoadExecutableImages>0:00:02.960132</algorithm_FrontEndCommomLoadExecutableImages>
+    <algorithm_FrontEndCommonApplicationRunner>0:00:04.283709</algorithm_FrontEndCommonApplicationRunner>
+    <algorithm_FrontEndCommonReloadScriptCreator>0:00:00.007067</algorithm_FrontEndCommonReloadScriptCreator>
+    <algorithm_FrontEndCommonMemoryMapReport>0:00:00.000336</algorithm_FrontEndCommonMemoryMapReport>
+    <algorithm_FrontEndCommonNetworkSpecificationPartitionableReport>0:00:00.000673</algorithm_FrontEndCommonNetworkSpecificationPartitionableReport>
+    <algorithm_FrontEndCommonProvenanceGatherer>0:00:00.135185</algorithm_FrontEndCommonProvenanceGatherer>
+    <algorithm_TagReport>0:00:00.000014</algorithm_TagReport>
+    <algorithm_routingInfoReports>0:00:00.000706</algorithm_routingInfoReports>
+    <algorithm_RouterReports>0:00:00.000407</algorithm_RouterReports>
+    <algorithm_PartitionerReport>0:00:00.000275</algorithm_PartitionerReport>
+    <algorithm_PlacerReportWithPartitionableGraph>0:00:00.009332</algorithm_PlacerReportWithPartitionableGraph>
+  </algorithm_timings>
+</Provenance_data_from_PACMAN>

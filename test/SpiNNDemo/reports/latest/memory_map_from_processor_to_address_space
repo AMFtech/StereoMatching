@@ -1,0 +1,6 @@
+(0, 0, 3, 'ret_right'): (0, 0, 3, 'ret_right'): ('start_address': 1617175732, hex(0x606424b4), 'memory_used': 144, 'memory_written': 144 
+(0, 0, 2, 'ret_left'): (0, 0, 2, 'ret_left'): ('start_address': 1617175884, hex(0x6064254c), 'memory_used': 144, 'memory_written': 144 
+(0, 0, 1, 'LiveSpikeReceiver'): (0, 0, 1, 'LiveSpikeReceiver'): ('start_address': 1617176036, hex(0x606425e4), 'memory_used': 144, 'memory_written': 144 
+(11, 0, 2, 'inh_right'): (11, 0, 2, 'inh_right'): ('start_address': 1612972052, hex(0x60240014), 'memory_used': 121392, 'memory_written': 1312 
+(0, 0, 4, 'collector'): (0, 0, 4, 'collector'): ('start_address': 1617176188, hex(0x6064267c), 'memory_used': 123488, 'memory_written': 3408 
+(11, 0, 1, 'inh_left'): (11, 0, 1, 'inh_left'): ('start_address': 1613093452, hex(0x6025da4c), 'memory_used': 121392, 'memory_written': 1312 

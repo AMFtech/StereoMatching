@@ -1,0 +1,29 @@
+Subvert: LiveSpikeReceiver 
+
+
+Subvert: collector:0:0 
+subedge:PartitionedEdge:collector:0:0->LiveSpikeReceiver, keys_and_masks:[KeyAndMask:0x0L:0xffffffff] 
+
+
+Subvert: inh_left:0:0 
+subedge:PartitionedEdge:inh_left:0:0->collector:0:0, keys_and_masks:[KeyAndMask:0x1L:0xffffffff] 
+subedge:PartitionedEdge:inh_left:0:0->LiveSpikeReceiver, keys_and_masks:[KeyAndMask:0x1L:0xffffffff] 
+
+
+Subvert: inh_right:0:0 
+subedge:PartitionedEdge:inh_right:0:0->collector:0:0, keys_and_masks:[KeyAndMask:0x2L:0xffffffff] 
+subedge:PartitionedEdge:inh_right:0:0->LiveSpikeReceiver, keys_and_masks:[KeyAndMask:0x2L:0xffffffff] 
+
+
+Subvert: ret_left:0:0 
+subedge:PartitionedEdge:ret_left:0:0->inh_left:0:0, keys_and_masks:[KeyAndMask:0x3L:0xffffffff] 
+subedge:PartitionedEdge:ret_left:0:0->inh_right:0:0, keys_and_masks:[KeyAndMask:0x3L:0xffffffff] 
+subedge:PartitionedEdge:ret_left:0:0->collector:0:0, keys_and_masks:[KeyAndMask:0x3L:0xffffffff] 
+
+
+Subvert: ret_right:0:0 
+subedge:PartitionedEdge:ret_right:0:0->inh_right:0:0, keys_and_masks:[KeyAndMask:0x4L:0xffffffff] 
+subedge:PartitionedEdge:ret_right:0:0->inh_left:0:0, keys_and_masks:[KeyAndMask:0x4L:0xffffffff] 
+subedge:PartitionedEdge:ret_right:0:0->collector:0:0, keys_and_masks:[KeyAndMask:0x4L:0xffffffff] 
+
+

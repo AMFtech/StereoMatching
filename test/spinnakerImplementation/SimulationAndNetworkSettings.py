@@ -11,8 +11,8 @@ maxSynapseDelay = 2.0       # The largest time step for a delay in a synapse con
 
 dimensionRetinaX = 50        # Defines the dimension of the x-axis of the input spikes from the retina sensor
 dimensionRetinaY = 50       # Defines the dimension of the y-axis of the input spikes from the retina sensor
-minDisparity = 0            # Defines the minimum detectable disparity
-maxDisparity = 17            # Defines the maximum detectable disparity
+minDisparity = 10            # Defines the minimum detectable disparity
+maxDisparity = 11           # Defines the maximum detectable disparity
 
 radiusExcitation = 1
 radiusInhibition = max(dimensionRetinaX, dimensionRetinaY)
@@ -22,21 +22,19 @@ radiusInhibition = max(dimensionRetinaX, dimensionRetinaY)
 # retLeftSpikes = \
 #     [[[1], [100], [100], [2]],
 #      [[100], [1], [100], [100]],
-#      [[100], [100], [100], [100]],
 #      [[100], [100], [100], [100]]
 #     ]
-#            
+#                
 # retRightSpikes = \
-#     [[[1], [100], [100], [100]],
-#      [[100], [100], [100], [2]],
+#     [[[100], [100], [100], [2]],
 #      [[100], [1], [100], [100]],
 #      [[100], [100], [100], [100]]
 #     ]  
 retinaNbhoodL = []
 retinaNbhoodR = []    
 from cPickle import load
-retLeftSpikes = load(open('../src/realInput/retinaLeft_50_persAway.p', 'rb'))
-retRightSpikes = load(open('../src/realInput/retinaRight_50_persAway.p', 'rb'))
+retLeftSpikes = load(open('../src/realInput/retinaLeft_50_persAway_minD_10.p', 'rb'))
+retRightSpikes = load(open('../src/realInput/retinaRight_50_persAway_minD_10.p', 'rb'))
 
 ## Neural Parameters ##
 

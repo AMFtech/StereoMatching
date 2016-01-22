@@ -1,4 +1,4 @@
-from SimulationAndNetworkSettings import dimensionRetinaX, dimensionRetinaY, maxDisparity, simulationTime
+from SimulationAndNetworkSettings import dimensionRetinaX, dimensionRetinaY, maxDisparity, minDisparity, simulationTime
     
 def plotExperiment(retinaLeft, retinaRight, network):
     # TODO: make it work
@@ -58,13 +58,13 @@ def plotDisparityHistogram(network=None):
     from NetworkBuilder import sameDisparityInd
     
     spikesPerDisparityMap = []
-    for d in range(0, maxDisparity+1):
+    for d in range(0, maxDisparity-minDisparity+1):
         cellsOut = [network[x][1] for x in sameDisparityInd[d]]
         spikesPerDisparityMap.append(sum([sum(x.get_spike_counts().values()) for x in cellsOut]))
     
     print spikesPerDisparityMap
     
-    plt.bar(range(0, maxDisparity+1), spikesPerDisparityMap, align='center')
+    plt.bar(range(0, maxDisparity-minDisparity+1), spikesPerDisparityMap, align='center')
     
     plt.show()
     

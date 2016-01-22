@@ -1,0 +1,53 @@
+        Edge Routing Report
+        ===================
+
+Generated: Thu Jan 14 15:40:43 2016 for target machine '10.162.177.122'
+
+**** SubEdge '[]', from vertex: 'i1:0:255' to vertex: 'c1:255:255'
+P0->11:0->P5P2->0:0->W
+[] has route length: 2
+
+**** SubEdge '[]', from vertex: 'i2:0:255' to vertex: 'c2:255:255'
+P0->11:0->P7P3->0:0->W
+[] has route length: 2
+
+**** SubEdge 'recorder_edge', from vertex: 'c0:255:255' to vertex: 'LiveSpikeReceiver'
+P2->11:0->P3
+recorder_edge has route length: 1
+
+**** SubEdge '[]', from vertex: 'i0:0:255' to vertex: 'c0:0:254'
+P0->11:0->P1P1->0:0->W
+[] has route length: 2
+
+**** SubEdge 'recorder_edge', from vertex: 'c0:0:254' to vertex: 'LiveSpikeReceiver'
+P1->11:0->P3
+recorder_edge has route length: 1
+
+**** SubEdge '[]', from vertex: 'i0:0:255' to vertex: 'c0:255:255'
+P0->11:0->P2P1->0:0->W
+[] has route length: 2
+
+**** SubEdge 'recorder_edge', from vertex: 'c1:0:254' to vertex: 'LiveSpikeReceiver'
+P4->11:0->P3
+recorder_edge has route length: 1
+
+**** SubEdge '[]', from vertex: 'i1:0:255' to vertex: 'c1:0:254'
+P0->11:0->P4P2->0:0->W
+[] has route length: 2
+
+**** SubEdge 'recorder_edge', from vertex: 'c2:0:254' to vertex: 'LiveSpikeReceiver'
+P6->11:0->P3
+recorder_edge has route length: 1
+
+**** SubEdge '[]', from vertex: 'i2:0:255' to vertex: 'c2:0:254'
+P0->11:0->P6P3->0:0->W
+[] has route length: 2
+
+**** SubEdge 'recorder_edge', from vertex: 'c1:255:255' to vertex: 'LiveSpikeReceiver'
+P5->11:0->P3
+recorder_edge has route length: 1
+
+**** SubEdge 'recorder_edge', from vertex: 'c2:255:255' to vertex: 'LiveSpikeReceiver'
+P7->11:0->P3
+recorder_edge has route length: 1
+

@@ -29,8 +29,8 @@ for evt in eventList:
 	y = evt[2]-1
  	t = evt[0]/1000.0
  	
- 	lowerBound = 35
- 	upperBound = 85
+ 	lowerBound = (128 - dimRet)/2
+ 	upperBound = (128 + dimRet)/2
 	if lowerBound <= x < upperBound and lowerBound <= y < upperBound:
 		if evt[4] == 0:
 			if t - last_t[x-lowerBound][y-lowerBound] > 0.9:

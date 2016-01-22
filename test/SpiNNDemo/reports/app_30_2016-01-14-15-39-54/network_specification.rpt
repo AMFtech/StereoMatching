@@ -1,0 +1,27 @@
+        Network Specification
+ =====================
+
+Generated: Thu Jan 14 15:40:04 2016 for target machine '10.162.177.122'
+
+*** Vertices:
+Vertex c0, size: 256
+Model: <bound method IFCurrExp.model_name of c0 with 256 atoms>
+constraint: partitioner max atom per core constraint with size 255
+constraint: tag allocator constraint
+
+Vertex i0, size: 256
+Model: ReverseIpTagMultiCastSource
+constraint: partitioner max atom per core constraint with size 9223372036854775807
+
+Vertex LiveSpikeReceiver, size: 1
+Model: live packet gather
+constraint: placer radial placement from chip and core constraint at coords 0,0
+constraint: tag allocator constraint
+
+*** Edges:
+Edge Projection 0 from vertex: 'i0' (256 atoms) to vertex: 'c0' (256 atoms)
+  Model: No Model
+
+Edge recorder_edge from vertex: 'c0' (256 atoms) to vertex: 'LiveSpikeReceiver' (1 atoms)
+  Model: No Model
+

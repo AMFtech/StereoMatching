@@ -1,0 +1,68 @@
+        Network Specification
+ =====================
+
+Generated: Thu Jan 14 16:05:49 2016 for target machine '10.162.177.122'
+
+*** Vertices:
+Vertex collector, size: 1
+Model: <bound method IFCurrExp.model_name of collector with 1 atoms>
+constraint: partitioner max atom per core constraint with size 255
+constraint: tag allocator constraint
+
+Vertex inh_left, size: 1
+Model: <bound method IFCurrExp.model_name of inh_left with 1 atoms>
+constraint: partitioner max atom per core constraint with size 255
+constraint: tag allocator constraint
+
+Vertex inh_right, size: 1
+Model: <bound method IFCurrExp.model_name of inh_right with 1 atoms>
+constraint: partitioner max atom per core constraint with size 255
+constraint: tag allocator constraint
+
+Vertex ret_left, size: 1
+Model: ReverseIpTagMultiCastSource
+constraint: partitioner max atom per core constraint with size 9223372036854775807
+
+Vertex ret_right, size: 1
+Model: ReverseIpTagMultiCastSource
+constraint: partitioner max atom per core constraint with size 9223372036854775807
+
+Vertex LiveSpikeReceiver, size: 1
+Model: live packet gather
+constraint: placer radial placement from chip and core constraint at coords 0,0
+constraint: tag allocator constraint
+
+*** Edges:
+Edge Projection 0 from vertex: 'ret_left' (1 atoms) to vertex: 'inh_left' (1 atoms)
+  Model: No Model
+
+Edge Projection 1 from vertex: 'ret_left' (1 atoms) to vertex: 'inh_right' (1 atoms)
+  Model: No Model
+
+Edge Projection 2 from vertex: 'ret_left' (1 atoms) to vertex: 'collector' (1 atoms)
+  Model: No Model
+
+Edge Projection 3 from vertex: 'ret_right' (1 atoms) to vertex: 'inh_right' (1 atoms)
+  Model: No Model
+
+Edge Projection 4 from vertex: 'ret_right' (1 atoms) to vertex: 'inh_left' (1 atoms)
+  Model: No Model
+
+Edge Projection 5 from vertex: 'ret_right' (1 atoms) to vertex: 'collector' (1 atoms)
+  Model: No Model
+
+Edge Projection 6 from vertex: 'inh_left' (1 atoms) to vertex: 'collector' (1 atoms)
+  Model: No Model
+
+Edge Projection 7 from vertex: 'inh_right' (1 atoms) to vertex: 'collector' (1 atoms)
+  Model: No Model
+
+Edge recorder_edge from vertex: 'inh_left' (1 atoms) to vertex: 'LiveSpikeReceiver' (1 atoms)
+  Model: No Model
+
+Edge recorder_edge from vertex: 'collector' (1 atoms) to vertex: 'LiveSpikeReceiver' (1 atoms)
+  Model: No Model
+
+Edge recorder_edge from vertex: 'inh_right' (1 atoms) to vertex: 'LiveSpikeReceiver' (1 atoms)
+  Model: No Model
+

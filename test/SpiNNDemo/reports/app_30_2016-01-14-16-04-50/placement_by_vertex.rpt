@@ -1,0 +1,41 @@
+        Placement Information by Vertex
+        ===============================
+
+Generated: Thu Jan 14 16:05:02 2016 for target machine '10.162.177.122'
+
+**** Vertex: 'LiveSpikeReceiver'
+Model: live packet gather
+Pop sz: 1
+Sub-vertices: 
+  Slice 0:0 (1 atoms) on core (0, 0, 1) 
+
+**** Vertex: 'collector'
+Model: <bound method IFCurrExp.model_name of collector with 1 atoms>
+Pop sz: 1
+Sub-vertices: 
+  Slice 0:0 (1 atoms) on core (0, 0, 4) 
+
+**** Vertex: 'inh_left'
+Model: <bound method IFCurrExp.model_name of inh_left with 1 atoms>
+Pop sz: 1
+Sub-vertices: 
+  Slice 0:0 (1 atoms) on core (11, 0, 1) 
+
+**** Vertex: 'inh_right'
+Model: <bound method IFCurrExp.model_name of inh_right with 1 atoms>
+Pop sz: 1
+Sub-vertices: 
+  Slice 0:0 (1 atoms) on core (11, 0, 2) 
+
+**** Vertex: 'ret_left'
+Model: ReverseIpTagMultiCastSource
+Pop sz: 1
+Sub-vertices: 
+  Slice 0:0 (1 atoms) on core (0, 0, 2) 
+
+**** Vertex: 'ret_right'
+Model: ReverseIpTagMultiCastSource
+Pop sz: 1
+Sub-vertices: 
+  Slice 0:0 (1 atoms) on core (0, 0, 3) 
+

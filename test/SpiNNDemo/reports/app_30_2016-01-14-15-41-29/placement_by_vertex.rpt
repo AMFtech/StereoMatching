@@ -1,0 +1,89 @@
+        Placement Information by Vertex
+        ===============================
+
+Generated: Thu Jan 14 15:41:42 2016 for target machine '10.162.177.122'
+
+**** Vertex: 'LiveSpikeReceiver'
+Model: live packet gather
+Pop sz: 1
+Sub-vertices: 
+  Slice 0:0 (1 atoms) on core (0, 11, 2) 
+
+**** Vertex: 'c0'
+Model: <bound method IFCurrExp.model_name of c0 with 256 atoms>
+Pop sz: 256
+Sub-vertices: 
+  Slice 0:254 (255 atoms) on core (11, 0, 4) 
+  Slice 255:255 (1 atoms) on core (0, 11, 1) 
+
+**** Vertex: 'c1'
+Model: <bound method IFCurrExp.model_name of c1 with 256 atoms>
+Pop sz: 256
+Sub-vertices: 
+  Slice 0:254 (255 atoms) on core (0, 11, 3) 
+  Slice 255:255 (1 atoms) on core (0, 11, 4) 
+
+**** Vertex: 'c2'
+Model: <bound method IFCurrExp.model_name of c2 with 256 atoms>
+Pop sz: 256
+Sub-vertices: 
+  Slice 0:254 (255 atoms) on core (0, 11, 5) 
+  Slice 255:255 (1 atoms) on core (0, 11, 6) 
+
+**** Vertex: 'c3'
+Model: <bound method IFCurrExp.model_name of c3 with 256 atoms>
+Pop sz: 256
+Sub-vertices: 
+  Slice 0:254 (255 atoms) on core (0, 11, 7) 
+  Slice 255:255 (1 atoms) on core (0, 11, 8) 
+
+**** Vertex: 'c4'
+Model: <bound method IFCurrExp.model_name of c4 with 256 atoms>
+Pop sz: 256
+Sub-vertices: 
+  Slice 0:254 (255 atoms) on core (0, 11, 9) 
+  Slice 255:255 (1 atoms) on core (0, 11, 10) 
+
+**** Vertex: 'c5'
+Model: <bound method IFCurrExp.model_name of c5 with 256 atoms>
+Pop sz: 256
+Sub-vertices: 
+  Slice 0:254 (255 atoms) on core (0, 11, 11) 
+  Slice 255:255 (1 atoms) on core (0, 11, 12) 
+
+**** Vertex: 'i0'
+Model: ReverseIpTagMultiCastSource
+Pop sz: 256
+Sub-vertices: 
+  Slice 0:255 (256 atoms) on core (0, 0, 1) 
+
+**** Vertex: 'i1'
+Model: ReverseIpTagMultiCastSource
+Pop sz: 256
+Sub-vertices: 
+  Slice 0:255 (256 atoms) on core (0, 0, 2) 
+
+**** Vertex: 'i2'
+Model: ReverseIpTagMultiCastSource
+Pop sz: 256
+Sub-vertices: 
+  Slice 0:255 (256 atoms) on core (0, 0, 3) 
+
+**** Vertex: 'i3'
+Model: ReverseIpTagMultiCastSource
+Pop sz: 256
+Sub-vertices: 
+  Slice 0:255 (256 atoms) on core (11, 0, 1) 
+
+**** Vertex: 'i4'
+Model: ReverseIpTagMultiCastSource
+Pop sz: 256
+Sub-vertices: 
+  Slice 0:255 (256 atoms) on core (11, 0, 2) 
+
+**** Vertex: 'i5'
+Model: ReverseIpTagMultiCastSource
+Pop sz: 256
+Sub-vertices: 
+  Slice 0:255 (256 atoms) on core (11, 0, 3) 
+

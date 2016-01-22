@@ -11,6 +11,7 @@
 #                         network[layer][row][cell].get_population("Cell Output {0} - {1} - {2}".format(cell, layer, row)),
 #                         OneToOneConnector(), StaticSynapse(weight=internalWeightInhibition, delay=internalDelayInhibition))    
 from itertools import repeat
+from lib2to3.fixer_util import Number
 
 
 
@@ -288,42 +289,64 @@ from itertools import repeat
 #     
 # print newdata
 # 
+# # 
 # 
+# import numpy as np
+# import matplotlib.pyplot as plt
+# import matplotlib.animation as animation
+# import timeit
+# 
+# clock = timeit.default_timer
+# 
+# fig, ax = plt.subplots()
+# 
+# alphab = ['A', 'B', 'C', 'D', 'E', 'F']
+# frequencies = [1, 44, 12, 11, 2, 10]
+# 
+# pos = np.arange(len(alphab))
+# width = 1.0     # gives histogram aspect to the bar diagram
+# ax.set_xticks(pos + (width / 2))
+# ax.set_xticklabels(alphab)
+# 
+# rects = plt.bar(pos, frequencies, width, color='r')
+# start = clock()
+# 
+# def animate(arg, rects):
+#     frameno, frequencies = arg
+#     for rect, f in zip(rects, frequencies):
+#         rect.set_height(f)
+#     print("FPS: {:.2f}".format(frameno / (clock() - start))) 
+# 
+# def step():
+#     for frame, bin_idx in enumerate(np.linspace(0,1000000,100000000), 1):
+#         #Here we just change the first bin, so it increases through the animation.
+#         frequencies[0] = bin_idx
+#         yield frame, frequencies
+# 
+# 
+# ani = animation.FuncAnimation(fig, animate, step, interval=10,
+#                               repeat=False, blit=False, fargs=(rects,))
+# plt.show()
 
-import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib.animation as animation
-import timeit
-
-clock = timeit.default_timer
-
-fig, ax = plt.subplots()
-
-alphab = ['A', 'B', 'C', 'D', 'E', 'F']
-frequencies = [1, 44, 12, 11, 2, 10]
-
-pos = np.arange(len(alphab))
-width = 1.0     # gives histogram aspect to the bar diagram
-ax.set_xticks(pos + (width / 2))
-ax.set_xticklabels(alphab)
-
-rects = plt.bar(pos, frequencies, width, color='r')
-start = clock()
-
-def animate(arg, rects):
-    frameno, frequencies = arg
-    for rect, f in zip(rects, frequencies):
-        rect.set_height(f)
-    print("FPS: {:.2f}".format(frameno / (clock() - start))) 
-
-def step():
-    for frame, bin_idx in enumerate(np.linspace(0,1000000,100000000), 1):
-        #Here we just change the first bin, so it increases through the animation.
-        frequencies[0] = bin_idx
-        yield frame, frequencies
-
-
-ani = animation.FuncAnimation(fig, animate, step, interval=10,
-                              repeat=False, blit=False, fargs=(rects,))
-plt.show()
-
+# import matplotlib.pyplot as plt
+# import numpy as np
+# 
+# x = np.linspace(0, 6*np.pi, 100)
+# y = np.sin(x)
+# 
+# # You probably won't need this if you're embedding things in a tkinter plot...
+# plt.ion()
+# 
+# fig = plt.figure()
+# ax = fig.add_subplot(111)
+# line1, = ax.plot(x, y, 'r-') # Returns a tuple of line objects, thus the comma
+# 
+# for phase in np.linspace(0, 10*np.pi, 500):
+#     line1.set_ydata(np.sin(x + phase))
+#     fig.canvas.draw()
+#     
+    
+# dimensionRetinaX = 90
+# maxDisparity = 40
+# numberOfPopulations = (2*dimensionRetinaX*(maxDisparity+1) - (maxDisparity+1)**2 + maxDisparity + 1)/2
+# print numberOfPopulations

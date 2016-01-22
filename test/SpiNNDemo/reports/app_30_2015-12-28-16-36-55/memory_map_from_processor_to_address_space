@@ -1,5 +1,0 @@
-(0, 0, 2, 'spike_injector_backward'): (0, 0, 2, 'spike_injector_backward'): ('start_address': 1613141192, hex(0x602694c8), 'memory_used': 132, 'memory_written': 132 
-(0, 0, 4, 'pop_forward'): (0, 0, 4, 'pop_forward'): ('start_address': 1613141464, hex(0x602695d8), 'memory_used': 169028, 'memory_written': 9024 
-(0, 0, 1, 'spike_injector_forward'): (0, 0, 1, 'spike_injector_forward'): ('start_address': 1613141060, hex(0x60269444), 'memory_used': 132, 'memory_written': 132 
-(0, 0, 5, 'pop_backward'): (0, 0, 5, 'pop_backward'): ('start_address': 1612972032, hex(0x60240000), 'memory_used': 169028, 'memory_written': 9024 
-(0, 0, 3, 'LiveSpikeReceiver'): (0, 0, 3, 'LiveSpikeReceiver'): ('start_address': 1613141324, hex(0x6026954c), 'memory_used': 140, 'memory_written': 140 
