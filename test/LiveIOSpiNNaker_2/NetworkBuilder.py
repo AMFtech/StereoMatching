@@ -1,7 +1,8 @@
-from SimulationAndNetworkSettings import dimensionRetinaX, dimensionRetinaY, minDisparity, maxDisparity,\
-    maxSpikeInjectorPopsPerRetina, maxSpikeInjectorNeuronsPerPop, retLeftSpikes, retRightSpikes
+from SimulationAndNetworkSettings import dimensionRetinaX, dimensionRetinaY, minDisparity, maxDisparity, maxSpikeInjectorPopsPerRetina, maxSpikeInjectorNeuronsPerPop
+# from SimulationAndNetworkSettings import retRightSpikes, retLeftSpikes
 import spynnaker.pyNN as Frontend
 import spynnaker_external_devices_plugin.pyNN as ExternalDevices
+from pyNN.space import Line
 # from pyNN.space import Line
 
 retinaNbhoodL = []
@@ -11,22 +12,22 @@ sameDisparityInd = []
 def createSpikeSource(label):       
     # iterate over all neurons in the SpikeSourcaArray and set every one's parameters individually        
     print "Creating Spike Source: {0}".format(label)
-    assert int((dimensionRetinaX-minDisparity)/(maxSpikeInjectorNeuronsPerPop/dimensionRetinaY)) < maxSpikeInjectorPopsPerRetina, "Too much Spike Injector Populations."
-    
+    assert int((dimensionRetinaX-minDisparity)/(maxSpikeInjectorNeuronsPerPop/dimensionRetinaY)) <= maxSpikeInjectorPopsPerRetina, "Too much Spike Injector Populations."
+     
     retina = []
     remainingPixelCols = dimensionRetinaX
-    for columns in range(0, int((dimensionRetinaX-minDisparity)/(maxSpikeInjectorNeuronsPerPop/dimensionRetinaY))+1):
+    for columns in range(0, int((dimensionRetinaX-minDisparity-1)/(maxSpikeInjectorNeuronsPerPop/dimensionRetinaY))+1):
         if remainingPixelCols > int(maxSpikeInjectorNeuronsPerPop/dimensionRetinaY):
             colHeight = int(maxSpikeInjectorNeuronsPerPop/dimensionRetinaY)*dimensionRetinaY
         else:
             colHeight = remainingPixelCols*dimensionRetinaY    
         if label == "RetL":
-            colOfPixels = Frontend.Population(colHeight, ExternalDevices.SpikeInjector, {'port': 12000+columns}, label="RetL_{0}".format(columns))
+            colOfPixels = Frontend.Population(colHeight, ExternalDevices.SpikeInjector, {'port': 12000+columns}, label="RetL {0}".format(columns))
         else:
-            colOfPixels = Frontend.Population(colHeight, ExternalDevices.SpikeInjector, {'port': 13000+columns}, label="RetR_{0}".format(columns))
+            colOfPixels = Frontend.Population(colHeight, ExternalDevices.SpikeInjector, {'port': 13000+columns}, label="RetR {0}".format(columns))
         retina.append((colHeight, colOfPixels))
         remainingPixelCols -= int(maxSpikeInjectorNeuronsPerPop/dimensionRetinaY)
-    
+     
     return retina
 
 # def createSpikeSource(label):
@@ -35,17 +36,17 @@ def createSpikeSource(label):
 #         spikeTimes = retRightSpikes
 #     else:
 #         spikeTimes = retLeftSpikes   
-#         
+#          
 # #     assert len(spikeTimes) >= dimensionRetinaY and len(spikeTimes[0]) >= dimensionRetinaX, "Check dimensionality of retina's spiking times!"        
 #     # iterate over all neurons in the SpikeSourcaArray and set every one's parameters individually        
 #     print "Creating Spike Injector: {0}".format(label)
-#     
+#      
 #     retina = []
 #     for x in range(0, dimensionRetinaX-minDisparity):
 #         colOfPixels = Frontend.Population(dimensionRetinaY, Frontend.SpikeSourceArray, {'spike_times': spikeTimes[x]}, label="{0}_{1}".format(label, x), structure=Line())
 #         retina.append(colOfPixels)
 # #         colOfPixels.record()
-#     
+#      
 #     return retina
 
 
@@ -210,14 +211,14 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
 #     print "\t Connecting completed."
     
 def connectSpikeSourcesToNetwork(network=None, retinaLeft=None, retinaRight=None):
-    
+     
     assert network is not None and retinaLeft is not None and retinaRight is not None, "Network or one of the Retinas is not initialised!"
     print "Connecting Spike Sources to Network..."
-    
+     
     from SimulationAndNetworkSettings import wSSToOtherInh, wSSToSelfInh, wSSToOut, dSSToOtherInh, dSSToSelfInh, dSSToOut
-    
+     
     global retinaNbhoodL, retinaNbhoodR
-    
+     
     # left is 0--dimensionRetinaY-1; right is dimensionRetinaY--dimensionRetinaY*2-1
     connListRetLBlockerL = [[[]]]
     connListRetLBlockerR = [[[]]]
@@ -226,48 +227,110 @@ def connectSpikeSourcesToNetwork(network=None, retinaLeft=None, retinaRight=None
     connListRetRBlockerR = [[[]]]
     connListRetRCol = [[[]]]
     for injCol in range(0, len(retinaLeft)):
-        print "injCol", injCol, "height", retinaLeft[injCol][0]
+#         print "injCol", injCol, "height", retinaLeft[injCol][0]
         for pixelCol in range(0, retinaLeft[injCol][0]/dimensionRetinaY):
             for y in range(0, dimensionRetinaY):
                 connListRetLBlockerL[injCol][pixelCol].append((pixelCol*dimensionRetinaY+y, y, wSSToSelfInh, dSSToSelfInh))
                 connListRetLBlockerR[injCol][pixelCol].append((pixelCol*dimensionRetinaY+y, y+dimensionRetinaY, wSSToOtherInh, dSSToOtherInh))
                 connListRetLCol[injCol][pixelCol].append((pixelCol*dimensionRetinaY+y, y, wSSToOut, dSSToOut))
-                
+                 
                 connListRetRBlockerL[injCol][pixelCol].append((pixelCol*dimensionRetinaY+y, y, wSSToSelfInh, dSSToSelfInh))
                 connListRetRBlockerR[injCol][pixelCol].append((pixelCol*dimensionRetinaY+y, y+dimensionRetinaY, wSSToOtherInh, dSSToOtherInh))
                 connListRetRCol[injCol][pixelCol].append((pixelCol*dimensionRetinaY+y, y, wSSToOut, dSSToOut))
-                
+                 
             connListRetLBlockerL[injCol].append([])    
             connListRetLBlockerR[injCol].append([])
             connListRetLCol[injCol].append([])
-            
+             
             connListRetRBlockerL[injCol].append([])    
             connListRetRBlockerR[injCol].append([])
             connListRetRCol[injCol].append([])
-            
-            print "cnnectin L with ", retinaNbhoodL[injCol*(maxSpikeInjectorNeuronsPerPop/dimensionRetinaY) + pixelCol]
+             
+#             print "cnnectin L with ", retinaNbhoodL[injCol*(maxSpikeInjectorNeuronsPerPop/dimensionRetinaY) + pixelCol]
+#             print retinaNbhoodL 
+#             print injCol*(maxSpikeInjectorNeuronsPerPop/dimensionRetinaY), pixelCol
             for targetPopIndex in retinaNbhoodL[injCol*(maxSpikeInjectorNeuronsPerPop/dimensionRetinaY) + pixelCol]:
-                print connListRetLCol[injCol][pixelCol]
+#                 print connListRetLCol[injCol][pixelCol]
+#                 print targetPopIndex
                 Frontend.Projection(retinaLeft[injCol][1], network[targetPopIndex][1], Frontend.FromListConnector(connListRetLCol[injCol][pixelCol]))
                 Frontend.Projection(retinaLeft[injCol][1], network[targetPopIndex][0], Frontend.FromListConnector(connListRetLBlockerL[injCol][pixelCol]))
                 Frontend.Projection(retinaLeft[injCol][1], network[targetPopIndex][0], Frontend.FromListConnector(connListRetLBlockerR[injCol][pixelCol]))
-             
-            for targetPopIndex in retinaNbhoodR[injCol*(retinaLeft[injCol][0]/dimensionRetinaY) + pixelCol]:
+              
+            for targetPopIndex in retinaNbhoodR[injCol*(maxSpikeInjectorNeuronsPerPop/dimensionRetinaY) + pixelCol]:
                 Frontend.Projection(retinaRight[injCol][1], network[targetPopIndex][1], Frontend.FromListConnector(connListRetRCol[injCol][pixelCol]))
                 Frontend.Projection(retinaRight[injCol][1], network[targetPopIndex][0], Frontend.FromListConnector(connListRetRBlockerL[injCol][pixelCol]))
                 Frontend.Projection(retinaRight[injCol][1], network[targetPopIndex][0], Frontend.FromListConnector(connListRetRBlockerR[injCol][pixelCol]))
-                        
+                         
         connListRetLBlockerL.append([[]])    
         connListRetLBlockerR.append([[]])
         connListRetLCol.append([[]])
-        
+         
         connListRetRBlockerL.append([[]])    
         connListRetRBlockerR.append([[]])
         connListRetRCol.append([[]])
-        
-    print connListRetLCol
-    print connListRetLBlockerL
-    print connListRetLBlockerR    
+     
+#     print retinaNbhoodL
+#     print retinaNbhoodR
+#     
+#     print connListRetLBlockerL
+#     print connListRetLBlockerR
+#     print connListRetLCol
+#     
+#     print connListRetRBlockerL
+#     print connListRetRBlockerR
+#     print connListRetRCol
+     
+    testPop = Frontend.Population(1, Frontend.SpikeSourceArray, {'spike_times':[100.0]}, Line, label="testp")
+    Frontend.Projection(testPop, network[0][1], Frontend.FromListConnector([(0, 0, 45.0, 0.2)]))
+     
     from NetworkVisualiser import setupVisualiser    
+     
+    setupVisualiser(network, retinaLeft, retinaRight)
+
+# If spike source arrays are used instead:
+# def connectSpikeSourcesToNetwork(network=None, retinaLeft=None, retinaRight=None):
+#     
+#     assert network is not None and retinaLeft is not None and retinaRight is not None, "Network or one of the Retinas is not initialised!"
+#     print "Connecting Spike Sources to Network..."
+#     
+#     from SimulationAndNetworkSettings import wSSToOtherInh, wSSToSelfInh, wSSToOut, dSSToOtherInh, dSSToSelfInh, dSSToOut
+#     
+#     global retinaNbhoodL, retinaNbhoodR
+#     
+#     # left is 0--dimensionRetinaY-1; right is dimensionRetinaY--dimensionRetinaY*2-1
+#     connListRetLBlockerL = []
+#     connListRetLBlockerR = []
+#     connListRetRBlockerL = []
+#     connListRetRBlockerR = []
+#     for y in range(0, dimensionRetinaY):
+#         connListRetLBlockerL.append((y, y, wSSToSelfInh, dSSToSelfInh))
+#         connListRetLBlockerR.append((y, y+dimensionRetinaY, wSSToOtherInh, dSSToOtherInh))
+#         connListRetRBlockerL.append((y, y, wSSToOtherInh, dSSToOtherInh))
+#         connListRetRBlockerR.append((y, y+dimensionRetinaY, wSSToSelfInh, dSSToSelfInh))
+#         
+#     pixel = 0
+#     for row in retinaNbhoodL:
+# #         print row, pixel
+#         for pop in row:
+#             Frontend.Projection(retinaLeft[pixel], network[pop][1], 
+#                 Frontend.OneToOneConnector(weights=wSSToOut, delays=dSSToOut), target='excitatory')
+#             Frontend.Projection(retinaLeft[pixel], network[pop][0], Frontend.FromListConnector(connListRetLBlockerL), target='excitatory')
+#             Frontend.Projection(retinaLeft[pixel], network[pop][0], Frontend.FromListConnector(connListRetLBlockerR), target='inhibitory')
+#         pixel += 1
+#     
+#     pixel = 0    
+#     for col in retinaNbhoodR:
+# #         print col, pixel
+#         for pop in col:
+#             Frontend.Projection(retinaRight[pixel], network[pop][1], 
+#                 Frontend.OneToOneConnector(weights=wSSToOut, delays=dSSToOut), target='excitatory')
+#             Frontend.Projection(retinaRight[pixel], network[pop][0], Frontend.FromListConnector(connListRetRBlockerR), target='excitatory')
+#             Frontend.Projection(retinaRight[pixel], network[pop][0], Frontend.FromListConnector(connListRetRBlockerL), target='inhibitory')
+#         pixel += 1    
+#         
+#     from NetworkVisualiser import setupVisualiser    
+#     
+#     setupVisualiser(network)
+
     
-    setupVisualiser(network)
+    

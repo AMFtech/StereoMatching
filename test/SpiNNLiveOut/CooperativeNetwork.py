@@ -19,8 +19,10 @@ def main():
     print "Simulation started..."
     Frontend.run(simulationTime)                                            
     print "Simulation ended."
-    spikeList = network[0][1].getSpikes()
-    print spikeList
+    
+    # plot results  
+    #
+#     plotExperiment(retinaLeft, retinaRight, network)
     # finalise program and simulation
     Frontend.end()
 

@@ -1,57 +1,38 @@
 from NetworkBuilder import sameDisparityInd, retinaNbhoodL
-from SimulationAndNetworkSettings import dimensionRetinaX, dimensionRetinaY, maxDisparity, minDisparity, simulationTime, \
-    maxSpikeInjectorPopsPerRetina, maxSpikeInjectorNeuronsPerPop
+from SimulationAndNetworkSettings import dimensionRetinaX, dimensionRetinaY, maxDisparity, minDisparity, simulationTime
 from spynnaker_external_devices_plugin.pyNN.connections.spynnaker_live_spikes_connection import SpynnakerLiveSpikesConnection
 import spynnaker_external_devices_plugin.pyNN as ExternalDevices
+
 import time
 import serial
 import numpy as np
 from threading import Thread, Timer
 import sys
-import pygame 
 
+import pygame
+retinaImg = []   
 DVSXRES, DVSYRES = 128,128
-retinaThreads = dict()
-ports = [1,0]
 
-def setupVisualiser(network=None, retinaLeft=None, retinaRight=None):
+def setupVisualiser(network=None):
+    global retinaImg
+    
     print "Setting up Visualiser..."
-    global retinaThreads
-    print "\tSetting up Spike Receiver..."
-    networkLabels = []
-    for pop in network:
-        ExternalDevices.activate_live_output_for(pop[1], database_notify_host="localhost", database_notify_port_num=19996)
-        networkLabels.append(pop[1].label)
+    for x in range(0, dimensionRetinaX):
+        zeroList = []
+        for y in range(0, dimensionRetinaY):    
+            zeroList.append(0)
+        retinaImg.append(zeroList)   
     
-    liveConnection_receiver = SpynnakerLiveSpikesConnection(receive_labels=networkLabels, local_port=19996, send_labels=None) 
-    disparityThread = spike_plotter()
-    for label in networkLabels:
-            liveConnection_receiver.add_receive_callback(label, disparityThread.plotReceivedSpike)
-    
-    print "\tSetting up Spike Injectors for Retina Left and Retina Right..."            
-    retinaLabels = []
-    for popL, popR in zip(retinaLeft, retinaRight):
-        retinaLabels.append(popL[1].label)
-        retinaLabels.append(popR[1].label)
-     
-    liveConnection_sender = SpynnakerLiveSpikesConnection(receive_labels=None, local_port=19999, send_labels=retinaLabels)
-    bg_col=pygame.Color(0,0,0,0)
-    on_col=pygame.Color(10,220,10,0)
-    off_col=pygame.Color(220,10,10,0)
-    retinaThreads[ports[0]] = dvs_reader(port=ports[0], colors = {"bg": bg_col, "on": on_col, "off": off_col}, label="RetL", liveConnection=liveConnection_sender)
-    retinaThreads[ports[1]] = dvs_reader(port=ports[1], colors = {"bg": bg_col, "on": on_col, "off": off_col}, label="RetR", liveConnection=liveConnection_sender)
-    
-    liveConnection_sender.add_start_callback(retinaLabels[0], startInjecting)
-    
-    panelsDrawer = Thread(target=setupPanels, args=(disparityThread,))
+    panelsDrawer = Thread(target=setupPanels, args=(network,))
     panelsDrawer.start()
 
-def setupPanels(disparityThread=None):
-    global ports, retinaThreads
+def setupPanels(network=None):
+    
     time_period = 20    # targeted duration of a single update cycle in ms
     half_time = 100. # targeted half time for after glow in ms
     decay_alpha = int(255. - 255.*(0.5)**(time_period/half_time)) # alpha of periodically blitted surface
 #     print "setting alpha to",decay_alpha
+    ports = [1,0]
     l=len(ports)
     
     pygame.init()
@@ -79,10 +60,14 @@ def setupPanels(disparityThread=None):
     screen.fill(pygame.Color(255,0,0,0),rect=pygame.Rect(2*subsize[0]+l,0,1,subsize[1])) # red separator
     pygame.event.set_allowed(None) # allow only the 2 event types we process:
     pygame.event.set_allowed([pygame.VIDEORESIZE,pygame.QUIT])
-        
-    retinaThreads[ports[0]].start()
-    retinaThreads[ports[1]].start()
     
+    retinaThreads = dict()
+    for p in ports:
+        retina = dvs_reader(port=p, colors = {"bg": bg_col, "on": on_col, "off": off_col})
+        retinaThreads[p] = retina
+        retina.start()
+    
+    disparityThread = spike_plotter(network=network)
     disparityThread.start()
     
     buffill = [0]*(l+1)
@@ -102,7 +87,7 @@ def setupPanels(disparityThread=None):
             """blit updated surfaces to screen"""
             cv=retinaThreads[p].cv
             screen.blit(pygame.transform.scale(cv,subsize,outsurfs[j]), (j*subsize[0]+j,0))
-            
+#         print outsurfs
         screen.blit(pygame.transform.scale(disparityThread.cv,subsize,outsurfs[l]), (l*subsize[0]+l+1,0))
         # now show on screen:
         pygame.display.flip()
@@ -111,31 +96,19 @@ def setupPanels(disparityThread=None):
             retinaThreads[p].cv.blit(fade_surface,(0,0))
         disparityThread.cv.blit(fade_surface,(0,0))    
         # and wait until our frame is over
-        
         pygame.time.wait(time_period - (pygame.time.get_ticks() - stime))
-        
+  
     for p in ports:
         retinaThreads[p].stop = True
     disparityThread.stop = True
-
-def startInjecting(label, liveConnection):
-    global retinaThreads, ports
-    for p in ports:
-        print "\tActivating Spike Injector:", retinaThreads[p].label
-        retinaThreads[p].startInjecting = True
-        liveConnection.send_spike(label="RetL 0", neuron_id=0, send_full_keys=False)
-        liveConnection.send_spike(label="RetR 0", neuron_id=0, send_full_keys=False)
-        time.sleep(1)
         
 class dvs_reader(Thread):
-  def __init__(self, address='/dev/ttyUSB', port=0, baudrate=6000000, buflen=64, colors=None, label=None, liveConnection=None):
+  def __init__(self, address = '/dev/ttyUSB', port = 0, baudrate = 6000000, buflen = 64, colors = None):
     Thread.__init__(self)
     if colors == None:
-        self.colors = { "on": pygame.Color(0,255,0,0), "off": pygame.Color(255,0,0,0), "bg": pygame.Color(0,0,0,0)}
+      self.colors = { "on": pygame.Color(0,255,0,0), "off": pygame.Color(255,0,0,0), "bg": pygame.Color(0,0,0,0)}
     else:
-        self.colors = colors
-    self.liveConnection = liveConnection
-    self.label = label
+      self.colors = colors
     self.cv = pygame.Surface((DVSXRES,DVSYRES))
     self.cv.fill(colors["bg"])
     self.onbuf = [(0,0)] * buflen
@@ -145,7 +118,6 @@ class dvs_reader(Thread):
     self.evind = 0
     self.port = port
     self.stop = False
-    self.startInjecting = False
     self.alive = True
     self.setDaemon(True)
     self.timeArray = np.ones((DVSXRES,DVSYRES),dtype=np.uint32)
@@ -168,13 +140,6 @@ class dvs_reader(Thread):
         """read and interpret data from serial port"""
         colors = [ self.colors["off"], self.colors["on"] ]
         try:
-            lastx = -1
-            lasty = -1
-            lowerBoundX = (DVSXRES-dimensionRetinaX)/2
-            upperBoundX = (DVSXRES+dimensionRetinaX)/2
-            lowerBoundY = (DVSYRES-dimensionRetinaY)/2
-            upperBoundY = (DVSYRES+dimensionRetinaY)/2
-#             print lowerBoundX, upperBoundX, lowerBoundY, upperBoundY
             while not self.stop:
 #                self.bufbytes = self.dvsdev.inWaiting()
                 data = bytearray(self.dvsdev.read(2))
@@ -183,20 +148,18 @@ class dvs_reader(Thread):
                     x = data[1] & 0x7f
                     p = data[1] >> 7
                     self.cv.set_at((x,DVSXRES-y),colors[p])
-                    if lowerBoundX <= x < upperBoundX and lowerBoundY <= y < upperBoundY and self.startInjecting: 
-                        if x != lastx or y != lasty:
-                            injectorLabel = (x-lowerBoundX) / (maxSpikeInjectorNeuronsPerPop/dimensionRetinaY)
-                            injectorNeuronID = (y-lowerBoundY) + ((x-lowerBoundX)%(maxSpikeInjectorNeuronsPerPop/dimensionRetinaY))*dimensionRetinaY 
-#                             print "sendin atr", x, injectorLabel, y, injectorNeuronID
-                            self.liveConnection.send_spike(label="{0} {1}".format(self.label, injectorLabel), neuron_id=injectorNeuronID, send_full_keys=False)
-                            lastx = x
-                            lasty = y
-                        else:
-                            self.dvsdev.read(1)                
+                  # check time delta vs last spike of this pixel
+#                  now = pygame.time.get_ticks()
+#                  dt = now - self.timeArray[x,y]
+#                  self.timeArray[x,y] = now
+                  # or just the simple -not again- test:
+#                  if x != lastx and y != lasty:
+#                    sendEvent()
+                else:
+                    self.dvsdev.read(1)                
             self.dvs_uninit()
-            self.startInjecting = False
             
-        except self.dvsdev.SerialException, e:
+        except dvsdev.SerialException, e:
             self.alive = False
             self.dvs_uninit()
             print "something went wrong at port %i" % self.port
@@ -204,7 +167,7 @@ class dvs_reader(Thread):
         
 
 class spike_plotter(Thread):
-    def __init__(self):
+    def __init__(self, network=None):
         Thread.__init__(self)
         self.colors = { "on": pygame.Color(0,255,0,0), "off": pygame.Color(255,0,0,0), "bg": pygame.Color(0,0,0,0)}
         self.cv = pygame.Surface((DVSXRES,DVSYRES))
@@ -214,30 +177,43 @@ class spike_plotter(Thread):
         self.alive = True
         self.setDaemon(True)
         self.timeArray = np.ones((DVSXRES,DVSYRES),dtype=np.uint32)
+        self.setupSpikeReceiver(network)
         
     def run(self):
-        pass    
+        pass
+       
+    def setupSpikeReceiver(self, network=None):
+        print "\tSetting up Spike Receiver..."
+        networkLabels = []
+        for pop in network:
+            ExternalDevices.activate_live_output_for(pop[1], database_notify_host="localhost", database_notify_port_num=19996)
+            networkLabels.append(pop[1].label)
+           
+        liveConnection = SpynnakerLiveSpikesConnection(receive_labels=networkLabels, local_port=19996, send_labels=None)   
+        
+        for label in networkLabels:
+            liveConnection.add_receive_callback(label, self.plotReceivedSpike)    
 
     def plotReceivedSpike(self, label, time, neuronIDs):
+        global retinaImg
         populationID = int([s for s in label.split()][1])
         for neuronID in neuronIDs:   
-            print "Received spike from ", label, neuronID 
+#             print "Received spike from ", label, neuronID 
             disp = minDisparity
             for d in range(0, maxDisparity+1):
                 if populationID in sameDisparityInd[d]:
                     disp = d+minDisparity
                     break
-#             print "Detected disp: ", disp + minDisparity
+        #     print "Detected disp: ", disp + minDisparity
             normalisedDisp = float(disp - minDisparity)/float(maxDisparity - minDisparity)
-            gradientCol = (int(255*normalisedDisp), int(-255*normalisedDisp + 255)) #red and blue values
+#             print "normalised disp", normalisedDisp
+            gradientCol = (int(255*normalisedDisp), int(-255*normalisedDisp + 255))
 #             print gradientCol
-            
             pixel = 0    
             for p in range(0, dimensionRetinaX):
                 if populationID in retinaNbhoodL[p]:
                     pixel = p
                     break
-#             print pixel, neuronID
             self.cv.set_at((pixel, neuronID), pygame.Color(gradientCol[0], 0, gradientCol[1], 0))
             
                           
