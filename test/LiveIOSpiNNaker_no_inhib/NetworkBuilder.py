@@ -71,8 +71,6 @@ def createNetwork():
     numberOfPopulations = (2*(dimensionRetinaX - minDisparity)*(maxDisparity-minDisparity+1) - (maxDisparity-minDisparity+1)**2 + maxDisparity - minDisparity + 1)/2
     print "\t Creating {0} Neural Ensembles...".format(numberOfPopulations)
     for x in range(0, numberOfPopulations):
-        inhLeftRightPop = Frontend.Population(dimensionRetinaY*2, Frontend.IF_curr_exp, {'tau_syn_E':t_synE, 'tau_syn_I':t_synI, 'tau_m':t_memb, 'v_reset':vResetInh},
-            label="InhPop {0}".format(x))
         cellOutputPop = Frontend.Population(dimensionRetinaY, Frontend.IF_curr_exp, {'tau_syn_E':t_synE, 'tau_syn_I':t_synI, 'tau_m':t_memb, 'v_reset':vResetCO},
             label="ColPop {0}".format(x))
         
@@ -80,7 +78,7 @@ def createNetwork():
 #         cellOutputPop.record()
 #         cellOutputPop.record_v()
             
-        network.append((inhLeftRightPop, cellOutputPop))
+        network.append((None, cellOutputPop))
         
     interconnectNetworkNeurons(network)
     
@@ -90,19 +88,6 @@ def createNetwork():
 def interconnectNetworkNeurons(network=None):
     
     assert network is not None, "Network is not initialised! Interconnecting failed."
-    
-    from SimulationAndNetworkSettings import wInhToOut, dInhToOut
-        
-    # generate connectivity list: 0 till dimensionRetinaY-1 for the  left and dimensionRetinaY till dimensionRetinaY*2 -1 for the right
-    connList = []
-    for y in range(0, dimensionRetinaY):
-        connList.append((y, y, wInhToOut, dInhToOut))
-        connList.append((y+dimensionRetinaY, y, wInhToOut, dInhToOut))
-          
-    # connect the inhibitory neurons to the cell output neurons
-    print "Interconnecting Neurons..."
-    for ensemble in network:
-        Frontend.Projection(ensemble[0], ensemble[1], Frontend.FromListConnector(connList),  target='inhibitory')
     
     if dimensionRetinaX > 1 and maxDisparity >= 0 and minDisparity <= maxDisparity:
         interconnectNeuronsForInternalInhibitionAndExcitation(network)
@@ -215,7 +200,7 @@ def connectSpikeSourcesToNetwork(network=None, retinaLeft=None, retinaRight=None
     assert network is not None and retinaLeft is not None and retinaRight is not None, "Network or one of the Retinas is not initialised!"
     print "Connecting Spike Sources to Network..."
        
-    from SimulationAndNetworkSettings import wSSToOtherInh, wSSToSelfInh, wSSToOut, dSSToOtherInh, dSSToSelfInh, dSSToOut
+    from SimulationAndNetworkSettings import  wSSToOut, dSSToOut
        
     global retinaNbhoodL, retinaNbhoodR
       
@@ -223,30 +208,19 @@ def connectSpikeSourcesToNetwork(network=None, retinaLeft=None, retinaRight=None
 #     testPopl = Frontend.Population(4, Frontend.SpikeSourceArray, {'spike_times':[1000.0]}, Line, label="testl") 
       
     # left is 0--dimensionRetinaY-1; right is dimensionRetinaY--dimensionRetinaY*2-1
-    connListRetLBlockerL = [[[]]]
-    connListRetLBlockerR = [[[]]]
+
     connListRetLCol = [[[]]]
-    connListRetRBlockerL = [[[]]]
-    connListRetRBlockerR = [[[]]]
     connListRetRCol = [[[]]]
     for injCol in range(0, len(retinaLeft)):
 #         print "injCol", injCol, "height", retinaLeft[injCol][0]
         for pixelCol in range(0, retinaLeft[injCol][0]/dimensionRetinaY):
             for y in range(0, dimensionRetinaY):
-                connListRetLBlockerL[injCol][pixelCol].append((pixelCol*dimensionRetinaY+y, y, wSSToSelfInh, dSSToSelfInh))
-                connListRetLBlockerR[injCol][pixelCol].append((pixelCol*dimensionRetinaY+y, y+dimensionRetinaY, wSSToOtherInh, dSSToOtherInh))
                 connListRetLCol[injCol][pixelCol].append((pixelCol*dimensionRetinaY+y, y, wSSToOut, dSSToOut))
                    
-                connListRetRBlockerL[injCol][pixelCol].append((pixelCol*dimensionRetinaY+y, y, wSSToOtherInh, dSSToOtherInh))
-                connListRetRBlockerR[injCol][pixelCol].append((pixelCol*dimensionRetinaY+y, y+dimensionRetinaY, wSSToSelfInh, dSSToSelfInh))
                 connListRetRCol[injCol][pixelCol].append((pixelCol*dimensionRetinaY+y, y, wSSToOut, dSSToOut))
                    
-            connListRetLBlockerL[injCol].append([])    
-            connListRetLBlockerR[injCol].append([])
             connListRetLCol[injCol].append([])
                
-            connListRetRBlockerL[injCol].append([])    
-            connListRetRBlockerR[injCol].append([])
             connListRetRCol[injCol].append([])
                
 #             print "cnnectin L with ", retinaNbhoodL[injCol*(maxSpikeInjectorNeuronsPerPop/dimensionRetinaY) + pixelCol]
@@ -254,39 +228,15 @@ def connectSpikeSourcesToNetwork(network=None, retinaLeft=None, retinaRight=None
 #             print injCol*(maxSpikeInjectorNeuronsPerPop/dimensionRetinaY), pixelCol
 #             print "retinaL", retinaNbhoodL[injCol*(maxSpikeInjectorNeuronsPerPop/dimensionRetinaY) + pixelCol], injCol
             for targetPopIndex in retinaNbhoodL[injCol*(maxSpikeInjectorNeuronsPerPop/dimensionRetinaY) + pixelCol]:
-#                 print connListRetLCol[injCol][pixelCol]
-#                 print targetPopIndex, injCol, pixelCol
-#                 print connListRetLCol[injCol][pixelCol]
-#                 print connListRetLBlockerL[injCol][pixelCol]
-#                 print connListRetLBlockerR[injCol][pixelCol]
-#                 Frontend.Projection(testPopl, network[targetPopIndex][1], Frontend.FromListConnector(connListRetLCol[injCol][pixelCol]), target='excitatory')
-#                 Frontend.Projection(testPopl, network[targetPopIndex][0], Frontend.FromListConnector(connListRetLBlockerL[injCol][pixelCol]), target='excitatory')
-#                 Frontend.Projection(testPopl, network[targetPopIndex][0], Frontend.FromListConnector(connListRetLBlockerR[injCol][pixelCol]), target='inhibitory')
-                  
                 Frontend.Projection(retinaLeft[injCol][1], network[targetPopIndex][1], Frontend.FromListConnector(connListRetLCol[injCol][pixelCol]), target='excitatory')
-                Frontend.Projection(retinaLeft[injCol][1], network[targetPopIndex][0], Frontend.FromListConnector(connListRetLBlockerL[injCol][pixelCol]), target='excitatory')
-                Frontend.Projection(retinaLeft[injCol][1], network[targetPopIndex][0], Frontend.FromListConnector(connListRetLBlockerR[injCol][pixelCol]), target='inhibitory')
-              
+
 #             print "retinaR", retinaNbhoodR[injCol*(maxSpikeInjectorNeuronsPerPop/dimensionRetinaY) + pixelCol], injCol  
             for targetPopIndex in retinaNbhoodR[injCol*(maxSpikeInjectorNeuronsPerPop/dimensionRetinaY) + pixelCol]:
-#                 print targetPopIndex, injCol, pixelCol
-#                 print connListRetRCol[injCol][pixelCol]
-#                 print connListRetRBlockerL[injCol][pixelCol]
-#                 print connListRetRBlockerR[injCol][pixelCol]
-#                 Frontend.Projection(testPopr, network[targetPopIndex][1], Frontend.FromListConnector(connListRetRCol[injCol][pixelCol]), target='excitatory')
-#                 Frontend.Projection(testPopr, network[targetPopIndex][0], Frontend.FromListConnector(connListRetRBlockerL[injCol][pixelCol]), target='inhibitory')
-#                 Frontend.Projection(testPopr, network[targetPopIndex][0], Frontend.FromListConnector(connListRetRBlockerR[injCol][pixelCol]), target='excitatory')
-                  
+
                 Frontend.Projection(retinaRight[injCol][1], network[targetPopIndex][1], Frontend.FromListConnector(connListRetRCol[injCol][pixelCol]), target='excitatory')
-                Frontend.Projection(retinaRight[injCol][1], network[targetPopIndex][0], Frontend.FromListConnector(connListRetRBlockerL[injCol][pixelCol]), target='inhibitory')
-                Frontend.Projection(retinaRight[injCol][1], network[targetPopIndex][0], Frontend.FromListConnector(connListRetRBlockerR[injCol][pixelCol]), target='excitatory')
-                           
-        connListRetLBlockerL.append([[]])    
-        connListRetLBlockerR.append([[]])
+#  
         connListRetLCol.append([[]])
-           
-        connListRetRBlockerL.append([[]])    
-        connListRetRBlockerR.append([[]])
+   
         connListRetRCol.append([[]])
        
 #     print retinaNbhoodL
