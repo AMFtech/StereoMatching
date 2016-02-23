@@ -1,0 +1,1878 @@
+Subvert: Collector Neuron 0:0:119 
+subedge:PartitionedEdge:Collector Neuron 0:0:119->Collector Neuron 1:0:119, keys_and_masks:[KeyAndMask:0x0L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 0:0:119->Collector Neuron 2:0:119, keys_and_masks:[KeyAndMask:0x0L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 0:0:119->Collector Neuron 0:0:119, keys_and_masks:[KeyAndMask:0x0L:0xffffff80] 
+
+
+Subvert: Collector Neuron 1:0:119 
+subedge:PartitionedEdge:Collector Neuron 1:0:119->Collector Neuron 0:0:119, keys_and_masks:[KeyAndMask:0x80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 1:0:119->Collector Neuron 2:0:119, keys_and_masks:[KeyAndMask:0x80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 1:0:119->Collector Neuron 3:0:119, keys_and_masks:[KeyAndMask:0x80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 1:0:119->Collector Neuron 1:0:119, keys_and_masks:[KeyAndMask:0x80L:0xffffff80] 
+
+
+Subvert: Collector Neuron 2:0:119 
+subedge:PartitionedEdge:Collector Neuron 2:0:119->Collector Neuron 3:0:119, keys_and_masks:[KeyAndMask:0x100L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 2:0:119->Collector Neuron 1:0:119, keys_and_masks:[KeyAndMask:0x100L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 2:0:119->Collector Neuron 4:0:119, keys_and_masks:[KeyAndMask:0x100L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 2:0:119->Collector Neuron 0:0:119, keys_and_masks:[KeyAndMask:0x100L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 2:0:119->Collector Neuron 2:0:119, keys_and_masks:[KeyAndMask:0x100L:0xffffff80] 
+
+
+Subvert: Collector Neuron 3:0:119 
+subedge:PartitionedEdge:Collector Neuron 3:0:119->Collector Neuron 2:0:119, keys_and_masks:[KeyAndMask:0x180L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 3:0:119->Collector Neuron 4:0:119, keys_and_masks:[KeyAndMask:0x180L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 3:0:119->Collector Neuron 5:0:119, keys_and_masks:[KeyAndMask:0x180L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 3:0:119->Collector Neuron 1:0:119, keys_and_masks:[KeyAndMask:0x180L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 3:0:119->Collector Neuron 3:0:119, keys_and_masks:[KeyAndMask:0x180L:0xffffff80] 
+
+
+Subvert: Collector Neuron 4:0:119 
+subedge:PartitionedEdge:Collector Neuron 4:0:119->Collector Neuron 5:0:119, keys_and_masks:[KeyAndMask:0x200L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 4:0:119->Collector Neuron 3:0:119, keys_and_masks:[KeyAndMask:0x200L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 4:0:119->Collector Neuron 6:0:119, keys_and_masks:[KeyAndMask:0x200L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 4:0:119->Collector Neuron 2:0:119, keys_and_masks:[KeyAndMask:0x200L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 4:0:119->Collector Neuron 4:0:119, keys_and_masks:[KeyAndMask:0x200L:0xffffff80] 
+
+
+Subvert: Collector Neuron 5:0:119 
+subedge:PartitionedEdge:Collector Neuron 5:0:119->Collector Neuron 4:0:119, keys_and_masks:[KeyAndMask:0x280L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 5:0:119->Collector Neuron 6:0:119, keys_and_masks:[KeyAndMask:0x280L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 5:0:119->Collector Neuron 7:0:119, keys_and_masks:[KeyAndMask:0x280L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 5:0:119->Collector Neuron 3:0:119, keys_and_masks:[KeyAndMask:0x280L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 5:0:119->Collector Neuron 5:0:119, keys_and_masks:[KeyAndMask:0x280L:0xffffff80] 
+
+
+Subvert: Collector Neuron 6:0:119 
+subedge:PartitionedEdge:Collector Neuron 6:0:119->Collector Neuron 7:0:119, keys_and_masks:[KeyAndMask:0x300L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 6:0:119->Collector Neuron 5:0:119, keys_and_masks:[KeyAndMask:0x300L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 6:0:119->Collector Neuron 8:0:119, keys_and_masks:[KeyAndMask:0x300L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 6:0:119->Collector Neuron 4:0:119, keys_and_masks:[KeyAndMask:0x300L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 6:0:119->Collector Neuron 6:0:119, keys_and_masks:[KeyAndMask:0x300L:0xffffff80] 
+
+
+Subvert: Collector Neuron 7:0:119 
+subedge:PartitionedEdge:Collector Neuron 7:0:119->Collector Neuron 6:0:119, keys_and_masks:[KeyAndMask:0x380L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 7:0:119->Collector Neuron 8:0:119, keys_and_masks:[KeyAndMask:0x380L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 7:0:119->Collector Neuron 9:0:119, keys_and_masks:[KeyAndMask:0x380L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 7:0:119->Collector Neuron 5:0:119, keys_and_masks:[KeyAndMask:0x380L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 7:0:119->Collector Neuron 7:0:119, keys_and_masks:[KeyAndMask:0x380L:0xffffff80] 
+
+
+Subvert: Collector Neuron 8:0:119 
+subedge:PartitionedEdge:Collector Neuron 8:0:119->Collector Neuron 9:0:119, keys_and_masks:[KeyAndMask:0x400L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 8:0:119->Collector Neuron 7:0:119, keys_and_masks:[KeyAndMask:0x400L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 8:0:119->Collector Neuron 10:0:119, keys_and_masks:[KeyAndMask:0x400L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 8:0:119->Collector Neuron 6:0:119, keys_and_masks:[KeyAndMask:0x400L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 8:0:119->Collector Neuron 8:0:119, keys_and_masks:[KeyAndMask:0x400L:0xffffff80] 
+
+
+Subvert: Collector Neuron 9:0:119 
+subedge:PartitionedEdge:Collector Neuron 9:0:119->Collector Neuron 8:0:119, keys_and_masks:[KeyAndMask:0x480L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 9:0:119->Collector Neuron 10:0:119, keys_and_masks:[KeyAndMask:0x480L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 9:0:119->Collector Neuron 11:0:119, keys_and_masks:[KeyAndMask:0x480L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 9:0:119->Collector Neuron 7:0:119, keys_and_masks:[KeyAndMask:0x480L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 9:0:119->Collector Neuron 9:0:119, keys_and_masks:[KeyAndMask:0x480L:0xffffff80] 
+
+
+Subvert: Collector Neuron 10:0:119 
+subedge:PartitionedEdge:Collector Neuron 10:0:119->Collector Neuron 11:0:119, keys_and_masks:[KeyAndMask:0x500L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 10:0:119->Collector Neuron 9:0:119, keys_and_masks:[KeyAndMask:0x500L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 10:0:119->Collector Neuron 12:0:119, keys_and_masks:[KeyAndMask:0x500L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 10:0:119->Collector Neuron 8:0:119, keys_and_masks:[KeyAndMask:0x500L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 10:0:119->Collector Neuron 10:0:119, keys_and_masks:[KeyAndMask:0x500L:0xffffff80] 
+
+
+Subvert: Collector Neuron 11:0:119 
+subedge:PartitionedEdge:Collector Neuron 11:0:119->Collector Neuron 10:0:119, keys_and_masks:[KeyAndMask:0x580L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 11:0:119->Collector Neuron 12:0:119, keys_and_masks:[KeyAndMask:0x580L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 11:0:119->Collector Neuron 13:0:119, keys_and_masks:[KeyAndMask:0x580L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 11:0:119->Collector Neuron 9:0:119, keys_and_masks:[KeyAndMask:0x580L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 11:0:119->Collector Neuron 11:0:119, keys_and_masks:[KeyAndMask:0x580L:0xffffff80] 
+
+
+Subvert: Collector Neuron 12:0:119 
+subedge:PartitionedEdge:Collector Neuron 12:0:119->Collector Neuron 13:0:119, keys_and_masks:[KeyAndMask:0x600L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 12:0:119->Collector Neuron 11:0:119, keys_and_masks:[KeyAndMask:0x600L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 12:0:119->Collector Neuron 14:0:119, keys_and_masks:[KeyAndMask:0x600L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 12:0:119->Collector Neuron 10:0:119, keys_and_masks:[KeyAndMask:0x600L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 12:0:119->Collector Neuron 12:0:119, keys_and_masks:[KeyAndMask:0x600L:0xffffff80] 
+
+
+Subvert: Collector Neuron 13:0:119 
+subedge:PartitionedEdge:Collector Neuron 13:0:119->Collector Neuron 12:0:119, keys_and_masks:[KeyAndMask:0x680L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 13:0:119->Collector Neuron 14:0:119, keys_and_masks:[KeyAndMask:0x680L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 13:0:119->Collector Neuron 15:0:119, keys_and_masks:[KeyAndMask:0x680L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 13:0:119->Collector Neuron 11:0:119, keys_and_masks:[KeyAndMask:0x680L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 13:0:119->Collector Neuron 13:0:119, keys_and_masks:[KeyAndMask:0x680L:0xffffff80] 
+
+
+Subvert: Collector Neuron 14:0:119 
+subedge:PartitionedEdge:Collector Neuron 14:0:119->Collector Neuron 15:0:119, keys_and_masks:[KeyAndMask:0x700L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 14:0:119->Collector Neuron 13:0:119, keys_and_masks:[KeyAndMask:0x700L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 14:0:119->Collector Neuron 16:0:119, keys_and_masks:[KeyAndMask:0x700L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 14:0:119->Collector Neuron 12:0:119, keys_and_masks:[KeyAndMask:0x700L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 14:0:119->Collector Neuron 14:0:119, keys_and_masks:[KeyAndMask:0x700L:0xffffff80] 
+
+
+Subvert: Collector Neuron 15:0:119 
+subedge:PartitionedEdge:Collector Neuron 15:0:119->Collector Neuron 14:0:119, keys_and_masks:[KeyAndMask:0x780L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 15:0:119->Collector Neuron 16:0:119, keys_and_masks:[KeyAndMask:0x780L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 15:0:119->Collector Neuron 17:0:119, keys_and_masks:[KeyAndMask:0x780L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 15:0:119->Collector Neuron 13:0:119, keys_and_masks:[KeyAndMask:0x780L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 15:0:119->Collector Neuron 15:0:119, keys_and_masks:[KeyAndMask:0x780L:0xffffff80] 
+
+
+Subvert: Collector Neuron 16:0:119 
+subedge:PartitionedEdge:Collector Neuron 16:0:119->Collector Neuron 17:0:119, keys_and_masks:[KeyAndMask:0x800L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 16:0:119->Collector Neuron 15:0:119, keys_and_masks:[KeyAndMask:0x800L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 16:0:119->Collector Neuron 18:0:119, keys_and_masks:[KeyAndMask:0x800L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 16:0:119->Collector Neuron 14:0:119, keys_and_masks:[KeyAndMask:0x800L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 16:0:119->Collector Neuron 16:0:119, keys_and_masks:[KeyAndMask:0x800L:0xffffff80] 
+
+
+Subvert: Collector Neuron 17:0:119 
+subedge:PartitionedEdge:Collector Neuron 17:0:119->Collector Neuron 16:0:119, keys_and_masks:[KeyAndMask:0x880L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 17:0:119->Collector Neuron 18:0:119, keys_and_masks:[KeyAndMask:0x880L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 17:0:119->Collector Neuron 19:0:119, keys_and_masks:[KeyAndMask:0x880L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 17:0:119->Collector Neuron 15:0:119, keys_and_masks:[KeyAndMask:0x880L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 17:0:119->Collector Neuron 17:0:119, keys_and_masks:[KeyAndMask:0x880L:0xffffff80] 
+
+
+Subvert: Collector Neuron 18:0:119 
+subedge:PartitionedEdge:Collector Neuron 18:0:119->Collector Neuron 19:0:119, keys_and_masks:[KeyAndMask:0x900L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 18:0:119->Collector Neuron 17:0:119, keys_and_masks:[KeyAndMask:0x900L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 18:0:119->Collector Neuron 20:0:119, keys_and_masks:[KeyAndMask:0x900L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 18:0:119->Collector Neuron 16:0:119, keys_and_masks:[KeyAndMask:0x900L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 18:0:119->Collector Neuron 18:0:119, keys_and_masks:[KeyAndMask:0x900L:0xffffff80] 
+
+
+Subvert: Collector Neuron 19:0:119 
+subedge:PartitionedEdge:Collector Neuron 19:0:119->Collector Neuron 18:0:119, keys_and_masks:[KeyAndMask:0x980L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 19:0:119->Collector Neuron 20:0:119, keys_and_masks:[KeyAndMask:0x980L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 19:0:119->Collector Neuron 21:0:119, keys_and_masks:[KeyAndMask:0x980L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 19:0:119->Collector Neuron 17:0:119, keys_and_masks:[KeyAndMask:0x980L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 19:0:119->Collector Neuron 19:0:119, keys_and_masks:[KeyAndMask:0x980L:0xffffff80] 
+
+
+Subvert: Collector Neuron 20:0:119 
+subedge:PartitionedEdge:Collector Neuron 20:0:119->Collector Neuron 21:0:119, keys_and_masks:[KeyAndMask:0xa00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 20:0:119->Collector Neuron 19:0:119, keys_and_masks:[KeyAndMask:0xa00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 20:0:119->Collector Neuron 22:0:119, keys_and_masks:[KeyAndMask:0xa00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 20:0:119->Collector Neuron 18:0:119, keys_and_masks:[KeyAndMask:0xa00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 20:0:119->Collector Neuron 20:0:119, keys_and_masks:[KeyAndMask:0xa00L:0xffffff80] 
+
+
+Subvert: Collector Neuron 21:0:119 
+subedge:PartitionedEdge:Collector Neuron 21:0:119->Collector Neuron 20:0:119, keys_and_masks:[KeyAndMask:0xa80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 21:0:119->Collector Neuron 22:0:119, keys_and_masks:[KeyAndMask:0xa80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 21:0:119->Collector Neuron 23:0:119, keys_and_masks:[KeyAndMask:0xa80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 21:0:119->Collector Neuron 19:0:119, keys_and_masks:[KeyAndMask:0xa80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 21:0:119->Collector Neuron 21:0:119, keys_and_masks:[KeyAndMask:0xa80L:0xffffff80] 
+
+
+Subvert: Collector Neuron 22:0:119 
+subedge:PartitionedEdge:Collector Neuron 22:0:119->Collector Neuron 23:0:119, keys_and_masks:[KeyAndMask:0xb00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 22:0:119->Collector Neuron 21:0:119, keys_and_masks:[KeyAndMask:0xb00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 22:0:119->Collector Neuron 24:0:119, keys_and_masks:[KeyAndMask:0xb00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 22:0:119->Collector Neuron 20:0:119, keys_and_masks:[KeyAndMask:0xb00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 22:0:119->Collector Neuron 22:0:119, keys_and_masks:[KeyAndMask:0xb00L:0xffffff80] 
+
+
+Subvert: Collector Neuron 23:0:119 
+subedge:PartitionedEdge:Collector Neuron 23:0:119->Collector Neuron 22:0:119, keys_and_masks:[KeyAndMask:0xb80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 23:0:119->Collector Neuron 24:0:119, keys_and_masks:[KeyAndMask:0xb80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 23:0:119->Collector Neuron 25:0:119, keys_and_masks:[KeyAndMask:0xb80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 23:0:119->Collector Neuron 21:0:119, keys_and_masks:[KeyAndMask:0xb80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 23:0:119->Collector Neuron 23:0:119, keys_and_masks:[KeyAndMask:0xb80L:0xffffff80] 
+
+
+Subvert: Collector Neuron 24:0:119 
+subedge:PartitionedEdge:Collector Neuron 24:0:119->Collector Neuron 25:0:119, keys_and_masks:[KeyAndMask:0xc00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 24:0:119->Collector Neuron 23:0:119, keys_and_masks:[KeyAndMask:0xc00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 24:0:119->Collector Neuron 26:0:119, keys_and_masks:[KeyAndMask:0xc00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 24:0:119->Collector Neuron 22:0:119, keys_and_masks:[KeyAndMask:0xc00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 24:0:119->Collector Neuron 24:0:119, keys_and_masks:[KeyAndMask:0xc00L:0xffffff80] 
+
+
+Subvert: Collector Neuron 25:0:119 
+subedge:PartitionedEdge:Collector Neuron 25:0:119->Collector Neuron 24:0:119, keys_and_masks:[KeyAndMask:0xc80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 25:0:119->Collector Neuron 26:0:119, keys_and_masks:[KeyAndMask:0xc80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 25:0:119->Collector Neuron 27:0:119, keys_and_masks:[KeyAndMask:0xc80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 25:0:119->Collector Neuron 23:0:119, keys_and_masks:[KeyAndMask:0xc80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 25:0:119->Collector Neuron 25:0:119, keys_and_masks:[KeyAndMask:0xc80L:0xffffff80] 
+
+
+Subvert: Collector Neuron 26:0:119 
+subedge:PartitionedEdge:Collector Neuron 26:0:119->Collector Neuron 27:0:119, keys_and_masks:[KeyAndMask:0xd00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 26:0:119->Collector Neuron 25:0:119, keys_and_masks:[KeyAndMask:0xd00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 26:0:119->Collector Neuron 28:0:119, keys_and_masks:[KeyAndMask:0xd00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 26:0:119->Collector Neuron 24:0:119, keys_and_masks:[KeyAndMask:0xd00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 26:0:119->Collector Neuron 26:0:119, keys_and_masks:[KeyAndMask:0xd00L:0xffffff80] 
+
+
+Subvert: Collector Neuron 27:0:119 
+subedge:PartitionedEdge:Collector Neuron 27:0:119->Collector Neuron 26:0:119, keys_and_masks:[KeyAndMask:0xd80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 27:0:119->Collector Neuron 28:0:119, keys_and_masks:[KeyAndMask:0xd80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 27:0:119->Collector Neuron 29:0:119, keys_and_masks:[KeyAndMask:0xd80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 27:0:119->Collector Neuron 25:0:119, keys_and_masks:[KeyAndMask:0xd80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 27:0:119->Collector Neuron 27:0:119, keys_and_masks:[KeyAndMask:0xd80L:0xffffff80] 
+
+
+Subvert: Collector Neuron 28:0:119 
+subedge:PartitionedEdge:Collector Neuron 28:0:119->Collector Neuron 29:0:119, keys_and_masks:[KeyAndMask:0xe00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 28:0:119->Collector Neuron 27:0:119, keys_and_masks:[KeyAndMask:0xe00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 28:0:119->Collector Neuron 30:0:119, keys_and_masks:[KeyAndMask:0xe00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 28:0:119->Collector Neuron 26:0:119, keys_and_masks:[KeyAndMask:0xe00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 28:0:119->Collector Neuron 28:0:119, keys_and_masks:[KeyAndMask:0xe00L:0xffffff80] 
+
+
+Subvert: Collector Neuron 29:0:119 
+subedge:PartitionedEdge:Collector Neuron 29:0:119->Collector Neuron 28:0:119, keys_and_masks:[KeyAndMask:0xe80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 29:0:119->Collector Neuron 30:0:119, keys_and_masks:[KeyAndMask:0xe80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 29:0:119->Collector Neuron 31:0:119, keys_and_masks:[KeyAndMask:0xe80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 29:0:119->Collector Neuron 27:0:119, keys_and_masks:[KeyAndMask:0xe80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 29:0:119->Collector Neuron 29:0:119, keys_and_masks:[KeyAndMask:0xe80L:0xffffff80] 
+
+
+Subvert: Collector Neuron 30:0:119 
+subedge:PartitionedEdge:Collector Neuron 30:0:119->Collector Neuron 31:0:119, keys_and_masks:[KeyAndMask:0xf00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 30:0:119->Collector Neuron 29:0:119, keys_and_masks:[KeyAndMask:0xf00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 30:0:119->Collector Neuron 32:0:119, keys_and_masks:[KeyAndMask:0xf00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 30:0:119->Collector Neuron 28:0:119, keys_and_masks:[KeyAndMask:0xf00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 30:0:119->Collector Neuron 30:0:119, keys_and_masks:[KeyAndMask:0xf00L:0xffffff80] 
+
+
+Subvert: Collector Neuron 31:0:119 
+subedge:PartitionedEdge:Collector Neuron 31:0:119->Collector Neuron 30:0:119, keys_and_masks:[KeyAndMask:0xf80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 31:0:119->Collector Neuron 32:0:119, keys_and_masks:[KeyAndMask:0xf80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 31:0:119->Collector Neuron 33:0:119, keys_and_masks:[KeyAndMask:0xf80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 31:0:119->Collector Neuron 29:0:119, keys_and_masks:[KeyAndMask:0xf80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 31:0:119->Collector Neuron 31:0:119, keys_and_masks:[KeyAndMask:0xf80L:0xffffff80] 
+
+
+Subvert: Collector Neuron 32:0:119 
+subedge:PartitionedEdge:Collector Neuron 32:0:119->Collector Neuron 33:0:119, keys_and_masks:[KeyAndMask:0x1000L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 32:0:119->Collector Neuron 31:0:119, keys_and_masks:[KeyAndMask:0x1000L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 32:0:119->Collector Neuron 34:0:119, keys_and_masks:[KeyAndMask:0x1000L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 32:0:119->Collector Neuron 30:0:119, keys_and_masks:[KeyAndMask:0x1000L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 32:0:119->Collector Neuron 32:0:119, keys_and_masks:[KeyAndMask:0x1000L:0xffffff80] 
+
+
+Subvert: Collector Neuron 33:0:119 
+subedge:PartitionedEdge:Collector Neuron 33:0:119->Collector Neuron 32:0:119, keys_and_masks:[KeyAndMask:0x1080L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 33:0:119->Collector Neuron 34:0:119, keys_and_masks:[KeyAndMask:0x1080L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 33:0:119->Collector Neuron 35:0:119, keys_and_masks:[KeyAndMask:0x1080L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 33:0:119->Collector Neuron 31:0:119, keys_and_masks:[KeyAndMask:0x1080L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 33:0:119->Collector Neuron 33:0:119, keys_and_masks:[KeyAndMask:0x1080L:0xffffff80] 
+
+
+Subvert: Collector Neuron 34:0:119 
+subedge:PartitionedEdge:Collector Neuron 34:0:119->Collector Neuron 35:0:119, keys_and_masks:[KeyAndMask:0x1100L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 34:0:119->Collector Neuron 33:0:119, keys_and_masks:[KeyAndMask:0x1100L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 34:0:119->Collector Neuron 36:0:119, keys_and_masks:[KeyAndMask:0x1100L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 34:0:119->Collector Neuron 32:0:119, keys_and_masks:[KeyAndMask:0x1100L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 34:0:119->Collector Neuron 34:0:119, keys_and_masks:[KeyAndMask:0x1100L:0xffffff80] 
+
+
+Subvert: Collector Neuron 35:0:119 
+subedge:PartitionedEdge:Collector Neuron 35:0:119->Collector Neuron 34:0:119, keys_and_masks:[KeyAndMask:0x1180L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 35:0:119->Collector Neuron 36:0:119, keys_and_masks:[KeyAndMask:0x1180L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 35:0:119->Collector Neuron 37:0:119, keys_and_masks:[KeyAndMask:0x1180L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 35:0:119->Collector Neuron 33:0:119, keys_and_masks:[KeyAndMask:0x1180L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 35:0:119->Collector Neuron 35:0:119, keys_and_masks:[KeyAndMask:0x1180L:0xffffff80] 
+
+
+Subvert: Collector Neuron 36:0:119 
+subedge:PartitionedEdge:Collector Neuron 36:0:119->Collector Neuron 37:0:119, keys_and_masks:[KeyAndMask:0x1200L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 36:0:119->Collector Neuron 35:0:119, keys_and_masks:[KeyAndMask:0x1200L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 36:0:119->Collector Neuron 38:0:119, keys_and_masks:[KeyAndMask:0x1200L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 36:0:119->Collector Neuron 34:0:119, keys_and_masks:[KeyAndMask:0x1200L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 36:0:119->Collector Neuron 36:0:119, keys_and_masks:[KeyAndMask:0x1200L:0xffffff80] 
+
+
+Subvert: Collector Neuron 37:0:119 
+subedge:PartitionedEdge:Collector Neuron 37:0:119->Collector Neuron 36:0:119, keys_and_masks:[KeyAndMask:0x1280L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 37:0:119->Collector Neuron 38:0:119, keys_and_masks:[KeyAndMask:0x1280L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 37:0:119->Collector Neuron 39:0:119, keys_and_masks:[KeyAndMask:0x1280L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 37:0:119->Collector Neuron 35:0:119, keys_and_masks:[KeyAndMask:0x1280L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 37:0:119->Collector Neuron 37:0:119, keys_and_masks:[KeyAndMask:0x1280L:0xffffff80] 
+
+
+Subvert: Collector Neuron 38:0:119 
+subedge:PartitionedEdge:Collector Neuron 38:0:119->Collector Neuron 39:0:119, keys_and_masks:[KeyAndMask:0x1300L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 38:0:119->Collector Neuron 37:0:119, keys_and_masks:[KeyAndMask:0x1300L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 38:0:119->Collector Neuron 40:0:119, keys_and_masks:[KeyAndMask:0x1300L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 38:0:119->Collector Neuron 36:0:119, keys_and_masks:[KeyAndMask:0x1300L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 38:0:119->Collector Neuron 38:0:119, keys_and_masks:[KeyAndMask:0x1300L:0xffffff80] 
+
+
+Subvert: Collector Neuron 39:0:119 
+subedge:PartitionedEdge:Collector Neuron 39:0:119->Collector Neuron 38:0:119, keys_and_masks:[KeyAndMask:0x1380L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 39:0:119->Collector Neuron 40:0:119, keys_and_masks:[KeyAndMask:0x1380L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 39:0:119->Collector Neuron 41:0:119, keys_and_masks:[KeyAndMask:0x1380L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 39:0:119->Collector Neuron 37:0:119, keys_and_masks:[KeyAndMask:0x1380L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 39:0:119->Collector Neuron 39:0:119, keys_and_masks:[KeyAndMask:0x1380L:0xffffff80] 
+
+
+Subvert: Collector Neuron 40:0:119 
+subedge:PartitionedEdge:Collector Neuron 40:0:119->Collector Neuron 41:0:119, keys_and_masks:[KeyAndMask:0x1400L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 40:0:119->Collector Neuron 39:0:119, keys_and_masks:[KeyAndMask:0x1400L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 40:0:119->Collector Neuron 42:0:119, keys_and_masks:[KeyAndMask:0x1400L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 40:0:119->Collector Neuron 38:0:119, keys_and_masks:[KeyAndMask:0x1400L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 40:0:119->Collector Neuron 40:0:119, keys_and_masks:[KeyAndMask:0x1400L:0xffffff80] 
+
+
+Subvert: Collector Neuron 41:0:119 
+subedge:PartitionedEdge:Collector Neuron 41:0:119->Collector Neuron 40:0:119, keys_and_masks:[KeyAndMask:0x1480L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 41:0:119->Collector Neuron 42:0:119, keys_and_masks:[KeyAndMask:0x1480L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 41:0:119->Collector Neuron 43:0:119, keys_and_masks:[KeyAndMask:0x1480L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 41:0:119->Collector Neuron 39:0:119, keys_and_masks:[KeyAndMask:0x1480L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 41:0:119->Collector Neuron 41:0:119, keys_and_masks:[KeyAndMask:0x1480L:0xffffff80] 
+
+
+Subvert: Collector Neuron 42:0:119 
+subedge:PartitionedEdge:Collector Neuron 42:0:119->Collector Neuron 43:0:119, keys_and_masks:[KeyAndMask:0x1500L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 42:0:119->Collector Neuron 41:0:119, keys_and_masks:[KeyAndMask:0x1500L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 42:0:119->Collector Neuron 44:0:119, keys_and_masks:[KeyAndMask:0x1500L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 42:0:119->Collector Neuron 40:0:119, keys_and_masks:[KeyAndMask:0x1500L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 42:0:119->Collector Neuron 42:0:119, keys_and_masks:[KeyAndMask:0x1500L:0xffffff80] 
+
+
+Subvert: Collector Neuron 43:0:119 
+subedge:PartitionedEdge:Collector Neuron 43:0:119->Collector Neuron 42:0:119, keys_and_masks:[KeyAndMask:0x1580L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 43:0:119->Collector Neuron 44:0:119, keys_and_masks:[KeyAndMask:0x1580L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 43:0:119->Collector Neuron 45:0:119, keys_and_masks:[KeyAndMask:0x1580L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 43:0:119->Collector Neuron 41:0:119, keys_and_masks:[KeyAndMask:0x1580L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 43:0:119->Collector Neuron 43:0:119, keys_and_masks:[KeyAndMask:0x1580L:0xffffff80] 
+
+
+Subvert: Collector Neuron 44:0:119 
+subedge:PartitionedEdge:Collector Neuron 44:0:119->Collector Neuron 45:0:119, keys_and_masks:[KeyAndMask:0x1600L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 44:0:119->Collector Neuron 43:0:119, keys_and_masks:[KeyAndMask:0x1600L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 44:0:119->Collector Neuron 46:0:119, keys_and_masks:[KeyAndMask:0x1600L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 44:0:119->Collector Neuron 42:0:119, keys_and_masks:[KeyAndMask:0x1600L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 44:0:119->Collector Neuron 44:0:119, keys_and_masks:[KeyAndMask:0x1600L:0xffffff80] 
+
+
+Subvert: Collector Neuron 45:0:119 
+subedge:PartitionedEdge:Collector Neuron 45:0:119->Collector Neuron 44:0:119, keys_and_masks:[KeyAndMask:0x1680L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 45:0:119->Collector Neuron 46:0:119, keys_and_masks:[KeyAndMask:0x1680L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 45:0:119->Collector Neuron 47:0:119, keys_and_masks:[KeyAndMask:0x1680L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 45:0:119->Collector Neuron 43:0:119, keys_and_masks:[KeyAndMask:0x1680L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 45:0:119->Collector Neuron 45:0:119, keys_and_masks:[KeyAndMask:0x1680L:0xffffff80] 
+
+
+Subvert: Collector Neuron 46:0:119 
+subedge:PartitionedEdge:Collector Neuron 46:0:119->Collector Neuron 47:0:119, keys_and_masks:[KeyAndMask:0x1700L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 46:0:119->Collector Neuron 45:0:119, keys_and_masks:[KeyAndMask:0x1700L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 46:0:119->Collector Neuron 48:0:119, keys_and_masks:[KeyAndMask:0x1700L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 46:0:119->Collector Neuron 44:0:119, keys_and_masks:[KeyAndMask:0x1700L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 46:0:119->Collector Neuron 46:0:119, keys_and_masks:[KeyAndMask:0x1700L:0xffffff80] 
+
+
+Subvert: Collector Neuron 47:0:119 
+subedge:PartitionedEdge:Collector Neuron 47:0:119->Collector Neuron 46:0:119, keys_and_masks:[KeyAndMask:0x1780L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 47:0:119->Collector Neuron 48:0:119, keys_and_masks:[KeyAndMask:0x1780L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 47:0:119->Collector Neuron 49:0:119, keys_and_masks:[KeyAndMask:0x1780L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 47:0:119->Collector Neuron 45:0:119, keys_and_masks:[KeyAndMask:0x1780L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 47:0:119->Collector Neuron 47:0:119, keys_and_masks:[KeyAndMask:0x1780L:0xffffff80] 
+
+
+Subvert: Collector Neuron 48:0:119 
+subedge:PartitionedEdge:Collector Neuron 48:0:119->Collector Neuron 49:0:119, keys_and_masks:[KeyAndMask:0x1800L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 48:0:119->Collector Neuron 47:0:119, keys_and_masks:[KeyAndMask:0x1800L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 48:0:119->Collector Neuron 50:0:119, keys_and_masks:[KeyAndMask:0x1800L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 48:0:119->Collector Neuron 46:0:119, keys_and_masks:[KeyAndMask:0x1800L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 48:0:119->Collector Neuron 48:0:119, keys_and_masks:[KeyAndMask:0x1800L:0xffffff80] 
+
+
+Subvert: Collector Neuron 49:0:119 
+subedge:PartitionedEdge:Collector Neuron 49:0:119->Collector Neuron 48:0:119, keys_and_masks:[KeyAndMask:0x1880L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 49:0:119->Collector Neuron 50:0:119, keys_and_masks:[KeyAndMask:0x1880L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 49:0:119->Collector Neuron 51:0:119, keys_and_masks:[KeyAndMask:0x1880L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 49:0:119->Collector Neuron 47:0:119, keys_and_masks:[KeyAndMask:0x1880L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 49:0:119->Collector Neuron 49:0:119, keys_and_masks:[KeyAndMask:0x1880L:0xffffff80] 
+
+
+Subvert: Collector Neuron 50:0:119 
+subedge:PartitionedEdge:Collector Neuron 50:0:119->Collector Neuron 51:0:119, keys_and_masks:[KeyAndMask:0x1900L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 50:0:119->Collector Neuron 49:0:119, keys_and_masks:[KeyAndMask:0x1900L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 50:0:119->Collector Neuron 52:0:119, keys_and_masks:[KeyAndMask:0x1900L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 50:0:119->Collector Neuron 48:0:119, keys_and_masks:[KeyAndMask:0x1900L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 50:0:119->Collector Neuron 50:0:119, keys_and_masks:[KeyAndMask:0x1900L:0xffffff80] 
+
+
+Subvert: Collector Neuron 51:0:119 
+subedge:PartitionedEdge:Collector Neuron 51:0:119->Collector Neuron 50:0:119, keys_and_masks:[KeyAndMask:0x1980L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 51:0:119->Collector Neuron 52:0:119, keys_and_masks:[KeyAndMask:0x1980L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 51:0:119->Collector Neuron 53:0:119, keys_and_masks:[KeyAndMask:0x1980L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 51:0:119->Collector Neuron 49:0:119, keys_and_masks:[KeyAndMask:0x1980L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 51:0:119->Collector Neuron 51:0:119, keys_and_masks:[KeyAndMask:0x1980L:0xffffff80] 
+
+
+Subvert: Collector Neuron 52:0:119 
+subedge:PartitionedEdge:Collector Neuron 52:0:119->Collector Neuron 53:0:119, keys_and_masks:[KeyAndMask:0x1a00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 52:0:119->Collector Neuron 51:0:119, keys_and_masks:[KeyAndMask:0x1a00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 52:0:119->Collector Neuron 54:0:119, keys_and_masks:[KeyAndMask:0x1a00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 52:0:119->Collector Neuron 50:0:119, keys_and_masks:[KeyAndMask:0x1a00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 52:0:119->Collector Neuron 52:0:119, keys_and_masks:[KeyAndMask:0x1a00L:0xffffff80] 
+
+
+Subvert: Collector Neuron 53:0:119 
+subedge:PartitionedEdge:Collector Neuron 53:0:119->Collector Neuron 52:0:119, keys_and_masks:[KeyAndMask:0x1a80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 53:0:119->Collector Neuron 54:0:119, keys_and_masks:[KeyAndMask:0x1a80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 53:0:119->Collector Neuron 55:0:119, keys_and_masks:[KeyAndMask:0x1a80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 53:0:119->Collector Neuron 51:0:119, keys_and_masks:[KeyAndMask:0x1a80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 53:0:119->Collector Neuron 53:0:119, keys_and_masks:[KeyAndMask:0x1a80L:0xffffff80] 
+
+
+Subvert: Collector Neuron 54:0:119 
+subedge:PartitionedEdge:Collector Neuron 54:0:119->Collector Neuron 55:0:119, keys_and_masks:[KeyAndMask:0x1b00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 54:0:119->Collector Neuron 53:0:119, keys_and_masks:[KeyAndMask:0x1b00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 54:0:119->Collector Neuron 56:0:119, keys_and_masks:[KeyAndMask:0x1b00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 54:0:119->Collector Neuron 52:0:119, keys_and_masks:[KeyAndMask:0x1b00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 54:0:119->Collector Neuron 54:0:119, keys_and_masks:[KeyAndMask:0x1b00L:0xffffff80] 
+
+
+Subvert: Collector Neuron 55:0:119 
+subedge:PartitionedEdge:Collector Neuron 55:0:119->Collector Neuron 54:0:119, keys_and_masks:[KeyAndMask:0x1b80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 55:0:119->Collector Neuron 56:0:119, keys_and_masks:[KeyAndMask:0x1b80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 55:0:119->Collector Neuron 57:0:119, keys_and_masks:[KeyAndMask:0x1b80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 55:0:119->Collector Neuron 53:0:119, keys_and_masks:[KeyAndMask:0x1b80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 55:0:119->Collector Neuron 55:0:119, keys_and_masks:[KeyAndMask:0x1b80L:0xffffff80] 
+
+
+Subvert: Collector Neuron 56:0:119 
+subedge:PartitionedEdge:Collector Neuron 56:0:119->Collector Neuron 57:0:119, keys_and_masks:[KeyAndMask:0x1c00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 56:0:119->Collector Neuron 55:0:119, keys_and_masks:[KeyAndMask:0x1c00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 56:0:119->Collector Neuron 58:0:119, keys_and_masks:[KeyAndMask:0x1c00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 56:0:119->Collector Neuron 54:0:119, keys_and_masks:[KeyAndMask:0x1c00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 56:0:119->Collector Neuron 56:0:119, keys_and_masks:[KeyAndMask:0x1c00L:0xffffff80] 
+
+
+Subvert: Collector Neuron 57:0:119 
+subedge:PartitionedEdge:Collector Neuron 57:0:119->Collector Neuron 56:0:119, keys_and_masks:[KeyAndMask:0x1c80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 57:0:119->Collector Neuron 58:0:119, keys_and_masks:[KeyAndMask:0x1c80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 57:0:119->Collector Neuron 59:0:119, keys_and_masks:[KeyAndMask:0x1c80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 57:0:119->Collector Neuron 55:0:119, keys_and_masks:[KeyAndMask:0x1c80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 57:0:119->Collector Neuron 57:0:119, keys_and_masks:[KeyAndMask:0x1c80L:0xffffff80] 
+
+
+Subvert: Collector Neuron 58:0:119 
+subedge:PartitionedEdge:Collector Neuron 58:0:119->Collector Neuron 59:0:119, keys_and_masks:[KeyAndMask:0x1d00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 58:0:119->Collector Neuron 57:0:119, keys_and_masks:[KeyAndMask:0x1d00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 58:0:119->Collector Neuron 60:0:119, keys_and_masks:[KeyAndMask:0x1d00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 58:0:119->Collector Neuron 56:0:119, keys_and_masks:[KeyAndMask:0x1d00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 58:0:119->Collector Neuron 58:0:119, keys_and_masks:[KeyAndMask:0x1d00L:0xffffff80] 
+
+
+Subvert: Collector Neuron 59:0:119 
+subedge:PartitionedEdge:Collector Neuron 59:0:119->Collector Neuron 58:0:119, keys_and_masks:[KeyAndMask:0x1d80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 59:0:119->Collector Neuron 60:0:119, keys_and_masks:[KeyAndMask:0x1d80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 59:0:119->Collector Neuron 61:0:119, keys_and_masks:[KeyAndMask:0x1d80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 59:0:119->Collector Neuron 57:0:119, keys_and_masks:[KeyAndMask:0x1d80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 59:0:119->Collector Neuron 59:0:119, keys_and_masks:[KeyAndMask:0x1d80L:0xffffff80] 
+
+
+Subvert: Collector Neuron 60:0:119 
+subedge:PartitionedEdge:Collector Neuron 60:0:119->Collector Neuron 61:0:119, keys_and_masks:[KeyAndMask:0x1e00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 60:0:119->Collector Neuron 59:0:119, keys_and_masks:[KeyAndMask:0x1e00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 60:0:119->Collector Neuron 62:0:119, keys_and_masks:[KeyAndMask:0x1e00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 60:0:119->Collector Neuron 58:0:119, keys_and_masks:[KeyAndMask:0x1e00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 60:0:119->Collector Neuron 60:0:119, keys_and_masks:[KeyAndMask:0x1e00L:0xffffff80] 
+
+
+Subvert: Collector Neuron 61:0:119 
+subedge:PartitionedEdge:Collector Neuron 61:0:119->Collector Neuron 60:0:119, keys_and_masks:[KeyAndMask:0x1e80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 61:0:119->Collector Neuron 62:0:119, keys_and_masks:[KeyAndMask:0x1e80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 61:0:119->Collector Neuron 63:0:119, keys_and_masks:[KeyAndMask:0x1e80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 61:0:119->Collector Neuron 59:0:119, keys_and_masks:[KeyAndMask:0x1e80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 61:0:119->Collector Neuron 61:0:119, keys_and_masks:[KeyAndMask:0x1e80L:0xffffff80] 
+
+
+Subvert: Collector Neuron 62:0:119 
+subedge:PartitionedEdge:Collector Neuron 62:0:119->Collector Neuron 63:0:119, keys_and_masks:[KeyAndMask:0x1f00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 62:0:119->Collector Neuron 61:0:119, keys_and_masks:[KeyAndMask:0x1f00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 62:0:119->Collector Neuron 64:0:119, keys_and_masks:[KeyAndMask:0x1f00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 62:0:119->Collector Neuron 60:0:119, keys_and_masks:[KeyAndMask:0x1f00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 62:0:119->Collector Neuron 62:0:119, keys_and_masks:[KeyAndMask:0x1f00L:0xffffff80] 
+
+
+Subvert: Collector Neuron 63:0:119 
+subedge:PartitionedEdge:Collector Neuron 63:0:119->Collector Neuron 62:0:119, keys_and_masks:[KeyAndMask:0x1f80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 63:0:119->Collector Neuron 64:0:119, keys_and_masks:[KeyAndMask:0x1f80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 63:0:119->Collector Neuron 65:0:119, keys_and_masks:[KeyAndMask:0x1f80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 63:0:119->Collector Neuron 61:0:119, keys_and_masks:[KeyAndMask:0x1f80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 63:0:119->Collector Neuron 63:0:119, keys_and_masks:[KeyAndMask:0x1f80L:0xffffff80] 
+
+
+Subvert: Collector Neuron 64:0:119 
+subedge:PartitionedEdge:Collector Neuron 64:0:119->Collector Neuron 65:0:119, keys_and_masks:[KeyAndMask:0x2000L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 64:0:119->Collector Neuron 63:0:119, keys_and_masks:[KeyAndMask:0x2000L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 64:0:119->Collector Neuron 66:0:119, keys_and_masks:[KeyAndMask:0x2000L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 64:0:119->Collector Neuron 62:0:119, keys_and_masks:[KeyAndMask:0x2000L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 64:0:119->Collector Neuron 64:0:119, keys_and_masks:[KeyAndMask:0x2000L:0xffffff80] 
+
+
+Subvert: Collector Neuron 65:0:119 
+subedge:PartitionedEdge:Collector Neuron 65:0:119->Collector Neuron 64:0:119, keys_and_masks:[KeyAndMask:0x2080L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 65:0:119->Collector Neuron 66:0:119, keys_and_masks:[KeyAndMask:0x2080L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 65:0:119->Collector Neuron 67:0:119, keys_and_masks:[KeyAndMask:0x2080L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 65:0:119->Collector Neuron 63:0:119, keys_and_masks:[KeyAndMask:0x2080L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 65:0:119->Collector Neuron 65:0:119, keys_and_masks:[KeyAndMask:0x2080L:0xffffff80] 
+
+
+Subvert: Collector Neuron 66:0:119 
+subedge:PartitionedEdge:Collector Neuron 66:0:119->Collector Neuron 67:0:119, keys_and_masks:[KeyAndMask:0x2100L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 66:0:119->Collector Neuron 65:0:119, keys_and_masks:[KeyAndMask:0x2100L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 66:0:119->Collector Neuron 68:0:119, keys_and_masks:[KeyAndMask:0x2100L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 66:0:119->Collector Neuron 64:0:119, keys_and_masks:[KeyAndMask:0x2100L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 66:0:119->Collector Neuron 66:0:119, keys_and_masks:[KeyAndMask:0x2100L:0xffffff80] 
+
+
+Subvert: Collector Neuron 67:0:119 
+subedge:PartitionedEdge:Collector Neuron 67:0:119->Collector Neuron 66:0:119, keys_and_masks:[KeyAndMask:0x2180L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 67:0:119->Collector Neuron 68:0:119, keys_and_masks:[KeyAndMask:0x2180L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 67:0:119->Collector Neuron 69:0:119, keys_and_masks:[KeyAndMask:0x2180L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 67:0:119->Collector Neuron 65:0:119, keys_and_masks:[KeyAndMask:0x2180L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 67:0:119->Collector Neuron 67:0:119, keys_and_masks:[KeyAndMask:0x2180L:0xffffff80] 
+
+
+Subvert: Collector Neuron 68:0:119 
+subedge:PartitionedEdge:Collector Neuron 68:0:119->Collector Neuron 69:0:119, keys_and_masks:[KeyAndMask:0x2200L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 68:0:119->Collector Neuron 67:0:119, keys_and_masks:[KeyAndMask:0x2200L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 68:0:119->Collector Neuron 70:0:119, keys_and_masks:[KeyAndMask:0x2200L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 68:0:119->Collector Neuron 66:0:119, keys_and_masks:[KeyAndMask:0x2200L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 68:0:119->Collector Neuron 68:0:119, keys_and_masks:[KeyAndMask:0x2200L:0xffffff80] 
+
+
+Subvert: Collector Neuron 69:0:119 
+subedge:PartitionedEdge:Collector Neuron 69:0:119->Collector Neuron 68:0:119, keys_and_masks:[KeyAndMask:0x2280L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 69:0:119->Collector Neuron 70:0:119, keys_and_masks:[KeyAndMask:0x2280L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 69:0:119->Collector Neuron 71:0:119, keys_and_masks:[KeyAndMask:0x2280L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 69:0:119->Collector Neuron 67:0:119, keys_and_masks:[KeyAndMask:0x2280L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 69:0:119->Collector Neuron 69:0:119, keys_and_masks:[KeyAndMask:0x2280L:0xffffff80] 
+
+
+Subvert: Collector Neuron 70:0:119 
+subedge:PartitionedEdge:Collector Neuron 70:0:119->Collector Neuron 71:0:119, keys_and_masks:[KeyAndMask:0x2300L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 70:0:119->Collector Neuron 69:0:119, keys_and_masks:[KeyAndMask:0x2300L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 70:0:119->Collector Neuron 72:0:119, keys_and_masks:[KeyAndMask:0x2300L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 70:0:119->Collector Neuron 68:0:119, keys_and_masks:[KeyAndMask:0x2300L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 70:0:119->Collector Neuron 70:0:119, keys_and_masks:[KeyAndMask:0x2300L:0xffffff80] 
+
+
+Subvert: Collector Neuron 71:0:119 
+subedge:PartitionedEdge:Collector Neuron 71:0:119->Collector Neuron 70:0:119, keys_and_masks:[KeyAndMask:0x2380L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 71:0:119->Collector Neuron 72:0:119, keys_and_masks:[KeyAndMask:0x2380L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 71:0:119->Collector Neuron 73:0:119, keys_and_masks:[KeyAndMask:0x2380L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 71:0:119->Collector Neuron 69:0:119, keys_and_masks:[KeyAndMask:0x2380L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 71:0:119->Collector Neuron 71:0:119, keys_and_masks:[KeyAndMask:0x2380L:0xffffff80] 
+
+
+Subvert: Collector Neuron 72:0:119 
+subedge:PartitionedEdge:Collector Neuron 72:0:119->Collector Neuron 73:0:119, keys_and_masks:[KeyAndMask:0x2400L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 72:0:119->Collector Neuron 71:0:119, keys_and_masks:[KeyAndMask:0x2400L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 72:0:119->Collector Neuron 74:0:119, keys_and_masks:[KeyAndMask:0x2400L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 72:0:119->Collector Neuron 70:0:119, keys_and_masks:[KeyAndMask:0x2400L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 72:0:119->Collector Neuron 72:0:119, keys_and_masks:[KeyAndMask:0x2400L:0xffffff80] 
+
+
+Subvert: Collector Neuron 73:0:119 
+subedge:PartitionedEdge:Collector Neuron 73:0:119->Collector Neuron 72:0:119, keys_and_masks:[KeyAndMask:0x2480L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 73:0:119->Collector Neuron 74:0:119, keys_and_masks:[KeyAndMask:0x2480L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 73:0:119->Collector Neuron 75:0:119, keys_and_masks:[KeyAndMask:0x2480L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 73:0:119->Collector Neuron 71:0:119, keys_and_masks:[KeyAndMask:0x2480L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 73:0:119->Collector Neuron 73:0:119, keys_and_masks:[KeyAndMask:0x2480L:0xffffff80] 
+
+
+Subvert: Collector Neuron 74:0:119 
+subedge:PartitionedEdge:Collector Neuron 74:0:119->Collector Neuron 75:0:119, keys_and_masks:[KeyAndMask:0x2500L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 74:0:119->Collector Neuron 73:0:119, keys_and_masks:[KeyAndMask:0x2500L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 74:0:119->Collector Neuron 76:0:119, keys_and_masks:[KeyAndMask:0x2500L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 74:0:119->Collector Neuron 72:0:119, keys_and_masks:[KeyAndMask:0x2500L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 74:0:119->Collector Neuron 74:0:119, keys_and_masks:[KeyAndMask:0x2500L:0xffffff80] 
+
+
+Subvert: Collector Neuron 75:0:119 
+subedge:PartitionedEdge:Collector Neuron 75:0:119->Collector Neuron 74:0:119, keys_and_masks:[KeyAndMask:0x2580L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 75:0:119->Collector Neuron 76:0:119, keys_and_masks:[KeyAndMask:0x2580L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 75:0:119->Collector Neuron 77:0:119, keys_and_masks:[KeyAndMask:0x2580L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 75:0:119->Collector Neuron 73:0:119, keys_and_masks:[KeyAndMask:0x2580L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 75:0:119->Collector Neuron 75:0:119, keys_and_masks:[KeyAndMask:0x2580L:0xffffff80] 
+
+
+Subvert: Collector Neuron 76:0:119 
+subedge:PartitionedEdge:Collector Neuron 76:0:119->Collector Neuron 77:0:119, keys_and_masks:[KeyAndMask:0x2600L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 76:0:119->Collector Neuron 75:0:119, keys_and_masks:[KeyAndMask:0x2600L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 76:0:119->Collector Neuron 78:0:119, keys_and_masks:[KeyAndMask:0x2600L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 76:0:119->Collector Neuron 74:0:119, keys_and_masks:[KeyAndMask:0x2600L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 76:0:119->Collector Neuron 76:0:119, keys_and_masks:[KeyAndMask:0x2600L:0xffffff80] 
+
+
+Subvert: Collector Neuron 77:0:119 
+subedge:PartitionedEdge:Collector Neuron 77:0:119->Collector Neuron 76:0:119, keys_and_masks:[KeyAndMask:0x2680L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 77:0:119->Collector Neuron 78:0:119, keys_and_masks:[KeyAndMask:0x2680L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 77:0:119->Collector Neuron 79:0:119, keys_and_masks:[KeyAndMask:0x2680L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 77:0:119->Collector Neuron 75:0:119, keys_and_masks:[KeyAndMask:0x2680L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 77:0:119->Collector Neuron 77:0:119, keys_and_masks:[KeyAndMask:0x2680L:0xffffff80] 
+
+
+Subvert: Collector Neuron 78:0:119 
+subedge:PartitionedEdge:Collector Neuron 78:0:119->Collector Neuron 79:0:119, keys_and_masks:[KeyAndMask:0x2700L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 78:0:119->Collector Neuron 77:0:119, keys_and_masks:[KeyAndMask:0x2700L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 78:0:119->Collector Neuron 80:0:119, keys_and_masks:[KeyAndMask:0x2700L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 78:0:119->Collector Neuron 76:0:119, keys_and_masks:[KeyAndMask:0x2700L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 78:0:119->Collector Neuron 78:0:119, keys_and_masks:[KeyAndMask:0x2700L:0xffffff80] 
+
+
+Subvert: Collector Neuron 79:0:119 
+subedge:PartitionedEdge:Collector Neuron 79:0:119->Collector Neuron 78:0:119, keys_and_masks:[KeyAndMask:0x2780L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 79:0:119->Collector Neuron 80:0:119, keys_and_masks:[KeyAndMask:0x2780L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 79:0:119->Collector Neuron 81:0:119, keys_and_masks:[KeyAndMask:0x2780L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 79:0:119->Collector Neuron 77:0:119, keys_and_masks:[KeyAndMask:0x2780L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 79:0:119->Collector Neuron 79:0:119, keys_and_masks:[KeyAndMask:0x2780L:0xffffff80] 
+
+
+Subvert: Collector Neuron 80:0:119 
+subedge:PartitionedEdge:Collector Neuron 80:0:119->Collector Neuron 81:0:119, keys_and_masks:[KeyAndMask:0x2800L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 80:0:119->Collector Neuron 79:0:119, keys_and_masks:[KeyAndMask:0x2800L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 80:0:119->Collector Neuron 82:0:119, keys_and_masks:[KeyAndMask:0x2800L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 80:0:119->Collector Neuron 78:0:119, keys_and_masks:[KeyAndMask:0x2800L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 80:0:119->Collector Neuron 80:0:119, keys_and_masks:[KeyAndMask:0x2800L:0xffffff80] 
+
+
+Subvert: Collector Neuron 81:0:119 
+subedge:PartitionedEdge:Collector Neuron 81:0:119->Collector Neuron 80:0:119, keys_and_masks:[KeyAndMask:0x2880L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 81:0:119->Collector Neuron 82:0:119, keys_and_masks:[KeyAndMask:0x2880L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 81:0:119->Collector Neuron 83:0:119, keys_and_masks:[KeyAndMask:0x2880L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 81:0:119->Collector Neuron 79:0:119, keys_and_masks:[KeyAndMask:0x2880L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 81:0:119->Collector Neuron 81:0:119, keys_and_masks:[KeyAndMask:0x2880L:0xffffff80] 
+
+
+Subvert: Collector Neuron 82:0:119 
+subedge:PartitionedEdge:Collector Neuron 82:0:119->Collector Neuron 83:0:119, keys_and_masks:[KeyAndMask:0x2900L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 82:0:119->Collector Neuron 81:0:119, keys_and_masks:[KeyAndMask:0x2900L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 82:0:119->Collector Neuron 84:0:119, keys_and_masks:[KeyAndMask:0x2900L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 82:0:119->Collector Neuron 80:0:119, keys_and_masks:[KeyAndMask:0x2900L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 82:0:119->Collector Neuron 82:0:119, keys_and_masks:[KeyAndMask:0x2900L:0xffffff80] 
+
+
+Subvert: Collector Neuron 83:0:119 
+subedge:PartitionedEdge:Collector Neuron 83:0:119->Collector Neuron 82:0:119, keys_and_masks:[KeyAndMask:0x2980L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 83:0:119->Collector Neuron 84:0:119, keys_and_masks:[KeyAndMask:0x2980L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 83:0:119->Collector Neuron 85:0:119, keys_and_masks:[KeyAndMask:0x2980L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 83:0:119->Collector Neuron 81:0:119, keys_and_masks:[KeyAndMask:0x2980L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 83:0:119->Collector Neuron 83:0:119, keys_and_masks:[KeyAndMask:0x2980L:0xffffff80] 
+
+
+Subvert: Collector Neuron 84:0:119 
+subedge:PartitionedEdge:Collector Neuron 84:0:119->Collector Neuron 85:0:119, keys_and_masks:[KeyAndMask:0x2a00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 84:0:119->Collector Neuron 83:0:119, keys_and_masks:[KeyAndMask:0x2a00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 84:0:119->Collector Neuron 86:0:119, keys_and_masks:[KeyAndMask:0x2a00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 84:0:119->Collector Neuron 82:0:119, keys_and_masks:[KeyAndMask:0x2a00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 84:0:119->Collector Neuron 84:0:119, keys_and_masks:[KeyAndMask:0x2a00L:0xffffff80] 
+
+
+Subvert: Collector Neuron 85:0:119 
+subedge:PartitionedEdge:Collector Neuron 85:0:119->Collector Neuron 84:0:119, keys_and_masks:[KeyAndMask:0x2a80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 85:0:119->Collector Neuron 86:0:119, keys_and_masks:[KeyAndMask:0x2a80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 85:0:119->Collector Neuron 87:0:119, keys_and_masks:[KeyAndMask:0x2a80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 85:0:119->Collector Neuron 83:0:119, keys_and_masks:[KeyAndMask:0x2a80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 85:0:119->Collector Neuron 85:0:119, keys_and_masks:[KeyAndMask:0x2a80L:0xffffff80] 
+
+
+Subvert: Collector Neuron 86:0:119 
+subedge:PartitionedEdge:Collector Neuron 86:0:119->Collector Neuron 87:0:119, keys_and_masks:[KeyAndMask:0x2b00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 86:0:119->Collector Neuron 85:0:119, keys_and_masks:[KeyAndMask:0x2b00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 86:0:119->Collector Neuron 88:0:119, keys_and_masks:[KeyAndMask:0x2b00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 86:0:119->Collector Neuron 84:0:119, keys_and_masks:[KeyAndMask:0x2b00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 86:0:119->Collector Neuron 86:0:119, keys_and_masks:[KeyAndMask:0x2b00L:0xffffff80] 
+
+
+Subvert: Collector Neuron 87:0:119 
+subedge:PartitionedEdge:Collector Neuron 87:0:119->Collector Neuron 86:0:119, keys_and_masks:[KeyAndMask:0x2b80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 87:0:119->Collector Neuron 88:0:119, keys_and_masks:[KeyAndMask:0x2b80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 87:0:119->Collector Neuron 89:0:119, keys_and_masks:[KeyAndMask:0x2b80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 87:0:119->Collector Neuron 85:0:119, keys_and_masks:[KeyAndMask:0x2b80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 87:0:119->Collector Neuron 87:0:119, keys_and_masks:[KeyAndMask:0x2b80L:0xffffff80] 
+
+
+Subvert: Collector Neuron 88:0:119 
+subedge:PartitionedEdge:Collector Neuron 88:0:119->Collector Neuron 89:0:119, keys_and_masks:[KeyAndMask:0x2c00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 88:0:119->Collector Neuron 87:0:119, keys_and_masks:[KeyAndMask:0x2c00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 88:0:119->Collector Neuron 90:0:119, keys_and_masks:[KeyAndMask:0x2c00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 88:0:119->Collector Neuron 86:0:119, keys_and_masks:[KeyAndMask:0x2c00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 88:0:119->Collector Neuron 88:0:119, keys_and_masks:[KeyAndMask:0x2c00L:0xffffff80] 
+
+
+Subvert: Collector Neuron 89:0:119 
+subedge:PartitionedEdge:Collector Neuron 89:0:119->Collector Neuron 88:0:119, keys_and_masks:[KeyAndMask:0x2c80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 89:0:119->Collector Neuron 90:0:119, keys_and_masks:[KeyAndMask:0x2c80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 89:0:119->Collector Neuron 91:0:119, keys_and_masks:[KeyAndMask:0x2c80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 89:0:119->Collector Neuron 87:0:119, keys_and_masks:[KeyAndMask:0x2c80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 89:0:119->Collector Neuron 89:0:119, keys_and_masks:[KeyAndMask:0x2c80L:0xffffff80] 
+
+
+Subvert: Collector Neuron 90:0:119 
+subedge:PartitionedEdge:Collector Neuron 90:0:119->Collector Neuron 91:0:119, keys_and_masks:[KeyAndMask:0x2d00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 90:0:119->Collector Neuron 89:0:119, keys_and_masks:[KeyAndMask:0x2d00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 90:0:119->Collector Neuron 92:0:119, keys_and_masks:[KeyAndMask:0x2d00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 90:0:119->Collector Neuron 88:0:119, keys_and_masks:[KeyAndMask:0x2d00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 90:0:119->Collector Neuron 90:0:119, keys_and_masks:[KeyAndMask:0x2d00L:0xffffff80] 
+
+
+Subvert: Collector Neuron 91:0:119 
+subedge:PartitionedEdge:Collector Neuron 91:0:119->Collector Neuron 90:0:119, keys_and_masks:[KeyAndMask:0x2d80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 91:0:119->Collector Neuron 92:0:119, keys_and_masks:[KeyAndMask:0x2d80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 91:0:119->Collector Neuron 93:0:119, keys_and_masks:[KeyAndMask:0x2d80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 91:0:119->Collector Neuron 89:0:119, keys_and_masks:[KeyAndMask:0x2d80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 91:0:119->Collector Neuron 91:0:119, keys_and_masks:[KeyAndMask:0x2d80L:0xffffff80] 
+
+
+Subvert: Collector Neuron 92:0:119 
+subedge:PartitionedEdge:Collector Neuron 92:0:119->Collector Neuron 93:0:119, keys_and_masks:[KeyAndMask:0x2e00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 92:0:119->Collector Neuron 91:0:119, keys_and_masks:[KeyAndMask:0x2e00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 92:0:119->Collector Neuron 94:0:119, keys_and_masks:[KeyAndMask:0x2e00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 92:0:119->Collector Neuron 90:0:119, keys_and_masks:[KeyAndMask:0x2e00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 92:0:119->Collector Neuron 92:0:119, keys_and_masks:[KeyAndMask:0x2e00L:0xffffff80] 
+
+
+Subvert: Collector Neuron 93:0:119 
+subedge:PartitionedEdge:Collector Neuron 93:0:119->Collector Neuron 92:0:119, keys_and_masks:[KeyAndMask:0x2e80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 93:0:119->Collector Neuron 94:0:119, keys_and_masks:[KeyAndMask:0x2e80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 93:0:119->Collector Neuron 95:0:119, keys_and_masks:[KeyAndMask:0x2e80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 93:0:119->Collector Neuron 91:0:119, keys_and_masks:[KeyAndMask:0x2e80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 93:0:119->Collector Neuron 93:0:119, keys_and_masks:[KeyAndMask:0x2e80L:0xffffff80] 
+
+
+Subvert: Collector Neuron 94:0:119 
+subedge:PartitionedEdge:Collector Neuron 94:0:119->Collector Neuron 95:0:119, keys_and_masks:[KeyAndMask:0x2f00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 94:0:119->Collector Neuron 93:0:119, keys_and_masks:[KeyAndMask:0x2f00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 94:0:119->Collector Neuron 96:0:119, keys_and_masks:[KeyAndMask:0x2f00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 94:0:119->Collector Neuron 92:0:119, keys_and_masks:[KeyAndMask:0x2f00L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 94:0:119->Collector Neuron 94:0:119, keys_and_masks:[KeyAndMask:0x2f00L:0xffffff80] 
+
+
+Subvert: Collector Neuron 95:0:119 
+subedge:PartitionedEdge:Collector Neuron 95:0:119->Collector Neuron 94:0:119, keys_and_masks:[KeyAndMask:0x2f80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 95:0:119->Collector Neuron 96:0:119, keys_and_masks:[KeyAndMask:0x2f80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 95:0:119->Collector Neuron 97:0:119, keys_and_masks:[KeyAndMask:0x2f80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 95:0:119->Collector Neuron 93:0:119, keys_and_masks:[KeyAndMask:0x2f80L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 95:0:119->Collector Neuron 95:0:119, keys_and_masks:[KeyAndMask:0x2f80L:0xffffff80] 
+
+
+Subvert: Collector Neuron 96:0:119 
+subedge:PartitionedEdge:Collector Neuron 96:0:119->Collector Neuron 97:0:119, keys_and_masks:[KeyAndMask:0x3000L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 96:0:119->Collector Neuron 95:0:119, keys_and_masks:[KeyAndMask:0x3000L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 96:0:119->Collector Neuron 98:0:119, keys_and_masks:[KeyAndMask:0x3000L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 96:0:119->Collector Neuron 94:0:119, keys_and_masks:[KeyAndMask:0x3000L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 96:0:119->Collector Neuron 96:0:119, keys_and_masks:[KeyAndMask:0x3000L:0xffffff80] 
+
+
+Subvert: Collector Neuron 97:0:119 
+subedge:PartitionedEdge:Collector Neuron 97:0:119->Collector Neuron 96:0:119, keys_and_masks:[KeyAndMask:0x3080L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 97:0:119->Collector Neuron 98:0:119, keys_and_masks:[KeyAndMask:0x3080L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 97:0:119->Collector Neuron 95:0:119, keys_and_masks:[KeyAndMask:0x3080L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 97:0:119->Collector Neuron 97:0:119, keys_and_masks:[KeyAndMask:0x3080L:0xffffff80] 
+
+
+Subvert: Collector Neuron 98:0:119 
+subedge:PartitionedEdge:Collector Neuron 98:0:119->Collector Neuron 97:0:119, keys_and_masks:[KeyAndMask:0x3100L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 98:0:119->Collector Neuron 96:0:119, keys_and_masks:[KeyAndMask:0x3100L:0xffffff80] 
+subedge:PartitionedEdge:Collector Neuron 98:0:119->Collector Neuron 98:0:119, keys_and_masks:[KeyAndMask:0x3100L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 0:0:119 
+subedge:PartitionedEdge:Retina Left - Population 0:0:119->Collector Neuron 0:0:119, keys_and_masks:[KeyAndMask:0x3180L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 0:0:119->Inhibiting Neurons 0:0:239, keys_and_masks:[KeyAndMask:0x3180L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 0:0:119->Collector Neuron 1:0:119, keys_and_masks:[KeyAndMask:0x3180L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 0:0:119->Inhibiting Neurons 1:0:239, keys_and_masks:[KeyAndMask:0x3180L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 1:0:119 
+subedge:PartitionedEdge:Retina Left - Population 1:0:119->Collector Neuron 2:0:119, keys_and_masks:[KeyAndMask:0x3200L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 1:0:119->Inhibiting Neurons 2:0:239, keys_and_masks:[KeyAndMask:0x3200L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 1:0:119->Collector Neuron 3:0:119, keys_and_masks:[KeyAndMask:0x3200L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 1:0:119->Inhibiting Neurons 3:0:239, keys_and_masks:[KeyAndMask:0x3200L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 2:0:119 
+subedge:PartitionedEdge:Retina Left - Population 2:0:119->Collector Neuron 4:0:119, keys_and_masks:[KeyAndMask:0x3280L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 2:0:119->Inhibiting Neurons 4:0:239, keys_and_masks:[KeyAndMask:0x3280L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 2:0:119->Collector Neuron 5:0:119, keys_and_masks:[KeyAndMask:0x3280L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 2:0:119->Inhibiting Neurons 5:0:239, keys_and_masks:[KeyAndMask:0x3280L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 3:0:119 
+subedge:PartitionedEdge:Retina Left - Population 3:0:119->Collector Neuron 6:0:119, keys_and_masks:[KeyAndMask:0x3300L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 3:0:119->Inhibiting Neurons 6:0:239, keys_and_masks:[KeyAndMask:0x3300L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 3:0:119->Collector Neuron 7:0:119, keys_and_masks:[KeyAndMask:0x3300L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 3:0:119->Inhibiting Neurons 7:0:239, keys_and_masks:[KeyAndMask:0x3300L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 4:0:119 
+subedge:PartitionedEdge:Retina Left - Population 4:0:119->Collector Neuron 8:0:119, keys_and_masks:[KeyAndMask:0x3380L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 4:0:119->Inhibiting Neurons 8:0:239, keys_and_masks:[KeyAndMask:0x3380L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 4:0:119->Collector Neuron 9:0:119, keys_and_masks:[KeyAndMask:0x3380L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 4:0:119->Inhibiting Neurons 9:0:239, keys_and_masks:[KeyAndMask:0x3380L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 5:0:119 
+subedge:PartitionedEdge:Retina Left - Population 5:0:119->Collector Neuron 10:0:119, keys_and_masks:[KeyAndMask:0x3400L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 5:0:119->Inhibiting Neurons 10:0:239, keys_and_masks:[KeyAndMask:0x3400L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 5:0:119->Collector Neuron 11:0:119, keys_and_masks:[KeyAndMask:0x3400L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 5:0:119->Inhibiting Neurons 11:0:239, keys_and_masks:[KeyAndMask:0x3400L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 6:0:119 
+subedge:PartitionedEdge:Retina Left - Population 6:0:119->Collector Neuron 12:0:119, keys_and_masks:[KeyAndMask:0x3480L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 6:0:119->Inhibiting Neurons 12:0:239, keys_and_masks:[KeyAndMask:0x3480L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 6:0:119->Collector Neuron 13:0:119, keys_and_masks:[KeyAndMask:0x3480L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 6:0:119->Inhibiting Neurons 13:0:239, keys_and_masks:[KeyAndMask:0x3480L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 7:0:119 
+subedge:PartitionedEdge:Retina Left - Population 7:0:119->Collector Neuron 14:0:119, keys_and_masks:[KeyAndMask:0x3500L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 7:0:119->Inhibiting Neurons 14:0:239, keys_and_masks:[KeyAndMask:0x3500L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 7:0:119->Collector Neuron 15:0:119, keys_and_masks:[KeyAndMask:0x3500L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 7:0:119->Inhibiting Neurons 15:0:239, keys_and_masks:[KeyAndMask:0x3500L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 8:0:119 
+subedge:PartitionedEdge:Retina Left - Population 8:0:119->Collector Neuron 16:0:119, keys_and_masks:[KeyAndMask:0x3580L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 8:0:119->Inhibiting Neurons 16:0:239, keys_and_masks:[KeyAndMask:0x3580L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 8:0:119->Collector Neuron 17:0:119, keys_and_masks:[KeyAndMask:0x3580L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 8:0:119->Inhibiting Neurons 17:0:239, keys_and_masks:[KeyAndMask:0x3580L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 9:0:119 
+subedge:PartitionedEdge:Retina Left - Population 9:0:119->Collector Neuron 18:0:119, keys_and_masks:[KeyAndMask:0x3600L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 9:0:119->Inhibiting Neurons 18:0:239, keys_and_masks:[KeyAndMask:0x3600L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 9:0:119->Collector Neuron 19:0:119, keys_and_masks:[KeyAndMask:0x3600L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 9:0:119->Inhibiting Neurons 19:0:239, keys_and_masks:[KeyAndMask:0x3600L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 10:0:119 
+subedge:PartitionedEdge:Retina Left - Population 10:0:119->Collector Neuron 20:0:119, keys_and_masks:[KeyAndMask:0x3680L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 10:0:119->Inhibiting Neurons 20:0:239, keys_and_masks:[KeyAndMask:0x3680L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 10:0:119->Collector Neuron 21:0:119, keys_and_masks:[KeyAndMask:0x3680L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 10:0:119->Inhibiting Neurons 21:0:239, keys_and_masks:[KeyAndMask:0x3680L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 11:0:119 
+subedge:PartitionedEdge:Retina Left - Population 11:0:119->Collector Neuron 22:0:119, keys_and_masks:[KeyAndMask:0x3700L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 11:0:119->Inhibiting Neurons 22:0:239, keys_and_masks:[KeyAndMask:0x3700L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 11:0:119->Collector Neuron 23:0:119, keys_and_masks:[KeyAndMask:0x3700L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 11:0:119->Inhibiting Neurons 23:0:239, keys_and_masks:[KeyAndMask:0x3700L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 12:0:119 
+subedge:PartitionedEdge:Retina Left - Population 12:0:119->Collector Neuron 24:0:119, keys_and_masks:[KeyAndMask:0x3780L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 12:0:119->Inhibiting Neurons 24:0:239, keys_and_masks:[KeyAndMask:0x3780L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 12:0:119->Collector Neuron 25:0:119, keys_and_masks:[KeyAndMask:0x3780L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 12:0:119->Inhibiting Neurons 25:0:239, keys_and_masks:[KeyAndMask:0x3780L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 13:0:119 
+subedge:PartitionedEdge:Retina Left - Population 13:0:119->Collector Neuron 26:0:119, keys_and_masks:[KeyAndMask:0x3800L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 13:0:119->Inhibiting Neurons 26:0:239, keys_and_masks:[KeyAndMask:0x3800L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 13:0:119->Collector Neuron 27:0:119, keys_and_masks:[KeyAndMask:0x3800L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 13:0:119->Inhibiting Neurons 27:0:239, keys_and_masks:[KeyAndMask:0x3800L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 14:0:119 
+subedge:PartitionedEdge:Retina Left - Population 14:0:119->Collector Neuron 28:0:119, keys_and_masks:[KeyAndMask:0x3880L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 14:0:119->Inhibiting Neurons 28:0:239, keys_and_masks:[KeyAndMask:0x3880L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 14:0:119->Collector Neuron 29:0:119, keys_and_masks:[KeyAndMask:0x3880L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 14:0:119->Inhibiting Neurons 29:0:239, keys_and_masks:[KeyAndMask:0x3880L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 15:0:119 
+subedge:PartitionedEdge:Retina Left - Population 15:0:119->Collector Neuron 30:0:119, keys_and_masks:[KeyAndMask:0x3900L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 15:0:119->Inhibiting Neurons 30:0:239, keys_and_masks:[KeyAndMask:0x3900L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 15:0:119->Collector Neuron 31:0:119, keys_and_masks:[KeyAndMask:0x3900L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 15:0:119->Inhibiting Neurons 31:0:239, keys_and_masks:[KeyAndMask:0x3900L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 16:0:119 
+subedge:PartitionedEdge:Retina Left - Population 16:0:119->Collector Neuron 32:0:119, keys_and_masks:[KeyAndMask:0x3980L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 16:0:119->Inhibiting Neurons 32:0:239, keys_and_masks:[KeyAndMask:0x3980L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 16:0:119->Collector Neuron 33:0:119, keys_and_masks:[KeyAndMask:0x3980L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 16:0:119->Inhibiting Neurons 33:0:239, keys_and_masks:[KeyAndMask:0x3980L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 17:0:119 
+subedge:PartitionedEdge:Retina Left - Population 17:0:119->Collector Neuron 34:0:119, keys_and_masks:[KeyAndMask:0x3a00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 17:0:119->Inhibiting Neurons 34:0:239, keys_and_masks:[KeyAndMask:0x3a00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 17:0:119->Collector Neuron 35:0:119, keys_and_masks:[KeyAndMask:0x3a00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 17:0:119->Inhibiting Neurons 35:0:239, keys_and_masks:[KeyAndMask:0x3a00L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 18:0:119 
+subedge:PartitionedEdge:Retina Left - Population 18:0:119->Collector Neuron 36:0:119, keys_and_masks:[KeyAndMask:0x3a80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 18:0:119->Inhibiting Neurons 36:0:239, keys_and_masks:[KeyAndMask:0x3a80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 18:0:119->Collector Neuron 37:0:119, keys_and_masks:[KeyAndMask:0x3a80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 18:0:119->Inhibiting Neurons 37:0:239, keys_and_masks:[KeyAndMask:0x3a80L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 19:0:119 
+subedge:PartitionedEdge:Retina Left - Population 19:0:119->Collector Neuron 38:0:119, keys_and_masks:[KeyAndMask:0x3b00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 19:0:119->Inhibiting Neurons 38:0:239, keys_and_masks:[KeyAndMask:0x3b00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 19:0:119->Collector Neuron 39:0:119, keys_and_masks:[KeyAndMask:0x3b00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 19:0:119->Inhibiting Neurons 39:0:239, keys_and_masks:[KeyAndMask:0x3b00L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 20:0:119 
+subedge:PartitionedEdge:Retina Left - Population 20:0:119->Collector Neuron 40:0:119, keys_and_masks:[KeyAndMask:0x3b80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 20:0:119->Inhibiting Neurons 40:0:239, keys_and_masks:[KeyAndMask:0x3b80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 20:0:119->Collector Neuron 41:0:119, keys_and_masks:[KeyAndMask:0x3b80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 20:0:119->Inhibiting Neurons 41:0:239, keys_and_masks:[KeyAndMask:0x3b80L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 21:0:119 
+subedge:PartitionedEdge:Retina Left - Population 21:0:119->Collector Neuron 42:0:119, keys_and_masks:[KeyAndMask:0x3c00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 21:0:119->Inhibiting Neurons 42:0:239, keys_and_masks:[KeyAndMask:0x3c00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 21:0:119->Collector Neuron 43:0:119, keys_and_masks:[KeyAndMask:0x3c00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 21:0:119->Inhibiting Neurons 43:0:239, keys_and_masks:[KeyAndMask:0x3c00L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 22:0:119 
+subedge:PartitionedEdge:Retina Left - Population 22:0:119->Collector Neuron 44:0:119, keys_and_masks:[KeyAndMask:0x3c80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 22:0:119->Inhibiting Neurons 44:0:239, keys_and_masks:[KeyAndMask:0x3c80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 22:0:119->Collector Neuron 45:0:119, keys_and_masks:[KeyAndMask:0x3c80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 22:0:119->Inhibiting Neurons 45:0:239, keys_and_masks:[KeyAndMask:0x3c80L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 23:0:119 
+subedge:PartitionedEdge:Retina Left - Population 23:0:119->Collector Neuron 46:0:119, keys_and_masks:[KeyAndMask:0x3d00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 23:0:119->Inhibiting Neurons 46:0:239, keys_and_masks:[KeyAndMask:0x3d00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 23:0:119->Collector Neuron 47:0:119, keys_and_masks:[KeyAndMask:0x3d00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 23:0:119->Inhibiting Neurons 47:0:239, keys_and_masks:[KeyAndMask:0x3d00L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 24:0:119 
+subedge:PartitionedEdge:Retina Left - Population 24:0:119->Collector Neuron 48:0:119, keys_and_masks:[KeyAndMask:0x3d80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 24:0:119->Inhibiting Neurons 48:0:239, keys_and_masks:[KeyAndMask:0x3d80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 24:0:119->Collector Neuron 49:0:119, keys_and_masks:[KeyAndMask:0x3d80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 24:0:119->Inhibiting Neurons 49:0:239, keys_and_masks:[KeyAndMask:0x3d80L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 25:0:119 
+subedge:PartitionedEdge:Retina Left - Population 25:0:119->Collector Neuron 50:0:119, keys_and_masks:[KeyAndMask:0x3e00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 25:0:119->Inhibiting Neurons 50:0:239, keys_and_masks:[KeyAndMask:0x3e00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 25:0:119->Collector Neuron 51:0:119, keys_and_masks:[KeyAndMask:0x3e00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 25:0:119->Inhibiting Neurons 51:0:239, keys_and_masks:[KeyAndMask:0x3e00L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 26:0:119 
+subedge:PartitionedEdge:Retina Left - Population 26:0:119->Collector Neuron 52:0:119, keys_and_masks:[KeyAndMask:0x3e80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 26:0:119->Inhibiting Neurons 52:0:239, keys_and_masks:[KeyAndMask:0x3e80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 26:0:119->Collector Neuron 53:0:119, keys_and_masks:[KeyAndMask:0x3e80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 26:0:119->Inhibiting Neurons 53:0:239, keys_and_masks:[KeyAndMask:0x3e80L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 27:0:119 
+subedge:PartitionedEdge:Retina Left - Population 27:0:119->Collector Neuron 54:0:119, keys_and_masks:[KeyAndMask:0x3f00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 27:0:119->Inhibiting Neurons 54:0:239, keys_and_masks:[KeyAndMask:0x3f00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 27:0:119->Collector Neuron 55:0:119, keys_and_masks:[KeyAndMask:0x3f00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 27:0:119->Inhibiting Neurons 55:0:239, keys_and_masks:[KeyAndMask:0x3f00L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 28:0:119 
+subedge:PartitionedEdge:Retina Left - Population 28:0:119->Collector Neuron 56:0:119, keys_and_masks:[KeyAndMask:0x3f80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 28:0:119->Inhibiting Neurons 56:0:239, keys_and_masks:[KeyAndMask:0x3f80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 28:0:119->Collector Neuron 57:0:119, keys_and_masks:[KeyAndMask:0x3f80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 28:0:119->Inhibiting Neurons 57:0:239, keys_and_masks:[KeyAndMask:0x3f80L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 29:0:119 
+subedge:PartitionedEdge:Retina Left - Population 29:0:119->Collector Neuron 58:0:119, keys_and_masks:[KeyAndMask:0x4000L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 29:0:119->Inhibiting Neurons 58:0:239, keys_and_masks:[KeyAndMask:0x4000L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 29:0:119->Collector Neuron 59:0:119, keys_and_masks:[KeyAndMask:0x4000L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 29:0:119->Inhibiting Neurons 59:0:239, keys_and_masks:[KeyAndMask:0x4000L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 30:0:119 
+subedge:PartitionedEdge:Retina Left - Population 30:0:119->Collector Neuron 60:0:119, keys_and_masks:[KeyAndMask:0x4080L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 30:0:119->Inhibiting Neurons 60:0:239, keys_and_masks:[KeyAndMask:0x4080L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 30:0:119->Collector Neuron 61:0:119, keys_and_masks:[KeyAndMask:0x4080L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 30:0:119->Inhibiting Neurons 61:0:239, keys_and_masks:[KeyAndMask:0x4080L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 31:0:119 
+subedge:PartitionedEdge:Retina Left - Population 31:0:119->Collector Neuron 62:0:119, keys_and_masks:[KeyAndMask:0x4100L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 31:0:119->Inhibiting Neurons 62:0:239, keys_and_masks:[KeyAndMask:0x4100L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 31:0:119->Collector Neuron 63:0:119, keys_and_masks:[KeyAndMask:0x4100L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 31:0:119->Inhibiting Neurons 63:0:239, keys_and_masks:[KeyAndMask:0x4100L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 32:0:119 
+subedge:PartitionedEdge:Retina Left - Population 32:0:119->Collector Neuron 64:0:119, keys_and_masks:[KeyAndMask:0x4180L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 32:0:119->Inhibiting Neurons 64:0:239, keys_and_masks:[KeyAndMask:0x4180L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 32:0:119->Collector Neuron 65:0:119, keys_and_masks:[KeyAndMask:0x4180L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 32:0:119->Inhibiting Neurons 65:0:239, keys_and_masks:[KeyAndMask:0x4180L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 33:0:119 
+subedge:PartitionedEdge:Retina Left - Population 33:0:119->Collector Neuron 66:0:119, keys_and_masks:[KeyAndMask:0x4200L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 33:0:119->Inhibiting Neurons 66:0:239, keys_and_masks:[KeyAndMask:0x4200L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 33:0:119->Collector Neuron 67:0:119, keys_and_masks:[KeyAndMask:0x4200L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 33:0:119->Inhibiting Neurons 67:0:239, keys_and_masks:[KeyAndMask:0x4200L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 34:0:119 
+subedge:PartitionedEdge:Retina Left - Population 34:0:119->Collector Neuron 68:0:119, keys_and_masks:[KeyAndMask:0x4280L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 34:0:119->Inhibiting Neurons 68:0:239, keys_and_masks:[KeyAndMask:0x4280L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 34:0:119->Collector Neuron 69:0:119, keys_and_masks:[KeyAndMask:0x4280L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 34:0:119->Inhibiting Neurons 69:0:239, keys_and_masks:[KeyAndMask:0x4280L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 35:0:119 
+subedge:PartitionedEdge:Retina Left - Population 35:0:119->Collector Neuron 70:0:119, keys_and_masks:[KeyAndMask:0x4300L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 35:0:119->Inhibiting Neurons 70:0:239, keys_and_masks:[KeyAndMask:0x4300L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 35:0:119->Collector Neuron 71:0:119, keys_and_masks:[KeyAndMask:0x4300L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 35:0:119->Inhibiting Neurons 71:0:239, keys_and_masks:[KeyAndMask:0x4300L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 36:0:119 
+subedge:PartitionedEdge:Retina Left - Population 36:0:119->Collector Neuron 72:0:119, keys_and_masks:[KeyAndMask:0x4380L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 36:0:119->Inhibiting Neurons 72:0:239, keys_and_masks:[KeyAndMask:0x4380L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 36:0:119->Collector Neuron 73:0:119, keys_and_masks:[KeyAndMask:0x4380L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 36:0:119->Inhibiting Neurons 73:0:239, keys_and_masks:[KeyAndMask:0x4380L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 37:0:119 
+subedge:PartitionedEdge:Retina Left - Population 37:0:119->Collector Neuron 74:0:119, keys_and_masks:[KeyAndMask:0x4400L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 37:0:119->Inhibiting Neurons 74:0:239, keys_and_masks:[KeyAndMask:0x4400L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 37:0:119->Collector Neuron 75:0:119, keys_and_masks:[KeyAndMask:0x4400L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 37:0:119->Inhibiting Neurons 75:0:239, keys_and_masks:[KeyAndMask:0x4400L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 38:0:119 
+subedge:PartitionedEdge:Retina Left - Population 38:0:119->Collector Neuron 76:0:119, keys_and_masks:[KeyAndMask:0x4480L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 38:0:119->Inhibiting Neurons 76:0:239, keys_and_masks:[KeyAndMask:0x4480L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 38:0:119->Collector Neuron 77:0:119, keys_and_masks:[KeyAndMask:0x4480L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 38:0:119->Inhibiting Neurons 77:0:239, keys_and_masks:[KeyAndMask:0x4480L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 39:0:119 
+subedge:PartitionedEdge:Retina Left - Population 39:0:119->Collector Neuron 78:0:119, keys_and_masks:[KeyAndMask:0x4500L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 39:0:119->Inhibiting Neurons 78:0:239, keys_and_masks:[KeyAndMask:0x4500L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 39:0:119->Collector Neuron 79:0:119, keys_and_masks:[KeyAndMask:0x4500L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 39:0:119->Inhibiting Neurons 79:0:239, keys_and_masks:[KeyAndMask:0x4500L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 40:0:119 
+subedge:PartitionedEdge:Retina Left - Population 40:0:119->Collector Neuron 80:0:119, keys_and_masks:[KeyAndMask:0x4580L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 40:0:119->Inhibiting Neurons 80:0:239, keys_and_masks:[KeyAndMask:0x4580L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 40:0:119->Collector Neuron 81:0:119, keys_and_masks:[KeyAndMask:0x4580L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 40:0:119->Inhibiting Neurons 81:0:239, keys_and_masks:[KeyAndMask:0x4580L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 41:0:119 
+subedge:PartitionedEdge:Retina Left - Population 41:0:119->Collector Neuron 82:0:119, keys_and_masks:[KeyAndMask:0x4600L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 41:0:119->Inhibiting Neurons 82:0:239, keys_and_masks:[KeyAndMask:0x4600L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 41:0:119->Collector Neuron 83:0:119, keys_and_masks:[KeyAndMask:0x4600L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 41:0:119->Inhibiting Neurons 83:0:239, keys_and_masks:[KeyAndMask:0x4600L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 42:0:119 
+subedge:PartitionedEdge:Retina Left - Population 42:0:119->Collector Neuron 84:0:119, keys_and_masks:[KeyAndMask:0x4680L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 42:0:119->Inhibiting Neurons 84:0:239, keys_and_masks:[KeyAndMask:0x4680L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 42:0:119->Collector Neuron 85:0:119, keys_and_masks:[KeyAndMask:0x4680L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 42:0:119->Inhibiting Neurons 85:0:239, keys_and_masks:[KeyAndMask:0x4680L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 43:0:119 
+subedge:PartitionedEdge:Retina Left - Population 43:0:119->Collector Neuron 86:0:119, keys_and_masks:[KeyAndMask:0x4700L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 43:0:119->Inhibiting Neurons 86:0:239, keys_and_masks:[KeyAndMask:0x4700L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 43:0:119->Collector Neuron 87:0:119, keys_and_masks:[KeyAndMask:0x4700L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 43:0:119->Inhibiting Neurons 87:0:239, keys_and_masks:[KeyAndMask:0x4700L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 44:0:119 
+subedge:PartitionedEdge:Retina Left - Population 44:0:119->Collector Neuron 88:0:119, keys_and_masks:[KeyAndMask:0x4780L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 44:0:119->Inhibiting Neurons 88:0:239, keys_and_masks:[KeyAndMask:0x4780L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 44:0:119->Collector Neuron 89:0:119, keys_and_masks:[KeyAndMask:0x4780L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 44:0:119->Inhibiting Neurons 89:0:239, keys_and_masks:[KeyAndMask:0x4780L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 45:0:119 
+subedge:PartitionedEdge:Retina Left - Population 45:0:119->Collector Neuron 90:0:119, keys_and_masks:[KeyAndMask:0x4800L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 45:0:119->Inhibiting Neurons 90:0:239, keys_and_masks:[KeyAndMask:0x4800L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 45:0:119->Collector Neuron 91:0:119, keys_and_masks:[KeyAndMask:0x4800L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 45:0:119->Inhibiting Neurons 91:0:239, keys_and_masks:[KeyAndMask:0x4800L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 46:0:119 
+subedge:PartitionedEdge:Retina Left - Population 46:0:119->Collector Neuron 92:0:119, keys_and_masks:[KeyAndMask:0x4880L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 46:0:119->Inhibiting Neurons 92:0:239, keys_and_masks:[KeyAndMask:0x4880L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 46:0:119->Collector Neuron 93:0:119, keys_and_masks:[KeyAndMask:0x4880L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 46:0:119->Inhibiting Neurons 93:0:239, keys_and_masks:[KeyAndMask:0x4880L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 47:0:119 
+subedge:PartitionedEdge:Retina Left - Population 47:0:119->Collector Neuron 94:0:119, keys_and_masks:[KeyAndMask:0x4900L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 47:0:119->Inhibiting Neurons 94:0:239, keys_and_masks:[KeyAndMask:0x4900L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 47:0:119->Collector Neuron 95:0:119, keys_and_masks:[KeyAndMask:0x4900L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 47:0:119->Inhibiting Neurons 95:0:239, keys_and_masks:[KeyAndMask:0x4900L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 48:0:119 
+subedge:PartitionedEdge:Retina Left - Population 48:0:119->Collector Neuron 96:0:119, keys_and_masks:[KeyAndMask:0x4980L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 48:0:119->Inhibiting Neurons 96:0:239, keys_and_masks:[KeyAndMask:0x4980L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 48:0:119->Collector Neuron 97:0:119, keys_and_masks:[KeyAndMask:0x4980L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 48:0:119->Inhibiting Neurons 97:0:239, keys_and_masks:[KeyAndMask:0x4980L:0xffffff80] 
+
+
+Subvert: Retina Left - Population 49:0:119 
+subedge:PartitionedEdge:Retina Left - Population 49:0:119->Collector Neuron 98:0:119, keys_and_masks:[KeyAndMask:0x4a00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Left - Population 49:0:119->Inhibiting Neurons 98:0:239, keys_and_masks:[KeyAndMask:0x4a00L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 0:0:119 
+subedge:PartitionedEdge:Retina Right - Population 0:0:119->Collector Neuron 0:0:119, keys_and_masks:[KeyAndMask:0x4a80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 0:0:119->Inhibiting Neurons 0:0:239, keys_and_masks:[KeyAndMask:0x4a80L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 1:0:119 
+subedge:PartitionedEdge:Retina Right - Population 1:0:119->Collector Neuron 1:0:119, keys_and_masks:[KeyAndMask:0x4b00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 1:0:119->Inhibiting Neurons 1:0:239, keys_and_masks:[KeyAndMask:0x4b00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 1:0:119->Collector Neuron 2:0:119, keys_and_masks:[KeyAndMask:0x4b00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 1:0:119->Inhibiting Neurons 2:0:239, keys_and_masks:[KeyAndMask:0x4b00L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 2:0:119 
+subedge:PartitionedEdge:Retina Right - Population 2:0:119->Collector Neuron 3:0:119, keys_and_masks:[KeyAndMask:0x4b80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 2:0:119->Inhibiting Neurons 3:0:239, keys_and_masks:[KeyAndMask:0x4b80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 2:0:119->Collector Neuron 4:0:119, keys_and_masks:[KeyAndMask:0x4b80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 2:0:119->Inhibiting Neurons 4:0:239, keys_and_masks:[KeyAndMask:0x4b80L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 3:0:119 
+subedge:PartitionedEdge:Retina Right - Population 3:0:119->Collector Neuron 5:0:119, keys_and_masks:[KeyAndMask:0x4c00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 3:0:119->Inhibiting Neurons 5:0:239, keys_and_masks:[KeyAndMask:0x4c00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 3:0:119->Collector Neuron 6:0:119, keys_and_masks:[KeyAndMask:0x4c00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 3:0:119->Inhibiting Neurons 6:0:239, keys_and_masks:[KeyAndMask:0x4c00L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 4:0:119 
+subedge:PartitionedEdge:Retina Right - Population 4:0:119->Collector Neuron 7:0:119, keys_and_masks:[KeyAndMask:0x4c80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 4:0:119->Inhibiting Neurons 7:0:239, keys_and_masks:[KeyAndMask:0x4c80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 4:0:119->Collector Neuron 8:0:119, keys_and_masks:[KeyAndMask:0x4c80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 4:0:119->Inhibiting Neurons 8:0:239, keys_and_masks:[KeyAndMask:0x4c80L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 5:0:119 
+subedge:PartitionedEdge:Retina Right - Population 5:0:119->Collector Neuron 9:0:119, keys_and_masks:[KeyAndMask:0x4d00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 5:0:119->Inhibiting Neurons 9:0:239, keys_and_masks:[KeyAndMask:0x4d00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 5:0:119->Collector Neuron 10:0:119, keys_and_masks:[KeyAndMask:0x4d00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 5:0:119->Inhibiting Neurons 10:0:239, keys_and_masks:[KeyAndMask:0x4d00L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 6:0:119 
+subedge:PartitionedEdge:Retina Right - Population 6:0:119->Collector Neuron 11:0:119, keys_and_masks:[KeyAndMask:0x4d80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 6:0:119->Inhibiting Neurons 11:0:239, keys_and_masks:[KeyAndMask:0x4d80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 6:0:119->Collector Neuron 12:0:119, keys_and_masks:[KeyAndMask:0x4d80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 6:0:119->Inhibiting Neurons 12:0:239, keys_and_masks:[KeyAndMask:0x4d80L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 7:0:119 
+subedge:PartitionedEdge:Retina Right - Population 7:0:119->Collector Neuron 13:0:119, keys_and_masks:[KeyAndMask:0x4e00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 7:0:119->Inhibiting Neurons 13:0:239, keys_and_masks:[KeyAndMask:0x4e00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 7:0:119->Collector Neuron 14:0:119, keys_and_masks:[KeyAndMask:0x4e00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 7:0:119->Inhibiting Neurons 14:0:239, keys_and_masks:[KeyAndMask:0x4e00L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 8:0:119 
+subedge:PartitionedEdge:Retina Right - Population 8:0:119->Collector Neuron 15:0:119, keys_and_masks:[KeyAndMask:0x4e80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 8:0:119->Inhibiting Neurons 15:0:239, keys_and_masks:[KeyAndMask:0x4e80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 8:0:119->Collector Neuron 16:0:119, keys_and_masks:[KeyAndMask:0x4e80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 8:0:119->Inhibiting Neurons 16:0:239, keys_and_masks:[KeyAndMask:0x4e80L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 9:0:119 
+subedge:PartitionedEdge:Retina Right - Population 9:0:119->Collector Neuron 17:0:119, keys_and_masks:[KeyAndMask:0x4f00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 9:0:119->Inhibiting Neurons 17:0:239, keys_and_masks:[KeyAndMask:0x4f00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 9:0:119->Collector Neuron 18:0:119, keys_and_masks:[KeyAndMask:0x4f00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 9:0:119->Inhibiting Neurons 18:0:239, keys_and_masks:[KeyAndMask:0x4f00L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 10:0:119 
+subedge:PartitionedEdge:Retina Right - Population 10:0:119->Collector Neuron 19:0:119, keys_and_masks:[KeyAndMask:0x4f80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 10:0:119->Inhibiting Neurons 19:0:239, keys_and_masks:[KeyAndMask:0x4f80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 10:0:119->Collector Neuron 20:0:119, keys_and_masks:[KeyAndMask:0x4f80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 10:0:119->Inhibiting Neurons 20:0:239, keys_and_masks:[KeyAndMask:0x4f80L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 11:0:119 
+subedge:PartitionedEdge:Retina Right - Population 11:0:119->Collector Neuron 21:0:119, keys_and_masks:[KeyAndMask:0x5000L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 11:0:119->Inhibiting Neurons 21:0:239, keys_and_masks:[KeyAndMask:0x5000L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 11:0:119->Collector Neuron 22:0:119, keys_and_masks:[KeyAndMask:0x5000L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 11:0:119->Inhibiting Neurons 22:0:239, keys_and_masks:[KeyAndMask:0x5000L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 12:0:119 
+subedge:PartitionedEdge:Retina Right - Population 12:0:119->Collector Neuron 23:0:119, keys_and_masks:[KeyAndMask:0x5080L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 12:0:119->Inhibiting Neurons 23:0:239, keys_and_masks:[KeyAndMask:0x5080L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 12:0:119->Collector Neuron 24:0:119, keys_and_masks:[KeyAndMask:0x5080L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 12:0:119->Inhibiting Neurons 24:0:239, keys_and_masks:[KeyAndMask:0x5080L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 13:0:119 
+subedge:PartitionedEdge:Retina Right - Population 13:0:119->Collector Neuron 25:0:119, keys_and_masks:[KeyAndMask:0x5100L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 13:0:119->Inhibiting Neurons 25:0:239, keys_and_masks:[KeyAndMask:0x5100L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 13:0:119->Collector Neuron 26:0:119, keys_and_masks:[KeyAndMask:0x5100L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 13:0:119->Inhibiting Neurons 26:0:239, keys_and_masks:[KeyAndMask:0x5100L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 14:0:119 
+subedge:PartitionedEdge:Retina Right - Population 14:0:119->Collector Neuron 27:0:119, keys_and_masks:[KeyAndMask:0x5180L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 14:0:119->Inhibiting Neurons 27:0:239, keys_and_masks:[KeyAndMask:0x5180L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 14:0:119->Collector Neuron 28:0:119, keys_and_masks:[KeyAndMask:0x5180L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 14:0:119->Inhibiting Neurons 28:0:239, keys_and_masks:[KeyAndMask:0x5180L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 15:0:119 
+subedge:PartitionedEdge:Retina Right - Population 15:0:119->Collector Neuron 29:0:119, keys_and_masks:[KeyAndMask:0x5200L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 15:0:119->Inhibiting Neurons 29:0:239, keys_and_masks:[KeyAndMask:0x5200L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 15:0:119->Collector Neuron 30:0:119, keys_and_masks:[KeyAndMask:0x5200L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 15:0:119->Inhibiting Neurons 30:0:239, keys_and_masks:[KeyAndMask:0x5200L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 16:0:119 
+subedge:PartitionedEdge:Retina Right - Population 16:0:119->Collector Neuron 31:0:119, keys_and_masks:[KeyAndMask:0x5280L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 16:0:119->Inhibiting Neurons 31:0:239, keys_and_masks:[KeyAndMask:0x5280L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 16:0:119->Collector Neuron 32:0:119, keys_and_masks:[KeyAndMask:0x5280L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 16:0:119->Inhibiting Neurons 32:0:239, keys_and_masks:[KeyAndMask:0x5280L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 17:0:119 
+subedge:PartitionedEdge:Retina Right - Population 17:0:119->Collector Neuron 33:0:119, keys_and_masks:[KeyAndMask:0x5300L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 17:0:119->Inhibiting Neurons 33:0:239, keys_and_masks:[KeyAndMask:0x5300L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 17:0:119->Collector Neuron 34:0:119, keys_and_masks:[KeyAndMask:0x5300L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 17:0:119->Inhibiting Neurons 34:0:239, keys_and_masks:[KeyAndMask:0x5300L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 18:0:119 
+subedge:PartitionedEdge:Retina Right - Population 18:0:119->Collector Neuron 35:0:119, keys_and_masks:[KeyAndMask:0x5380L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 18:0:119->Inhibiting Neurons 35:0:239, keys_and_masks:[KeyAndMask:0x5380L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 18:0:119->Collector Neuron 36:0:119, keys_and_masks:[KeyAndMask:0x5380L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 18:0:119->Inhibiting Neurons 36:0:239, keys_and_masks:[KeyAndMask:0x5380L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 19:0:119 
+subedge:PartitionedEdge:Retina Right - Population 19:0:119->Collector Neuron 37:0:119, keys_and_masks:[KeyAndMask:0x5400L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 19:0:119->Inhibiting Neurons 37:0:239, keys_and_masks:[KeyAndMask:0x5400L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 19:0:119->Collector Neuron 38:0:119, keys_and_masks:[KeyAndMask:0x5400L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 19:0:119->Inhibiting Neurons 38:0:239, keys_and_masks:[KeyAndMask:0x5400L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 20:0:119 
+subedge:PartitionedEdge:Retina Right - Population 20:0:119->Collector Neuron 39:0:119, keys_and_masks:[KeyAndMask:0x5480L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 20:0:119->Inhibiting Neurons 39:0:239, keys_and_masks:[KeyAndMask:0x5480L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 20:0:119->Collector Neuron 40:0:119, keys_and_masks:[KeyAndMask:0x5480L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 20:0:119->Inhibiting Neurons 40:0:239, keys_and_masks:[KeyAndMask:0x5480L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 21:0:119 
+subedge:PartitionedEdge:Retina Right - Population 21:0:119->Collector Neuron 41:0:119, keys_and_masks:[KeyAndMask:0x5500L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 21:0:119->Inhibiting Neurons 41:0:239, keys_and_masks:[KeyAndMask:0x5500L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 21:0:119->Collector Neuron 42:0:119, keys_and_masks:[KeyAndMask:0x5500L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 21:0:119->Inhibiting Neurons 42:0:239, keys_and_masks:[KeyAndMask:0x5500L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 22:0:119 
+subedge:PartitionedEdge:Retina Right - Population 22:0:119->Collector Neuron 43:0:119, keys_and_masks:[KeyAndMask:0x5580L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 22:0:119->Inhibiting Neurons 43:0:239, keys_and_masks:[KeyAndMask:0x5580L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 22:0:119->Collector Neuron 44:0:119, keys_and_masks:[KeyAndMask:0x5580L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 22:0:119->Inhibiting Neurons 44:0:239, keys_and_masks:[KeyAndMask:0x5580L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 23:0:119 
+subedge:PartitionedEdge:Retina Right - Population 23:0:119->Collector Neuron 45:0:119, keys_and_masks:[KeyAndMask:0x5600L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 23:0:119->Inhibiting Neurons 45:0:239, keys_and_masks:[KeyAndMask:0x5600L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 23:0:119->Collector Neuron 46:0:119, keys_and_masks:[KeyAndMask:0x5600L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 23:0:119->Inhibiting Neurons 46:0:239, keys_and_masks:[KeyAndMask:0x5600L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 24:0:119 
+subedge:PartitionedEdge:Retina Right - Population 24:0:119->Collector Neuron 47:0:119, keys_and_masks:[KeyAndMask:0x5680L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 24:0:119->Inhibiting Neurons 47:0:239, keys_and_masks:[KeyAndMask:0x5680L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 24:0:119->Collector Neuron 48:0:119, keys_and_masks:[KeyAndMask:0x5680L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 24:0:119->Inhibiting Neurons 48:0:239, keys_and_masks:[KeyAndMask:0x5680L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 25:0:119 
+subedge:PartitionedEdge:Retina Right - Population 25:0:119->Collector Neuron 49:0:119, keys_and_masks:[KeyAndMask:0x5700L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 25:0:119->Inhibiting Neurons 49:0:239, keys_and_masks:[KeyAndMask:0x5700L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 25:0:119->Collector Neuron 50:0:119, keys_and_masks:[KeyAndMask:0x5700L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 25:0:119->Inhibiting Neurons 50:0:239, keys_and_masks:[KeyAndMask:0x5700L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 26:0:119 
+subedge:PartitionedEdge:Retina Right - Population 26:0:119->Collector Neuron 51:0:119, keys_and_masks:[KeyAndMask:0x5780L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 26:0:119->Inhibiting Neurons 51:0:239, keys_and_masks:[KeyAndMask:0x5780L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 26:0:119->Collector Neuron 52:0:119, keys_and_masks:[KeyAndMask:0x5780L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 26:0:119->Inhibiting Neurons 52:0:239, keys_and_masks:[KeyAndMask:0x5780L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 27:0:119 
+subedge:PartitionedEdge:Retina Right - Population 27:0:119->Collector Neuron 53:0:119, keys_and_masks:[KeyAndMask:0x5800L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 27:0:119->Inhibiting Neurons 53:0:239, keys_and_masks:[KeyAndMask:0x5800L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 27:0:119->Collector Neuron 54:0:119, keys_and_masks:[KeyAndMask:0x5800L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 27:0:119->Inhibiting Neurons 54:0:239, keys_and_masks:[KeyAndMask:0x5800L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 28:0:119 
+subedge:PartitionedEdge:Retina Right - Population 28:0:119->Collector Neuron 55:0:119, keys_and_masks:[KeyAndMask:0x5880L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 28:0:119->Inhibiting Neurons 55:0:239, keys_and_masks:[KeyAndMask:0x5880L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 28:0:119->Collector Neuron 56:0:119, keys_and_masks:[KeyAndMask:0x5880L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 28:0:119->Inhibiting Neurons 56:0:239, keys_and_masks:[KeyAndMask:0x5880L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 29:0:119 
+subedge:PartitionedEdge:Retina Right - Population 29:0:119->Collector Neuron 57:0:119, keys_and_masks:[KeyAndMask:0x5900L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 29:0:119->Inhibiting Neurons 57:0:239, keys_and_masks:[KeyAndMask:0x5900L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 29:0:119->Collector Neuron 58:0:119, keys_and_masks:[KeyAndMask:0x5900L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 29:0:119->Inhibiting Neurons 58:0:239, keys_and_masks:[KeyAndMask:0x5900L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 30:0:119 
+subedge:PartitionedEdge:Retina Right - Population 30:0:119->Collector Neuron 59:0:119, keys_and_masks:[KeyAndMask:0x5980L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 30:0:119->Inhibiting Neurons 59:0:239, keys_and_masks:[KeyAndMask:0x5980L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 30:0:119->Collector Neuron 60:0:119, keys_and_masks:[KeyAndMask:0x5980L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 30:0:119->Inhibiting Neurons 60:0:239, keys_and_masks:[KeyAndMask:0x5980L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 31:0:119 
+subedge:PartitionedEdge:Retina Right - Population 31:0:119->Collector Neuron 61:0:119, keys_and_masks:[KeyAndMask:0x5a00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 31:0:119->Inhibiting Neurons 61:0:239, keys_and_masks:[KeyAndMask:0x5a00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 31:0:119->Collector Neuron 62:0:119, keys_and_masks:[KeyAndMask:0x5a00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 31:0:119->Inhibiting Neurons 62:0:239, keys_and_masks:[KeyAndMask:0x5a00L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 32:0:119 
+subedge:PartitionedEdge:Retina Right - Population 32:0:119->Collector Neuron 63:0:119, keys_and_masks:[KeyAndMask:0x5a80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 32:0:119->Inhibiting Neurons 63:0:239, keys_and_masks:[KeyAndMask:0x5a80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 32:0:119->Collector Neuron 64:0:119, keys_and_masks:[KeyAndMask:0x5a80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 32:0:119->Inhibiting Neurons 64:0:239, keys_and_masks:[KeyAndMask:0x5a80L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 33:0:119 
+subedge:PartitionedEdge:Retina Right - Population 33:0:119->Collector Neuron 65:0:119, keys_and_masks:[KeyAndMask:0x5b00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 33:0:119->Inhibiting Neurons 65:0:239, keys_and_masks:[KeyAndMask:0x5b00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 33:0:119->Collector Neuron 66:0:119, keys_and_masks:[KeyAndMask:0x5b00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 33:0:119->Inhibiting Neurons 66:0:239, keys_and_masks:[KeyAndMask:0x5b00L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 34:0:119 
+subedge:PartitionedEdge:Retina Right - Population 34:0:119->Collector Neuron 67:0:119, keys_and_masks:[KeyAndMask:0x5b80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 34:0:119->Inhibiting Neurons 67:0:239, keys_and_masks:[KeyAndMask:0x5b80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 34:0:119->Collector Neuron 68:0:119, keys_and_masks:[KeyAndMask:0x5b80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 34:0:119->Inhibiting Neurons 68:0:239, keys_and_masks:[KeyAndMask:0x5b80L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 35:0:119 
+subedge:PartitionedEdge:Retina Right - Population 35:0:119->Collector Neuron 69:0:119, keys_and_masks:[KeyAndMask:0x5c00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 35:0:119->Inhibiting Neurons 69:0:239, keys_and_masks:[KeyAndMask:0x5c00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 35:0:119->Collector Neuron 70:0:119, keys_and_masks:[KeyAndMask:0x5c00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 35:0:119->Inhibiting Neurons 70:0:239, keys_and_masks:[KeyAndMask:0x5c00L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 36:0:119 
+subedge:PartitionedEdge:Retina Right - Population 36:0:119->Collector Neuron 71:0:119, keys_and_masks:[KeyAndMask:0x5c80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 36:0:119->Inhibiting Neurons 71:0:239, keys_and_masks:[KeyAndMask:0x5c80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 36:0:119->Collector Neuron 72:0:119, keys_and_masks:[KeyAndMask:0x5c80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 36:0:119->Inhibiting Neurons 72:0:239, keys_and_masks:[KeyAndMask:0x5c80L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 37:0:119 
+subedge:PartitionedEdge:Retina Right - Population 37:0:119->Collector Neuron 73:0:119, keys_and_masks:[KeyAndMask:0x5d00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 37:0:119->Inhibiting Neurons 73:0:239, keys_and_masks:[KeyAndMask:0x5d00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 37:0:119->Collector Neuron 74:0:119, keys_and_masks:[KeyAndMask:0x5d00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 37:0:119->Inhibiting Neurons 74:0:239, keys_and_masks:[KeyAndMask:0x5d00L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 38:0:119 
+subedge:PartitionedEdge:Retina Right - Population 38:0:119->Collector Neuron 75:0:119, keys_and_masks:[KeyAndMask:0x5d80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 38:0:119->Inhibiting Neurons 75:0:239, keys_and_masks:[KeyAndMask:0x5d80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 38:0:119->Collector Neuron 76:0:119, keys_and_masks:[KeyAndMask:0x5d80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 38:0:119->Inhibiting Neurons 76:0:239, keys_and_masks:[KeyAndMask:0x5d80L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 39:0:119 
+subedge:PartitionedEdge:Retina Right - Population 39:0:119->Collector Neuron 77:0:119, keys_and_masks:[KeyAndMask:0x5e00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 39:0:119->Inhibiting Neurons 77:0:239, keys_and_masks:[KeyAndMask:0x5e00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 39:0:119->Collector Neuron 78:0:119, keys_and_masks:[KeyAndMask:0x5e00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 39:0:119->Inhibiting Neurons 78:0:239, keys_and_masks:[KeyAndMask:0x5e00L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 40:0:119 
+subedge:PartitionedEdge:Retina Right - Population 40:0:119->Collector Neuron 79:0:119, keys_and_masks:[KeyAndMask:0x5e80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 40:0:119->Inhibiting Neurons 79:0:239, keys_and_masks:[KeyAndMask:0x5e80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 40:0:119->Collector Neuron 80:0:119, keys_and_masks:[KeyAndMask:0x5e80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 40:0:119->Inhibiting Neurons 80:0:239, keys_and_masks:[KeyAndMask:0x5e80L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 41:0:119 
+subedge:PartitionedEdge:Retina Right - Population 41:0:119->Collector Neuron 81:0:119, keys_and_masks:[KeyAndMask:0x5f00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 41:0:119->Inhibiting Neurons 81:0:239, keys_and_masks:[KeyAndMask:0x5f00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 41:0:119->Collector Neuron 82:0:119, keys_and_masks:[KeyAndMask:0x5f00L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 41:0:119->Inhibiting Neurons 82:0:239, keys_and_masks:[KeyAndMask:0x5f00L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 42:0:119 
+subedge:PartitionedEdge:Retina Right - Population 42:0:119->Collector Neuron 83:0:119, keys_and_masks:[KeyAndMask:0x5f80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 42:0:119->Inhibiting Neurons 83:0:239, keys_and_masks:[KeyAndMask:0x5f80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 42:0:119->Collector Neuron 84:0:119, keys_and_masks:[KeyAndMask:0x5f80L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 42:0:119->Inhibiting Neurons 84:0:239, keys_and_masks:[KeyAndMask:0x5f80L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 43:0:119 
+subedge:PartitionedEdge:Retina Right - Population 43:0:119->Collector Neuron 85:0:119, keys_and_masks:[KeyAndMask:0x6000L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 43:0:119->Inhibiting Neurons 85:0:239, keys_and_masks:[KeyAndMask:0x6000L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 43:0:119->Collector Neuron 86:0:119, keys_and_masks:[KeyAndMask:0x6000L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 43:0:119->Inhibiting Neurons 86:0:239, keys_and_masks:[KeyAndMask:0x6000L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 44:0:119 
+subedge:PartitionedEdge:Retina Right - Population 44:0:119->Collector Neuron 87:0:119, keys_and_masks:[KeyAndMask:0x6080L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 44:0:119->Inhibiting Neurons 87:0:239, keys_and_masks:[KeyAndMask:0x6080L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 44:0:119->Collector Neuron 88:0:119, keys_and_masks:[KeyAndMask:0x6080L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 44:0:119->Inhibiting Neurons 88:0:239, keys_and_masks:[KeyAndMask:0x6080L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 45:0:119 
+subedge:PartitionedEdge:Retina Right - Population 45:0:119->Collector Neuron 89:0:119, keys_and_masks:[KeyAndMask:0x6100L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 45:0:119->Inhibiting Neurons 89:0:239, keys_and_masks:[KeyAndMask:0x6100L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 45:0:119->Collector Neuron 90:0:119, keys_and_masks:[KeyAndMask:0x6100L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 45:0:119->Inhibiting Neurons 90:0:239, keys_and_masks:[KeyAndMask:0x6100L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 46:0:119 
+subedge:PartitionedEdge:Retina Right - Population 46:0:119->Collector Neuron 91:0:119, keys_and_masks:[KeyAndMask:0x6180L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 46:0:119->Inhibiting Neurons 91:0:239, keys_and_masks:[KeyAndMask:0x6180L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 46:0:119->Collector Neuron 92:0:119, keys_and_masks:[KeyAndMask:0x6180L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 46:0:119->Inhibiting Neurons 92:0:239, keys_and_masks:[KeyAndMask:0x6180L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 47:0:119 
+subedge:PartitionedEdge:Retina Right - Population 47:0:119->Collector Neuron 93:0:119, keys_and_masks:[KeyAndMask:0x6200L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 47:0:119->Inhibiting Neurons 93:0:239, keys_and_masks:[KeyAndMask:0x6200L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 47:0:119->Collector Neuron 94:0:119, keys_and_masks:[KeyAndMask:0x6200L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 47:0:119->Inhibiting Neurons 94:0:239, keys_and_masks:[KeyAndMask:0x6200L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 48:0:119 
+subedge:PartitionedEdge:Retina Right - Population 48:0:119->Collector Neuron 95:0:119, keys_and_masks:[KeyAndMask:0x6280L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 48:0:119->Inhibiting Neurons 95:0:239, keys_and_masks:[KeyAndMask:0x6280L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 48:0:119->Collector Neuron 96:0:119, keys_and_masks:[KeyAndMask:0x6280L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 48:0:119->Inhibiting Neurons 96:0:239, keys_and_masks:[KeyAndMask:0x6280L:0xffffff80] 
+
+
+Subvert: Retina Right - Population 49:0:119 
+subedge:PartitionedEdge:Retina Right - Population 49:0:119->Collector Neuron 97:0:119, keys_and_masks:[KeyAndMask:0x6300L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 49:0:119->Inhibiting Neurons 97:0:239, keys_and_masks:[KeyAndMask:0x6300L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 49:0:119->Collector Neuron 98:0:119, keys_and_masks:[KeyAndMask:0x6300L:0xffffff80] 
+subedge:PartitionedEdge:Retina Right - Population 49:0:119->Inhibiting Neurons 98:0:239, keys_and_masks:[KeyAndMask:0x6300L:0xffffff80] 
+
+
+Subvert: Inhibiting Neurons 0:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 0:0:239->Collector Neuron 0:0:119, keys_and_masks:[KeyAndMask:0x6400L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 1:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 1:0:239->Collector Neuron 1:0:119, keys_and_masks:[KeyAndMask:0x6500L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 2:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 2:0:239->Collector Neuron 2:0:119, keys_and_masks:[KeyAndMask:0x6600L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 3:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 3:0:239->Collector Neuron 3:0:119, keys_and_masks:[KeyAndMask:0x6700L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 4:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 4:0:239->Collector Neuron 4:0:119, keys_and_masks:[KeyAndMask:0x6800L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 5:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 5:0:239->Collector Neuron 5:0:119, keys_and_masks:[KeyAndMask:0x6900L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 6:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 6:0:239->Collector Neuron 6:0:119, keys_and_masks:[KeyAndMask:0x6a00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 7:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 7:0:239->Collector Neuron 7:0:119, keys_and_masks:[KeyAndMask:0x6b00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 8:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 8:0:239->Collector Neuron 8:0:119, keys_and_masks:[KeyAndMask:0x6c00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 9:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 9:0:239->Collector Neuron 9:0:119, keys_and_masks:[KeyAndMask:0x6d00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 10:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 10:0:239->Collector Neuron 10:0:119, keys_and_masks:[KeyAndMask:0x6e00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 11:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 11:0:239->Collector Neuron 11:0:119, keys_and_masks:[KeyAndMask:0x6f00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 12:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 12:0:239->Collector Neuron 12:0:119, keys_and_masks:[KeyAndMask:0x7000L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 13:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 13:0:239->Collector Neuron 13:0:119, keys_and_masks:[KeyAndMask:0x7100L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 14:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 14:0:239->Collector Neuron 14:0:119, keys_and_masks:[KeyAndMask:0x7200L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 15:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 15:0:239->Collector Neuron 15:0:119, keys_and_masks:[KeyAndMask:0x7300L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 16:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 16:0:239->Collector Neuron 16:0:119, keys_and_masks:[KeyAndMask:0x7400L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 17:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 17:0:239->Collector Neuron 17:0:119, keys_and_masks:[KeyAndMask:0x7500L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 18:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 18:0:239->Collector Neuron 18:0:119, keys_and_masks:[KeyAndMask:0x7600L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 19:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 19:0:239->Collector Neuron 19:0:119, keys_and_masks:[KeyAndMask:0x7700L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 20:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 20:0:239->Collector Neuron 20:0:119, keys_and_masks:[KeyAndMask:0x7800L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 21:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 21:0:239->Collector Neuron 21:0:119, keys_and_masks:[KeyAndMask:0x7900L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 22:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 22:0:239->Collector Neuron 22:0:119, keys_and_masks:[KeyAndMask:0x7a00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 23:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 23:0:239->Collector Neuron 23:0:119, keys_and_masks:[KeyAndMask:0x7b00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 24:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 24:0:239->Collector Neuron 24:0:119, keys_and_masks:[KeyAndMask:0x7c00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 25:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 25:0:239->Collector Neuron 25:0:119, keys_and_masks:[KeyAndMask:0x7d00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 26:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 26:0:239->Collector Neuron 26:0:119, keys_and_masks:[KeyAndMask:0x7e00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 27:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 27:0:239->Collector Neuron 27:0:119, keys_and_masks:[KeyAndMask:0x7f00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 28:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 28:0:239->Collector Neuron 28:0:119, keys_and_masks:[KeyAndMask:0x8000L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 29:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 29:0:239->Collector Neuron 29:0:119, keys_and_masks:[KeyAndMask:0x8100L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 30:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 30:0:239->Collector Neuron 30:0:119, keys_and_masks:[KeyAndMask:0x8200L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 31:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 31:0:239->Collector Neuron 31:0:119, keys_and_masks:[KeyAndMask:0x8300L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 32:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 32:0:239->Collector Neuron 32:0:119, keys_and_masks:[KeyAndMask:0x8400L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 33:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 33:0:239->Collector Neuron 33:0:119, keys_and_masks:[KeyAndMask:0x8500L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 34:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 34:0:239->Collector Neuron 34:0:119, keys_and_masks:[KeyAndMask:0x8600L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 35:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 35:0:239->Collector Neuron 35:0:119, keys_and_masks:[KeyAndMask:0x8700L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 36:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 36:0:239->Collector Neuron 36:0:119, keys_and_masks:[KeyAndMask:0x8800L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 37:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 37:0:239->Collector Neuron 37:0:119, keys_and_masks:[KeyAndMask:0x8900L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 38:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 38:0:239->Collector Neuron 38:0:119, keys_and_masks:[KeyAndMask:0x8a00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 39:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 39:0:239->Collector Neuron 39:0:119, keys_and_masks:[KeyAndMask:0x8b00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 40:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 40:0:239->Collector Neuron 40:0:119, keys_and_masks:[KeyAndMask:0x8c00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 41:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 41:0:239->Collector Neuron 41:0:119, keys_and_masks:[KeyAndMask:0x8d00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 42:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 42:0:239->Collector Neuron 42:0:119, keys_and_masks:[KeyAndMask:0x8e00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 43:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 43:0:239->Collector Neuron 43:0:119, keys_and_masks:[KeyAndMask:0x8f00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 44:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 44:0:239->Collector Neuron 44:0:119, keys_and_masks:[KeyAndMask:0x9000L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 45:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 45:0:239->Collector Neuron 45:0:119, keys_and_masks:[KeyAndMask:0x9100L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 46:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 46:0:239->Collector Neuron 46:0:119, keys_and_masks:[KeyAndMask:0x9200L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 47:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 47:0:239->Collector Neuron 47:0:119, keys_and_masks:[KeyAndMask:0x9300L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 48:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 48:0:239->Collector Neuron 48:0:119, keys_and_masks:[KeyAndMask:0x9400L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 49:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 49:0:239->Collector Neuron 49:0:119, keys_and_masks:[KeyAndMask:0x9500L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 50:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 50:0:239->Collector Neuron 50:0:119, keys_and_masks:[KeyAndMask:0x9600L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 51:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 51:0:239->Collector Neuron 51:0:119, keys_and_masks:[KeyAndMask:0x9700L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 52:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 52:0:239->Collector Neuron 52:0:119, keys_and_masks:[KeyAndMask:0x9800L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 53:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 53:0:239->Collector Neuron 53:0:119, keys_and_masks:[KeyAndMask:0x9900L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 54:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 54:0:239->Collector Neuron 54:0:119, keys_and_masks:[KeyAndMask:0x9a00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 55:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 55:0:239->Collector Neuron 55:0:119, keys_and_masks:[KeyAndMask:0x9b00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 56:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 56:0:239->Collector Neuron 56:0:119, keys_and_masks:[KeyAndMask:0x9c00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 57:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 57:0:239->Collector Neuron 57:0:119, keys_and_masks:[KeyAndMask:0x9d00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 58:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 58:0:239->Collector Neuron 58:0:119, keys_and_masks:[KeyAndMask:0x9e00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 59:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 59:0:239->Collector Neuron 59:0:119, keys_and_masks:[KeyAndMask:0x9f00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 60:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 60:0:239->Collector Neuron 60:0:119, keys_and_masks:[KeyAndMask:0xa000L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 61:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 61:0:239->Collector Neuron 61:0:119, keys_and_masks:[KeyAndMask:0xa100L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 62:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 62:0:239->Collector Neuron 62:0:119, keys_and_masks:[KeyAndMask:0xa200L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 63:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 63:0:239->Collector Neuron 63:0:119, keys_and_masks:[KeyAndMask:0xa300L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 64:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 64:0:239->Collector Neuron 64:0:119, keys_and_masks:[KeyAndMask:0xa400L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 65:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 65:0:239->Collector Neuron 65:0:119, keys_and_masks:[KeyAndMask:0xa500L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 66:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 66:0:239->Collector Neuron 66:0:119, keys_and_masks:[KeyAndMask:0xa600L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 67:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 67:0:239->Collector Neuron 67:0:119, keys_and_masks:[KeyAndMask:0xa700L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 68:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 68:0:239->Collector Neuron 68:0:119, keys_and_masks:[KeyAndMask:0xa800L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 69:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 69:0:239->Collector Neuron 69:0:119, keys_and_masks:[KeyAndMask:0xa900L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 70:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 70:0:239->Collector Neuron 70:0:119, keys_and_masks:[KeyAndMask:0xaa00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 71:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 71:0:239->Collector Neuron 71:0:119, keys_and_masks:[KeyAndMask:0xab00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 72:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 72:0:239->Collector Neuron 72:0:119, keys_and_masks:[KeyAndMask:0xac00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 73:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 73:0:239->Collector Neuron 73:0:119, keys_and_masks:[KeyAndMask:0xad00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 74:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 74:0:239->Collector Neuron 74:0:119, keys_and_masks:[KeyAndMask:0xae00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 75:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 75:0:239->Collector Neuron 75:0:119, keys_and_masks:[KeyAndMask:0xaf00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 76:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 76:0:239->Collector Neuron 76:0:119, keys_and_masks:[KeyAndMask:0xb000L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 77:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 77:0:239->Collector Neuron 77:0:119, keys_and_masks:[KeyAndMask:0xb100L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 78:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 78:0:239->Collector Neuron 78:0:119, keys_and_masks:[KeyAndMask:0xb200L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 79:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 79:0:239->Collector Neuron 79:0:119, keys_and_masks:[KeyAndMask:0xb300L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 80:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 80:0:239->Collector Neuron 80:0:119, keys_and_masks:[KeyAndMask:0xb400L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 81:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 81:0:239->Collector Neuron 81:0:119, keys_and_masks:[KeyAndMask:0xb500L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 82:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 82:0:239->Collector Neuron 82:0:119, keys_and_masks:[KeyAndMask:0xb600L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 83:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 83:0:239->Collector Neuron 83:0:119, keys_and_masks:[KeyAndMask:0xb700L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 84:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 84:0:239->Collector Neuron 84:0:119, keys_and_masks:[KeyAndMask:0xb800L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 85:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 85:0:239->Collector Neuron 85:0:119, keys_and_masks:[KeyAndMask:0xb900L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 86:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 86:0:239->Collector Neuron 86:0:119, keys_and_masks:[KeyAndMask:0xba00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 87:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 87:0:239->Collector Neuron 87:0:119, keys_and_masks:[KeyAndMask:0xbb00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 88:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 88:0:239->Collector Neuron 88:0:119, keys_and_masks:[KeyAndMask:0xbc00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 89:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 89:0:239->Collector Neuron 89:0:119, keys_and_masks:[KeyAndMask:0xbd00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 90:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 90:0:239->Collector Neuron 90:0:119, keys_and_masks:[KeyAndMask:0xbe00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 91:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 91:0:239->Collector Neuron 91:0:119, keys_and_masks:[KeyAndMask:0xbf00L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 92:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 92:0:239->Collector Neuron 92:0:119, keys_and_masks:[KeyAndMask:0xc000L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 93:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 93:0:239->Collector Neuron 93:0:119, keys_and_masks:[KeyAndMask:0xc100L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 94:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 94:0:239->Collector Neuron 94:0:119, keys_and_masks:[KeyAndMask:0xc200L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 95:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 95:0:239->Collector Neuron 95:0:119, keys_and_masks:[KeyAndMask:0xc300L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 96:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 96:0:239->Collector Neuron 96:0:119, keys_and_masks:[KeyAndMask:0xc400L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 97:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 97:0:239->Collector Neuron 97:0:119, keys_and_masks:[KeyAndMask:0xc500L:0xffffff00] 
+
+
+Subvert: Inhibiting Neurons 98:0:239 
+subedge:PartitionedEdge:Inhibiting Neurons 98:0:239->Collector Neuron 98:0:119, keys_and_masks:[KeyAndMask:0xc600L:0xffffff00] 
+
+

@@ -1,0 +1,1793 @@
+        Placement Information by Vertex
+        ===============================
+
+Generated: Sat Feb 13 16:42:12 2016 for target machine '10.162.177.42'
+
+**** Vertex: 'Collector Neuron 0'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 0 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 0, 1) 
+
+**** Vertex: 'Collector Neuron 1'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 1 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 0, 2) 
+
+**** Vertex: 'Collector Neuron 10'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 10 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 0, 11) 
+
+**** Vertex: 'Collector Neuron 11'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 11 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 0, 12) 
+
+**** Vertex: 'Collector Neuron 12'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 12 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 0, 13) 
+
+**** Vertex: 'Collector Neuron 13'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 13 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 0, 14) 
+
+**** Vertex: 'Collector Neuron 14'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 14 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 0, 15) 
+
+**** Vertex: 'Collector Neuron 15'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 15 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 0, 16) 
+
+**** Vertex: 'Collector Neuron 16'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 16 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 0, 17) 
+
+**** Vertex: 'Collector Neuron 17'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 17 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 0, 1) 
+
+**** Vertex: 'Collector Neuron 18'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 18 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 0, 2) 
+
+**** Vertex: 'Collector Neuron 19'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 19 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 0, 3) 
+
+**** Vertex: 'Collector Neuron 2'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 2 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 0, 3) 
+
+**** Vertex: 'Collector Neuron 20'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 20 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 0, 4) 
+
+**** Vertex: 'Collector Neuron 21'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 21 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 0, 5) 
+
+**** Vertex: 'Collector Neuron 22'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 22 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 0, 6) 
+
+**** Vertex: 'Collector Neuron 23'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 23 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 0, 7) 
+
+**** Vertex: 'Collector Neuron 24'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 24 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 0, 8) 
+
+**** Vertex: 'Collector Neuron 25'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 25 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 0, 9) 
+
+**** Vertex: 'Collector Neuron 26'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 26 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 0, 10) 
+
+**** Vertex: 'Collector Neuron 27'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 27 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 0, 11) 
+
+**** Vertex: 'Collector Neuron 28'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 28 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 0, 12) 
+
+**** Vertex: 'Collector Neuron 29'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 29 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 0, 13) 
+
+**** Vertex: 'Collector Neuron 3'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 3 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 0, 4) 
+
+**** Vertex: 'Collector Neuron 30'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 30 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 0, 14) 
+
+**** Vertex: 'Collector Neuron 31'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 31 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 0, 15) 
+
+**** Vertex: 'Collector Neuron 32'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 32 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 0, 16) 
+
+**** Vertex: 'Collector Neuron 33'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 33 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 0, 17) 
+
+**** Vertex: 'Collector Neuron 34'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 34 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 1, 1) 
+
+**** Vertex: 'Collector Neuron 35'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 35 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 1, 2) 
+
+**** Vertex: 'Collector Neuron 36'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 36 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 1, 3) 
+
+**** Vertex: 'Collector Neuron 37'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 37 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 1, 4) 
+
+**** Vertex: 'Collector Neuron 38'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 38 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 1, 5) 
+
+**** Vertex: 'Collector Neuron 39'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 39 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 1, 6) 
+
+**** Vertex: 'Collector Neuron 4'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 4 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 0, 5) 
+
+**** Vertex: 'Collector Neuron 40'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 40 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 1, 7) 
+
+**** Vertex: 'Collector Neuron 41'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 41 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 1, 8) 
+
+**** Vertex: 'Collector Neuron 42'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 42 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 1, 9) 
+
+**** Vertex: 'Collector Neuron 43'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 43 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 1, 10) 
+
+**** Vertex: 'Collector Neuron 44'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 44 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 1, 11) 
+
+**** Vertex: 'Collector Neuron 45'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 45 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 1, 12) 
+
+**** Vertex: 'Collector Neuron 46'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 46 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 1, 13) 
+
+**** Vertex: 'Collector Neuron 47'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 47 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 1, 14) 
+
+**** Vertex: 'Collector Neuron 48'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 48 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 1, 15) 
+
+**** Vertex: 'Collector Neuron 49'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 49 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 1, 16) 
+
+**** Vertex: 'Collector Neuron 5'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 5 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 0, 6) 
+
+**** Vertex: 'Collector Neuron 50'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 50 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 1, 1) 
+
+**** Vertex: 'Collector Neuron 51'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 51 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 1, 2) 
+
+**** Vertex: 'Collector Neuron 52'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 52 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 1, 3) 
+
+**** Vertex: 'Collector Neuron 53'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 53 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 1, 4) 
+
+**** Vertex: 'Collector Neuron 54'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 54 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 1, 5) 
+
+**** Vertex: 'Collector Neuron 55'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 55 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 1, 6) 
+
+**** Vertex: 'Collector Neuron 56'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 56 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 1, 7) 
+
+**** Vertex: 'Collector Neuron 57'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 57 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 1, 8) 
+
+**** Vertex: 'Collector Neuron 58'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 58 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 1, 9) 
+
+**** Vertex: 'Collector Neuron 59'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 59 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 1, 10) 
+
+**** Vertex: 'Collector Neuron 6'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 6 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 0, 7) 
+
+**** Vertex: 'Collector Neuron 60'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 60 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 1, 11) 
+
+**** Vertex: 'Collector Neuron 61'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 61 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 1, 12) 
+
+**** Vertex: 'Collector Neuron 62'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 62 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 1, 13) 
+
+**** Vertex: 'Collector Neuron 63'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 63 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 1, 14) 
+
+**** Vertex: 'Collector Neuron 64'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 64 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 1, 15) 
+
+**** Vertex: 'Collector Neuron 65'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 65 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 1, 16) 
+
+**** Vertex: 'Collector Neuron 66'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 66 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 1, 17) 
+
+**** Vertex: 'Collector Neuron 67'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 67 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 0, 1) 
+
+**** Vertex: 'Collector Neuron 68'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 68 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 0, 2) 
+
+**** Vertex: 'Collector Neuron 69'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 69 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 0, 3) 
+
+**** Vertex: 'Collector Neuron 7'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 7 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 0, 8) 
+
+**** Vertex: 'Collector Neuron 70'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 70 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 0, 4) 
+
+**** Vertex: 'Collector Neuron 71'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 71 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 0, 5) 
+
+**** Vertex: 'Collector Neuron 72'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 72 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 0, 6) 
+
+**** Vertex: 'Collector Neuron 73'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 73 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 0, 7) 
+
+**** Vertex: 'Collector Neuron 74'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 74 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 0, 8) 
+
+**** Vertex: 'Collector Neuron 75'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 75 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 0, 9) 
+
+**** Vertex: 'Collector Neuron 76'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 76 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 0, 10) 
+
+**** Vertex: 'Collector Neuron 77'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 77 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 0, 11) 
+
+**** Vertex: 'Collector Neuron 78'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 78 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 0, 12) 
+
+**** Vertex: 'Collector Neuron 79'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 79 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 0, 13) 
+
+**** Vertex: 'Collector Neuron 8'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 8 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 0, 9) 
+
+**** Vertex: 'Collector Neuron 80'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 80 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 0, 14) 
+
+**** Vertex: 'Collector Neuron 81'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 81 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 0, 15) 
+
+**** Vertex: 'Collector Neuron 82'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 82 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 0, 16) 
+
+**** Vertex: 'Collector Neuron 83'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 83 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 0, 17) 
+
+**** Vertex: 'Collector Neuron 84'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 84 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 1, 1) 
+
+**** Vertex: 'Collector Neuron 85'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 85 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 1, 2) 
+
+**** Vertex: 'Collector Neuron 86'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 86 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 1, 3) 
+
+**** Vertex: 'Collector Neuron 87'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 87 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 1, 4) 
+
+**** Vertex: 'Collector Neuron 88'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 88 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 1, 5) 
+
+**** Vertex: 'Collector Neuron 89'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 89 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 1, 6) 
+
+**** Vertex: 'Collector Neuron 9'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 9 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 0, 10) 
+
+**** Vertex: 'Collector Neuron 90'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 90 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 1, 7) 
+
+**** Vertex: 'Collector Neuron 91'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 91 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 1, 8) 
+
+**** Vertex: 'Collector Neuron 92'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 92 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 1, 9) 
+
+**** Vertex: 'Collector Neuron 93'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 93 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 1, 10) 
+
+**** Vertex: 'Collector Neuron 94'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 94 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 1, 11) 
+
+**** Vertex: 'Collector Neuron 95'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 95 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 1, 12) 
+
+**** Vertex: 'Collector Neuron 96'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 96 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 1, 13) 
+
+**** Vertex: 'Collector Neuron 97'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 97 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 1, 14) 
+
+**** Vertex: 'Collector Neuron 98'
+Model: <bound method IFCurrExp.model_name of Collector Neuron 98 with 120 atoms>
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 1, 15) 
+
+**** Vertex: 'Inhibiting Neurons 0'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 0 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 0, 1) 
+
+**** Vertex: 'Inhibiting Neurons 1'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 1 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 0, 2) 
+
+**** Vertex: 'Inhibiting Neurons 10'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 10 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 0, 11) 
+
+**** Vertex: 'Inhibiting Neurons 11'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 11 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 0, 12) 
+
+**** Vertex: 'Inhibiting Neurons 12'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 12 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 0, 13) 
+
+**** Vertex: 'Inhibiting Neurons 13'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 13 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 0, 14) 
+
+**** Vertex: 'Inhibiting Neurons 14'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 14 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 0, 15) 
+
+**** Vertex: 'Inhibiting Neurons 15'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 15 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 0, 16) 
+
+**** Vertex: 'Inhibiting Neurons 16'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 16 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 0, 17) 
+
+**** Vertex: 'Inhibiting Neurons 17'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 17 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 11, 1) 
+
+**** Vertex: 'Inhibiting Neurons 18'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 18 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 11, 2) 
+
+**** Vertex: 'Inhibiting Neurons 19'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 19 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 11, 3) 
+
+**** Vertex: 'Inhibiting Neurons 2'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 2 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 0, 3) 
+
+**** Vertex: 'Inhibiting Neurons 20'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 20 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 11, 4) 
+
+**** Vertex: 'Inhibiting Neurons 21'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 21 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 11, 5) 
+
+**** Vertex: 'Inhibiting Neurons 22'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 22 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 11, 6) 
+
+**** Vertex: 'Inhibiting Neurons 23'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 23 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 11, 7) 
+
+**** Vertex: 'Inhibiting Neurons 24'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 24 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 11, 8) 
+
+**** Vertex: 'Inhibiting Neurons 25'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 25 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 11, 9) 
+
+**** Vertex: 'Inhibiting Neurons 26'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 26 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 11, 10) 
+
+**** Vertex: 'Inhibiting Neurons 27'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 27 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 11, 11) 
+
+**** Vertex: 'Inhibiting Neurons 28'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 28 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 11, 12) 
+
+**** Vertex: 'Inhibiting Neurons 29'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 29 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 11, 13) 
+
+**** Vertex: 'Inhibiting Neurons 3'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 3 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 0, 4) 
+
+**** Vertex: 'Inhibiting Neurons 30'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 30 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 11, 14) 
+
+**** Vertex: 'Inhibiting Neurons 31'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 31 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 11, 15) 
+
+**** Vertex: 'Inhibiting Neurons 32'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 32 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 11, 16) 
+
+**** Vertex: 'Inhibiting Neurons 33'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 33 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 11, 17) 
+
+**** Vertex: 'Inhibiting Neurons 34'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 34 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (0, 11, 1) 
+
+**** Vertex: 'Inhibiting Neurons 35'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 35 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (0, 11, 2) 
+
+**** Vertex: 'Inhibiting Neurons 36'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 36 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (0, 11, 3) 
+
+**** Vertex: 'Inhibiting Neurons 37'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 37 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (0, 11, 4) 
+
+**** Vertex: 'Inhibiting Neurons 38'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 38 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (0, 11, 5) 
+
+**** Vertex: 'Inhibiting Neurons 39'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 39 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (0, 11, 6) 
+
+**** Vertex: 'Inhibiting Neurons 4'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 4 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 0, 5) 
+
+**** Vertex: 'Inhibiting Neurons 40'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 40 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (0, 11, 7) 
+
+**** Vertex: 'Inhibiting Neurons 41'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 41 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (0, 11, 8) 
+
+**** Vertex: 'Inhibiting Neurons 42'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 42 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (0, 11, 9) 
+
+**** Vertex: 'Inhibiting Neurons 43'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 43 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (0, 11, 10) 
+
+**** Vertex: 'Inhibiting Neurons 44'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 44 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (0, 11, 11) 
+
+**** Vertex: 'Inhibiting Neurons 45'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 45 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (0, 11, 12) 
+
+**** Vertex: 'Inhibiting Neurons 46'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 46 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (0, 11, 13) 
+
+**** Vertex: 'Inhibiting Neurons 47'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 47 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (0, 11, 14) 
+
+**** Vertex: 'Inhibiting Neurons 48'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 48 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (0, 11, 15) 
+
+**** Vertex: 'Inhibiting Neurons 49'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 49 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (0, 11, 16) 
+
+**** Vertex: 'Inhibiting Neurons 5'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 5 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 0, 6) 
+
+**** Vertex: 'Inhibiting Neurons 50'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 50 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (0, 11, 17) 
+
+**** Vertex: 'Inhibiting Neurons 51'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 51 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (1, 11, 1) 
+
+**** Vertex: 'Inhibiting Neurons 52'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 52 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (1, 11, 2) 
+
+**** Vertex: 'Inhibiting Neurons 53'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 53 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (1, 11, 3) 
+
+**** Vertex: 'Inhibiting Neurons 54'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 54 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (1, 11, 4) 
+
+**** Vertex: 'Inhibiting Neurons 55'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 55 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (1, 11, 5) 
+
+**** Vertex: 'Inhibiting Neurons 56'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 56 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (1, 11, 6) 
+
+**** Vertex: 'Inhibiting Neurons 57'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 57 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (1, 11, 7) 
+
+**** Vertex: 'Inhibiting Neurons 58'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 58 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (1, 11, 8) 
+
+**** Vertex: 'Inhibiting Neurons 59'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 59 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (1, 11, 9) 
+
+**** Vertex: 'Inhibiting Neurons 6'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 6 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 0, 7) 
+
+**** Vertex: 'Inhibiting Neurons 60'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 60 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (1, 11, 10) 
+
+**** Vertex: 'Inhibiting Neurons 61'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 61 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (1, 11, 11) 
+
+**** Vertex: 'Inhibiting Neurons 62'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 62 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (1, 11, 12) 
+
+**** Vertex: 'Inhibiting Neurons 63'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 63 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (1, 11, 13) 
+
+**** Vertex: 'Inhibiting Neurons 64'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 64 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (1, 11, 14) 
+
+**** Vertex: 'Inhibiting Neurons 65'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 65 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (1, 11, 15) 
+
+**** Vertex: 'Inhibiting Neurons 66'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 66 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (1, 11, 16) 
+
+**** Vertex: 'Inhibiting Neurons 67'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 67 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (1, 11, 17) 
+
+**** Vertex: 'Inhibiting Neurons 68'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 68 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 1, 1) 
+
+**** Vertex: 'Inhibiting Neurons 69'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 69 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 1, 2) 
+
+**** Vertex: 'Inhibiting Neurons 7'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 7 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 0, 8) 
+
+**** Vertex: 'Inhibiting Neurons 70'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 70 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 1, 3) 
+
+**** Vertex: 'Inhibiting Neurons 71'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 71 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 1, 4) 
+
+**** Vertex: 'Inhibiting Neurons 72'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 72 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 1, 5) 
+
+**** Vertex: 'Inhibiting Neurons 73'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 73 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 1, 6) 
+
+**** Vertex: 'Inhibiting Neurons 74'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 74 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 1, 7) 
+
+**** Vertex: 'Inhibiting Neurons 75'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 75 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 1, 8) 
+
+**** Vertex: 'Inhibiting Neurons 76'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 76 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 1, 9) 
+
+**** Vertex: 'Inhibiting Neurons 77'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 77 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 1, 10) 
+
+**** Vertex: 'Inhibiting Neurons 78'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 78 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 1, 11) 
+
+**** Vertex: 'Inhibiting Neurons 79'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 79 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 1, 12) 
+
+**** Vertex: 'Inhibiting Neurons 8'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 8 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 0, 9) 
+
+**** Vertex: 'Inhibiting Neurons 80'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 80 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 1, 13) 
+
+**** Vertex: 'Inhibiting Neurons 81'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 81 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 1, 14) 
+
+**** Vertex: 'Inhibiting Neurons 82'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 82 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 1, 15) 
+
+**** Vertex: 'Inhibiting Neurons 83'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 83 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 1, 16) 
+
+**** Vertex: 'Inhibiting Neurons 84'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 84 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 1, 17) 
+
+**** Vertex: 'Inhibiting Neurons 85'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 85 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (10, 0, 1) 
+
+**** Vertex: 'Inhibiting Neurons 86'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 86 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (10, 0, 2) 
+
+**** Vertex: 'Inhibiting Neurons 87'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 87 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (10, 0, 3) 
+
+**** Vertex: 'Inhibiting Neurons 88'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 88 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (10, 0, 4) 
+
+**** Vertex: 'Inhibiting Neurons 89'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 89 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (10, 0, 5) 
+
+**** Vertex: 'Inhibiting Neurons 9'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 9 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (11, 0, 10) 
+
+**** Vertex: 'Inhibiting Neurons 90'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 90 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (10, 0, 6) 
+
+**** Vertex: 'Inhibiting Neurons 91'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 91 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (10, 0, 7) 
+
+**** Vertex: 'Inhibiting Neurons 92'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 92 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (10, 0, 8) 
+
+**** Vertex: 'Inhibiting Neurons 93'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 93 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (10, 0, 9) 
+
+**** Vertex: 'Inhibiting Neurons 94'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 94 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (10, 0, 10) 
+
+**** Vertex: 'Inhibiting Neurons 95'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 95 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (10, 0, 11) 
+
+**** Vertex: 'Inhibiting Neurons 96'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 96 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (10, 0, 12) 
+
+**** Vertex: 'Inhibiting Neurons 97'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 97 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (10, 0, 13) 
+
+**** Vertex: 'Inhibiting Neurons 98'
+Model: <bound method IFCurrExp.model_name of Inhibiting Neurons 98 with 240 atoms>
+Pop sz: 240
+Sub-vertices: 
+  Slice 0:239 (240 atoms) on core (10, 0, 14) 
+
+**** Vertex: 'Retina Left - Population 0'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 1, 16) 
+
+**** Vertex: 'Retina Left - Population 1'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 1, 17) 
+
+**** Vertex: 'Retina Left - Population 10'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 2, 9) 
+
+**** Vertex: 'Retina Left - Population 11'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 2, 10) 
+
+**** Vertex: 'Retina Left - Population 12'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 2, 11) 
+
+**** Vertex: 'Retina Left - Population 13'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 2, 12) 
+
+**** Vertex: 'Retina Left - Population 14'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 2, 13) 
+
+**** Vertex: 'Retina Left - Population 15'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 2, 14) 
+
+**** Vertex: 'Retina Left - Population 16'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 2, 15) 
+
+**** Vertex: 'Retina Left - Population 17'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 2, 16) 
+
+**** Vertex: 'Retina Left - Population 18'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 2, 17) 
+
+**** Vertex: 'Retina Left - Population 19'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 2, 1) 
+
+**** Vertex: 'Retina Left - Population 2'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 2, 1) 
+
+**** Vertex: 'Retina Left - Population 20'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 2, 2) 
+
+**** Vertex: 'Retina Left - Population 21'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 2, 3) 
+
+**** Vertex: 'Retina Left - Population 22'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 2, 4) 
+
+**** Vertex: 'Retina Left - Population 23'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 2, 5) 
+
+**** Vertex: 'Retina Left - Population 24'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 2, 6) 
+
+**** Vertex: 'Retina Left - Population 25'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 2, 7) 
+
+**** Vertex: 'Retina Left - Population 26'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 2, 8) 
+
+**** Vertex: 'Retina Left - Population 27'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 2, 9) 
+
+**** Vertex: 'Retina Left - Population 28'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 2, 10) 
+
+**** Vertex: 'Retina Left - Population 29'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 2, 11) 
+
+**** Vertex: 'Retina Left - Population 3'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 2, 2) 
+
+**** Vertex: 'Retina Left - Population 30'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 2, 12) 
+
+**** Vertex: 'Retina Left - Population 31'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 2, 13) 
+
+**** Vertex: 'Retina Left - Population 32'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 2, 14) 
+
+**** Vertex: 'Retina Left - Population 33'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 2, 15) 
+
+**** Vertex: 'Retina Left - Population 34'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 2, 16) 
+
+**** Vertex: 'Retina Left - Population 35'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (1, 2, 17) 
+
+**** Vertex: 'Retina Left - Population 36'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 2, 1) 
+
+**** Vertex: 'Retina Left - Population 37'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 2, 2) 
+
+**** Vertex: 'Retina Left - Population 38'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 2, 3) 
+
+**** Vertex: 'Retina Left - Population 39'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 2, 4) 
+
+**** Vertex: 'Retina Left - Population 4'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 2, 3) 
+
+**** Vertex: 'Retina Left - Population 40'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 2, 5) 
+
+**** Vertex: 'Retina Left - Population 41'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 2, 6) 
+
+**** Vertex: 'Retina Left - Population 42'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 2, 7) 
+
+**** Vertex: 'Retina Left - Population 43'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 2, 8) 
+
+**** Vertex: 'Retina Left - Population 44'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 2, 9) 
+
+**** Vertex: 'Retina Left - Population 45'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 2, 10) 
+
+**** Vertex: 'Retina Left - Population 46'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 2, 11) 
+
+**** Vertex: 'Retina Left - Population 47'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 2, 12) 
+
+**** Vertex: 'Retina Left - Population 48'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 2, 13) 
+
+**** Vertex: 'Retina Left - Population 49'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 2, 14) 
+
+**** Vertex: 'Retina Left - Population 5'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 2, 4) 
+
+**** Vertex: 'Retina Left - Population 6'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 2, 5) 
+
+**** Vertex: 'Retina Left - Population 7'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 2, 6) 
+
+**** Vertex: 'Retina Left - Population 8'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 2, 7) 
+
+**** Vertex: 'Retina Left - Population 9'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (2, 2, 8) 
+
+**** Vertex: 'Retina Right - Population 0'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 2, 15) 
+
+**** Vertex: 'Retina Right - Population 1'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 2, 16) 
+
+**** Vertex: 'Retina Right - Population 10'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 0, 8) 
+
+**** Vertex: 'Retina Right - Population 11'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 0, 9) 
+
+**** Vertex: 'Retina Right - Population 12'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 0, 10) 
+
+**** Vertex: 'Retina Right - Population 13'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 0, 11) 
+
+**** Vertex: 'Retina Right - Population 14'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 0, 12) 
+
+**** Vertex: 'Retina Right - Population 15'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 0, 13) 
+
+**** Vertex: 'Retina Right - Population 16'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 0, 14) 
+
+**** Vertex: 'Retina Right - Population 17'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 0, 15) 
+
+**** Vertex: 'Retina Right - Population 18'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 0, 16) 
+
+**** Vertex: 'Retina Right - Population 19'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 0, 17) 
+
+**** Vertex: 'Retina Right - Population 2'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (0, 2, 17) 
+
+**** Vertex: 'Retina Right - Population 20'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 1, 1) 
+
+**** Vertex: 'Retina Right - Population 21'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 1, 2) 
+
+**** Vertex: 'Retina Right - Population 22'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 1, 3) 
+
+**** Vertex: 'Retina Right - Population 23'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 1, 4) 
+
+**** Vertex: 'Retina Right - Population 24'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 1, 5) 
+
+**** Vertex: 'Retina Right - Population 25'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 1, 6) 
+
+**** Vertex: 'Retina Right - Population 26'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 1, 7) 
+
+**** Vertex: 'Retina Right - Population 27'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 1, 8) 
+
+**** Vertex: 'Retina Right - Population 28'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 1, 9) 
+
+**** Vertex: 'Retina Right - Population 29'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 1, 10) 
+
+**** Vertex: 'Retina Right - Population 3'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 0, 1) 
+
+**** Vertex: 'Retina Right - Population 30'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 1, 11) 
+
+**** Vertex: 'Retina Right - Population 31'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 1, 12) 
+
+**** Vertex: 'Retina Right - Population 32'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 1, 13) 
+
+**** Vertex: 'Retina Right - Population 33'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 1, 14) 
+
+**** Vertex: 'Retina Right - Population 34'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 1, 15) 
+
+**** Vertex: 'Retina Right - Population 35'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 1, 16) 
+
+**** Vertex: 'Retina Right - Population 36'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 2, 1) 
+
+**** Vertex: 'Retina Right - Population 37'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 2, 2) 
+
+**** Vertex: 'Retina Right - Population 38'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 2, 3) 
+
+**** Vertex: 'Retina Right - Population 39'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 2, 4) 
+
+**** Vertex: 'Retina Right - Population 4'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 0, 2) 
+
+**** Vertex: 'Retina Right - Population 40'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 2, 5) 
+
+**** Vertex: 'Retina Right - Population 41'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 2, 6) 
+
+**** Vertex: 'Retina Right - Population 42'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 2, 7) 
+
+**** Vertex: 'Retina Right - Population 43'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 2, 8) 
+
+**** Vertex: 'Retina Right - Population 44'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 2, 9) 
+
+**** Vertex: 'Retina Right - Population 45'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 2, 10) 
+
+**** Vertex: 'Retina Right - Population 46'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 2, 11) 
+
+**** Vertex: 'Retina Right - Population 47'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 2, 12) 
+
+**** Vertex: 'Retina Right - Population 48'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 2, 13) 
+
+**** Vertex: 'Retina Right - Population 49'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 2, 14) 
+
+**** Vertex: 'Retina Right - Population 5'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 0, 3) 
+
+**** Vertex: 'Retina Right - Population 6'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 0, 4) 
+
+**** Vertex: 'Retina Right - Population 7'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 0, 5) 
+
+**** Vertex: 'Retina Right - Population 8'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 0, 6) 
+
+**** Vertex: 'Retina Right - Population 9'
+Model: SpikeSourceArray
+Pop sz: 120
+Sub-vertices: 
+  Slice 0:119 (120 atoms) on core (3, 0, 7) 
+
