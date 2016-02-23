@@ -1,9 +1,0 @@
-router contains 5 entries 
- 
-  Index   Key(hex)    Mask(hex)    Route(hex)    Src. Core -> [Cores][Links]
-------------------------------------------------------------------------------
-    0     0x00000001       0xFFFFFFFF      0x00000480         (0, 0, 0)      [1, 4] []
-    1     0x00000004       0xFFFFFFFF      0x00000408         (0, 0, 0)      [4] [W]
-    2     0x00000000       0xFFFFFFFF      0x00000080         (0, 0, 0)      [1] []
-    3     0x00000003       0xFFFFFFFF      0x00000408         (0, 0, 0)      [4] [W]
-    4     0x00000002       0xFFFFFFFF      0x00000480         (0, 0, 0)      [1, 4] []

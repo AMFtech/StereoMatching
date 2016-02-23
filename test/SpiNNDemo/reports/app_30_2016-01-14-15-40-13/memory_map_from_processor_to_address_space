@@ -1,4 +1,0 @@
-(0, 0, 2, 'c0'): (0, 0, 2, 'c0'): ('start_address': 1612972052, hex(0x60240014), 'memory_used': 197632, 'memory_written': 17552 
-(0, 0, 3, 'c0'): (0, 0, 3, 'c0'): ('start_address': 1613169692, hex(0x6027041c), 'memory_used': 44424, 'memory_written': 4344 
-(0, 0, 4, 'LiveSpikeReceiver'): (0, 0, 4, 'LiveSpikeReceiver'): ('start_address': 1613214124, hex(0x6027b1ac), 'memory_used': 144, 'memory_written': 144 
-(0, 0, 1, 'i0'): (0, 0, 1, 'i0'): ('start_address': 1613214276, hex(0x6027b244), 'memory_used': 144, 'memory_written': 144 
