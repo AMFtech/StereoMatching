@@ -13,12 +13,13 @@ import pygame
 DVSXRES, DVSYRES = 128,128
 logFile = None
 
+# these boundaries control the position of the network output within the plotting window
 lowerBoundX = (DVSXRES-dimensionRetinaX)/2
 upperBoundX = (DVSXRES+dimensionRetinaX)/2
 lowerBoundY = (DVSYRES-dimensionRetinaY)/2
 upperBoundY = (DVSYRES+dimensionRetinaY)/2
 
-flushcounter = 0
+flushcounter = 0 # used to decrease the numbers of file flushing for the logging. This is needed because the simulations does not end sometimes.
 
 def setupVisualiser(network=None):
     global logFile
@@ -36,7 +37,7 @@ def setupPanels(network=None):
     time_period = 20    # targeted duration of a single update cycle in ms
     half_time = 100. # targeted half time for after glow in ms
     decay_alpha = int(255. - 255.*(0.5)**(time_period/half_time)) # alpha of periodically blitted surface
-#     print "setting alpha to",decay_alpha
+
     ports = [0,1]
     l=len(ports)
     
@@ -210,16 +211,11 @@ class spike_plotter(Thread):
                     disp = d+minDisparity
                     break
             
-#             logFile = open("dipsarities_liveout.txt", 'w')
-            
-#             logFile.close()
-#             printClk += 1    
-#             if printClk % 30 == 0:    
-#             print disp + minDisparity
+            # calculate the percentage of red and blue
             normalisedDisp = float(disp - minDisparity)/float(maxDisparity - minDisparity)
             gradientCol = (int(255*normalisedDisp), int(-255*normalisedDisp + 255)) #red and blue values
-#             print gradientCol
-            
+
+            # find corresponding pixel in the retina
             pixel = 0    
             for p in range(0, dimensionRetinaX):
                 if populationID in retinaNbhoodL[p]:
@@ -227,12 +223,14 @@ class spike_plotter(Thread):
                     break
 #             print pixel, neuronID
             
+            # log the time stamp, x and y pixel coordinate and the detected disparity
             logFile.write(str(time) + " " + str(lowerBoundX + pixel) + " " + str(lowerBoundY + neuronID) + " " + str(disp) + "\n")  
             
             if flushcounter % 5 == 0:
                 logFile.flush() 
             flushcounter += 1
             
+            # draw the coloured pixel on the panel
             self.cv.set_at((lowerBoundX + pixel, lowerBoundY + neuronID), pygame.Color(gradientCol[0], 0, gradientCol[1], 0))
 #             self.cv.set_at((lowerBoundX + pixel, lowerBoundY + neuronID), pygame.Color(0, 255, 0, 0))
             

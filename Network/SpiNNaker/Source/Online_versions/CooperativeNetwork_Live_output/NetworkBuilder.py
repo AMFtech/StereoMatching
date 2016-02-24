@@ -15,7 +15,7 @@ This function should be invoked from outside
 and before the network is created.
 """
 def createSpikeSource(label):
-    # This assertion is left, because the creation of retinas, depends on its poision in the stereo setup. 
+    # This assertion is left, because the creation of retinas, depends on its position in the stereo setup. 
     # The lable passing and checking should be replaced by a more sophisticated code!
     assert label == "RetL" or label == "RetR", "Unknown Retina Identifier! Creating Retina Failed."
     if label == "RetR":
@@ -54,7 +54,7 @@ and packs them in a single population.
 """
 def createNetwork():
     
-    # The dimesion is X x Y x maxDisparity+1 because disparity 0 means no shift in pixel location
+    # The dimension is X x Y x maxDisparity+1 because disparity 0 means no shift in pixel location
     # Check if network dimensions are valid contain only one disparity map. 
     assert dimensionRetinaX > maxDisparity >= 0, "Maximum Disparity Constant is illegal!"
     assert dimensionRetinaX > 0 and dimensionRetinaY > 0, "Network dimensions are illegal!"
@@ -118,16 +118,21 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
     
     from SimulationAndNetworkSettings import radiusExcitation, radiusInhibition
     from SimulationAndNetworkSettings import wOutToOutExc, dOutToOutExc, wOutToOutInh, dOutToOutInh
-    assert radiusInhibition >= maxDisparity, "Bad radius of inhibition. Uniquness constraint cannot be satisfied."
+    assert radiusInhibition >= maxDisparity, "Bad radius of inhibition. Uniqueness constraint cannot be satisfied."
     assert 0 <= radiusExcitation <= dimensionRetinaX, "Bad radius of excitation."
-    # create lists with inhibitory along the Retina Right projective line
+   
+    # create lists which contain the IDs of populations which inhibit themselves. 
     nbhoodInhL = []
     nbhoodInhR = []
     nbhoodExcX = []
     nbhoodEcxY = []
-    # used for the triangular form of the matrix in order to remain within the square
+    
     print "\t Generating inhibitory and excitatory connectivity patterns..."
-    # generate rows
+
+    # generate row inhibition
+
+    # limit the ensembleIndex counter according to the triangular form of the matrix 
+    # in order to remain within the boundaries.
     limiter = maxDisparity-minDisparity+1
     ensembleIndex = 0
     
@@ -142,7 +147,20 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
     
     ensembleIndex = len(network)
     
-    # generate columns
+    # generate column inhibition
+
+    # take the upper row, which is already generated above
+    # and insert populations IDs, which are shifted with one cell to the right
+    # for each row below like this:
+    # 1 2 3 -
+    # - 5 6 7
+    # - - 8 9
+    # - - - 10
+    # keep in mind that this form is actually allocated like this:
+    # 1 2 3 
+    # 5 6 7
+    # 8 9 -
+    # 10- -
     nbhoodInhR = [[x] for x in nbhoodInhL[0]]
     shiftGlob = 0
     for x in nbhoodInhL[1:]:
@@ -156,7 +174,8 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
                 nbhoodInhR[shift+shiftGlob].append(e)
             shift += 1     
       
-    # generate all diagonals
+    # generate all diagonal excitation patterns for all populations which correspond to common disparity 
+    # and which are at fixed y-coordinate
     for diag in map(None, *nbhoodInhL):
         sublist = []
         for elem in diag:
@@ -164,7 +183,7 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
                 sublist.append(elem)
         nbhoodExcX.append(sublist)
     
-    # generate all y-axis excitation
+    # generate all y-axis excitation within the excitation radius
     for x in range(0, dimensionRetinaY):
         for e in range(1, radiusExcitation+1):
             if x+e < dimensionRetinaY:
@@ -177,6 +196,7 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
 #     print nbhoodExcX  
 #     print nbhoodEcxY        
     
+    # make them global as they are used in the visualiser and not generated from scratch 
     global retinaNbhoodL,retinaNbhoodR, sameDisparityInd 
     
     retinaNbhoodL = nbhoodInhL
@@ -184,7 +204,7 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
     sameDisparityInd = nbhoodExcX
 
     print "\t Connecting neurons for internal excitation and inhibition..."
-    print "inh row"
+    print "\t\tConnecting for row inhibition..."
     for row in nbhoodInhL:
         for pop in row:
             for nb in row:
@@ -192,7 +212,7 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
                     Frontend.Projection(network[pop][1], network[nb][1], 
                         Frontend.OneToOneConnector(weights=wOutToOutInh, delays=dOutToOutInh), target='inhibitory')
     
-    print "inh col"
+    print "\t\tConnecting for column inhibition..."
                     
     for col in nbhoodInhR:
         for pop in col:
@@ -201,7 +221,7 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
                     Frontend.Projection(network[pop][1], network[nb][1], 
                         Frontend.OneToOneConnector(weights=wOutToOutInh, delays=dOutToOutInh), target='inhibitory')
     
-    print "exc layer"
+    print "\t\tConnecting for layer excitation..."
                     
     for diag in nbhoodExcX:
         for pop in diag:
@@ -213,23 +233,28 @@ def interconnectNeuronsForInternalInhibitionAndExcitation(network=None):
                     Frontend.Projection(network[pop][1], network[diag[diag.index(pop)-nb]][1], 
                         Frontend.OneToOneConnector(weights=wOutToOutExc, delays=dOutToOutExc), target='excitatory')
     
-    print "exc orth"
+    print "\t\tConnecting for excitation across layers..."
     
     for ensemble in network:
         Frontend.Projection(ensemble[1], ensemble[1], Frontend.FromListConnector(nbhoodEcxY), target='excitatory')
                     
 #     print "\t Connecting completed."
     
+
+"""
+Connects the lists of SpikeSourceArray populations of the retina
+to the network Blocker and Collector populations.
+"""    
 def connectSpikeSourcesToNetwork(network=None, retinaLeft=None, retinaRight=None):
     
-    assert network is not None and retinaLeft is not None and retinaRight is not None, "Network or one of the Retinas is not initialised!"
+    assert network is not None and retinaLeft is not None and retinaRight is not None, "The Network or one of the Retinas is not initialised!"
     print "Connecting Spike Sources to Network..."
     
     from SimulationAndNetworkSettings import wSSToOtherInh, wSSToSelfInh, wSSToOut, dSSToOtherInh, dSSToSelfInh, dSSToOut
     
     global retinaNbhoodL, retinaNbhoodR
     
-    # left is 0--dimensionRetinaY-1; right is dimensionRetinaY--dimensionRetinaY*2-1
+    # left Blocker ID is 0--dimensionRetinaY-1; right is dimensionRetinaY--dimensionRetinaY*2-1
     connListRetLBlockerL = []
     connListRetLBlockerR = []
     connListRetRBlockerL = []
@@ -262,6 +287,7 @@ def connectSpikeSourcesToNetwork(network=None, retinaLeft=None, retinaRight=None
         
     from NetworkVisualiser import setupVisualiser    
     
+    # setup the visualising panel for the network. 
     setupVisualiser(network)
     
 
