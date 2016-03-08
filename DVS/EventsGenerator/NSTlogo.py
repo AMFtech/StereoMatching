@@ -29,6 +29,8 @@ if __name__ == '__main__':
     
     letterOffset = (0, 1, 2)
     interval = 1.0/6.0
+    scalingFactor = 1.0
+    spacing = 0.1
     
     def xf(t):
         xval = 1.0
@@ -37,21 +39,21 @@ if __name__ == '__main__':
             xval = 1.0
         # 2nd segment  \
         elif 1*interval <= t < 2*interval:
-            xval = t
-        # 3rd segment   |
+            xval = 1*t + 1.0 - interval
+        # # # 3rd segment   |
         elif 2*interval <= t < 3*interval:
-            xval = 2*interval
-        # 4th segment     S
+            xval = 1.0 + interval
+        # # 4th segment     S
         elif 3*interval <= t < 4*interval:
-            xval = sin(t)
-        # 5th segment       |
+            xval = 1.0 + interval + spacing - 0.08*sin(60*t + 10)
+        # # 5th segment       |
         elif 4*interval <= t < 5*interval:
-            xval = 4*interval
+            xval = 1.0 + 3*interval
         # 6th segment         --
         else:
-            xval = t
+            xval = t + 0.6
 #         print "xval", xval    
-        return xval        
+        return xval * scalingFactor        
        
     def yf(t):
         yval = 1.0
@@ -60,20 +62,20 @@ if __name__ == '__main__':
             yval = t
         # 2nd segment  \
         elif 1*interval <= t < 2*interval:
-            yval = -1.0*t
-        # 3rd segment   |
+            yval = -1*t + 2*interval
+        # # 3rd segment   |
         elif 2*interval <= t < 3*interval:
             yval = t
         # 4th segment     S
         elif 3*interval <= t < 4*interval:
-            yval = t
+            yval = 2.5*t - 1.0
         # 5th segment       |
         elif 4*interval <= t < 5*interval:
-            yval = t
+            yval = t - interval
         # 6th segment         --
         else:
-            yval = 0.5    
-        return yval    
+            yval = 4*interval    
+        return yval * scalingFactor   
        
     def zf(t):
         zval = 1.0
@@ -83,19 +85,19 @@ if __name__ == '__main__':
         # 2nd segment  \
         elif 1*interval <= t < 2*interval:
             zval = 1.0
-        # 3rd segment   |
+        # # # 3rd segment   |
         elif 2*interval <= t < 3*interval:
             zval = 1.0
-        # 4th segment     S
+        # # 4th segment     S
         elif 3*interval <= t < 4*interval:
-            zval = 1.0
-        # 5th segment       |
-        elif 4*interval <= t < 5*interval:
             zval = 2.0
+        # # 5th segment       |
+        elif 4*interval <= t < 5*interval:
+            zval = 3.0
         # 6th segment         --
         else:
-            zval = 2.0
-        return zval    
+            zval = 3.0
+        return zval * scalingFactor   
     
     vxf = vectorize(xf)
     vyf = vectorize(yf)
