@@ -4,7 +4,7 @@ from numpy import vectorize
 from mpl_toolkits.mplot3d import Axes3D
 
 def project_to_vscreens(fx,fy,fz,zr = 0.005, dx = 0.1):
-    xproj = lambda t:zr/fz(t) * fx(t)
+    xproj = lambda t:zr/fz(t) * -fx(t)
     yproj = lambda t:zr/fz(t) * fy(t)
     disparity = lambda t: zr/fz(t) * dx
     return xproj, yproj, disparity
@@ -27,31 +27,31 @@ def dvsify(fx,fy,T,vscreen_pixelsize=0.001):
   
 if __name__ == '__main__': 
     
-    letterOffset = (0, 1, 2)
+    initialOffset = 0.4
     interval = 1.0/6.0
-    scalingFactor = 2.0
+    scalingFactor = 1.0
     spacing = 0.1
     
     def xf(t):
         xval = 1.0
         # 1st segment |
         if 0*interval <= t < 1*interval:
-            xval = 1.0
+            xval = initialOffset
         # 2nd segment  \
         elif 1*interval <= t < 2*interval:
-            xval = 1*t + 1.0 - interval
+            xval = 1*t + initialOffset - interval
         # 3rd segment   |
         elif 2*interval <= t < 3*interval:
-            xval = 1.0 + interval
+            xval = initialOffset + interval
         # 4th segment     S
         elif 3*interval <= t < 4*interval:
-            xval = 1.0 + interval + spacing - 0.07*sin(52*t + 7.1)
+            xval = initialOffset + interval + spacing + 0.07*sin(52*t + 7.1)
         # 5th segment       |
         elif 4*interval <= t < 5*interval:
-            xval = 1.0 + interval + spacing + 2*0.07
+            xval = initialOffset + interval + spacing + 2*0.07
         # 6th segment         --
         else:
-            xval = t - 5*interval + 1.0 + interval + spacing + 2*0.07 - interval/2.0
+            xval = t - 5*interval + initialOffset + interval + spacing + 2*0.07 - interval/2.0
 #         print "xval", xval    
         return xval * scalingFactor        
        
@@ -62,7 +62,7 @@ if __name__ == '__main__':
             yval = t
         # 2nd segment  \
         elif 1*interval <= t < 2*interval:
-            yval = -1*t + 2*interval
+            yval = 1*t - 1*interval
         # 3rd segment   |
         elif 2*interval <= t < 3*interval:
             yval = t - 2*interval
@@ -104,7 +104,7 @@ if __name__ == '__main__':
     vzf = vectorize(zf)
     
     zr = 0.05 # vscreen focal point z-distance
-    dx = 0.5 # focal points x-offset
+    dx = 0.1 # focal points x-offset
     T = arange(0,1.,0.001)
     
     # first: show trajectory in 3d
@@ -204,7 +204,7 @@ if __name__ == '__main__':
     #         print t,x,y
               eventsFile.write(str(int(t * maxTime_us + repetitions * maxTime_us)) + " " + str(x+offset_minX + dimX/2 - distX/2) + " " + str(y+offset_minY + dimY/2 - distY/2) + " " + str(0) + " " + str(0) + "\n")
     
-    print len(Ts1)
+    print "events per retina: ", len(Ts1)
     eventsFile.close()
       
     print "x-resolution: ", maxXL - minXR
