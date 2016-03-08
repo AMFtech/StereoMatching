@@ -29,7 +29,7 @@ if __name__ == '__main__':
     
     letterOffset = (0, 1, 2)
     interval = 1.0/6.0
-    scalingFactor = 1.0
+    scalingFactor = 2.0
     spacing = 0.1
     
     def xf(t):
@@ -40,18 +40,18 @@ if __name__ == '__main__':
         # 2nd segment  \
         elif 1*interval <= t < 2*interval:
             xval = 1*t + 1.0 - interval
-        # # # 3rd segment   |
+        # 3rd segment   |
         elif 2*interval <= t < 3*interval:
             xval = 1.0 + interval
-        # # 4th segment     S
+        # 4th segment     S
         elif 3*interval <= t < 4*interval:
-            xval = 1.0 + interval + spacing - 0.08*sin(60*t + 10)
-        # # 5th segment       |
+            xval = 1.0 + interval + spacing - 0.07*sin(52*t + 7.1)
+        # 5th segment       |
         elif 4*interval <= t < 5*interval:
-            xval = 1.0 + 3*interval
+            xval = 1.0 + interval + spacing + 2*0.07
         # 6th segment         --
         else:
-            xval = t + 0.6
+            xval = t - 5*interval + 1.0 + interval + spacing + 2*0.07 - interval/2.0
 #         print "xval", xval    
         return xval * scalingFactor        
        
@@ -63,18 +63,18 @@ if __name__ == '__main__':
         # 2nd segment  \
         elif 1*interval <= t < 2*interval:
             yval = -1*t + 2*interval
-        # # 3rd segment   |
+        # 3rd segment   |
         elif 2*interval <= t < 3*interval:
-            yval = t
+            yval = t - 2*interval
         # 4th segment     S
         elif 3*interval <= t < 4*interval:
-            yval = 2.5*t - 1.0
+            yval = t - 3*interval
         # 5th segment       |
         elif 4*interval <= t < 5*interval:
-            yval = t - interval
+            yval = t - 4*interval
         # 6th segment         --
         else:
-            yval = 4*interval    
+            yval = interval    
         return yval * scalingFactor   
        
     def zf(t):
@@ -85,26 +85,26 @@ if __name__ == '__main__':
         # 2nd segment  \
         elif 1*interval <= t < 2*interval:
             zval = 1.0
-        # # # 3rd segment   |
+        # 3rd segment   |
         elif 2*interval <= t < 3*interval:
             zval = 1.0
-        # # 4th segment     S
+        # 4th segment     S
         elif 3*interval <= t < 4*interval:
             zval = 2.0
-        # # 5th segment       |
+        # 5th segment       |
         elif 4*interval <= t < 5*interval:
-            zval = 3.0
+            zval = 4.0
         # 6th segment         --
         else:
-            zval = 3.0
+            zval = 4.0
         return zval * scalingFactor   
     
     vxf = vectorize(xf)
     vyf = vectorize(yf)
     vzf = vectorize(zf)
     
-    zr = 0.005 # vscreen focal point z-distance
-    dx = 0.1 # focal points x-offset
+    zr = 0.05 # vscreen focal point z-distance
+    dx = 0.5 # focal points x-offset
     T = arange(0,1.,0.001)
     
     # first: show trajectory in 3d
@@ -207,8 +207,8 @@ if __name__ == '__main__':
     print len(Ts1)
     eventsFile.close()
       
-    print minXR, maxXL
-    print minY, maxY   
+    print "x-resolution: ", maxXL - minXR
+    print "y-resolution: ", maxY - minY  
     print minD, maxD
     print maxD/float(minD)
     
