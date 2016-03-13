@@ -28,8 +28,8 @@ def dvsify(fx,fy,T,vscreen_pixelsize=0.001):
 if __name__ == '__main__': 
     
     initialOffset = 0.4
-    interval = 1.0/6.0
-    scalingFactor = 1.0
+    interval = 1.0/3.0
+    scalingFactor = 0.5
     spacing = 0.1
     
     def xf(t):
@@ -39,20 +39,13 @@ if __name__ == '__main__':
             xval = initialOffset
         # 2nd segment  \
         elif 1*interval <= t < 2*interval:
-            xval = 1*t + initialOffset - interval
+            xval = 0.5*t + initialOffset - interval/2.0
         # 3rd segment   |
         elif 2*interval <= t < 3*interval:
-            xval = initialOffset + interval
-        # 4th segment     S
-        elif 3*interval <= t < 4*interval:
-            xval = initialOffset + interval + spacing - 0.07*sin(52*t + 7.1)
-        # 5th segment       |
-        elif 4*interval <= t < 5*interval:
-            xval = initialOffset + interval + spacing + 2*0.07
-        # 6th segment         --
+            xval = initialOffset + interval/2.0
         else:
-            xval = t - 5*interval + initialOffset + interval + spacing + 2*0.07 - interval/2.0
-#         print "xval", xval    
+            xval = initialOffset + interval/2.0
+            
         return xval * scalingFactor        
        
     def yf(t):
@@ -66,15 +59,9 @@ if __name__ == '__main__':
         # 3rd segment   |
         elif 2*interval <= t < 3*interval:
             yval = t - 2*interval
-        # 4th segment     S
-        elif 3*interval <= t < 4*interval:
-            yval = t - 3*interval
-        # 5th segment       |
-        elif 4*interval <= t < 5*interval:
-            yval = t - 4*interval
-        # 6th segment         --
         else:
             yval = interval    
+            
         return yval * scalingFactor   
        
     def zf(t):
@@ -88,16 +75,10 @@ if __name__ == '__main__':
         # 3rd segment   |
         elif 2*interval <= t < 3*interval:
             zval = 1.0
-        # 4th segment     S
-        elif 3*interval <= t < 4*interval:
-            zval = 1.5
-        # 5th segment       |
-        elif 4*interval <= t < 5*interval:
-            zval = 2.0
-        # 6th segment         --
         else:
-            zval = 2.0
-        return zval * scalingFactor   
+            zval = 1.0
+            
+        return zval * 1.0   
     
     vxf = vectorize(xf)
     vyf = vectorize(yf)
@@ -171,7 +152,7 @@ if __name__ == '__main__':
     axev3d.set_ylabel("y")
     axev3d.set_zlabel("t")
     
-    eventsFile = open('./NSTlogo.dat', 'w')
+    eventsFile = open('./N.dat', 'w')
     
     dimX = dimY = 128
     
