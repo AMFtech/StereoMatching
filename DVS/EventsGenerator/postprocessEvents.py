@@ -9,4 +9,4 @@ with open('T.dat', 'r') as f:
 with open('T.dat', 'w') as f:    
     for e in evts:
         e[1] += xOffset
-        f.write(str(e[0] + 20) + " " + str(e[1]) + " " + str(e[2]) + " " + str(e[3]) + " " + str(e[4]) + "\n")
+        f.write(str(e[0] + 50) + " " + str(e[1]) + " " + str(e[2]) + " " + str(e[3]) + " " + str(e[4]) + "\n")

@@ -68,7 +68,7 @@ if __name__ == '__main__':
     vzf = vectorize(zf)
     
     zr = 0.05 # vscreen focal point z-distance
-    dx = 0.1 # focal points x-offset
+    dx = 0.05 # focal points x-offset
     T = arange(0,1.,0.001)
     
     # first: show trajectory in 3d
