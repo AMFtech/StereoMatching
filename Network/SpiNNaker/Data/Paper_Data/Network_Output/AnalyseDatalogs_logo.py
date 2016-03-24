@@ -41,21 +41,21 @@ ax.scatter(range(0, len(disps)*10, 10), disps)
 ax.set_ylabel("Disparity")
 ax.set_xlabel("Time in ms")
 ax.annotate('N', 
-             xy=(2, 12.5),  
+             xy=(10, 12.5),  
              xycoords='data',
              textcoords='offset points')
 
 ax.annotate('S', 
-             xy=(2, 8.5),  
+             xy=(10, 8.5),  
              xycoords='data',
              textcoords='offset points')
 
 ax.annotate('T', 
-             xy=(2, 3.5),  
+             xy=(10, 3.5),  
              xycoords='data',
              textcoords='offset points')
 
-ax.set_xlim([0, 1000])
+ax.set_xlim([-10, 1000])
 
 # print(float(sum(disps))/len(disps))
 print(len([x for x in disps if x > 10]))
